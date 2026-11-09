@@ -144,7 +144,8 @@ def guardar_peliculas(peliculas):
 def buscar_pelicula_tmdb(titulo, cache):
     clave = normalizar(titulo)
 
-    if clave in cache:
+    # Conservar resultados positivos, pero volver a intentar los fallidos
+    if clave in cache and cache[clave] is not None:
         return cache[clave]
 
     if not TMDB_API_KEY:
@@ -152,13 +153,12 @@ def buscar_pelicula_tmdb(titulo, cache):
         return None
 
     url = "https://api.themoviedb.org/3/search/movie"
-
-    # Probar distintas localizaciones
     idiomas = ["es-419", "es-ES", "en-US"]
 
     resultados_unidos = {}
 
     try:
+        # Buscar la película en varios idiomas
         for idioma in idiomas:
             respuesta = requests.get(
                 url,
@@ -173,12 +173,12 @@ def buscar_pelicula_tmdb(titulo, cache):
             )
             respuesta.raise_for_status()
 
-            for pelicula in respuesta.json().get("results", []):
+            for pelicula in respuesta.json().get("results", [])[:8]:
                 resultados_unidos[pelicula["id"]] = pelicula
 
         resultados = list(resultados_unidos.values())
 
-        # Buscar coincidencias exactas en los títulos
+        # Primero comprobar los títulos principales
         coincidencias = []
 
         for pelicula in resultados:
@@ -190,20 +190,54 @@ def buscar_pelicula_tmdb(titulo, cache):
             if any(normalizar(nombre) == clave for nombre in titulos):
                 coincidencias.append(pelicula)
 
+        # Si no hay coincidencia, consultar títulos alternativos
+        if not coincidencias:
+            for pelicula in resultados[:15]:
+                pelicula_id = pelicula["id"]
+
+                respuesta = requests.get(
+                    f"https://api.themoviedb.org/3/movie/{pelicula_id}/alternative_titles",
+                    params={"api_key": TMDB_API_KEY},
+                    timeout=30
+                )
+                respuesta.raise_for_status()
+
+                titulos_alternativos = respuesta.json().get("titles", [])
+
+                for alternativo in titulos_alternativos:
+                    nombre = alternativo.get("title", "")
+
+                    if normalizar(nombre) == clave:
+                        coincidencias.append(pelicula)
+                        print(
+                            "Coincidencia por título alternativo:",
+                            titulo,
+                            "->",
+                            pelicula.get("title", "")
+                        )
+                        break
+
+        # No escoger películas al azar
         if not coincidencias:
             print("Película no encontrada:", titulo)
             cache[clave] = None
             return None
 
-        # Evitar elegir arbitrariamente entre películas diferentes
-        if len(coincidencias) > 1:
+        # Eliminar posibles duplicados
+        coincidencias_unicas = {
+            pelicula["id"]: pelicula
+            for pelicula in coincidencias
+        }
+
+        if len(coincidencias_unicas) > 1:
             print("Varias coincidencias posibles:", titulo)
             cache[clave] = None
             return None
 
-        pelicula = coincidencias[0]
+        pelicula = list(coincidencias_unicas.values())[0]
         pelicula_id = pelicula["id"]
 
+        # Obtener la sinopsis en español latino
         detalle_respuesta = requests.get(
             f"https://api.themoviedb.org/3/movie/{pelicula_id}",
             params={
@@ -217,7 +251,7 @@ def buscar_pelicula_tmdb(titulo, cache):
         detalle = detalle_respuesta.json()
         sinopsis = detalle.get("overview", "").strip()
 
-        # Si no hay sinopsis latinoamericana, probar español de España
+        # Si no existe, probar español de España
         if not sinopsis:
             detalle_respuesta = requests.get(
                 f"https://api.themoviedb.org/3/movie/{pelicula_id}",
