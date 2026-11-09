@@ -25,7 +25,9 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
-      - name: Generar EPG
+          - name: Generar EPG
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python generar_epg.py
 
       - name: Guardar XML en GitHub
