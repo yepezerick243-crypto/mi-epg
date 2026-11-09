@@ -1,3 +1,4 @@
+
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
@@ -17,7 +18,32 @@ MOVIES_FILE = "peliculas.json"
 
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 
-# Cargar series desde series.json
+# Programas que no deben buscarse como películas.
+# Los cinco episodios se relacionan con sus respectivas series.
+EPISODIOS_CONOCIDOS = {
+    "The Next Episode": "Cobra Kai",
+    "Then Learn Fly": "Cobra Kai",
+    "Lo mejor que se puede comprar": "Two and a Half Men",
+    "Primero estar de pie": "Cobra Kai",
+    "Award Tour": "All American"
+}
+
+# Noticias o segmentos que tampoco son películas.
+PROGRAMAS_NO_PELICULAS = {
+    "Buzz",
+    "El Buzz"
+}
+
+# Película identificada directamente mediante su ID de TMDb.
+PELICULAS_ID_DIRECTO = {
+    "La purga: El año de la elección": 316727
+}
+
+
+# ==============================
+# CARGAR SERIES
+# ==============================
+
 def cargar_series():
     with open(SERIES_FILE, "r", encoding="utf-8") as archivo:
         datos = json.load(archivo)
@@ -100,6 +126,28 @@ def identificar_episodio(nombre, indice):
     return None
 
 
+def identificar_episodio_conocido(nombre):
+    clave = normalizar(nombre)
+
+    for titulo, serie in EPISODIOS_CONOCIDOS.items():
+        if normalizar(titulo) == clave:
+            return {
+                "serie": serie,
+                "episodio": titulo
+            }
+
+    return None
+
+
+def es_programa_no_pelicula(nombre):
+    clave = normalizar(nombre)
+
+    return any(
+        normalizar(titulo) == clave
+        for titulo in PROGRAMAS_NO_PELICULAS
+    )
+
+
 # ==============================
 # TMDB: IDENTIFICAR PELICULAS
 # ==============================
@@ -114,7 +162,6 @@ def cargar_peliculas():
 
         peliculas = datos.get("peliculas", {})
 
-        # Compatibilidad con el archivo anterior que tenía una lista vacía
         if isinstance(peliculas, list):
             return {}
 
@@ -139,26 +186,90 @@ def guardar_peliculas(peliculas):
         )
 
 
+def obtener_sinopsis_tmdb(pelicula_id):
+    # Intentar primero español latino
+    respuesta = requests.get(
+        f"https://api.themoviedb.org/3/movie/{pelicula_id}",
+        params={
+            "api_key": TMDB_API_KEY,
+            "language": "es-419"
+        },
+        timeout=30
+    )
+    respuesta.raise_for_status()
+
+    sinopsis = respuesta.json().get("overview", "").strip()
+
+    # Si no existe, probar español de España
+    if not sinopsis:
+        respuesta = requests.get(
+            f"https://api.themoviedb.org/3/movie/{pelicula_id}",
+            params={
+                "api_key": TMDB_API_KEY,
+                "language": "es-ES"
+            },
+            timeout=30
+        )
+        respuesta.raise_for_status()
+
+        sinopsis = respuesta.json().get("overview", "").strip()
+
+    return sinopsis
 
 
 def buscar_pelicula_tmdb(titulo, cache):
     clave = normalizar(titulo)
 
-    # Conservar resultados positivos, pero volver a intentar los fallidos
-    if clave in cache and cache[clave] is not None:
-        return cache[clave]
+    # No buscar noticias ni episodios como películas
+    if es_programa_no_pelicula(titulo):
+        print("Programa omitido (no es película):", titulo)
+        return None
+
+    if normalizar(titulo) in {
+        normalizar(nombre)
+        for nombre in EPISODIOS_CONOCIDOS
+    }:
+        print("Episodio omitido de búsqueda de películas:", titulo)
+        return None
 
     if not TMDB_API_KEY:
         print("Aviso: falta la clave TMDB_API_KEY")
         return None
 
-    url = "https://api.themoviedb.org/3/search/movie"
-    idiomas = ["es-419", "es-ES", "en-US"]
-
-    resultados_unidos = {}
-
     try:
-        # Buscar la película en varios idiomas
+        # Consultar directamente las películas con ID conocido
+        for nombre, pelicula_id in PELICULAS_ID_DIRECTO.items():
+            if normalizar(nombre) == clave:
+
+                if clave in cache and cache[clave] is not None:
+                    return cache[clave]
+
+                sinopsis = obtener_sinopsis_tmdb(pelicula_id)
+
+                if not sinopsis:
+                    print("Película sin sinopsis:", titulo)
+                    return None
+
+                resultado = {
+                    "id": pelicula_id,
+                    "sinopsis": sinopsis
+                }
+
+                cache[clave] = resultado
+
+                print("Película identificada por ID:", titulo)
+                return resultado
+
+        # Consultar la caché de resultados anteriores
+        if clave in cache and cache[clave] is not None:
+            return cache[clave]
+
+        url = "https://api.themoviedb.org/3/search/movie"
+        idiomas = ["es-419", "es-ES", "en-US"]
+
+        resultados_unidos = {}
+
+        # Buscar en varios idiomas
         for idioma in idiomas:
             respuesta = requests.get(
                 url,
@@ -178,7 +289,7 @@ def buscar_pelicula_tmdb(titulo, cache):
 
         resultados = list(resultados_unidos.values())
 
-        # Primero comprobar los títulos principales
+        # Buscar coincidencias con títulos principales
         coincidencias = []
 
         for pelicula in resultados:
@@ -190,7 +301,7 @@ def buscar_pelicula_tmdb(titulo, cache):
             if any(normalizar(nombre) == clave for nombre in titulos):
                 coincidencias.append(pelicula)
 
-        # Si no hay coincidencia, consultar títulos alternativos
+        # Buscar títulos alternativos si no hay coincidencias
         if not coincidencias:
             for pelicula in resultados[:15]:
                 pelicula_id = pelicula["id"]
@@ -209,6 +320,7 @@ def buscar_pelicula_tmdb(titulo, cache):
 
                     if normalizar(nombre) == clave:
                         coincidencias.append(pelicula)
+
                         print(
                             "Coincidencia por título alternativo:",
                             titulo,
@@ -217,18 +329,18 @@ def buscar_pelicula_tmdb(titulo, cache):
                         )
                         break
 
-        # No escoger películas al azar
         if not coincidencias:
             print("Película no encontrada:", titulo)
             cache[clave] = None
             return None
 
-        # Eliminar posibles duplicados
+        # Eliminar duplicados
         coincidencias_unicas = {
             pelicula["id"]: pelicula
             for pelicula in coincidencias
         }
 
+        # Evitar seleccionar películas al azar
         if len(coincidencias_unicas) > 1:
             print("Varias coincidencias posibles:", titulo)
             cache[clave] = None
@@ -237,34 +349,7 @@ def buscar_pelicula_tmdb(titulo, cache):
         pelicula = list(coincidencias_unicas.values())[0]
         pelicula_id = pelicula["id"]
 
-        # Obtener la sinopsis en español latino
-        detalle_respuesta = requests.get(
-            f"https://api.themoviedb.org/3/movie/{pelicula_id}",
-            params={
-                "api_key": TMDB_API_KEY,
-                "language": "es-419"
-            },
-            timeout=30
-        )
-        detalle_respuesta.raise_for_status()
-
-        detalle = detalle_respuesta.json()
-        sinopsis = detalle.get("overview", "").strip()
-
-        # Si no existe, probar español de España
-        if not sinopsis:
-            detalle_respuesta = requests.get(
-                f"https://api.themoviedb.org/3/movie/{pelicula_id}",
-                params={
-                    "api_key": TMDB_API_KEY,
-                    "language": "es-ES"
-                },
-                timeout=30
-            )
-            detalle_respuesta.raise_for_status()
-            sinopsis = detalle_respuesta.json().get(
-                "overview", ""
-            ).strip()
+        sinopsis = obtener_sinopsis_tmdb(pelicula_id)
 
         if not sinopsis:
             print("Película sin sinopsis:", titulo)
@@ -283,77 +368,6 @@ def buscar_pelicula_tmdb(titulo, cache):
 
     except requests.RequestException as error:
         print("Aviso: error consultando TMDb:", titulo, error)
-        return None
-
-
-
-    # Consultar primero la caché
-    if clave in cache:
-        return cache[clave]
-
-    if not TMDB_API_KEY:
-        print("Aviso: falta la clave TMDB_API_KEY")
-        return None
-
-    url = "https://api.themoviedb.org/3/search/movie"
-
-    parametros = {
-        "api_key": TMDB_API_KEY,
-        "query": titulo,
-        "language": "es-ES",
-        "include_adult": "false",
-        "page": 1
-    }
-
-    try:
-        respuesta = requests.get(
-            url,
-            params=parametros,
-            timeout=30
-        )
-        respuesta.raise_for_status()
-
-        resultados = respuesta.json().get("results", [])
-
-        coincidencias = []
-
-        for pelicula in resultados:
-            titulo_espanol = pelicula.get("title", "")
-            titulo_original = pelicula.get("original_title", "")
-
-            if (
-                normalizar(titulo_espanol) == clave
-                or normalizar(titulo_original) == clave
-            ):
-                coincidencias.append(pelicula)
-
-        # Aceptar únicamente coincidencias únicas
-        if len(coincidencias) != 1:
-            cache[clave] = None
-            print("Película no identificada con seguridad:", titulo)
-            return None
-
-        pelicula = coincidencias[0]
-        sinopsis = pelicula.get("overview", "").strip()
-
-        if not sinopsis:
-            cache[clave] = None
-            print("Película sin sinopsis:", titulo)
-            return None
-
-        resultado = {
-            "id": pelicula.get("id"),
-            "sinopsis": sinopsis
-        }
-
-        cache[clave] = resultado
-
-        print("Película identificada:", titulo)
-
-        return resultado
-
-    except requests.RequestException as error:
-        print("Aviso: error consultando TMDb para", titulo, error)
         return None
 
 
@@ -454,7 +468,7 @@ def generar_xml(fecha, programas, indice, cache):
 
     fecha_texto = fecha.strftime("%Y%m%d")
 
-    # Reemplazar la fecha consultada sin borrar días anteriores
+    # Reemplazar únicamente la fecha consultada
     for elemento in list(root.findall("programme")):
         if elemento.get("start", "").startswith(fecha_texto):
             root.remove(elemento)
@@ -486,7 +500,7 @@ def generar_xml(fecha, programas, indice, cache):
 
         nombre = programa["nombre"]
 
-        # Primero comprobar si es un episodio de una serie
+        # Primero buscar episodios en TVmaze
         episodio = identificar_episodio(nombre, indice)
 
         if episodio:
@@ -508,26 +522,56 @@ def generar_xml(fecha, programas, indice, cache):
             print("Identificado:", subtitulo)
 
         else:
-            # Si no es una serie, buscar como película
-            pelicula = buscar_pelicula_tmdb(nombre, cache)
+            # Buscar los episodios conocidos por sus títulos de INTV
+            episodio_conocido = identificar_episodio_conocido(nombre)
 
-            ET.SubElement(
-                elemento, "title"
-            ).text = nombre
-
-            if pelicula and pelicula.get("sinopsis"):
+            if episodio_conocido:
                 ET.SubElement(
-                    elemento, "desc"
-                ).text = pelicula["sinopsis"]
+                    elemento, "title"
+                ).text = episodio_conocido["serie"]
 
-                peliculas_identificadas += 1
+                ET.SubElement(
+                    elemento, "sub-title"
+                ).text = "Episodio: " + episodio_conocido["episodio"]
+
+                identificados += 1
+
+                print(
+                    "Episodio identificado por título:",
+                    episodio_conocido["serie"],
+                    "-",
+                    episodio_conocido["episodio"]
+                )
+
+            elif es_programa_no_pelicula(nombre):
+                # Mantener el programa sin tratarlo como película
+                ET.SubElement(
+                    elemento, "title"
+                ).text = nombre
+
+                print("Programa informativo:", nombre)
+
+            else:
+                # Si no es episodio ni segmento, buscar como película
+                pelicula = buscar_pelicula_tmdb(nombre, cache)
+
+                ET.SubElement(
+                    elemento, "title"
+                ).text = nombre
+
+                if pelicula and pelicula.get("sinopsis"):
+                    ET.SubElement(
+                        elemento, "desc"
+                    ).text = pelicula["sinopsis"]
+
+                    peliculas_identificadas += 1
 
         nuevos += 1
 
-    # Guardar la caché de películas
+    # Guardar caché de películas
     guardar_peliculas(cache)
 
-    # Mantener el canal primero y ordenar los programas por hora
+    # Ordenar los programas por hora
     todos_programas = root.findall("programme")
 
     root[:] = canales + sorted(
