@@ -102,13 +102,15 @@ def obtener_episodios_tvmaze():
                     continue
 
                 clave = normalizar(nombre)
-indice.setdefault(clave, []).append({
-    "show_id": show_id,
-    "serie": nombre_serie,
-    "temporada": temporada,
-    "numero": numero,
-    "episodio": nombre
-})
+
+                indice.setdefault(clave, []).append({
+                    "show_id": show_id,
+                    "serie": nombre_serie,
+                    "temporada": temporada,
+                    "numero": numero,
+                    "episodio": nombre
+                })
+
             print("TVmaze consultado:", nombre_serie)
 
         except requests.RequestException as error:
