@@ -140,6 +140,7 @@ def guardar_peliculas(peliculas):
 
 
 
+
 def buscar_pelicula_tmdb(titulo, cache):
     clave = normalizar(titulo)
 
@@ -152,61 +153,62 @@ def buscar_pelicula_tmdb(titulo, cache):
 
     url = "https://api.themoviedb.org/3/search/movie"
 
-    parametros = {
-        "api_key": TMDB_API_KEY,
-        "query": titulo,
-        "language": "es-ES",
-        "include_adult": "false",
-        "page": 1
-    }
+    # Probar distintas localizaciones
+    idiomas = ["es-419", "es-ES", "en-US"]
+
+    resultados_unidos = {}
 
     try:
-        respuesta = requests.get(
-            url,
-            params=parametros,
-            timeout=30
-        )
-        respuesta.raise_for_status()
+        for idioma in idiomas:
+            respuesta = requests.get(
+                url,
+                params={
+                    "api_key": TMDB_API_KEY,
+                    "query": titulo,
+                    "language": idioma,
+                    "include_adult": "false",
+                    "page": 1
+                },
+                timeout=30
+            )
+            respuesta.raise_for_status()
 
-        resultados = respuesta.json().get("results", [])
+            for pelicula in respuesta.json().get("results", []):
+                resultados_unidos[pelicula["id"]] = pelicula
 
+        resultados = list(resultados_unidos.values())
+
+        # Buscar coincidencias exactas en los títulos
         coincidencias = []
 
         for pelicula in resultados:
-            titulo_espanol = normalizar(
-                pelicula.get("title", "")
-            )
-            titulo_original = normalizar(
+            titulos = [
+                pelicula.get("title", ""),
                 pelicula.get("original_title", "")
-            )
+            ]
 
-            if clave in (titulo_espanol, titulo_original):
+            if any(normalizar(nombre) == clave for nombre in titulos):
                 coincidencias.append(pelicula)
 
-        if len(coincidencias) == 0:
+        if not coincidencias:
             print("Película no encontrada:", titulo)
             cache[clave] = None
             return None
 
-        # Elegir la coincidencia más popular si hay duplicados
-        coincidencias.sort(
-            key=lambda p: p.get("popularity", 0),
-            reverse=True
-        )
+        # Evitar elegir arbitrariamente entre películas diferentes
+        if len(coincidencias) > 1:
+            print("Varias coincidencias posibles:", titulo)
+            cache[clave] = None
+            return None
 
         pelicula = coincidencias[0]
-        pelicula_id = pelicula.get("id")
-
-        # Obtener información completa en español
-        detalle_url = (
-            f"https://api.themoviedb.org/3/movie/{pelicula_id}"
-        )
+        pelicula_id = pelicula["id"]
 
         detalle_respuesta = requests.get(
-            detalle_url,
+            f"https://api.themoviedb.org/3/movie/{pelicula_id}",
             params={
                 "api_key": TMDB_API_KEY,
-                "language": "es-ES"
+                "language": "es-419"
             },
             timeout=30
         )
@@ -214,6 +216,21 @@ def buscar_pelicula_tmdb(titulo, cache):
 
         detalle = detalle_respuesta.json()
         sinopsis = detalle.get("overview", "").strip()
+
+        # Si no hay sinopsis latinoamericana, probar español de España
+        if not sinopsis:
+            detalle_respuesta = requests.get(
+                f"https://api.themoviedb.org/3/movie/{pelicula_id}",
+                params={
+                    "api_key": TMDB_API_KEY,
+                    "language": "es-ES"
+                },
+                timeout=30
+            )
+            detalle_respuesta.raise_for_status()
+            sinopsis = detalle_respuesta.json().get(
+                "overview", ""
+            ).strip()
 
         if not sinopsis:
             print("Película sin sinopsis:", titulo)
@@ -228,12 +245,12 @@ def buscar_pelicula_tmdb(titulo, cache):
         cache[clave] = resultado
 
         print("Película identificada:", titulo)
-
         return resultado
 
     except requests.RequestException as error:
-        print("Aviso: error consultando TMDb para", titulo, error)
+        print("Aviso: error consultando TMDb:", titulo, error)
         return None
+
 
 
     # Consultar primero la caché
