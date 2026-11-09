@@ -1,4 +1,3 @@
-
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
@@ -19,8 +18,6 @@ MOVIES_FILE = "peliculas.json"
 
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 
-# Programas que no deben buscarse como películas.
-# Los cinco episodios se relacionan con sus respectivas series.
 EPISODIOS_CONOCIDOS = {
     "The Next Episode": "Cobra Kai",
     "Then Learn Fly": "Cobra Kai",
@@ -29,13 +26,11 @@ EPISODIOS_CONOCIDOS = {
     "Award Tour": "All American"
 }
 
-# Noticias o segmentos que tampoco son películas.
 PROGRAMAS_NO_PELICULAS = {
     "Buzz",
     "El Buzz"
 }
 
-# Película identificada directamente mediante su ID de TMDb.
 PELICULAS_ID_DIRECTO = {
     "La purga: El año de la elección": 316727
 }
@@ -114,7 +109,11 @@ def obtener_episodios_tvmaze():
             print("TVmaze consultado:", nombre_serie)
 
         except requests.RequestException as error:
-            print("Aviso: no se pudo consultar", nombre_serie, error)
+            print(
+                "Aviso: no se pudo consultar",
+                nombre_serie,
+                error
+            )
 
     return indice
 
@@ -141,7 +140,6 @@ def identificar_episodio_conocido(nombre, indice):
     if not serie:
         return None
 
-    # Obtener el ID de TVmaze de la serie correspondiente
     show_id = next(
         (
             sid for sid, nombre_serie in SERIES.items()
@@ -151,9 +149,10 @@ def identificar_episodio_conocido(nombre, indice):
     )
 
     if show_id is None:
+        print("Serie sin ID en series.json:", serie)
         return None
 
-    # Reunir episodios únicamente de esa serie
+    # Obtener todos los episodios de esa serie
     candidatos = []
 
     for episodios in indice.values():
@@ -161,7 +160,7 @@ def identificar_episodio_conocido(nombre, indice):
             if episodio["show_id"] == show_id:
                 candidatos.append(episodio)
 
-    # Buscar coincidencia exacta
+    # Primero buscar coincidencia exacta
     exactos = [
         episodio for episodio in candidatos
         if normalizar(episodio["episodio"]) == clave
@@ -170,7 +169,7 @@ def identificar_episodio_conocido(nombre, indice):
     if len(exactos) == 1:
         return exactos[0]
 
-    # Buscar coincidencias aproximadas
+    # Después buscar coincidencia aproximada
     puntuaciones = []
 
     for episodio in candidatos:
@@ -182,22 +181,26 @@ def identificar_episodio_conocido(nombre, indice):
 
         puntuaciones.append((puntuacion, episodio))
 
-    puntuaciones.sort(key=lambda x: x[0], reverse=True)
+    puntuaciones.sort(
+        key=lambda x: x[0],
+        reverse=True
+    )
 
     if not puntuaciones:
+        print("No hay episodios disponibles para:", serie)
         return None
 
     mejor_puntuacion, mejor_episodio = puntuaciones[0]
 
-    # Evitar coincidencias dudosas
     segunda_puntuacion = (
         puntuaciones[1][0]
         if len(puntuaciones) > 1
         else 0
     )
 
-    if mejor_puntuacion >= 0.82 and (
-        mejor_puntuacion - segunda_puntuacion >= 0.08
+    if (
+        mejor_puntuacion >= 0.82
+        and mejor_puntuacion - segunda_puntuacion >= 0.08
     ):
         print(
             "Coincidencia aproximada en TVmaze:",
@@ -207,7 +210,11 @@ def identificar_episodio_conocido(nombre, indice):
         )
         return mejor_episodio
 
-    print("Episodio sin coincidencia segura en TVmaze:", nombre)
+    print(
+        "Episodio sin coincidencia segura en TVmaze:",
+        nombre
+    )
+
     return None
 
 
@@ -259,7 +266,6 @@ def guardar_peliculas(peliculas):
 
 
 def obtener_sinopsis_tmdb(pelicula_id):
-    # Intentar primero español latino
     respuesta = requests.get(
         f"https://api.themoviedb.org/3/movie/{pelicula_id}",
         params={
@@ -272,7 +278,6 @@ def obtener_sinopsis_tmdb(pelicula_id):
 
     sinopsis = respuesta.json().get("overview", "").strip()
 
-    # Si no existe, probar español de España
     if not sinopsis:
         respuesta = requests.get(
             f"https://api.themoviedb.org/3/movie/{pelicula_id}",
@@ -292,7 +297,6 @@ def obtener_sinopsis_tmdb(pelicula_id):
 def buscar_pelicula_tmdb(titulo, cache):
     clave = normalizar(titulo)
 
-    # No buscar noticias ni episodios como películas
     if es_programa_no_pelicula(titulo):
         print("Programa omitido (no es película):", titulo)
         return None
@@ -309,7 +313,7 @@ def buscar_pelicula_tmdb(titulo, cache):
         return None
 
     try:
-        # Consultar directamente las películas con ID conocido
+        # Películas con ID conocido
         for nombre, pelicula_id in PELICULAS_ID_DIRECTO.items():
             if normalizar(nombre) == clave:
 
@@ -332,7 +336,7 @@ def buscar_pelicula_tmdb(titulo, cache):
                 print("Película identificada por ID:", titulo)
                 return resultado
 
-        # Consultar la caché de resultados anteriores
+        # Consultar caché
         if clave in cache and cache[clave] is not None:
             return cache[clave]
 
@@ -341,7 +345,6 @@ def buscar_pelicula_tmdb(titulo, cache):
 
         resultados_unidos = {}
 
-        # Buscar en varios idiomas
         for idioma in idiomas:
             respuesta = requests.get(
                 url,
@@ -360,10 +363,9 @@ def buscar_pelicula_tmdb(titulo, cache):
                 resultados_unidos[pelicula["id"]] = pelicula
 
         resultados = list(resultados_unidos.values())
-
-        # Buscar coincidencias con títulos principales
         coincidencias = []
 
+        # Coincidencias con títulos principales
         for pelicula in resultados:
             titulos = [
                 pelicula.get("title", ""),
@@ -373,7 +375,7 @@ def buscar_pelicula_tmdb(titulo, cache):
             if any(normalizar(nombre) == clave for nombre in titulos):
                 coincidencias.append(pelicula)
 
-        # Buscar títulos alternativos si no hay coincidencias
+        # Buscar títulos alternativos
         if not coincidencias:
             for pelicula in resultados[:15]:
                 pelicula_id = pelicula["id"]
@@ -406,13 +408,11 @@ def buscar_pelicula_tmdb(titulo, cache):
             cache[clave] = None
             return None
 
-        # Eliminar duplicados
         coincidencias_unicas = {
             pelicula["id"]: pelicula
             for pelicula in coincidencias
         }
 
-        # Evitar seleccionar películas al azar
         if len(coincidencias_unicas) > 1:
             print("Varias coincidencias posibles:", titulo)
             cache[clave] = None
@@ -495,7 +495,8 @@ def obtener_programacion():
                 continue
 
             inicio = datetime.strptime(
-                hora.upper(), "%I:%M %p"
+                hora.upper(),
+                "%I:%M %p"
             ).replace(
                 year=fecha.year,
                 month=fecha.month,
@@ -532,10 +533,14 @@ def generar_xml(fecha, programas, indice, cache):
 
     if not any(c.get("id") == CHANNEL_ID for c in canales):
         canal = ET.SubElement(
-            root, "channel", {"id": CHANNEL_ID}
+            root,
+            "channel",
+            {"id": CHANNEL_ID}
         )
+
         ET.SubElement(
-            canal, "display-name"
+            canal,
+            "display-name"
         ).text = "Warner Channel"
 
     fecha_texto = fecha.strftime("%Y%m%d")
@@ -575,9 +580,16 @@ def generar_xml(fecha, programas, indice, cache):
         # Primero buscar episodios en TVmaze
         episodio = identificar_episodio(nombre, indice)
 
+        if episodio is None:
+            episodio = identificar_episodio_conocido(
+                nombre,
+                indice
+            )
+
         if episodio:
             ET.SubElement(
-                elemento, "title"
+                elemento,
+                "title"
             ).text = episodio["serie"]
 
             subtitulo = (
@@ -587,64 +599,43 @@ def generar_xml(fecha, programas, indice, cache):
             )
 
             ET.SubElement(
-                elemento, "sub-title"
+                elemento,
+                "sub-title"
             ).text = subtitulo
 
             identificados += 1
-            print("Identificado:", subtitulo)
+            print("Episodio identificado:", subtitulo)
+
+        elif es_programa_no_pelicula(nombre):
+            ET.SubElement(
+                elemento,
+                "title"
+            ).text = nombre
+
+            print("Programa informativo:", nombre)
 
         else:
-            # Buscar los episodios conocidos por sus títulos de INTV
-           episodio_conocido = identificar_episodio_conocido(nombre, indice)
+            pelicula = buscar_pelicula_tmdb(nombre, cache)
 
-            if episodio_conocido:
-    ET.SubElement(
-        elemento, "title"
-    ).text = episodio_conocido["serie"]
+            ET.SubElement(
+                elemento,
+                "title"
+            ).text = nombre
 
-    subtitulo = (
-        f"Temporada {episodio_conocido['temporada']}, "
-        f"Episodio {episodio_conocido['numero']} - "
-        f"{episodio_conocido['episodio']}"
-    )
-
-    ET.SubElement(
-        elemento, "sub-title"
-    ).text = subtitulo
-
-    identificados += 1
-
-    print("Episodio identificado por TVmaze:", subtitulo)
-
-            elif es_programa_no_pelicula(nombre):
-                # Mantener el programa sin tratarlo como película
+            if pelicula and pelicula.get("sinopsis"):
                 ET.SubElement(
-                    elemento, "title"
-                ).text = nombre
+                    elemento,
+                    "desc"
+                ).text = pelicula["sinopsis"]
 
-                print("Programa informativo:", nombre)
-
-            else:
-                # Si no es episodio ni segmento, buscar como película
-                pelicula = buscar_pelicula_tmdb(nombre, cache)
-
-                ET.SubElement(
-                    elemento, "title"
-                ).text = nombre
-
-                if pelicula and pelicula.get("sinopsis"):
-                    ET.SubElement(
-                        elemento, "desc"
-                    ).text = pelicula["sinopsis"]
-
-                    peliculas_identificadas += 1
+                peliculas_identificadas += 1
 
         nuevos += 1
 
     # Guardar caché de películas
     guardar_peliculas(cache)
 
-    # Ordenar los programas por hora
+    # Ordenar programas por hora
     todos_programas = root.findall("programme")
 
     root[:] = canales + sorted(
