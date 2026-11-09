@@ -5,17 +5,81 @@ from datetime import datetime, timedelta
 import xml.etree.ElementTree as ET
 import os
 import re
+import unicodedata
 
 URL = "https://intv.com.co/inicio/television/canales/warner-channel/"
 XML_FILE = "epg.xml"
 CHANNEL_ID = "WarnerChannel.us@Colombia"
 OFFSET = "-0500"
 
+# Series identificadas en la programación de Warner Channel
+SERIES = {
+    66: "The Big Bang Theory",
+    130: "Two and a Half Men"
+}
+
 MESES = {
     "ene": 1, "feb": 2, "mar": 3, "abr": 4,
     "may": 5, "jun": 6, "jul": 7, "ago": 8,
     "sep": 9, "oct": 10, "nov": 11, "dic": 12
 }
+
+def normalizar(texto):
+    texto = unicodedata.normalize("NFKD", texto)
+    texto = "".join(
+        c for c in texto
+        if not unicodedata.combining(c)
+    )
+    return re.sub(r"[^a-z0-9]", "", texto.lower())
+
+def obtener_episodios_tvmaze():
+    indice = {}
+
+    for show_id, nombre_serie in SERIES.items():
+        url = f"https://api.tvmaze.com/shows/{show_id}/episodes"
+
+        try:
+            respuesta = requests.get(
+                url,
+                headers={"User-Agent": "WarnerEPG/1.0"},
+                timeout=30
+            )
+            respuesta.raise_for_status()
+
+            episodios = respuesta.json()
+
+            for episodio in episodios:
+                nombre = episodio.get("name")
+                temporada = episodio.get("season")
+                numero = episodio.get("number")
+
+                if not nombre or temporada is None or numero is None:
+                    continue
+
+                clave = normalizar(nombre)
+
+                indice.setdefault(clave, []).append({
+                    "serie": nombre_serie,
+                    "temporada": temporada,
+                    "numero": numero,
+                    "episodio": nombre
+                })
+
+            print("TVmaze consultado:", nombre_serie)
+
+        except requests.RequestException as error:
+            print("Aviso: no se pudo consultar", nombre_serie, error)
+
+    return indice
+
+def identificar_episodio(nombre, indice):
+    coincidencias = indice.get(normalizar(nombre), [])
+
+    # Solo aceptar coincidencias únicas
+    if len(coincidencias) == 1:
+        return coincidencias[0]
+
+    return None
 
 def obtener_programacion():
     respuesta = requests.get(
@@ -24,9 +88,10 @@ def obtener_programacion():
         timeout=30
     )
     respuesta.raise_for_status()
-    soup = BeautifulSoup(respuesta.text, "html.parser")
 
+    soup = BeautifulSoup(respuesta.text, "html.parser")
     texto = soup.get_text(" ", strip=True)
+
     fecha_match = re.search(
         r"(\d{1,2})\s+de\s+([a-záéíóú]+)\s+de\s+(\d{4})",
         texto,
@@ -34,17 +99,16 @@ def obtener_programacion():
     )
 
     if not fecha_match:
-        raise ValueError("No se encontró la fecha de programación")
+        raise ValueError("No se encontró la fecha")
 
     dia = int(fecha_match.group(1))
-    mes_nombre = fecha_match.group(2).lower()[:3]
+    mes = fecha_match.group(2).lower()[:3]
     anio = int(fecha_match.group(3))
 
-    if mes_nombre not in MESES:
-        raise ValueError("Mes desconocido: " + mes_nombre)
+    if mes not in MESES:
+        raise ValueError("Mes desconocido: " + mes)
 
-    fecha = datetime(anio, MESES[mes_nombre], dia)
-
+    fecha = datetime(anio, MESES[mes], dia)
     programas = []
 
     for tabla in soup.find_all("table"):
@@ -64,12 +128,8 @@ def obtener_programacion():
             ):
                 continue
 
-            if not nombre or nombre.lower() == "programa":
-                continue
-
             inicio = datetime.strptime(
-                hora.upper(),
-                "%I:%M %p"
+                hora.upper(), "%I:%M %p"
             ).replace(
                 year=fecha.year,
                 month=fecha.month,
@@ -82,14 +142,14 @@ def obtener_programacion():
             })
 
     if not programas:
-        raise ValueError("No se encontraron programas en la tabla")
+        raise ValueError("No se encontraron programas")
 
     return fecha, programas
 
 def formato_xml(fecha):
     return fecha.strftime("%Y%m%d%H%M%S") + " " + OFFSET
 
-def generar_xml(fecha, programas):
+def generar_xml(fecha, programas, indice):
     if os.path.exists(XML_FILE):
         arbol = ET.parse(XML_FILE)
         root = arbol.getroot()
@@ -102,15 +162,19 @@ def generar_xml(fecha, programas):
         canal = ET.SubElement(
             root, "channel", {"id": CHANNEL_ID}
         )
-        ET.SubElement(canal, "display-name").text = "Warner Channel"
+        ET.SubElement(
+            canal, "display-name"
+        ).text = "Warner Channel"
 
-    # Reemplazar solamente la programación de esta fecha.
     fecha_texto = fecha.strftime("%Y%m%d")
 
+    # Reemplazar la fecha consultada sin borrar días anteriores
     for elemento in list(root.findall("programme")):
-        inicio = elemento.get("start", "")
-        if inicio.startswith(fecha_texto):
+        if elemento.get("start", "").startswith(fecha_texto):
             root.remove(elemento)
+
+    nuevos = 0
+    identificados = 0
 
     for i, programa in enumerate(programas):
         inicio = programa["inicio"]
@@ -133,27 +197,59 @@ def generar_xml(fecha, programas):
             }
         )
 
-        ET.SubElement(elemento, "title").text = programa["nombre"]
+        episodio = identificar_episodio(
+            programa["nombre"], indice
+        )
 
-    root[:] = sorted(
-        root,
-        key=lambda elemento: elemento.get("start", "")
+        if episodio:
+            ET.SubElement(
+                elemento, "title"
+            ).text = episodio["serie"]
+
+            subtitulo = (
+                f"Temporada {episodio['temporada']}, "
+                f"Episodio {episodio['numero']} - "
+                f"{episodio['episodio']}"
+            )
+
+            ET.SubElement(
+                elemento, "sub-title"
+            ).text = subtitulo
+
+            identificados += 1
+            print("Identificado:", subtitulo)
+
+        else:
+            ET.SubElement(
+                elemento, "title"
+            ).text = programa["nombre"]
+
+        nuevos += 1
+
+    # Mantener el canal primero y ordenar los programas por hora
+    todos_programas = root.findall("programme")
+    root[:] = canales + sorted(
+        todos_programas,
+        key=lambda p: p.get("start", "")
     )
 
     ET.indent(root, space="  ")
+
     ET.ElementTree(root).write(
         XML_FILE,
         encoding="UTF-8",
         xml_declaration=True
     )
 
-    print("Fecha procesada:", fecha.strftime("%d/%m/%Y"))
-    print("Programas guardados:", len(programas))
+    print("Fecha:", fecha.strftime("%d/%m/%Y"))
+    print("Programas guardados:", nuevos)
+    print("Episodios identificados:", identificados)
     print("Archivo generado:", XML_FILE)
 
 def main():
     fecha, programas = obtener_programacion()
-    generar_xml(fecha, programas)
+    indice = obtener_episodios_tvmaze()
+    generar_xml(fecha, programas, indice)
 
 if __name__ == "__main__":
     main()
