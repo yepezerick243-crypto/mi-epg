@@ -1,20 +1,3 @@
 {
-  "peliculas": {
-    "thenextepisode": null,
-    "thenlearnfly": null,
-    "elbuzz": null,
-    "lasaventurasdelcapitancalzoncilloslapelicula": null,
-    "scooby": {
-      "id": 385103,
-      "sinopsis": "Con cientos de casos resueltos y aventuras compartidas, Scooby y la pandilla se enfrentan al misterio más grande y desafiante de todos los tiempos: un complot para liberar al perro fantasma Cerberus en el mundo. Mientras compiten para detener esta escasez de perros global, la pandilla descubre que Scooby tiene un legado secreto y un destino épico más grande de lo que cualquiera podría haber imaginado."
-    },
-    "lomejorquesepuedecomprar": null,
-    "primeroestardepie": null,
-    "megamente": null,
-    "turbo": null,
-    "elprotector": null,
-    "roboenlasalturas": null,
-    "lapurgaelanodelaeleccion": null,
-    "awardtour": null
-  }
+  "peliculas": {}
 }
