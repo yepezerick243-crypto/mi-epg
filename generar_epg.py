@@ -1,3 +1,4 @@
+
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
@@ -25,9 +26,6 @@ TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 # CONFIGURACIÓN
 # ==============================
 
-# Episodios identificados y confirmados manualmente.
-# Estos datos tienen prioridad sobre las búsquedas automáticas.
-
 EPISODIOS_CONFIRMADOS = {
     "The Next Episode": {
         "serie": "All American",
@@ -52,9 +50,6 @@ EPISODIOS_CONFIRMADOS = {
 }
 
 
-# Episodios que todavía pueden identificarse
-# mediante coincidencias aproximadas.
-
 EPISODIOS_CONOCIDOS = {
     "Then Learn Fly": "Cobra Kai",
     "Award Tour": "All American"
@@ -71,8 +66,6 @@ PELICULAS_ID_DIRECTO = {
     "La purga: El año de la elección": 316727
 }
 
-
-# Idiomas que se consultarán en TMDb.
 
 IDIOMAS_SERIES = [
     "es-419",
@@ -860,7 +853,7 @@ def buscar_pelicula_tmdb(titulo, cache):
 
     try:
 
-        # Películas con ID conocido
+        # 1. Películas con ID conocido.
 
         for nombre, pelicula_id in PELICULAS_ID_DIRECTO.items():
 
@@ -868,8 +861,16 @@ def buscar_pelicula_tmdb(titulo, cache):
 
                 if (
                     clave in cache
-                    and cache[clave] is not None
+                    and isinstance(cache[clave], dict)
+                    and cache[clave].get("id")
                 ):
+
+                    print(
+                        "Película identificada desde caché:",
+                        titulo,
+                        "| ID:",
+                        cache[clave]["id"]
+                    )
 
                     return cache[clave]
 
@@ -894,20 +895,50 @@ def buscar_pelicula_tmdb(titulo, cache):
                 cache[clave] = resultado
 
                 print(
-                    "Película identificada por ID:",
-                    titulo
+                    "Película identificada por ID directo:",
+                    titulo,
+                    "| ID:",
+                    pelicula_id
                 )
 
                 return resultado
 
-        # Consultar caché
+        # 2. Consultar caché existente.
 
-        if (
-            clave in cache
-            and cache[clave] is not None
-        ):
+        if clave in cache:
 
-            return cache[clave]
+            resultado_cache = cache[clave]
+
+            if (
+                isinstance(resultado_cache, dict)
+                and resultado_cache.get("id")
+                and resultado_cache.get("sinopsis")
+            ):
+
+                print(
+                    "Película identificada desde caché:",
+                    titulo,
+                    "| ID:",
+                    resultado_cache["id"]
+                )
+
+                return resultado_cache
+
+            if resultado_cache is None:
+
+                print(
+                    "Película omitida: búsqueda anterior sin coincidencia:",
+                    titulo
+                )
+
+                return None
+
+            print(
+                "Caché incompleto; se volverá a consultar:",
+                titulo
+            )
+
+        # 3. Buscar en TMDb en diferentes idiomas.
 
         url = (
             "https://api.themoviedb.org/3/search/movie"
@@ -950,7 +981,7 @@ def buscar_pelicula_tmdb(titulo, cache):
 
         coincidencias = []
 
-        # Coincidencias con títulos principales
+        # 4. Coincidencias con títulos principales.
 
         for pelicula in resultados:
 
@@ -966,7 +997,7 @@ def buscar_pelicula_tmdb(titulo, cache):
 
                 coincidencias.append(pelicula)
 
-        # Buscar títulos alternativos
+        # 5. Buscar títulos alternativos.
 
         if not coincidencias:
 
@@ -1009,6 +1040,8 @@ def buscar_pelicula_tmdb(titulo, cache):
                         )
 
                         break
+
+        # 6. Si no existe coincidencia segura.
 
         if not coincidencias:
 
@@ -1054,8 +1087,6 @@ def buscar_pelicula_tmdb(titulo, cache):
                 titulo
             )
 
-            cache[clave] = None
-
             return None
 
         resultado = {
@@ -1066,8 +1097,10 @@ def buscar_pelicula_tmdb(titulo, cache):
         cache[clave] = resultado
 
         print(
-            "Película identificada:",
-            titulo
+            "Película identificada por primera vez:",
+            titulo,
+            "| ID:",
+            pelicula_id
         )
 
         return resultado
@@ -1249,7 +1282,7 @@ def generar_xml(
 
     fecha_texto = fecha.strftime("%Y%m%d")
 
-    # Reemplazar únicamente la fecha consultada
+    # Reemplazar únicamente la fecha consultada.
 
     for elemento in list(
         root.findall("programme")
@@ -1293,13 +1326,13 @@ def generar_xml(
 
         nombre = programa["nombre"]
 
-        # 1. Buscar primero en los episodios confirmados.
+        # 1. Episodios confirmados.
 
         episodio = identificar_episodio_confirmado(
             nombre
         )
 
-        # 2. Buscar episodios en TVmaze.
+        # 2. Episodios de TVmaze.
 
         if episodio is None:
 
@@ -1308,7 +1341,7 @@ def generar_xml(
                 indice
             )
 
-        # 3. Buscar episodios conocidos en TVmaze.
+        # 3. Episodios conocidos.
 
         if episodio is None:
 
@@ -1317,7 +1350,7 @@ def generar_xml(
                 indice
             )
 
-        # 4. Buscar episodios en TMDb y sus traducciones.
+        # 4. Episodios multilingües de TMDb.
 
         if episodio is None:
 
@@ -1476,23 +1509,25 @@ def main():
             "Aviso: TMDb no tiene una clave disponible"
         )
 
-    # Obtener programación.
-
     fecha, programas = obtener_programacion()
-
-    # Consultar TVmaze.
 
     indice = obtener_episodios_tvmaze()
 
-    # Consultar episodios y traducciones en TMDb.
-
     indice_tmdb = obtener_episodios_tmdb()
-
-    # Cargar películas guardadas.
 
     cache = cargar_peliculas()
 
-    # Generar XML.
+    print(
+        "Películas cargadas desde caché:",
+        sum(
+            1
+            for pelicula in cache.values()
+            if (
+                isinstance(pelicula, dict)
+                and pelicula.get("id")
+            )
+        )
+    )
 
     generar_xml(
         fecha,
