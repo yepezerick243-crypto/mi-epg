@@ -2,6 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
+from difflib import SequenceMatcher
 import xml.etree.ElementTree as ET
 import os
 import re
@@ -101,14 +102,13 @@ def obtener_episodios_tvmaze():
                     continue
 
                 clave = normalizar(nombre)
-
-                indice.setdefault(clave, []).append({
-                    "serie": nombre_serie,
-                    "temporada": temporada,
-                    "numero": numero,
-                    "episodio": nombre
-                })
-
+indice.setdefault(clave, []).append({
+    "show_id": show_id,
+    "serie": nombre_serie,
+    "temporada": temporada,
+    "numero": numero,
+    "episodio": nombre
+})
             print("TVmaze consultado:", nombre_serie)
 
         except requests.RequestException as error:
@@ -126,16 +126,86 @@ def identificar_episodio(nombre, indice):
     return None
 
 
-def identificar_episodio_conocido(nombre):
+def identificar_episodio_conocido(nombre, indice):
     clave = normalizar(nombre)
 
-    for titulo, serie in EPISODIOS_CONOCIDOS.items():
-        if normalizar(titulo) == clave:
-            return {
-                "serie": serie,
-                "episodio": titulo
-            }
+    serie = None
 
+    for titulo, nombre_serie in EPISODIOS_CONOCIDOS.items():
+        if normalizar(titulo) == clave:
+            serie = nombre_serie
+            break
+
+    if not serie:
+        return None
+
+    # Obtener el ID de TVmaze de la serie correspondiente
+    show_id = next(
+        (
+            sid for sid, nombre_serie in SERIES.items()
+            if normalizar(nombre_serie) == normalizar(serie)
+        ),
+        None
+    )
+
+    if show_id is None:
+        return None
+
+    # Reunir episodios únicamente de esa serie
+    candidatos = []
+
+    for episodios in indice.values():
+        for episodio in episodios:
+            if episodio["show_id"] == show_id:
+                candidatos.append(episodio)
+
+    # Buscar coincidencia exacta
+    exactos = [
+        episodio for episodio in candidatos
+        if normalizar(episodio["episodio"]) == clave
+    ]
+
+    if len(exactos) == 1:
+        return exactos[0]
+
+    # Buscar coincidencias aproximadas
+    puntuaciones = []
+
+    for episodio in candidatos:
+        puntuacion = SequenceMatcher(
+            None,
+            clave,
+            normalizar(episodio["episodio"])
+        ).ratio()
+
+        puntuaciones.append((puntuacion, episodio))
+
+    puntuaciones.sort(key=lambda x: x[0], reverse=True)
+
+    if not puntuaciones:
+        return None
+
+    mejor_puntuacion, mejor_episodio = puntuaciones[0]
+
+    # Evitar coincidencias dudosas
+    segunda_puntuacion = (
+        puntuaciones[1][0]
+        if len(puntuaciones) > 1
+        else 0
+    )
+
+    if mejor_puntuacion >= 0.82 and (
+        mejor_puntuacion - segunda_puntuacion >= 0.08
+    ):
+        print(
+            "Coincidencia aproximada en TVmaze:",
+            nombre,
+            "->",
+            mejor_episodio["episodio"]
+        )
+        return mejor_episodio
+
+    print("Episodio sin coincidencia segura en TVmaze:", nombre)
     return None
 
 
@@ -523,25 +593,26 @@ def generar_xml(fecha, programas, indice, cache):
 
         else:
             # Buscar los episodios conocidos por sus títulos de INTV
-            episodio_conocido = identificar_episodio_conocido(nombre)
+           episodio_conocido = identificar_episodio_conocido(nombre, indice)
 
             if episodio_conocido:
-                ET.SubElement(
-                    elemento, "title"
-                ).text = episodio_conocido["serie"]
+    ET.SubElement(
+        elemento, "title"
+    ).text = episodio_conocido["serie"]
 
-                ET.SubElement(
-                    elemento, "sub-title"
-                ).text = "Episodio: " + episodio_conocido["episodio"]
+    subtitulo = (
+        f"Temporada {episodio_conocido['temporada']}, "
+        f"Episodio {episodio_conocido['numero']} - "
+        f"{episodio_conocido['episodio']}"
+    )
 
-                identificados += 1
+    ET.SubElement(
+        elemento, "sub-title"
+    ).text = subtitulo
 
-                print(
-                    "Episodio identificado por título:",
-                    episodio_conocido["serie"],
-                    "-",
-                    episodio_conocido["episodio"]
-                )
+    identificados += 1
+
+    print("Episodio identificado por TVmaze:", subtitulo)
 
             elif es_programa_no_pelicula(nombre):
                 # Mantener el programa sin tratarlo como película
