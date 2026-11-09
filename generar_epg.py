@@ -1,4 +1,3 @@
-
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
@@ -13,9 +12,12 @@ XML_FILE = "epg.xml"
 CHANNEL_ID = "WarnerChannel.us@Colombia"
 OFFSET = "-0500"
 
-# Cargar series desde series.json
 SERIES_FILE = "series.json"
+MOVIES_FILE = "peliculas.json"
 
+TMDB_API_KEY = os.getenv("TMDB_API_KEY")
+
+# Cargar series desde series.json
 def cargar_series():
     with open(SERIES_FILE, "r", encoding="utf-8") as archivo:
         datos = json.load(archivo)
@@ -25,6 +27,7 @@ def cargar_series():
         for show_id, nombre in datos.items()
     }
 
+
 SERIES = cargar_series()
 
 MESES = {
@@ -33,6 +36,7 @@ MESES = {
     "sep": 9, "oct": 10, "nov": 11, "dic": 12
 }
 
+
 def normalizar(texto):
     texto = unicodedata.normalize("NFKD", texto)
     texto = "".join(
@@ -40,6 +44,11 @@ def normalizar(texto):
         if not unicodedata.combining(c)
     )
     return re.sub(r"[^a-z0-9]", "", texto.lower())
+
+
+# ==============================
+# TVMAZE: IDENTIFICAR SERIES
+# ==============================
 
 def obtener_episodios_tvmaze():
     indice = {}
@@ -81,14 +90,131 @@ def obtener_episodios_tvmaze():
 
     return indice
 
+
 def identificar_episodio(nombre, indice):
     coincidencias = indice.get(normalizar(nombre), [])
 
-    # Solo aceptar coincidencias únicas
     if len(coincidencias) == 1:
         return coincidencias[0]
 
     return None
+
+
+# ==============================
+# TMDB: IDENTIFICAR PELICULAS
+# ==============================
+
+def cargar_peliculas():
+    if not os.path.exists(MOVIES_FILE):
+        return {}
+
+    try:
+        with open(MOVIES_FILE, "r", encoding="utf-8") as archivo:
+            datos = json.load(archivo)
+
+        peliculas = datos.get("peliculas", {})
+
+        # Compatibilidad con el archivo anterior que tenía una lista vacía
+        if isinstance(peliculas, list):
+            return {}
+
+        return peliculas
+
+    except (json.JSONDecodeError, OSError):
+        print("Aviso: no se pudo leer peliculas.json")
+        return {}
+
+
+def guardar_peliculas(peliculas):
+    datos = {
+        "peliculas": peliculas
+    }
+
+    with open(MOVIES_FILE, "w", encoding="utf-8") as archivo:
+        json.dump(
+            datos,
+            archivo,
+            ensure_ascii=False,
+            indent=2
+        )
+
+
+def buscar_pelicula_tmdb(titulo, cache):
+    clave = normalizar(titulo)
+
+    # Consultar primero la caché
+    if clave in cache:
+        return cache[clave]
+
+    if not TMDB_API_KEY:
+        print("Aviso: falta la clave TMDB_API_KEY")
+        return None
+
+    url = "https://api.themoviedb.org/3/search/movie"
+
+    parametros = {
+        "api_key": TMDB_API_KEY,
+        "query": titulo,
+        "language": "es-ES",
+        "include_adult": "false",
+        "page": 1
+    }
+
+    try:
+        respuesta = requests.get(
+            url,
+            params=parametros,
+            timeout=30
+        )
+        respuesta.raise_for_status()
+
+        resultados = respuesta.json().get("results", [])
+
+        coincidencias = []
+
+        for pelicula in resultados:
+            titulo_espanol = pelicula.get("title", "")
+            titulo_original = pelicula.get("original_title", "")
+
+            if (
+                normalizar(titulo_espanol) == clave
+                or normalizar(titulo_original) == clave
+            ):
+                coincidencias.append(pelicula)
+
+        # Aceptar únicamente coincidencias únicas
+        if len(coincidencias) != 1:
+            cache[clave] = None
+            print("Película no identificada con seguridad:", titulo)
+            return None
+
+        pelicula = coincidencias[0]
+        sinopsis = pelicula.get("overview", "").strip()
+
+        if not sinopsis:
+            cache[clave] = None
+            print("Película sin sinopsis:", titulo)
+            return None
+
+        resultado = {
+            "id": pelicula.get("id"),
+            "sinopsis": sinopsis
+        }
+
+        cache[clave] = resultado
+
+        print("Película identificada:", titulo)
+
+        return resultado
+
+    except requests.RequestException as error:
+        print("Aviso: error consultando TMDb para", titulo, error)
+        return None
+
+
+# ==============================
+# OBTENER PROGRAMACION DE INTV
+# ==============================
 
 def obtener_programacion():
     respuesta = requests.get(
@@ -155,10 +281,16 @@ def obtener_programacion():
 
     return fecha, programas
 
+
+# ==============================
+# GENERAR XMLTV
+# ==============================
+
 def formato_xml(fecha):
     return fecha.strftime("%Y%m%d%H%M%S") + " " + OFFSET
 
-def generar_xml(fecha, programas, indice):
+
+def generar_xml(fecha, programas, indice, cache):
     if os.path.exists(XML_FILE):
         arbol = ET.parse(XML_FILE)
         root = arbol.getroot()
@@ -184,6 +316,7 @@ def generar_xml(fecha, programas, indice):
 
     nuevos = 0
     identificados = 0
+    peliculas_identificadas = 0
 
     for i, programa in enumerate(programas):
         inicio = programa["inicio"]
@@ -206,9 +339,10 @@ def generar_xml(fecha, programas, indice):
             }
         )
 
-        episodio = identificar_episodio(
-            programa["nombre"], indice
-        )
+        nombre = programa["nombre"]
+
+        # Primero comprobar si es un episodio de una serie
+        episodio = identificar_episodio(nombre, indice)
 
         if episodio:
             ET.SubElement(
@@ -229,14 +363,28 @@ def generar_xml(fecha, programas, indice):
             print("Identificado:", subtitulo)
 
         else:
+            # Si no es una serie, buscar como película
+            pelicula = buscar_pelicula_tmdb(nombre, cache)
+
             ET.SubElement(
                 elemento, "title"
-            ).text = programa["nombre"]
+            ).text = nombre
+
+            if pelicula and pelicula.get("sinopsis"):
+                ET.SubElement(
+                    elemento, "desc"
+                ).text = pelicula["sinopsis"]
+
+                peliculas_identificadas += 1
 
         nuevos += 1
 
+    # Guardar la caché de películas
+    guardar_peliculas(cache)
+
     # Mantener el canal primero y ordenar los programas por hora
     todos_programas = root.findall("programme")
+
     root[:] = canales + sorted(
         todos_programas,
         key=lambda p: p.get("start", "")
@@ -253,7 +401,13 @@ def generar_xml(fecha, programas, indice):
     print("Fecha:", fecha.strftime("%d/%m/%Y"))
     print("Programas guardados:", nuevos)
     print("Episodios identificados:", identificados)
+    print("Películas identificadas:", peliculas_identificadas)
     print("Archivo generado:", XML_FILE)
+
+
+# ==============================
+# INICIO
+# ==============================
 
 def main():
     print("Series cargadas:", len(SERIES))
@@ -261,9 +415,18 @@ def main():
     for show_id, nombre in SERIES.items():
         print(f"Serie: {nombre} | ID: {show_id}")
 
+    if TMDB_API_KEY:
+        print("TMDb: clave detectada")
+    else:
+        print("Aviso: TMDb no tiene una clave disponible")
+
     fecha, programas = obtener_programacion()
+
     indice = obtener_episodios_tvmaze()
-    generar_xml(fecha, programas, indice)
+    cache = cargar_peliculas()
+
+    generar_xml(fecha, programas, indice, cache)
+
 
 if __name__ == "__main__":
     main()
