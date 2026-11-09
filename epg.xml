@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tv>
+  <channel id="WarnerChannel.us@Colombia">
+    <display-name>Warner Channel</display-name>
+  </channel>
+  <programme start="20261109000000 -0500" stop="20261109001700 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Misinterpretation Agitation</title>
+  </programme>
+  <programme start="20261109001700 -0500" stop="20261109003900 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Prom Equivalency</title>
+  </programme>
+  <programme start="20261109003900 -0500" stop="20261109010100 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Septum Deviation</title>
+  </programme>
+  <programme start="20261109010100 -0500" stop="20261109012300 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Champagne Reflection</title>
+  </programme>
+  <programme start="20261109012300 -0500" stop="20261109014600 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Fish in a Drawer</title>
+  </programme>
+  <programme start="20261109014600 -0500" stop="20261109020900 -0500" channel="WarnerChannel.us@Colombia">
+    <title>If My Hole Could Talk</title>
+  </programme>
+  <programme start="20261109020900 -0500" stop="20261109023300 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Waiting for the Right Snapper</title>
+  </programme>
+  <programme start="20261109023300 -0500" stop="20261109025600 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Taterhead Is Our Love Child</title>
+  </programme>
+  <programme start="20261109025600 -0500" stop="20261109031900 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Pie Hole, Herb</title>
+  </programme>
+  <programme start="20261109031900 -0500" stop="20261109034100 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Damn You, Eggs Benedict</title>
+  </programme>
+  <programme start="20261109034100 -0500" stop="20261109042400 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Next Episode</title>
+  </programme>
+  <programme start="20261109042400 -0500" stop="20261109050000 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Then Learn Fly</title>
+  </programme>
+  <programme start="20261109050000 -0500" stop="20261109050500 -0500" channel="WarnerChannel.us@Colombia">
+    <title>El Buzz</title>
+  </programme>
+  <programme start="20261109050500 -0500" stop="20261109050600 -0500" channel="WarnerChannel.us@Colombia">
+    <title>El Buzz</title>
+  </programme>
+  <programme start="20261109050600 -0500" stop="20261109063800 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Las aventuras del Capitán Calzoncillos: La película</title>
+  </programme>
+  <programme start="20261109063800 -0500" stop="20261109081900 -0500" channel="WarnerChannel.us@Colombia">
+    <title>¡Scooby!</title>
+  </programme>
+  <programme start="20261109081900 -0500" stop="20261109084200 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Clean Room Infiltration</title>
+  </programme>
+  <programme start="20261109084200 -0500" stop="20261109090400 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Space Probe Disintegration</title>
+  </programme>
+  <programme start="20261109090400 -0500" stop="20261109092800 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Anxiety Optimization</title>
+  </programme>
+  <programme start="20261109092800 -0500" stop="20261109095200 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Troll Manifestation</title>
+  </programme>
+  <programme start="20261109095200 -0500" stop="20261109101400 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Comic Book Store Regeneration</title>
+  </programme>
+  <programme start="20261109101400 -0500" stop="20261109103700 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Intimacy Acceleration</title>
+  </programme>
+  <programme start="20261109103700 -0500" stop="20261109110000 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Flavin' and the Mavin</title>
+  </programme>
+  <programme start="20261109110000 -0500" stop="20261109112500 -0500" channel="WarnerChannel.us@Colombia">
+    <title>A Jock Strap in Hell</title>
+  </programme>
+  <programme start="20261109112500 -0500" stop="20261109114900 -0500" channel="WarnerChannel.us@Colombia">
+    <title>It's Always Nazi Week</title>
+  </programme>
+  <programme start="20261109114900 -0500" stop="20261109121200 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Lo mejor que se puede comprar</title>
+  </programme>
+  <programme start="20261109121200 -0500" stop="20261109123700 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Pinocchio's Mouth</title>
+  </programme>
+  <programme start="20261109123700 -0500" stop="20261109130100 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Mooch at the Boo</title>
+  </programme>
+  <programme start="20261109130100 -0500" stop="20261109133600 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Primero estar de pie</title>
+  </programme>
+  <programme start="20261109133600 -0500" stop="20261109151600 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Megamente</title>
+  </programme>
+  <programme start="20261109151600 -0500" stop="20261109165600 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Turbo</title>
+  </programme>
+  <programme start="20261109165600 -0500" stop="20261109185800 -0500" channel="WarnerChannel.us@Colombia">
+    <title>El protector</title>
+  </programme>
+  <programme start="20261109185800 -0500" stop="20261109210000 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Robo en las alturas</title>
+  </programme>
+  <programme start="20261109210000 -0500" stop="20261109230600 -0500" channel="WarnerChannel.us@Colombia">
+    <title>La purga: El año de la elección</title>
+  </programme>
+  <programme start="20261109230600 -0500" stop="20261109235500 -0500" channel="WarnerChannel.us@Colombia">
+    <title>Award Tour</title>
+  </programme>
+  <programme start="20261109235500 -0500" stop="20261110000000 -0500" channel="WarnerChannel.us@Colombia">
+    <title>The Clean Room Infiltration</title>
+  </programme>
+</tv>
