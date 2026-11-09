@@ -117,9 +117,11 @@
   </programme>
   <programme start="20261109151600 -0500" stop="20261109165600 -0500" channel="WarnerChannel.us@Colombia">
     <title>Turbo</title>
+    <desc>Turbo es un caracol de jardín con un sueño imposible: convertirse en el caracol más rápido del mundo. Cuando un extraño accidente le da el poder de la súper-velocidad, Turbo intentará cumplir su sueño. Primero se hará amigo de una peculiar pandilla de caracoles callejeros tuneados y obsesionados con la velocidad, y allí Turbo aprenderá que nadie llega a tener éxito por sí solo. Así que coloca su corazón y su concha en la línea de salida dispuesto a ayudar a sus colegas a lograr sus sueños, antes de intentar alcanzar su sueño imposible: ganar las 500 millas de Indianápolis.</desc>
   </programme>
   <programme start="20261109165600 -0500" stop="20261109185800 -0500" channel="WarnerChannel.us@Colombia">
     <title>El protector</title>
+    <desc>Un ranchero en la frontera de Arizona se convierte en el improbable defensor de un joven mexicano que huye desesperadamente de los asesinos del cartel que lo han perseguido hasta Estados Unidos.</desc>
   </programme>
   <programme start="20261109185800 -0500" stop="20261109210000 -0500" channel="WarnerChannel.us@Colombia">
     <title>Robo en las alturas</title>

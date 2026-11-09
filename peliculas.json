@@ -1,3 +1,26 @@
 {
-  "peliculas": {}
+  "peliculas": {
+    "thenextepisode": null,
+    "thenlearnfly": null,
+    "elbuzz": null,
+    "lasaventurasdelcapitancalzoncilloslapelicula": null,
+    "scooby": {
+      "id": 385103,
+      "sinopsis": "Con cientos de casos resueltos y aventuras compartidas, Scooby y la pandilla se enfrentan al misterio más grande y desafiante de todos los tiempos: un complot para liberar al perro fantasma Cerberus en el mundo. Mientras compiten para detener esta escasez de perros global, la pandilla descubre que Scooby tiene un legado secreto y un destino épico más grande de lo que cualquiera podría haber imaginado."
+    },
+    "lomejorquesepuedecomprar": null,
+    "primeroestardepie": null,
+    "megamente": null,
+    "turbo": {
+      "id": 77950,
+      "sinopsis": "Turbo es un caracol de jardín con un sueño imposible: convertirse en el caracol más rápido del mundo. Cuando un extraño accidente le da el poder de la súper-velocidad, Turbo intentará cumplir su sueño. Primero se hará amigo de una peculiar pandilla de caracoles callejeros tuneados y obsesionados con la velocidad, y allí Turbo aprenderá que nadie llega a tener éxito por sí solo. Así que coloca su corazón y su concha en la línea de salida dispuesto a ayudar a sus colegas a lograr sus sueños, antes de intentar alcanzar su sueño imposible: ganar las 500 millas de Indianápolis."
+    },
+    "elprotector": {
+      "id": 634528,
+      "sinopsis": "Un ranchero en la frontera de Arizona se convierte en el improbable defensor de un joven mexicano que huye desesperadamente de los asesinos del cartel que lo han perseguido hasta Estados Unidos."
+    },
+    "roboenlasalturas": null,
+    "lapurgaelanodelaeleccion": null,
+    "awardtour": null
+  }
 }
