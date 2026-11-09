@@ -4,34 +4,44 @@
     <display-name>Warner Channel</display-name>
   </channel>
   <programme start="20261109000000 -0500" stop="20261109001700 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Misinterpretation Agitation</title>
+    <title>The Big Bang Theory</title>
+    <sub-title>Temporada 8, Episodio 7 - The Misinterpretation Agitation</sub-title>
   </programme>
   <programme start="20261109001700 -0500" stop="20261109003900 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Prom Equivalency</title>
+    <title>The Big Bang Theory</title>
+    <sub-title>Temporada 8, Episodio 8 - The Prom Equivalency</sub-title>
   </programme>
   <programme start="20261109003900 -0500" stop="20261109010100 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Septum Deviation</title>
+    <title>The Big Bang Theory</title>
+    <sub-title>Temporada 8, Episodio 9 - The Septum Deviation</sub-title>
   </programme>
   <programme start="20261109010100 -0500" stop="20261109012300 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Champagne Reflection</title>
+    <title>The Big Bang Theory</title>
+    <sub-title>Temporada 8, Episodio 10 - The Champagne Reflection</sub-title>
   </programme>
   <programme start="20261109012300 -0500" stop="20261109014600 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Fish in a Drawer</title>
+    <title>Two and a Half Men</title>
+    <sub-title>Temporada 5, Episodio 17 - Fish in a Drawer</sub-title>
   </programme>
   <programme start="20261109014600 -0500" stop="20261109020900 -0500" channel="WarnerChannel.us@Colombia">
-    <title>If My Hole Could Talk</title>
+    <title>Two and a Half Men</title>
+    <sub-title>Temporada 5, Episodio 18 - If My Hole Could Talk</sub-title>
   </programme>
   <programme start="20261109020900 -0500" stop="20261109023300 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Waiting for the Right Snapper</title>
+    <title>Two and a Half Men</title>
+    <sub-title>Temporada 5, Episodio 19 - Waiting for the Right Snapper</sub-title>
   </programme>
   <programme start="20261109023300 -0500" stop="20261109025600 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Taterhead Is Our Love Child</title>
+    <title>Two and a Half Men</title>
+    <sub-title>Temporada 6, Episodio 1 - Taterhead Is Our Love Child</sub-title>
   </programme>
   <programme start="20261109025600 -0500" stop="20261109031900 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Pie Hole, Herb</title>
+    <title>Two and a Half Men</title>
+    <sub-title>Temporada 6, Episodio 2 - Pie Hole, Herb</sub-title>
   </programme>
   <programme start="20261109031900 -0500" stop="20261109034100 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Damn You, Eggs Benedict</title>
+    <title>Two and a Half Men</title>
+    <sub-title>Temporada 6, Episodio 3 - Damn You, Eggs Benedict</sub-title>
   </programme>
   <programme start="20261109034100 -0500" stop="20261109042400 -0500" channel="WarnerChannel.us@Colombia">
     <title>The Next Episode</title>
@@ -52,40 +62,51 @@
     <title>¡Scooby!</title>
   </programme>
   <programme start="20261109081900 -0500" stop="20261109084200 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Clean Room Infiltration</title>
+    <title>The Big Bang Theory</title>
+    <sub-title>Temporada 8, Episodio 11 - The Clean Room Infiltration</sub-title>
   </programme>
   <programme start="20261109084200 -0500" stop="20261109090400 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Space Probe Disintegration</title>
+    <title>The Big Bang Theory</title>
+    <sub-title>Temporada 8, Episodio 12 - The Space Probe Disintegration</sub-title>
   </programme>
   <programme start="20261109090400 -0500" stop="20261109092800 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Anxiety Optimization</title>
+    <title>The Big Bang Theory</title>
+    <sub-title>Temporada 8, Episodio 13 - The Anxiety Optimization</sub-title>
   </programme>
   <programme start="20261109092800 -0500" stop="20261109095200 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Troll Manifestation</title>
+    <title>The Big Bang Theory</title>
+    <sub-title>Temporada 8, Episodio 14 - The Troll Manifestation</sub-title>
   </programme>
   <programme start="20261109095200 -0500" stop="20261109101400 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Comic Book Store Regeneration</title>
+    <title>The Big Bang Theory</title>
+    <sub-title>Temporada 8, Episodio 15 - The Comic Book Store Regeneration</sub-title>
   </programme>
   <programme start="20261109101400 -0500" stop="20261109103700 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Intimacy Acceleration</title>
+    <title>The Big Bang Theory</title>
+    <sub-title>Temporada 8, Episodio 16 - The Intimacy Acceleration</sub-title>
   </programme>
   <programme start="20261109103700 -0500" stop="20261109110000 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Flavin' and the Mavin</title>
+    <title>Two and a Half Men</title>
+    <sub-title>Temporada 6, Episodio 4 - The Flavin' and the Mavin'</sub-title>
   </programme>
   <programme start="20261109110000 -0500" stop="20261109112500 -0500" channel="WarnerChannel.us@Colombia">
-    <title>A Jock Strap in Hell</title>
+    <title>Two and a Half Men</title>
+    <sub-title>Temporada 6, Episodio 5 - A Jock Strap in Hell</sub-title>
   </programme>
   <programme start="20261109112500 -0500" stop="20261109114900 -0500" channel="WarnerChannel.us@Colombia">
-    <title>It's Always Nazi Week</title>
+    <title>Two and a Half Men</title>
+    <sub-title>Temporada 6, Episodio 6 - It's Always Nazi Week</sub-title>
   </programme>
   <programme start="20261109114900 -0500" stop="20261109121200 -0500" channel="WarnerChannel.us@Colombia">
     <title>Lo mejor que se puede comprar</title>
   </programme>
   <programme start="20261109121200 -0500" stop="20261109123700 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Pinocchio's Mouth</title>
+    <title>Two and a Half Men</title>
+    <sub-title>Temporada 6, Episodio 8 - Pinocchio's Mouth</sub-title>
   </programme>
   <programme start="20261109123700 -0500" stop="20261109130100 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Mooch at the Boo</title>
+    <title>Two and a Half Men</title>
+    <sub-title>Temporada 6, Episodio 9 - The Mooch at the Boo</sub-title>
   </programme>
   <programme start="20261109130100 -0500" stop="20261109133600 -0500" channel="WarnerChannel.us@Colombia">
     <title>Primero estar de pie</title>
@@ -109,6 +130,7 @@
     <title>Award Tour</title>
   </programme>
   <programme start="20261109235500 -0500" stop="20261110000000 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Clean Room Infiltration</title>
+    <title>The Big Bang Theory</title>
+    <sub-title>Temporada 8, Episodio 11 - The Clean Room Infiltration</sub-title>
   </programme>
 </tv>
