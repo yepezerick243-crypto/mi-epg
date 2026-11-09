@@ -6,17 +6,26 @@ import xml.etree.ElementTree as ET
 import os
 import re
 import unicodedata
+import json
 
 URL = "https://intv.com.co/inicio/television/canales/warner-channel/"
 XML_FILE = "epg.xml"
 CHANNEL_ID = "WarnerChannel.us@Colombia"
 OFFSET = "-0500"
 
-# Series identificadas en la programación de Warner Channel
-SERIES = {
-    66: "The Big Bang Theory",
-    130: "Two and a Half Men"
-}
+# Cargar series desde series.json
+SERIES_FILE = "series.json"
+
+def cargar_series():
+    with open(SERIES_FILE, "r", encoding="utf-8") as archivo:
+        datos = json.load(archivo)
+
+    return {
+        int(show_id): nombre
+        for show_id, nombre in datos.items()
+    }
+
+SERIES = cargar_series()
 
 MESES = {
     "ene": 1, "feb": 2, "mar": 3, "abr": 4,
@@ -247,9 +256,17 @@ def generar_xml(fecha, programas, indice):
     print("Archivo generado:", XML_FILE)
 
 def main():
+    print("Series cargadas:", len(SERIES))
+
+    for show_id, nombre in SERIES.items():
+        print(f"Serie: {nombre} | ID: {show_id}")
+
     fecha, programas = obtener_programacion()
     indice = obtener_episodios_tvmaze()
     generar_xml(fecha, programas, indice)
+
+if __name__ == "__main__":
+    main()
 
 if __name__ == "__main__":
     main()
