@@ -139,8 +139,102 @@ def guardar_peliculas(peliculas):
         )
 
 
+
 def buscar_pelicula_tmdb(titulo, cache):
     clave = normalizar(titulo)
+
+    if clave in cache:
+        return cache[clave]
+
+    if not TMDB_API_KEY:
+        print("Aviso: falta la clave TMDB_API_KEY")
+        return None
+
+    url = "https://api.themoviedb.org/3/search/movie"
+
+    parametros = {
+        "api_key": TMDB_API_KEY,
+        "query": titulo,
+        "language": "es-ES",
+        "include_adult": "false",
+        "page": 1
+    }
+
+    try:
+        respuesta = requests.get(
+            url,
+            params=parametros,
+            timeout=30
+        )
+        respuesta.raise_for_status()
+
+        resultados = respuesta.json().get("results", [])
+
+        coincidencias = []
+
+        for pelicula in resultados:
+            titulo_espanol = normalizar(
+                pelicula.get("title", "")
+            )
+            titulo_original = normalizar(
+                pelicula.get("original_title", "")
+            )
+
+            if clave in (titulo_espanol, titulo_original):
+                coincidencias.append(pelicula)
+
+        if len(coincidencias) == 0:
+            print("Película no encontrada:", titulo)
+            cache[clave] = None
+            return None
+
+        # Elegir la coincidencia más popular si hay duplicados
+        coincidencias.sort(
+            key=lambda p: p.get("popularity", 0),
+            reverse=True
+        )
+
+        pelicula = coincidencias[0]
+        pelicula_id = pelicula.get("id")
+
+        # Obtener información completa en español
+        detalle_url = (
+            f"https://api.themoviedb.org/3/movie/{pelicula_id}"
+        )
+
+        detalle_respuesta = requests.get(
+            detalle_url,
+            params={
+                "api_key": TMDB_API_KEY,
+                "language": "es-ES"
+            },
+            timeout=30
+        )
+        detalle_respuesta.raise_for_status()
+
+        detalle = detalle_respuesta.json()
+        sinopsis = detalle.get("overview", "").strip()
+
+        if not sinopsis:
+            print("Película sin sinopsis:", titulo)
+            cache[clave] = None
+            return None
+
+        resultado = {
+            "id": pelicula_id,
+            "sinopsis": sinopsis
+        }
+
+        cache[clave] = resultado
+
+        print("Película identificada:", titulo)
+
+        return resultado
+
+    except requests.RequestException as error:
+        print("Aviso: error consultando TMDb para", titulo, error)
+        return None
+
 
     # Consultar primero la caché
     if clave in cache:
