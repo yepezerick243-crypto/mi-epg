@@ -1,32 +1,27 @@
+
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
-import xml.etree.ElementTree as ET
-import os
 import re
 
 URL = "https://intv.com.co/inicio/television/canales/warner-channel/"
-XML_FILE = "epg.xml"
-CHANNEL_ID = "WarnerChannel.us@Colombia"
 
-def obtener_programacion():
-    respuesta = requests.get(URL, timeout=30)
-    respuesta.raise_for_status()
-    soup = BeautifulSoup(respuesta.text, "html.parser")
-    return soup.get_text(" ", strip=True)
+respuesta = requests.get(URL, timeout=30)
+respuesta.raise_for_status()
 
-def cargar_xml():
-    if os.path.exists(XML_FILE):
-        return ET.parse(XML_FILE)
-    root = ET.Element("tv")
-    canal = ET.SubElement(root, "channel", id=CHANNEL_ID)
-    ET.SubElement(canal, "display-name").text = "Warner Channel"
-    return ET.ElementTree(root)
+soup = BeautifulSoup(respuesta.text, "html.parser")
 
-def main():
-    texto = obtener_programacion()
-    print("Página consultada correctamente.")
-    print(texto[:3000])
+print("FECHAS ENCONTRADAS:")
+for elemento in soup.find_all(["h2", "h3", "h4"]):
+    texto = elemento.get_text(" ", strip=True)
+    if re.search(r"\d{1,2}\s+de\s+\w+\s+de\s+\d{4}", texto, re.I):
+        print(texto)
 
-if __name__ == "__main__":
-    main()
+print("\nPROGRAMAS DE LA TABLA:")
+for tabla in soup.find_all("table"):
+    for fila in tabla.find_all("tr"):
+        celdas = fila.find_all(["td", "th"])
+        if len(celdas) >= 2:
+            hora = celdas[0].get_text(" ", strip=True)
+            programa = celdas[1].get_text(" ", strip=True)
+            if re.search(r"\d{1,2}:\d{2}\s*[AP]M", hora, re.I):
+                print(hora, "-", programa)
