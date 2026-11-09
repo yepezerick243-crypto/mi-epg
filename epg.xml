@@ -44,10 +44,12 @@
     <sub-title>Temporada 6, Episodio 3 - Damn You, Eggs Benedict</sub-title>
   </programme>
   <programme start="20261109034100 -0500" stop="20261109042400 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Next Episode</title>
+    <title>Cobra Kai</title>
+    <sub-title>Episodio: The Next Episode</sub-title>
   </programme>
   <programme start="20261109042400 -0500" stop="20261109050000 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Then Learn Fly</title>
+    <title>Cobra Kai</title>
+    <sub-title>Episodio: Then Learn Fly</sub-title>
   </programme>
   <programme start="20261109050000 -0500" stop="20261109050500 -0500" channel="WarnerChannel.us@Colombia">
     <title>El Buzz</title>
@@ -100,7 +102,8 @@
     <sub-title>Temporada 6, Episodio 6 - It's Always Nazi Week</sub-title>
   </programme>
   <programme start="20261109114900 -0500" stop="20261109121200 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Lo mejor que se puede comprar</title>
+    <title>Two and a Half Men</title>
+    <sub-title>Episodio: Lo mejor que se puede comprar</sub-title>
   </programme>
   <programme start="20261109121200 -0500" stop="20261109123700 -0500" channel="WarnerChannel.us@Colombia">
     <title>Two and a Half Men</title>
@@ -111,7 +114,8 @@
     <sub-title>Temporada 6, Episodio 9 - The Mooch at the Boo</sub-title>
   </programme>
   <programme start="20261109130100 -0500" stop="20261109133600 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Primero estar de pie</title>
+    <title>Cobra Kai</title>
+    <sub-title>Episodio: Primero estar de pie</sub-title>
   </programme>
   <programme start="20261109133600 -0500" stop="20261109151600 -0500" channel="WarnerChannel.us@Colombia">
     <title>Megamente</title>
@@ -131,9 +135,11 @@
   </programme>
   <programme start="20261109210000 -0500" stop="20261109230600 -0500" channel="WarnerChannel.us@Colombia">
     <title>La purga: El año de la elección</title>
+    <desc>Han pasado dos años desde que el ex-sargento de policía Leo Barnes (Frank Grillo) decidió no vengarse del hombre que mató a su hijo. Ahora Barnes dirige al equipo de seguridad que se encarga de proteger a la senadora Charlie Roan (Elizabeth Mitchell), una candidata a la Presidencia que reivindica la supresión de La Purga anual, que consiste en permitir, una noche al año, cualquier actividad criminal, incluído el asesinato. Roan considera que esta práctica perjudica sobre todo a los necesitados y a los pobres.</desc>
   </programme>
   <programme start="20261109230600 -0500" stop="20261109235500 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Award Tour</title>
+    <title>All American</title>
+    <sub-title>Episodio: Award Tour</sub-title>
   </programme>
   <programme start="20261109235500 -0500" stop="20261110000000 -0500" channel="WarnerChannel.us@Colombia">
     <title>The Big Bang Theory</title>
