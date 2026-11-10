@@ -1,6 +1,7 @@
 
 import json
 import requests
+from collections import Counter
 
 URL_INTV = "https://intv.com.co/inicio/television/parrilla-de-television/"
 
@@ -41,7 +42,7 @@ def extraer_json(texto, inicio):
 
 def inspeccionar():
     print("=" * 55)
-    print("INSPECCION DE DATOS INTV - WARNER CHANNEL")
+    print("TITULOS UNICOS WARNER CHANNEL")
     print("=" * 55)
 
     respuesta = requests.get(
@@ -74,20 +75,24 @@ def inspeccionar():
     if not programas:
         raise Exception("No se encontraron programas.")
 
-    print("Total de registros:", len(programas))
+    titulos = Counter(
+        p.get("title", "").strip()
+        for p in programas
+        if p.get("title", "").strip()
+    )
 
-    for numero, programa in enumerate(programas[:15], 1):
-        print("\n" + "=" * 45)
-        print("PROGRAMA:", numero)
-        print("=" * 45)
+    print("Registros recibidos:", len(programas))
+    print("Titulos diferentes:", len(titulos))
+    print("-" * 55)
 
-        print(json.dumps(
-            programa,
-            ensure_ascii=False,
-            indent=2
-        ))
+    for numero, (titulo, cantidad) in enumerate(
+        sorted(titulos.items()),
+        1
+    ):
+        print(f"{numero}. {titulo} | Apariciones: {cantidad}")
 
-    print("\nINSPECCION FINALIZADA")
+    print("-" * 55)
+    print("INSPECCION FINALIZADA")
 
 
 if __name__ == "__main__":
