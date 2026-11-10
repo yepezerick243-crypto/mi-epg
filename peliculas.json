@@ -1,4 +1,194 @@
 {
   "version": 1,
-  "peliculas": {}
+  "peliculas": {
+    "el gato con botas": {
+      "titulo_origen": "El gato con botas",
+      "tmdb_id": 126486,
+      "titulo_es": "El gato con botas",
+      "sinopsis_es": "Un niño recibe unas botas y al ponérselas a su minino se transforma en un gato grande y servicial, juntos ayudan al rey.",
+      "verificada": true
+    },
+    "super agente 86": {
+      "titulo_origen": "Super agente 86",
+      "tmdb_id": 11665,
+      "titulo_es": "El Super Agente 86",
+      "sinopsis_es": "Maxwell Smart, un espía muy intelectual pero torpe que trabaja para la agencia CONTROL, tiene la tarea de prevenir un ataque terrorista de la agencia espía rival KAOS.",
+      "verificada": true
+    },
+    "hotel transilvania 3 unas vacaciones monstruosas": {
+      "titulo_origen": "Hotel Transilvania 3: Unas vacaciones monstruosas",
+      "tmdb_id": 400155,
+      "titulo_es": "Hotel Transylvania 3: Monstruos de vacaciones",
+      "sinopsis_es": "Mavis y Johnny planean ir con Drácula y sus amigos a unas vacaciones en un crucero de monstruos de lujo, donde Drácula se enamora de la capitana del barco, Ericka, sin que sepan que ella es descendiente de Abraham Van Helsing, el famoso cazador de monstruos.",
+      "verificada": true
+    },
+    "el sorprendente hombre arana": {
+      "titulo_origen": "El sorprendente Hombre Araña",
+      "tmdb_id": 1930,
+      "titulo_es": "El sorprendente Hombre Araña",
+      "sinopsis_es": "Peter Parker es un estudiante que fue abandonado por sus padres cuando era niño, quedando a cargo de su tío Ben y su tía May. Cuando Peter descubre un misterioso maletín perteneciente a su padre, comienza la búsqueda para entender la desaparición de sus padres, que lo lleva directamente al laboratorio en Oscorp del Dr. Curt Connors , ex compañero de trabajo de su padre.",
+      "verificada": true
+    },
+    "mundo jurasico": {
+      "titulo_origen": "Mundo Jurásico",
+      "tmdb_id": 135397,
+      "titulo_es": "Jurassic World",
+      "sinopsis_es": "Veintidós años después de lo ocurrido en Jurassic Park, la isla Nublar ha sido transformada en un enorme parque temático, Jurassic Wold, con versiones «domesticadas» de algunos de los dinosaurios más conocidos. Cuando todo parece ir sobre ruedas y ser el negocio del siglo, un nuevo dinosaurio de especie desconocida, pues ha sido creado manipulando genéticamente su ADN, y que resulta ser mucho más inteligente de lo que se pensaba, se escapa de su recinto y comienza a causar estragos entre los visitantes del Parque",
+      "verificada": true
+    },
+    "travesia salvaje": {
+      "titulo_origen": "Travesía salvaje",
+      "tmdb_id": 500916,
+      "titulo_es": "Instinto predador",
+      "sinopsis_es": "Un cazador que se dedica a capturar animales para luego venderlos a distintos zoológicos compra un pasaje para embarcarse en un crucero repleto de animales exóticos con los que piensa hacerse de oro, entre los que se incluye un jaguar y otros animales del Amazonas. Sin embargo, desconoce que en el mismo barco se está extraditando a un asesino en serie que, tras escapar del control de sus captores, liberta a los animales y con ellos el caos total.",
+      "verificada": true
+    },
+    "titanes del pacifico": {
+      "titulo_origen": "Titanes del Pacífico",
+      "tmdb_id": 68726,
+      "titulo_es": "Titanes Del Pacífico",
+      "sinopsis_es": "Cuando legiones de monstruosas criaturas, denominadas Kaiju, comienzan a salir del mar, se inicia una guerra que acabará con millones de vidas y que consumirá los recursos de la humanidad durante interminables años. Para combatir a los Kaiju gigantes diseñan un tipo especial de arma: enormes robots, llamados Jaegers, que son controlados simultáneamente por dos pilotos cuyas mentes están bloqueadas en un puente neural. Pero incluso los Jaegers proporcionan poca defensa ante los incansables Kaiju. A punto de la derrota, las fuerzas que defienden a la humanidad no tienen otra elección que recurrir a dos insólitos héroes: un ex piloto acabado y un aprendiz que todavía no se ha puesto a prueba. Ambos se unen para traer a un legendario pero al parecer obsoleto Jaeger del pasado. Juntos, son la última esperanza de la humanidad frente al Apocalipsis que se avecina",
+      "verificada": true
+    },
+    "tirador": {
+      "titulo_origen": "Tirador",
+      "tmdb_id": 151077,
+      "titulo_es": "Tirador",
+      "sinopsis_es": "",
+      "verificada": true
+    },
+    "un jefe en panales": {
+      "titulo_origen": "Un jefe en pañales",
+      "tmdb_id": 295693,
+      "titulo_es": "Un Jefe en Pañales",
+      "sinopsis_es": "La llegada de un hermanito trastoca por completo la idílica vida del pequeño Tim, hasta entonces hijo único de 7 años y el ojito derecho de sus padres. Su nuevo hermano es un peculiar bebé, que viste traje y corbata y lleva maletín. Tim comienza a sospechar de él, hasta que descubre que puede hablar.",
+      "verificada": true
+    },
+    "plan de escape 3": {
+      "titulo_origen": "Plan de escape 3",
+      "tmdb_id": 480042,
+      "titulo_es": "Plan de Escape 3: El Rescate",
+      "sinopsis_es": "El experto en seguridad Ray Breslin es contratado para rescatar a la hija de un magnate de la tecnología de Hong Kong que ha sido secuestrada y puesta bajo custodia en una prisión de Letonia. Por si esto fuera poco, su novia también es capturada. Ahora, él y su equipo deberán realizar una misión de rescate que les llevará a enfrentarse a su peor enemigo mientras tratan de poner a salvo a los rehenes.",
+      "verificada": true
+    },
+    "que paso ayer parte ii": {
+      "titulo_origen": "¿Qué Pasó Ayer? Parte II",
+      "tmdb_id": 45243,
+      "titulo_es": "¿Qué Pasó Ayer? Parte II",
+      "sinopsis_es": "El grupo viaja a Tailandia para la boda de Stu. Tras el desastre de su despedida de soltero en Las Vegas el año pasado, Stu prefiere ir a lo seguro con un tranquilo brunch preboda. Sin embargo, nada sale según lo planeado y Bangkok se convierte en el escenario perfecto para otra aventura con este grupo tan alocado.",
+      "verificada": true
+    },
+    "soy leyenda": {
+      "titulo_origen": "Soy leyenda",
+      "tmdb_id": 6479,
+      "titulo_es": "Soy Leyenda",
+      "sinopsis_es": "Año 2012. Robert Neville es el último hombre vivo que hay sobre la Tierra, pero no está solo. Los demás seres humanos se han convertido en unos mutantes nocturnos llamados “Darkseekers” y todos ansían beber su sangre. Durante el día vive en estado de alerta, como un cazador, y busca a los muertos vivientes mientras duermen; pero durante la noche debe esconderse de ellos y esperar el amanecer. Esta pesadilla empezó hace tres años: Neville era un brillante científico, pero no pudo impedir la expansión de un terrible virus creado por el hombre. Él ha sobrevivido porque es inmune al virus; todos los días envía mensajes por radio con la esperanza de que haya otros supervivientes, pero es inútil. Lo único que puede hacer es buscar una fórmula que le permita utilizar su sangre inmune para devolverles a los hombres su naturaleza. Pero está en inferioridad de condiciones y el tiempo se acaba.",
+      "verificada": true
+    },
+    "batman y robin": {
+      "titulo_origen": "Batman y Robin",
+      "tmdb_id": 415,
+      "titulo_es": "Batman & Robin",
+      "sinopsis_es": "Los experimentos del doctor Victor Fries, mediante los cuales busca conservar criogénicamente la vida de su esposa, originan un error fatal que lo convierte en el señor Frío, un villano que necesita mantener su cuerpo a temperaturas glaciales y que intentará congelar a todos los habitantes de Ciudad Gótica. Además, en el transcurso de un experimento, la tímida botánica Pamela Isley se transforma en la terrible Hiedra Venenosa, que tratará de asesinar a todos los seres humanos para que las plantas recuperen su hegemonía sobre la Tierra. Batman y su compañero Robin deberán enfrentarse a ellos para hacer fracasar sus siniestros planes.",
+      "verificada": true
+    },
+    "que paso ayer parte 2": {
+      "titulo_origen": "¿Qué pasó ayer? Parte 2",
+      "tmdb_id": 45243,
+      "titulo_es": "¿Qué Pasó Ayer? Parte II",
+      "sinopsis_es": "El grupo viaja a Tailandia para la boda de Stu. Tras el desastre de su despedida de soltero en Las Vegas el año pasado, Stu prefiere ir a lo seguro con un tranquilo brunch preboda. Sin embargo, nada sale según lo planeado y Bangkok se convierte en el escenario perfecto para otra aventura con este grupo tan alocado.",
+      "verificada": true
+    },
+    "dos policias rebeldes": {
+      "titulo_origen": "Dos policías rebeldes",
+      "tmdb_id": 9737,
+      "titulo_es": "Dos policías rebeldes",
+      "sinopsis_es": "Un lote de heroína valorado en unos 100 millones de dólares es robado del mismísimo depósito de la policía. El caso le será asignado a los agentes Burnett y Lowery, una pareja muy peculiar por los métodos que utilizan. La única pista que tienen para comenzar es la de una testigo que les ayudará a identificar a los atracadores y a la que tendrán que proteger.",
+      "verificada": true
+    },
+    "el coleccionista de huesos": {
+      "titulo_origen": "El coleccionista de huesos",
+      "tmdb_id": 9481,
+      "titulo_es": "El Coleccionista de Huesos",
+      "sinopsis_es": "Un psicópata va dejando pistas de sus crímenes, pero sólo Lincoln Rhyme, un agente de homicidios tetrapléjico, puede descifrarlas. La novata policía Amelia Donaghy es la encargada de inspeccionar los escenarios del crimen.",
+      "verificada": true
+    },
+    "el plan perfecto": {
+      "titulo_origen": "El plan perfecto",
+      "tmdb_id": 597353,
+      "titulo_es": "El Plan Perfecto",
+      "sinopsis_es": "Cuenta la vida de seis compañeros de trabajo que laboran en un viejo almacén de Santo Domingo, y que por cuestiones de salud el dueño, se ve compelido a venderlo, recibiendo una oferta de compra en la cual las operaciones de dicho almacén cambian de administrador, comenzando a operar, de manera clandestina, un centro de acopio de mercancía ilegal, cuestión que les trae serios problemas a estos empleados.",
+      "verificada": true
+    },
+    "las aventuras del capitan calzoncillos la pelicula": {
+      "titulo_origen": "Las aventuras del Capitán Calzoncillos: La película",
+      "tmdb_id": 268531,
+      "titulo_es": "Las aventuras del Capitán Calzoncillos: La película",
+      "sinopsis_es": "De Dreamworks Animation llega una aventura épica sobre un nuevo héroe. Esta comedia familiar cuenta la historia de dos niños traviesos, George y Harold, que hipnotizan al director de su colegio para convertirlo en un héroe de cómic llamado \"Capitán Calzoncillos\".",
+      "verificada": true
+    },
+    "scooby": {
+      "titulo_origen": "¡Scooby!",
+      "tmdb_id": 385103,
+      "titulo_es": "¡Scooby!",
+      "sinopsis_es": "Scooby y la pandilla enfrentan su misterio más complicado: un complot para liberar al perro fantasma Cerbero contra el mundo. Mientras corren para detener el apocalipsis perruno, el grupo descubre que Scooby tiene un épico destino que nadie sospechó nunca.",
+      "verificada": true
+    },
+    "megamente": {
+      "titulo_origen": "Megamente",
+      "tmdb_id": 38055,
+      "titulo_es": "Megamente",
+      "sinopsis_es": "Megamente es el supervillano más brillante que el mundo haya conocido. Y el que menos éxito tiene. Durante años, ha estado intentando conquistar Metro City por todos los medios posibles. Cada intento constituye un fracaso, por culpa de Metro Man, un héroe invencible hasta que Megamente consigue matarlo...",
+      "verificada": true
+    },
+    "rey arturo la leyenda de la espada": {
+      "titulo_origen": "Rey Arturo: La leyenda de la espada",
+      "tmdb_id": 274857,
+      "titulo_es": "El Rey Arturo: La Leyenda de la Espada",
+      "sinopsis_es": "Robado de su derecho de nacimiento, Arturo sube el camino duro en los callejones traseros de la ciudad. Pero una vez que saca la espada de la piedra, se ve obligado a reconocer su verdadero legado, le guste o no.",
+      "verificada": true
+    },
+    "vivo o muerto": {
+      "titulo_origen": "Vivo o muerto",
+      "tmdb_id": 366168,
+      "titulo_es": "Vivo o muerto",
+      "sinopsis_es": "",
+      "verificada": true
+    },
+    "turbo": {
+      "titulo_origen": "Turbo",
+      "tmdb_id": 77950,
+      "titulo_es": "Turbo",
+      "sinopsis_es": "La historia de un caracol de jardín común que sueña con ganar el Indy 500.",
+      "verificada": true
+    },
+    "el protector": {
+      "titulo_origen": "El protector",
+      "tmdb_id": 875609,
+      "titulo_es": "El protector",
+      "sinopsis_es": "Cortometraje de Jorge Macario.",
+      "verificada": true
+    },
+    "robo en las alturas": {
+      "titulo_origen": "Robo en las alturas",
+      "tmdb_id": 59108,
+      "titulo_es": "Robo en las alturas",
+      "sinopsis_es": "El gerente de un condominio de lujo une fuerzas con un criminal para quitarle el dinero del retiro que les robó a él y a sus compañeros de trabajo un estafador de Wall Street.",
+      "verificada": true
+    },
+    "sin limites": {
+      "titulo_origen": "Sin límites",
+      "tmdb_id": 51876,
+      "titulo_es": "Sin Límites",
+      "sinopsis_es": "El escritor Eddie Morra se enfrenta al desempleo, al rechazo de su novia y está convencido de que no tiene futuro. La situación cambia cuando un amigo le presenta la MDT, una droga que mejora las habilidades mentales. Gracias al MDT, Eddie alcanza la cima del mundo financiero. Él atrae la atención de un magnate que cree poder usar a Eddie para hacer una fortuna, pero los efectos secundarios y una disminución en sus poderes amenazan la buena suerte de Eddie",
+      "verificada": true
+    },
+    "la gran estafa": {
+      "titulo_origen": "La gran estafa",
+      "tmdb_id": 9903,
+      "titulo_es": "La gran estafa",
+      "sinopsis_es": "En la década de los 70, el escritor Clifford Irving engañó a una importante editorial, haciendo creer a sus propietarios que tenía permiso del mismísimo Howard Hugues para publicar su autobiografía. Lo que comienza siendo un acto de picaresca por parte de un escritor sin un céntimo, acaba convirtiéndose en un escándalo que salpica incluso a la Casa Blanca. Basada en hechos reales.",
+      "verificada": true
+    }
+  }
 }

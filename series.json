@@ -1,4 +1,23 @@
 {
   "version": 1,
-  "series": {}
+  "series": {
+    "the big bang theory": {
+      "nombre": "The Big Bang Theory",
+      "tvmaze_id": 66,
+      "tmdb_id": 1418,
+      "nombre_es": "Big Bang"
+    },
+    "two and a half men": {
+      "nombre": "Two and a Half Men",
+      "tvmaze_id": 130,
+      "tmdb_id": 2691,
+      "nombre_es": "Dos hombres y medio"
+    },
+    "cobra kai": {
+      "nombre": "Cobra Kai",
+      "tvmaze_id": 30960,
+      "tmdb_id": 77169,
+      "nombre_es": "Cobra Kai"
+    }
+  }
 }
