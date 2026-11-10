@@ -2,6 +2,7 @@
 import os
 import re
 import json
+import time
 import requests
 import xml.etree.ElementTree as ET
 
@@ -59,8 +60,31 @@ def extraer_json(texto, inicio):
 
 
 def obtener_programacion():
-    respuesta = SESION.get(URL_INTV, timeout=30)
-    respuesta.raise_for_status()
+    respuesta = None
+
+    for intento in range(1, 5):
+        try:
+            print(f"Conectando con INTV: intento {intento}/4")
+
+            respuesta = SESION.get(
+                URL_INTV,
+                timeout=(20, 60)
+            )
+
+            respuesta.raise_for_status()
+            break
+
+        except requests.RequestException as error:
+            print(f"INTV no respondió: {error}")
+
+            if intento < 4:
+                print("Esperando 15 segundos para reintentar...")
+                time.sleep(15)
+            else:
+                raise Exception(
+                    "No fue posible conectar con INTV después de 4 intentos. "
+                    "Se conservará el XML anterior."
+                ) from error
 
     inicio = respuesta.text.find("var tvGuideData")
 
@@ -77,9 +101,17 @@ def obtener_programacion():
 
     for nombre, informacion in canales.items():
         if nombre.strip().lower() == "warner channel":
-            return informacion.get("programs", [])
+            programas = informacion.get("programs", [])
 
-    raise Exception("No se encontró Warner Channel.")
+            if not programas:
+                raise Exception(
+                    "INTV respondió, pero no entregó programas de Warner Channel. "
+                    "Se conservará el XML anterior."
+                )
+
+            return programas
+
+    raise Exception("No se encontró Warner Channel en INTV.")
 
 
 def convertir_fecha(milisegundos):
@@ -177,14 +209,12 @@ def enriquecer_programa(elemento, programa):
         ["description", "synopsis", "overview"]
     )
 
-    # TVmaze: información de series
     if serie:
         resultado = buscar_tvmaze(serie)
 
         if resultado and not sinopsis:
             sinopsis = resultado.get("summary") or ""
 
-    # TMDb: información de películas o series
     if (
         "movie" in tipo
         or "pelicula" in tipo
@@ -251,8 +281,6 @@ def cargar_programas_anterior():
             try:
                 fecha_fin = fecha_xml_a_datetime(fin)
 
-                # Conservar programas que no hayan terminado
-                # hace más de 24 horas.
                 if fecha_fin < limite:
                     continue
 
@@ -268,7 +296,10 @@ def cargar_programas_anterior():
         )
 
     except ET.ParseError:
-        print("El XML anterior no se pudo leer. Se creará uno nuevo.")
+        raise Exception(
+            "El XML anterior está dañado. Se cancela la generación "
+            "para evitar perder la programación existente."
+        )
 
     return programas
 
@@ -325,17 +356,14 @@ def generar_xml():
         len(programas_intv)
     )
 
-    # Recuperar los programas de ejecuciones anteriores
     programas_finales = cargar_programas_anterior()
 
     nuevos = 0
     actualizados = 0
     descartados = 0
 
-    # Incorporar los datos nuevos de INTV
     for programa in programas_intv:
         titulo = obtener_texto(programa, ["title"])
-
         inicio = programa.get("start")
         fin = programa.get("end")
 
@@ -367,11 +395,8 @@ def generar_xml():
         else:
             nuevos += 1
 
-        # El dato nuevo reemplaza el anterior si coincide
-        # el canal y la hora de inicio.
         programas_finales[clave] = elemento
 
-    # Crear el XMLTV
     raiz = ET.Element(
         "tv",
         {"generator-info-name": "EPG Warner Channel INTV"}
@@ -389,7 +414,6 @@ def generar_xml():
         {"lang": "es"}
     ).text = "Warner Channel"
 
-    # Orden cronológico
     lista_ordenada = sorted(
         programas_finales.values(),
         key=lambda p: fecha_xml_a_datetime(p.get("start"))
@@ -400,11 +424,15 @@ def generar_xml():
 
     ET.indent(raiz, space="  ")
 
+    archivo_temporal = ARCHIVO_XML + ".tmp"
+
     ET.ElementTree(raiz).write(
-        ARCHIVO_XML,
+        archivo_temporal,
         encoding="UTF-8",
         xml_declaration=True
     )
+
+    os.replace(archivo_temporal, ARCHIVO_XML)
 
     print("---------------------------------------")
     print("Programas nuevos:", nuevos)
@@ -422,4 +450,12 @@ def generar_xml():
 
 
 if __name__ == "__main__":
-    generar_xml()
+    try:
+        generar_xml()
+    except Exception as error:
+        print("=" * 55)
+        print("GENERACIÓN CANCELADA")
+        print(error)
+        print("El epg.xml anterior no será modificado.")
+        print("=" * 55)
+        raise
