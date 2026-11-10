@@ -260,7 +260,7 @@ def consultar_directv(fecha):
                     if not inicio or not fin or not titulo:
                         continue
 
-                    if inicio.date() != fecha.date():
+                    if inicio.date() != fecha:
                         continue
 
                     if fin <= inicio:
