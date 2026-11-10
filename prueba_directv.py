@@ -9,7 +9,11 @@ headers = {
     "Origin": "https://www.directv.com.ec",
     "Referer": "https://www.directv.com.ec/guia/ChannelDetail.aspx?id=1206&name=WTVHD",
     "X-Requested-With": "XMLHttpRequest",
-    "User-Agent": "Mozilla/5.0"
+    "User-Agent": "Mozilla/5.0",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Dest": "empty",
+    "Accept-Language": "es-EC,es;q=0.9,en;q=0.8"
 }
 
 payload = {"filterParameters": None}
