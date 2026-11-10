@@ -1,148 +1,360 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='utf-8'?>
 <tv>
-  <channel id="WarnerChannel.us@Colombia">
-    <display-name>Warner Channel</display-name>
-  </channel>
-  <programme start="20261109000000 -0500" stop="20261109001700 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Big Bang Theory</title>
-    <sub-title>Temporada 8, Episodio 7 - The Misinterpretation Agitation</sub-title>
-  </programme>
-  <programme start="20261109001700 -0500" stop="20261109003900 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Big Bang Theory</title>
-    <sub-title>Temporada 8, Episodio 8 - The Prom Equivalency</sub-title>
-  </programme>
-  <programme start="20261109003900 -0500" stop="20261109010100 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Big Bang Theory</title>
-    <sub-title>Temporada 8, Episodio 9 - The Septum Deviation</sub-title>
-  </programme>
-  <programme start="20261109010100 -0500" stop="20261109012300 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Big Bang Theory</title>
-    <sub-title>Temporada 8, Episodio 10 - The Champagne Reflection</sub-title>
-  </programme>
-  <programme start="20261109012300 -0500" stop="20261109014600 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Two and a Half Men</title>
-    <sub-title>Temporada 5, Episodio 17 - Fish in a Drawer</sub-title>
-  </programme>
-  <programme start="20261109014600 -0500" stop="20261109020900 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Two and a Half Men</title>
-    <sub-title>Temporada 5, Episodio 18 - If My Hole Could Talk</sub-title>
-  </programme>
-  <programme start="20261109020900 -0500" stop="20261109023300 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Two and a Half Men</title>
-    <sub-title>Temporada 5, Episodio 19 - Waiting for the Right Snapper</sub-title>
-  </programme>
-  <programme start="20261109023300 -0500" stop="20261109025600 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Two and a Half Men</title>
-    <sub-title>Temporada 6, Episodio 1 - Taterhead Is Our Love Child</sub-title>
-  </programme>
-  <programme start="20261109025600 -0500" stop="20261109031900 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Two and a Half Men</title>
-    <sub-title>Temporada 6, Episodio 2 - Pie Hole, Herb</sub-title>
-  </programme>
-  <programme start="20261109031900 -0500" stop="20261109034100 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Two and a Half Men</title>
-    <sub-title>Temporada 6, Episodio 3 - Damn You, Eggs Benedict</sub-title>
-  </programme>
-  <programme start="20261109034100 -0500" stop="20261109042400 -0500" channel="WarnerChannel.us@Colombia">
-    <title>All American</title>
-    <sub-title>Temporada 6, Episodio 11 - The Next Episode</sub-title>
-  </programme>
-  <programme start="20261109042400 -0500" stop="20261109050000 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Cobra Kai</title>
-    <sub-title>Temporada 4, Episodio 3 - Then Learn Fly</sub-title>
-  </programme>
-  <programme start="20261109050000 -0500" stop="20261109050500 -0500" channel="WarnerChannel.us@Colombia">
-    <title>El Buzz</title>
-  </programme>
-  <programme start="20261109050500 -0500" stop="20261109050600 -0500" channel="WarnerChannel.us@Colombia">
-    <title>El Buzz</title>
-  </programme>
-  <programme start="20261109050600 -0500" stop="20261109063800 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Las aventuras del Capitán Calzoncillos: La película</title>
-    <desc>George y Harold son dos niños de primaria a los que les encantan los cómics y se dedican a pintar y dibujar historietas cuyo personaje central es el 'Capitán Calzoncillos'. Un día, de manera accidental, hipnotizan al director de su escuela, provocando su transformación en el mismo Capitán Calzoncillos de sus alocados tebeos. Cada vez que alguien chasquea los dedos, el Sr. Krupp se convierte en este superhéroe, que debe sus poderes a sus turbocalzones. Para volver a ser el Sr. Krupp, basta con que se le eche agua por encima.</desc>
-  </programme>
-  <programme start="20261109063800 -0500" stop="20261109081900 -0500" channel="WarnerChannel.us@Colombia">
-    <title>¡Scooby!</title>
-    <desc>Con cientos de casos resueltos y aventuras compartidas, Scooby y la pandilla se enfrentan al misterio más grande y desafiante de todos los tiempos: un complot para liberar al perro fantasma Cerberus en el mundo. Mientras compiten para detener esta escasez de perros global, la pandilla descubre que Scooby tiene un legado secreto y un destino épico más grande de lo que cualquiera podría haber imaginado.</desc>
-  </programme>
-  <programme start="20261109081900 -0500" stop="20261109084200 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Big Bang Theory</title>
-    <sub-title>Temporada 8, Episodio 11 - The Clean Room Infiltration</sub-title>
-  </programme>
-  <programme start="20261109084200 -0500" stop="20261109090400 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Big Bang Theory</title>
-    <sub-title>Temporada 8, Episodio 12 - The Space Probe Disintegration</sub-title>
-  </programme>
-  <programme start="20261109090400 -0500" stop="20261109092800 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Big Bang Theory</title>
-    <sub-title>Temporada 8, Episodio 13 - The Anxiety Optimization</sub-title>
-  </programme>
-  <programme start="20261109092800 -0500" stop="20261109095200 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Big Bang Theory</title>
-    <sub-title>Temporada 8, Episodio 14 - The Troll Manifestation</sub-title>
-  </programme>
-  <programme start="20261109095200 -0500" stop="20261109101400 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Big Bang Theory</title>
-    <sub-title>Temporada 8, Episodio 15 - The Comic Book Store Regeneration</sub-title>
-  </programme>
-  <programme start="20261109101400 -0500" stop="20261109103700 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Big Bang Theory</title>
-    <sub-title>Temporada 8, Episodio 16 - The Intimacy Acceleration</sub-title>
-  </programme>
-  <programme start="20261109103700 -0500" stop="20261109110000 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Two and a Half Men</title>
-    <sub-title>Temporada 6, Episodio 4 - The Flavin' and the Mavin'</sub-title>
-  </programme>
-  <programme start="20261109110000 -0500" stop="20261109112500 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Two and a Half Men</title>
-    <sub-title>Temporada 6, Episodio 5 - A Jock Strap in Hell</sub-title>
-  </programme>
-  <programme start="20261109112500 -0500" stop="20261109114900 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Two and a Half Men</title>
-    <sub-title>Temporada 6, Episodio 6 - It's Always Nazi Week</sub-title>
-  </programme>
-  <programme start="20261109114900 -0500" stop="20261109121200 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Two and a Half Men</title>
-    <sub-title>Temporada 6, Episodio 7 - Best H.O. Money Can Buy</sub-title>
-  </programme>
-  <programme start="20261109121200 -0500" stop="20261109123700 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Two and a Half Men</title>
-    <sub-title>Temporada 6, Episodio 8 - Pinocchio's Mouth</sub-title>
-  </programme>
-  <programme start="20261109123700 -0500" stop="20261109130100 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Two and a Half Men</title>
-    <sub-title>Temporada 6, Episodio 9 - The Mooch at the Boo</sub-title>
-  </programme>
-  <programme start="20261109130100 -0500" stop="20261109133600 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Cobra Kai</title>
-    <sub-title>Temporada 4, Episodio 2 - First Learn Stand</sub-title>
-  </programme>
-  <programme start="20261109133600 -0500" stop="20261109151600 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Megamente</title>
-    <desc>Megamind es el supervillano más brillante que el mundo haya conocido. Y el que menos éxito tiene. Durante años, ha estado intentando conquistar Metro City por todos los medios posibles. Cada intento constituye un fracaso, por culpa de Metro Man, un héroe invencible hasta que Megamind consigue matarlo. De repente, la vida de Megamind carece de sentido. ¿Qué puede hacer un supervillano sin un superhéroe con el que enfrentarse?. Crear a Titán, un nuevo héroe más fuerte que Metro Man. Pero Titán empieza a pensar que es mucho más divertido ser malo que ser bueno. Además, Titán no se propone conquistar el mundo, sino destruirlo. ¿Podrá derrotar Megamind a su diabólica criatura?</desc>
-  </programme>
-  <programme start="20261109151600 -0500" stop="20261109165600 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Turbo</title>
-    <desc>Turbo es un caracol de jardín con un sueño imposible: convertirse en el caracol más rápido del mundo. Cuando un extraño accidente le da el poder de la súper-velocidad, Turbo intentará cumplir su sueño. Primero se hará amigo de una peculiar pandilla de caracoles callejeros tuneados y obsesionados con la velocidad, y allí Turbo aprenderá que nadie llega a tener éxito por sí solo. Así que coloca su corazón y su concha en la línea de salida dispuesto a ayudar a sus colegas a lograr sus sueños, antes de intentar alcanzar su sueño imposible: ganar las 500 millas de Indianápolis.</desc>
-  </programme>
-  <programme start="20261109165600 -0500" stop="20261109185800 -0500" channel="WarnerChannel.us@Colombia">
-    <title>El protector</title>
-    <desc>Un ranchero en la frontera de Arizona se convierte en el improbable defensor de un joven mexicano que huye desesperadamente de los asesinos del cartel que lo han perseguido hasta Estados Unidos.</desc>
-  </programme>
-  <programme start="20261109185800 -0500" stop="20261109210000 -0500" channel="WarnerChannel.us@Colombia">
-    <title>Robo en las alturas</title>
-    <desc>Josh Kovaks lleva diez años como encargado de los pisos más lujosos y más vigilados de todo Nueva York. Nada le pasa desapercibido. Arthur Shaw es un pez gordo de Wall Street que está en arresto domiciliario en el piso más ostentoso del edificio después de ser acusado del robo de dos mil millones de dólares a sus inversores. Y de estos últimos, ¿quién va a sufrir más? El personal de “The Tower”, que le entregó su plan de pensiones. Sólo faltan unos días para que Shaw se salga con la suya. Josh y su gente deciden recurrir a Slide, un delincuente de poca monta, para conseguir lo imposible: robar los 20 millones de dólares que deben estar escondidos en el piso donde Shaw permanece vigilado por un equipo del FBI encabezado por la agente especial Claire Denham.</desc>
-  </programme>
-  <programme start="20261109210000 -0500" stop="20261109230600 -0500" channel="WarnerChannel.us@Colombia">
-    <title>La purga: El año de la elección</title>
-    <desc>Han pasado dos años desde que el ex-sargento de policía Leo Barnes (Frank Grillo) decidió no vengarse del hombre que mató a su hijo. Ahora Barnes dirige al equipo de seguridad que se encarga de proteger a la senadora Charlie Roan (Elizabeth Mitchell), una candidata a la Presidencia que reivindica la supresión de La Purga anual, que consiste en permitir, una noche al año, cualquier actividad criminal, incluído el asesinato. Roan considera que esta práctica perjudica sobre todo a los necesitados y a los pobres.</desc>
-  </programme>
-  <programme start="20261109230600 -0500" stop="20261109235500 -0500" channel="WarnerChannel.us@Colombia">
-    <title>All American</title>
-    <sub-title>Temporada 7, Episodio 13 - Award Tour</sub-title>
-  </programme>
-  <programme start="20261109235500 -0500" stop="20261110000000 -0500" channel="WarnerChannel.us@Colombia">
-    <title>The Big Bang Theory</title>
-    <sub-title>Temporada 8, Episodio 11 - The Clean Room Infiltration</sub-title>
-  </programme>
+    <channel id="WarnerChannel.us@Colombia">
+        <display-name>Warner Channel</display-name>
+    </channel>
+    <programme start="20261109000000 -0500" stop="20261109001700 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 7 - The Misinterpretation Agitation</sub-title>
+    </programme>
+    <programme start="20261109001700 -0500" stop="20261109003900 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 8 - The Prom Equivalency</sub-title>
+    </programme>
+    <programme start="20261109003900 -0500" stop="20261109010100 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 9 - The Septum Deviation</sub-title>
+    </programme>
+    <programme start="20261109010100 -0500" stop="20261109012300 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 10 - The Champagne Reflection</sub-title>
+    </programme>
+    <programme start="20261109012300 -0500" stop="20261109014600 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 5, Episodio 17 - Fish in a Drawer</sub-title>
+    </programme>
+    <programme start="20261109014600 -0500" stop="20261109020900 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 5, Episodio 18 - If My Hole Could Talk</sub-title>
+    </programme>
+    <programme start="20261109020900 -0500" stop="20261109023300 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 5, Episodio 19 - Waiting for the Right Snapper</sub-title>
+    </programme>
+    <programme start="20261109023300 -0500" stop="20261109025600 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 1 - Taterhead Is Our Love Child</sub-title>
+    </programme>
+    <programme start="20261109025600 -0500" stop="20261109031900 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 2 - Pie Hole, Herb</sub-title>
+    </programme>
+    <programme start="20261109031900 -0500" stop="20261109034100 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 3 - Damn You, Eggs Benedict</sub-title>
+    </programme>
+    <programme start="20261109034100 -0500" stop="20261109042400 -0500" channel="WarnerChannel.us@Colombia">
+        <title>All American</title>
+        <sub-title>Temporada 6, Episodio 11 - The Next Episode</sub-title>
+    </programme>
+    <programme start="20261109042400 -0500" stop="20261109050000 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Cobra Kai</title>
+        <sub-title>Temporada 4, Episodio 3 - Then Learn Fly</sub-title>
+    </programme>
+    <programme start="20261109050000 -0500" stop="20261109050500 -0500" channel="WarnerChannel.us@Colombia">
+        <title>El Buzz</title>
+    </programme>
+    <programme start="20261109050500 -0500" stop="20261109050600 -0500" channel="WarnerChannel.us@Colombia">
+        <title>El Buzz</title>
+    </programme>
+    <programme start="20261109050600 -0500" stop="20261109063800 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Las aventuras del Capitán Calzoncillos: La película</title>
+        <desc>George y Harold son dos niños de primaria a los que les encantan los cómics y se dedican a pintar y dibujar historietas cuyo personaje central es el 'Capitán Calzoncillos'. Un día, de manera accidental, hipnotizan al director de su escuela, provocando su transformación en el mismo Capitán Calzoncillos de sus alocados tebeos. Cada vez que alguien chasquea los dedos, el Sr. Krupp se convierte en este superhéroe, que debe sus poderes a sus turbocalzones. Para volver a ser el Sr. Krupp, basta con que se le eche agua por encima.</desc>
+    </programme>
+    <programme start="20261109063800 -0500" stop="20261109081900 -0500" channel="WarnerChannel.us@Colombia">
+        <title>¡Scooby!</title>
+        <desc>Con cientos de casos resueltos y aventuras compartidas, Scooby y la pandilla se enfrentan al misterio más grande y desafiante de todos los tiempos: un complot para liberar al perro fantasma Cerberus en el mundo. Mientras compiten para detener esta escasez de perros global, la pandilla descubre que Scooby tiene un legado secreto y un destino épico más grande de lo que cualquiera podría haber imaginado.</desc>
+    </programme>
+    <programme start="20261109081900 -0500" stop="20261109084200 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 11 - The Clean Room Infiltration</sub-title>
+    </programme>
+    <programme start="20261109084200 -0500" stop="20261109090400 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 12 - The Space Probe Disintegration</sub-title>
+    </programme>
+    <programme start="20261109090400 -0500" stop="20261109092800 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 13 - The Anxiety Optimization</sub-title>
+    </programme>
+    <programme start="20261109092800 -0500" stop="20261109095200 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 14 - The Troll Manifestation</sub-title>
+    </programme>
+    <programme start="20261109095200 -0500" stop="20261109101400 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 15 - The Comic Book Store Regeneration</sub-title>
+    </programme>
+    <programme start="20261109101400 -0500" stop="20261109103700 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 16 - The Intimacy Acceleration</sub-title>
+    </programme>
+    <programme start="20261109103700 -0500" stop="20261109110000 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 4 - The Flavin' and the Mavin'</sub-title>
+    </programme>
+    <programme start="20261109110000 -0500" stop="20261109112500 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 5 - A Jock Strap in Hell</sub-title>
+    </programme>
+    <programme start="20261109112500 -0500" stop="20261109114900 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 6 - It's Always Nazi Week</sub-title>
+    </programme>
+    <programme start="20261109114900 -0500" stop="20261109121200 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 7 - Best H.O. Money Can Buy</sub-title>
+    </programme>
+    <programme start="20261109121200 -0500" stop="20261109123700 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 8 - Pinocchio's Mouth</sub-title>
+    </programme>
+    <programme start="20261109123700 -0500" stop="20261109130100 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 9 - The Mooch at the Boo</sub-title>
+    </programme>
+    <programme start="20261109130100 -0500" stop="20261109133600 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Cobra Kai</title>
+        <sub-title>Temporada 4, Episodio 2 - First Learn Stand</sub-title>
+    </programme>
+    <programme start="20261109133600 -0500" stop="20261109151600 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Megamente</title>
+        <desc>Megamind es el supervillano más brillante que el mundo haya conocido. Y el que menos éxito tiene. Durante años, ha estado intentando conquistar Metro City por todos los medios posibles. Cada intento constituye un fracaso, por culpa de Metro Man, un héroe invencible hasta que Megamind consigue matarlo. De repente, la vida de Megamind carece de sentido. ¿Qué puede hacer un supervillano sin un superhéroe con el que enfrentarse?. Crear a Titán, un nuevo héroe más fuerte que Metro Man. Pero Titán empieza a pensar que es mucho más divertido ser malo que ser bueno. Además, Titán no se propone conquistar el mundo, sino destruirlo. ¿Podrá derrotar Megamind a su diabólica criatura?</desc>
+    </programme>
+    <programme start="20261109151600 -0500" stop="20261109165600 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Turbo</title>
+        <desc>Turbo es un caracol de jardín con un sueño imposible: convertirse en el caracol más rápido del mundo. Cuando un extraño accidente le da el poder de la súper-velocidad, Turbo intentará cumplir su sueño. Primero se hará amigo de una peculiar pandilla de caracoles callejeros tuneados y obsesionados con la velocidad, y allí Turbo aprenderá que nadie llega a tener éxito por sí solo. Así que coloca su corazón y su concha en la línea de salida dispuesto a ayudar a sus colegas a lograr sus sueños, antes de intentar alcanzar su sueño imposible: ganar las 500 millas de Indianápolis.</desc>
+    </programme>
+    <programme start="20261109165600 -0500" stop="20261109185800 -0500" channel="WarnerChannel.us@Colombia">
+        <title>El protector</title>
+        <desc>Un ranchero en la frontera de Arizona se convierte en el improbable defensor de un joven mexicano que huye desesperadamente de los asesinos del cartel que lo han perseguido hasta Estados Unidos.</desc>
+    </programme>
+    <programme start="20261109185800 -0500" stop="20261109210000 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Robo en las alturas</title>
+        <desc>Josh Kovaks lleva diez años como encargado de los pisos más lujosos y más vigilados de todo Nueva York. Nada le pasa desapercibido. Arthur Shaw es un pez gordo de Wall Street que está en arresto domiciliario en el piso más ostentoso del edificio después de ser acusado del robo de dos mil millones de dólares a sus inversores. Y de estos últimos, ¿quién va a sufrir más? El personal de “The Tower”, que le entregó su plan de pensiones. Sólo faltan unos días para que Shaw se salga con la suya. Josh y su gente deciden recurrir a Slide, un delincuente de poca monta, para conseguir lo imposible: robar los 20 millones de dólares que deben estar escondidos en el piso donde Shaw permanece vigilado por un equipo del FBI encabezado por la agente especial Claire Denham.</desc>
+    </programme>
+    <programme start="20261109210000 -0500" stop="20261109230600 -0500" channel="WarnerChannel.us@Colombia">
+        <title>La purga: El año de la elección</title>
+        <desc>Han pasado dos años desde que el ex-sargento de policía Leo Barnes (Frank Grillo) decidió no vengarse del hombre que mató a su hijo. Ahora Barnes dirige al equipo de seguridad que se encarga de proteger a la senadora Charlie Roan (Elizabeth Mitchell), una candidata a la Presidencia que reivindica la supresión de La Purga anual, que consiste en permitir, una noche al año, cualquier actividad criminal, incluído el asesinato. Roan considera que esta práctica perjudica sobre todo a los necesitados y a los pobres.</desc>
+    </programme>
+    <programme start="20261109230600 -0500" stop="20261109235500 -0500" channel="WarnerChannel.us@Colombia">
+        <title>All American</title>
+        <sub-title>Temporada 7, Episodio 13 - Award Tour</sub-title>
+    </programme>
+    <programme start="20261109235500 -0500" stop="20261110000000 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 11 - The Clean Room Infiltration</sub-title>
+    </programme>
+    <programme start="20261110001700 -0500" stop="20261110003900 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 12 - The Space Probe Disintegration</sub-title>
+        <episode-num system="onscreen">S08E12</episode-num>
+        <desc>Wolowitz tries to distract Raj, who is anxiously awaiting data from a space probe he helped launch. Meanwhile, Sheldon and Leonard go dress shopping with Penny and Amy.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110003900 -0500" stop="20261110010100 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 13 - The Anxiety Optimization</sub-title>
+        <episode-num system="onscreen">S08E13</episode-num>
+        <desc>The gang tries to help Sheldon when he becomes stuck in a rut at work by increasing his anxiety level. Howard teases Raj with a new game called "Cinnamon or Emily?"</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110010100 -0500" stop="20261110012400 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 14 - The Troll Manifestation</sub-title>
+        <episode-num system="onscreen">S08E14</episode-num>
+        <desc>After Leonard and Sheldon co-publish a physics paper, they must defend themselves against criticism from an online bully. Also, girls' night finds Penny, Amy and Bernadette confronting embarrassing moments from their past.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110012400 -0500" stop="20261110014600 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 15 - The Comic Book Store Regeneration</sub-title>
+        <episode-num system="onscreen">S08E15</episode-num>
+        <desc>Wolowitz receives some shocking news as everyone prepares for the reopening of Stuart's comic book store. Penny teaches Sheldon how to "let it go," but can't follow her own advice after she learns something infuriating about Amy. Also, Leonard and Raj think they spot Nathan Fillion at a restaurant.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110014600 -0500" stop="20261110020800 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 16 - The Intimacy Acceleration</sub-title>
+        <episode-num system="onscreen">S08E16</episode-num>
+        <desc>As a joke, Sheldon and Penny try an experiment designed to make participants fall in love. Also, Leonard, Amy, Raj and Emily spend the evening trying to escape a room with a "zombie." And, after returning from Mrs. Wolowitz' funeral, Bernadette and Howard run into trouble at the airport.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110020800 -0500" stop="20261110023000 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 4 - The Flavin' and the Mavin'</sub-title>
+        <episode-num system="onscreen">S06E04</episode-num>
+        <desc>Charlie romances Alan's sweet receptionist as Alan anxiously awaits disaster.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110023000 -0500" stop="20261110025300 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 5 - A Jock Strap in Hell</sub-title>
+        <episode-num system="onscreen">S06E05</episode-num>
+        <desc>The guys bump into Jake's former teacher who became a stripper after a fling with Charlie. Charlie tries to help her out by giving her a room and a job, but things spiral out of control.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110025300 -0500" stop="20261110031600 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 6 - It's Always Nazi Week</sub-title>
+        <episode-num system="onscreen">S06E06</episode-num>
+        <desc>When Judith kicks Herb to the curb, Alan comes knocking.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110031600 -0500" stop="20261110033900 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 7 - Best H.O. Money Can Buy</sub-title>
+        <episode-num system="onscreen">S06E07</episode-num>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110033900 -0500" stop="20261110040200 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 8 - Pinocchio's Mouth</sub-title>
+        <episode-num system="onscreen">S06E08</episode-num>
+        <desc>Charlie's new girlfriend asks him to spend the night at her place, while Alan tries to enforce a punishment on Jake.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110040200 -0500" stop="20261110042600 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 9 - The Mooch at the Boo</sub-title>
+        <episode-num system="onscreen">S06E09</episode-num>
+        <desc>Jake disappears with the daughter of Charlie's neighbor, a former NFL player, and Charlie is left to cover his back. Meanwhile, Alan scores a hot date with the help of Charlie's Mercedes.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110042600 -0500" stop="20261110043500 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Hollywood One on One</title>
+        <category>Series</category>
+    </programme>
+    <programme start="20261110043500 -0500" stop="20261110044900 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Hollywood One on One</title>
+        <category>Series</category>
+    </programme>
+    <programme start="20261110044900 -0500" stop="20261110050000 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Hollywood One on One</title>
+        <category>Series</category>
+    </programme>
+    <programme start="20261110050000 -0500" stop="20261110054000 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Empieza la fiesta</title>
+        <category>Series</category>
+    </programme>
+    <programme start="20261110054000 -0500" stop="20261110072000 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Turbo</title>
+        <category>Película</category>
+    </programme>
+    <programme start="20261110072000 -0500" stop="20261110074200 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 17 - The Colonization Application</sub-title>
+        <episode-num system="onscreen">S08E17</episode-num>
+        <desc>Trouble arises when Amy learns Sheldon has applied for a one-way mission to colonize Mars. Also, a trip to the pet store ends in a fight for Sheldon and Amy, Leonard surprises Penny with a very "adult" purchase, and, Raj is caught snooping in Emily's apartment.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110074200 -0500" stop="20261110080500 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 18 - The Leftover Thermalization</sub-title>
+        <episode-num system="onscreen">S08E18</episode-num>
+        <desc>Friction ensues when a magazine fails to mention Leonard in an article about the paper he co-wrote with Sheldon. Also, a blackout at Mrs. Wolowitz's home leads to a final family dinner in her honor.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110080500 -0500" stop="20261110082900 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 19 - The Skywalker Incursion</sub-title>
+        <episode-num system="onscreen">S08E19</episode-num>
+        <desc>When Leonard and Sheldon are invited to speak at UC Berkeley, they take a detour to try to meet an idol. Also, when Bernadette and Howard battle over the fate of his Dr. Who TARDIS, Raj and Amy offer to settle the dispute with a game of ping pong.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110082900 -0500" stop="20261110085100 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 20 - The Fortification Implementation</sub-title>
+        <episode-num system="onscreen">S08E20</episode-num>
+        <desc>When Sheldon and Amy build a blanket fort, they come to major crossroads in their relationship. Also, Wolowitz meets the half-brother he never knew he had, and when Penny is invited to appear on Wil Wheaton's podcast, she and Leonard have a huge, on-air argument.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110085100 -0500" stop="20261110091300 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 21 - The Communication Deterioration</sub-title>
+        <episode-num system="onscreen">S08E21</episode-num>
+        <desc>When Raj is asked to create a message in case a NASA mission discovers alien life, the guys fight over what he should do. Also, Penny is torn between auditioning for a movie or keeping her successful pharmaceutical sales job.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110091300 -0500" stop="20261110093500 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 22 - The Graduation Transmission</sub-title>
+        <episode-num system="onscreen">S08E22</episode-num>
+        <desc>Wolowitz questions his engineering abilities when he and Sheldon can't get a toy drone to fly. Meanwhile, a cancelled flight nearly prevents Leonard from giving the commencement address at his former high school, and Raj pits his parents against each other when his father cuts him off financially.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110093500 -0500" stop="20261110095900 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 10 - He Smelled the Ham, He Got Excited</sub-title>
+        <episode-num system="onscreen">S06E10</episode-num>
+        <desc>Evelyn offers to pay for Jake's college education, leaving Alan to wonder if he ever needs to work again.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110095900 -0500" stop="20261110102400 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 11 - The Devil's Lube</sub-title>
+        <episode-num system="onscreen">S06E11</episode-num>
+        <desc>One of Charlie's old partners in crime dies, leaving Charlie to reevaluate his own reckless lifestyle.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110102400 -0500" stop="20261110104700 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Two and a Half Men</title>
+        <sub-title>Temporada 6, Episodio 12 - Thank God for Scoliosis</sub-title>
+        <episode-num system="onscreen">S06E12</episode-num>
+        <desc>Charlie and Jake fight for the affections of a waitress, while Alan fights sexual tension with his receptionist.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110104700 -0500" stop="20261110111200 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Creo que ofendiste a Don</title>
+        <category>Series</category>
+    </programme>
+    <programme start="20261110111200 -0500" stop="20261110113700 -0500" channel="WarnerChannel.us@Colombia">
+        <title>David Copperfield me drogó</title>
+        <category>Series</category>
+    </programme>
+    <programme start="20261110113700 -0500" stop="20261110120100 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Empezaré con el gato</title>
+        <category>Series</category>
+    </programme>
+    <programme start="20261110120100 -0500" stop="20261110124000 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Cobra Kai</title>
+        <sub-title>Temporada 4, Episodio 3 - Then Learn Fly</sub-title>
+        <episode-num system="onscreen">S04E03</episode-num>
+        <desc>Kenny tries to become a student of Cobra Kai with some encouragement from Robby, while Johnny urges Sam to take a leap of faith – in herself.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110124000 -0500" stop="20261110143400 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Robo en las alturas</title>
+        <category>Movies</category>
+    </programme>
+    <programme start="20261110143400 -0500" stop="20261110162600 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Sin límites</title>
+        <category>Movies</category>
+    </programme>
+    <programme start="20261110162600 -0500" stop="20261110184300 -0500" channel="WarnerChannel.us@Colombia">
+        <title>La gran estafa</title>
+        <category>Movies</category>
+    </programme>
+    <programme start="20261110184300 -0500" stop="20261110210000 -0500" channel="WarnerChannel.us@Colombia">
+        <title>Spider-Man: Un nuevo universo</title>
+        <category>Movies</category>
+    </programme>
+    <programme start="20261110210000 -0500" stop="20261110233500 -0500" channel="WarnerChannel.us@Colombia">
+        <title>El sorprendente Hombre Araña 2: La amenaza de Electro</title>
+        <category>Movies</category>
+    </programme>
+    <programme start="20261110233500 -0500" stop="20261110235800 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 17 - The Colonization Application</sub-title>
+        <episode-num system="onscreen">S08E17</episode-num>
+        <desc>Trouble arises when Amy learns Sheldon has applied for a one-way mission to colonize Mars. Also, a trip to the pet store ends in a fight for Sheldon and Amy, Leonard surprises Penny with a very "adult" purchase, and, Raj is caught snooping in Emily's apartment.</desc>
+        <category>Serie</category>
+    </programme>
+    <programme start="20261110235800 -0500" stop="20261111002000 -0500" channel="WarnerChannel.us@Colombia">
+        <title>The Big Bang Theory</title>
+        <sub-title>Temporada 8, Episodio 18 - The Leftover Thermalization</sub-title>
+        <episode-num system="onscreen">S08E18</episode-num>
+        <desc>Friction ensues when a magazine fails to mention Leonard in an article about the paper he co-wrote with Sheldon. Also, a blackout at Mrs. Wolowitz's home leads to a final family dinner in her honor.</desc>
+        <category>Serie</category>
+    </programme>
 </tv>
