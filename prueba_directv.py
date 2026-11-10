@@ -45,7 +45,18 @@ respuesta = sesion.post(
 
 print("ESTADO:", respuesta.status_code)
 
-datos = respuesta.json()
+print("TAMAÑO:", len(respuesta.content))
+print("CONTENIDO:", repr(respuesta.text[:3000]))
+
+if not respuesta.text.strip():
+    print("DIRECTV DEVOLVIÓ UNA RESPUESTA VACÍA.")
+    raise SystemExit()
+
+try:
+    datos = respuesta.json()
+except ValueError:
+    print("DIRECTV NO DEVOLVIÓ JSON VÁLIDO.")
+    raise SystemExit()
 canales = datos.get("d", [])
 
 if not isinstance(canales, list) or not canales:
