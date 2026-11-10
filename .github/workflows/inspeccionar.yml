@@ -30,8 +30,8 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python generar_epg.py
 
-      - name: Guardar XML actualizado
+      - name: Guardar XML y catálogos JSON
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Actualizar EPG Warner Channel"
-          file_pattern: epg.xml
+          commit_message: "Actualizar EPG y catalogos"
+          file_pattern: epg.xml series.json peliculas.json
