@@ -1,5 +1,7 @@
 
 import requests
+from datetime import datetime
+from collections import Counter
 
 url_pagina = "https://www.directv.com.ec/guia/ChannelDetail.aspx?id=1206&name=WTVHD"
 url_api = "https://www.directv.com.ec/guia/ChannelDetail.aspx/GetProgramming"
@@ -15,9 +17,7 @@ headers = {
     "X-Requested-With": "XMLHttpRequest"
 }
 
-pagina = sesion.get(url_pagina, headers=headers, timeout=30)
-print("PÁGINA:", pagina.status_code)
-print("SESIÓN INICIADA:", bool(sesion.cookies))
+sesion.get(url_pagina, headers=headers, timeout=30)
 
 payload = {
     "filterParameters": {
@@ -43,9 +43,44 @@ respuesta = sesion.post(
     timeout=30
 )
 
-print("ESTADO API:", respuesta.status_code)
-print("TIPO:", respuesta.headers.get("Content-Type"))
-print("TAMAÑO:", len(respuesta.content))
-print("URL FINAL:", respuesta.url)
-print("RESPUESTA:")
-print(repr(respuesta.text[:5000]))
+print("ESTADO:", respuesta.status_code)
+
+datos = respuesta.json()
+canales = datos.get("d", [])
+
+if not isinstance(canales, list) or not canales:
+    print("No se recibieron canales.")
+    raise SystemExit()
+
+programas = canales[0].get("ProgramList", [])
+
+print("CANAL:", canales[0].get("ChannelFullName"))
+print("TOTAL DE PROGRAMAS:", len(programas))
+
+fechas = Counter()
+validos = []
+
+for p in programas:
+    inicio = p.get("startTimeString", "")
+    fin = p.get("endTimeString", "")
+
+    try:
+        fecha_inicio = datetime.strptime(inicio, "%m/%d/%Y %I:%M:%S %p")
+        fecha_fin = datetime.strptime(fin, "%m/%d/%Y %I:%M:%S %p")
+
+        fechas[fecha_inicio.strftime("%d/%m/%Y")] += 1
+        validos.append((fecha_inicio, fecha_fin, p.get("title", "")))
+    except ValueError:
+        continue
+
+print("\nPROGRAMAS POR FECHA:")
+for fecha, cantidad in sorted(fechas.items()):
+    print(fecha, "-", cantidad, "programas")
+
+print("\nPRIMEROS 5 PROGRAMAS:")
+for inicio, fin, titulo in validos[:5]:
+    print(inicio, "-", fin, "|", titulo)
+
+print("\nÚLTIMOS 5 PROGRAMAS:")
+for inicio, fin, titulo in validos[-5:]:
+    print(inicio, "-", fin, "|", titulo)
