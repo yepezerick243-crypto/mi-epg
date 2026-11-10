@@ -5,7 +5,7 @@ import json
 import requests
 import xml.etree.ElementTree as ET
 
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 from functools import lru_cache
 
@@ -17,6 +17,8 @@ TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 
 TVMAZE_URL = "https://api.tvmaze.com"
 TMDB_URL = "https://api.themoviedb.org/3"
+
+ARCHIVO_XML = "epg.xml"
 
 SESION = requests.Session()
 SESION.headers.update({"User-Agent": "Mozilla/5.0"})
@@ -88,8 +90,15 @@ def convertir_fecha(milisegundos):
     return fecha.strftime("%Y%m%d%H%M%S %z")
 
 
-def obtener_texto(programa, posibles_campos):
-    for campo in posibles_campos:
+def fecha_xml_a_datetime(fecha):
+    return datetime.strptime(
+        fecha,
+        "%Y%m%d%H%M%S %z"
+    ).astimezone(ZONA)
+
+
+def obtener_texto(programa, campos):
+    for campo in campos:
         valor = programa.get(campo)
 
         if isinstance(valor, str) and valor.strip():
@@ -110,13 +119,14 @@ def buscar_tvmaze(nombre_serie):
             timeout=15
         )
         respuesta.raise_for_status()
+
         resultados = respuesta.json()
 
         if resultados:
             return resultados[0]["show"]
 
     except Exception as error:
-        print("TVmaze:", error)
+        print("Error TVmaze:", error)
 
     return None
 
@@ -139,19 +149,19 @@ def buscar_tmdb(nombre, tipo):
             timeout=15
         )
         respuesta.raise_for_status()
+
         resultados = respuesta.json().get("results", [])
 
         if resultados:
             return resultados[0]
 
     except Exception as error:
-        print("TMDb:", error)
+        print("Error TMDb:", error)
 
     return None
 
 
 def enriquecer_programa(elemento, programa):
-    # INTV puede proporcionar el nombre de la serie o película
     serie = obtener_texto(
         programa,
         ["series", "show", "program", "seriesTitle"]
@@ -167,45 +177,140 @@ def enriquecer_programa(elemento, programa):
         ["description", "synopsis", "overview"]
     )
 
-    # TVmaze: buscar la serie cuando INTV identifica su nombre
+    # TVmaze: información de series
     if serie:
         resultado = buscar_tvmaze(serie)
 
-        if resultado:
-            if not sinopsis:
-                sinopsis = resultado.get("summary") or ""
+        if resultado and not sinopsis:
+            sinopsis = resultado.get("summary") or ""
 
-            elemento.set(
-                "tvmaze-id",
-                str(resultado.get("id", ""))
-            )
-
-    # TMDb: buscar películas o series cuando se conoce su tipo
-    if "movie" in tipo or "pelicula" in tipo or "película" in tipo:
+    # TMDb: información de películas o series
+    if (
+        "movie" in tipo
+        or "pelicula" in tipo
+        or "película" in tipo
+    ):
         resultado = buscar_tmdb(
             programa.get("title", ""),
             "movie"
         )
-    elif "series" in tipo or "serie" in tipo or serie:
+
+    elif (
+        "series" in tipo
+        or "serie" in tipo
+        or serie
+    ):
         resultado = buscar_tmdb(
             serie or programa.get("title", ""),
             "tv"
         )
+
     else:
         resultado = None
 
-    if resultado:
-        if not sinopsis:
-            sinopsis = resultado.get("overview", "")
-
-        elemento.set(
-            "tmdb-id",
-            str(resultado.get("id", ""))
-        )
+    if resultado and not sinopsis:
+        sinopsis = resultado.get("overview", "")
 
     if sinopsis:
-        descripcion = ET.SubElement(elemento, "desc", {"lang": "es"})
-        descripcion.text = re.sub(r"<[^>]+>", "", sinopsis).strip()
+        sinopsis = re.sub(
+            r"<[^>]+>",
+            "",
+            sinopsis
+        ).strip()
+
+        descripcion = ET.SubElement(
+            elemento,
+            "desc",
+            {"lang": "es"}
+        )
+
+        descripcion.text = sinopsis
+
+
+def cargar_programas_anterior():
+    programas = {}
+
+    if not os.path.exists(ARCHIVO_XML):
+        print("No existe un XML anterior. Se creará uno nuevo.")
+        return programas
+
+    try:
+        arbol = ET.parse(ARCHIVO_XML)
+        raiz = arbol.getroot()
+
+        limite = datetime.now(ZONA) - timedelta(hours=24)
+
+        for elemento in raiz.findall("programme"):
+            canal = elemento.get("channel")
+            inicio = elemento.get("start")
+            fin = elemento.get("stop")
+
+            if not canal or not inicio or not fin:
+                continue
+
+            try:
+                fecha_fin = fecha_xml_a_datetime(fin)
+
+                # Conservar programas que no hayan terminado
+                # hace más de 24 horas.
+                if fecha_fin < limite:
+                    continue
+
+                clave = (canal, inicio)
+                programas[clave] = elemento
+
+            except (ValueError, TypeError):
+                continue
+
+        print(
+            "Programas recuperados del XML anterior:",
+            len(programas)
+        )
+
+    except ET.ParseError:
+        print("El XML anterior no se pudo leer. Se creará uno nuevo.")
+
+    return programas
+
+
+def crear_programa(programa):
+    titulo = obtener_texto(programa, ["title"])
+
+    inicio = programa.get("start")
+    fin = programa.get("end")
+
+    if not titulo or not inicio or not fin:
+        return None
+
+    try:
+        inicio_num = int(inicio)
+        fin_num = int(fin)
+
+        if fin_num <= inicio_num:
+            return None
+
+        elemento = ET.Element(
+            "programme",
+            {
+                "start": convertir_fecha(inicio_num),
+                "stop": convertir_fecha(fin_num),
+                "channel": CANAL_ID
+            }
+        )
+
+        ET.SubElement(
+            elemento,
+            "title",
+            {"lang": "es"}
+        ).text = titulo
+
+        enriquecer_programa(elemento, programa)
+
+        return elemento
+
+    except (ValueError, TypeError, OSError) as error:
+        print("Error creando programa:", titulo, error)
+        return None
 
 
 def generar_xml():
@@ -213,26 +318,22 @@ def generar_xml():
     print("GENERADOR EPG WARNER CHANNEL")
     print("=" * 55)
 
-    programas = obtener_programacion()
+    programas_intv = obtener_programacion()
 
-    print("Registros recibidos de INTV:", len(programas))
-
-    raiz = ET.Element(
-        "tv",
-        {"generator-info-name": "EPG Warner Channel INTV"}
+    print(
+        "Registros recibidos de INTV:",
+        len(programas_intv)
     )
 
-    canal = ET.SubElement(raiz, "channel", {"id": CANAL_ID})
-    ET.SubElement(
-        canal,
-        "display-name",
-        {"lang": "es"}
-    ).text = "Warner Channel"
+    # Recuperar los programas de ejecuciones anteriores
+    programas_finales = cargar_programas_anterior()
 
-    validos = 0
+    nuevos = 0
+    actualizados = 0
     descartados = 0
 
-    for programa in programas:
+    # Incorporar los datos nuevos de INTV
+    for programa in programas_intv:
         titulo = obtener_texto(programa, ["title"])
 
         inicio = programa.get("start")
@@ -243,52 +344,80 @@ def generar_xml():
             continue
 
         try:
-            inicio_num = int(inicio)
-            fin_num = int(fin)
-
-            if fin_num <= inicio_num:
+            if int(fin) <= int(inicio):
                 descartados += 1
                 continue
-
-            elemento = ET.SubElement(
-                raiz,
-                "programme",
-                {
-                    "start": convertir_fecha(inicio_num),
-                    "stop": convertir_fecha(fin_num),
-                    "channel": CANAL_ID
-                }
-            )
-
-            ET.SubElement(
-                elemento,
-                "title",
-                {"lang": "es"}
-            ).text = titulo
-
-            enriquecer_programa(elemento, programa)
-
-            validos += 1
-
-        except (ValueError, TypeError, OSError) as error:
-            print("Registro descartado:", titulo, error)
+        except (ValueError, TypeError):
             descartados += 1
+            continue
+
+        elemento = crear_programa(programa)
+
+        if elemento is None:
+            descartados += 1
+            continue
+
+        clave = (
+            CANAL_ID,
+            elemento.get("start")
+        )
+
+        if clave in programas_finales:
+            actualizados += 1
+        else:
+            nuevos += 1
+
+        # El dato nuevo reemplaza el anterior si coincide
+        # el canal y la hora de inicio.
+        programas_finales[clave] = elemento
+
+    # Crear el XMLTV
+    raiz = ET.Element(
+        "tv",
+        {"generator-info-name": "EPG Warner Channel INTV"}
+    )
+
+    canal = ET.SubElement(
+        raiz,
+        "channel",
+        {"id": CANAL_ID}
+    )
+
+    ET.SubElement(
+        canal,
+        "display-name",
+        {"lang": "es"}
+    ).text = "Warner Channel"
+
+    # Orden cronológico
+    lista_ordenada = sorted(
+        programas_finales.values(),
+        key=lambda p: fecha_xml_a_datetime(p.get("start"))
+    )
+
+    for programa in lista_ordenada:
+        raiz.append(programa)
 
     ET.indent(raiz, space="  ")
 
     ET.ElementTree(raiz).write(
-        "epg.xml",
+        ARCHIVO_XML,
         encoding="UTF-8",
         xml_declaration=True
     )
 
     print("---------------------------------------")
-    print("Programas incluidos:", validos)
+    print("Programas nuevos:", nuevos)
+    print("Programas actualizados:", actualizados)
     print("Registros descartados:", descartados)
-    print("Archivo generado: epg.xml")
+    print("Total conservado:", len(lista_ordenada))
+    print("Archivo generado:", ARCHIVO_XML)
     print("Zona horaria: America/Guayaquil")
     print("TVmaze integrado.")
-    print("TMDb:", "Configurado" if TMDB_API_KEY else "Falta configurar la clave")
+    print(
+        "TMDb:",
+        "Configurado" if TMDB_API_KEY else "Sin clave"
+    )
     print("---------------------------------------")
 
 
