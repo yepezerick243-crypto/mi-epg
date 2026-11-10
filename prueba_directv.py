@@ -21,7 +21,7 @@ sesion.get(url_pagina, headers=headers, timeout=30)
 
 payload = {
     "filterParameters": {
-        "day": 10,
+        "day": 11,
         "time": 0,
         "minute": 0,
         "month": 11,
