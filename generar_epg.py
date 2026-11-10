@@ -152,6 +152,28 @@ def texto_xml(elemento, nombre, texto):
 # ============================================================
 
 
+def iniciar_sesion_directv():
+    global sesion
+
+    sesion = requests.Session()
+
+    pagina = sesion.get(
+        URL_PAGINA,
+        headers=HEADERS_DIRECTV,
+        timeout=30
+    )
+
+    pagina.raise_for_status()
+
+    if "captcha.perfdrive.com" in pagina.text.lower():
+        raise RuntimeError(
+            "DIRECTV bloqueó la sesión con Radware CAPTCHA."
+        )
+
+    print("Sesión DIRECTV iniciada correctamente.")
+    print("Cookies:", list(sesion.cookies.keys()))
+
+
 def consultar_directv(fecha):
     global sesion
 
@@ -201,6 +223,10 @@ def consultar_directv(fecha):
             )
 
             respuesta.raise_for_status()
+            if "captcha.perfdrive.com" in respuesta.text.lower():
+    raise RuntimeError(
+        "DIRECTV bloqueó la consulta con Radware CAPTCHA."
+    )
 
             if not respuesta.text.strip():
                 raise ValueError("DIRECTV devolvió una respuesta vacía.")
@@ -925,6 +951,7 @@ def generar_xml():
     print("=" * 55)
 
     # DIRECTV
+iniciar_sesion_directv()
     todos_programas = []
 
     # Hoy y los próximos 6 días.
