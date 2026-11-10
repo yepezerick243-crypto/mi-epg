@@ -1,6 +1,5 @@
 
 import requests
-import json
 
 url_pagina = "https://www.directv.com.ec/guia/ChannelDetail.aspx?id=1206&name=WTVHD"
 url_api = "https://www.directv.com.ec/guia/ChannelDetail.aspx/GetProgramming"
@@ -16,12 +15,10 @@ headers = {
     "X-Requested-With": "XMLHttpRequest"
 }
 
-# Primero iniciar sesión visitando la página
 pagina = sesion.get(url_pagina, headers=headers, timeout=30)
 print("PÁGINA:", pagina.status_code)
-print("COOKIES:", list(sesion.cookies.keys()))
+print("SESIÓN INICIADA:", bool(sesion.cookies))
 
-# Consultar la programación del 10 de noviembre de 2026
 payload = {
     "filterParameters": {
         "day": 10,
@@ -47,22 +44,8 @@ respuesta = sesion.post(
 )
 
 print("ESTADO API:", respuesta.status_code)
-
-datos = respuesta.json()
-print("RESPUESTA:", json.dumps(datos, ensure_ascii=False)[:15000])
-
-canales = datos.get("d", [])
-
-if isinstance(canales, list) and canales:
-    for canal in canales:
-        print("\nCANAL:", canal.get("ChannelFullName"))
-        for p in canal.get("ProgramList", []):
-            print(
-                p.get("startTimeString"),
-                "-",
-                p.get("endTimeString"),
-                "|",
-                p.get("title")
-            )
-else:
-    print("DIRECTV NO DEVOLVIÓ LA PROGRAMACIÓN.")
+print("TIPO:", respuesta.headers.get("Content-Type"))
+print("TAMAÑO:", len(respuesta.content))
+print("URL FINAL:", respuesta.url)
+print("RESPUESTA:")
+print(repr(respuesta.text[:5000]))
