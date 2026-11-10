@@ -27,15 +27,23 @@ TMDB_URL = "https://api.themoviedb.org/3"
 
 ARCHIVO_XML = "epg.xml"
 
-# Series cuyos episodios aparecen en la lista de INTV.
+# Idiomas utilizados para buscar títulos y episodios.
+IDIOMAS_BUSQUEDA = [
+    "es-ES",
+    "en-US",
+    "pt-BR",
+    "fr-FR",
+    "de-DE",
+    "it-IT",
+]
+
+# Series cuyos episodios aparecen en la programación de INTV.
 SERIES_CONOCIDAS = [
     "The Big Bang Theory",
     "Two and a Half Men",
     "Cobra Kai",
 ]
 
-# Nombres en español como respaldo si TMDb no devuelve
-# una traducción española para alguna serie.
 NOMBRES_SERIES_ES = {
     "the big bang theory": "La teoría del Big Bang",
     "two and a half men": "Dos hombres y medio",
@@ -80,6 +88,17 @@ def limpiar_texto(texto):
 
     texto = re.sub(r"<[^>]+>", "", str(texto))
     return texto.strip()
+
+
+def solicitar_json(url, params=None, timeout=25):
+    respuesta = SESION.get(
+        url,
+        params=params,
+        timeout=timeout
+    )
+
+    respuesta.raise_for_status()
+    return respuesta.json()
 
 
 # =========================================================
@@ -201,15 +220,11 @@ def fecha_xml_a_datetime(fecha):
 @lru_cache(maxsize=100)
 def buscar_serie_tvmaze(nombre):
     try:
-        respuesta = SESION.get(
+        resultados = solicitar_json(
             f"{TVMAZE_URL}/search/shows",
-            params={"q": nombre},
-            timeout=20
+            params={"q": nombre}
         )
 
-        respuesta.raise_for_status()
-
-        resultados = respuesta.json()
         nombre_buscado = normalizar(nombre)
 
         for resultado in resultados:
@@ -227,17 +242,185 @@ def buscar_serie_tvmaze(nombre):
 @lru_cache(maxsize=100)
 def obtener_episodios_tvmaze(show_id):
     try:
-        respuesta = SESION.get(
+        return solicitar_json(
             f"{TVMAZE_URL}/shows/{show_id}/episodes",
-            timeout=30
+            timeout=40
         )
-
-        respuesta.raise_for_status()
-        return respuesta.json()
 
     except Exception as error:
         print("Error obteniendo episodios TVmaze:", error)
         return []
+
+
+@lru_cache(maxsize=100)
+def obtener_aliases_tvmaze(show_id):
+    aliases = set()
+
+    try:
+        resultados = solicitar_json(
+            f"{TVMAZE_URL}/shows/{show_id}/akas"
+        )
+
+        for resultado in resultados:
+            nombre = resultado.get("name", "")
+
+            if nombre:
+                aliases.add(normalizar(nombre))
+
+    except Exception as error:
+        print("No se pudieron obtener alias de TVmaze:", error)
+
+    return aliases
+
+
+# =========================================================
+# TMDb: IDENTIFICAR SERIES
+# =========================================================
+
+@lru_cache(maxsize=100)
+def buscar_serie_tmdb(nombre_original):
+    if not TMDB_API_KEY:
+        return None
+
+    for idioma in IDIOMAS_BUSQUEDA:
+        try:
+            resultados = solicitar_json(
+                f"{TMDB_URL}/search/tv",
+                params={
+                    "api_key": TMDB_API_KEY,
+                    "query": nombre_original,
+                    "language": idioma,
+                    "include_adult": "false"
+                }
+            ).get("results", [])
+
+            buscado = normalizar(nombre_original)
+
+            for resultado in resultados:
+                nombres = [
+                    resultado.get("name", ""),
+                    resultado.get("original_name", "")
+                ]
+
+                if any(
+                    normalizar(nombre) == buscado
+                    for nombre in nombres if nombre
+                ):
+                    return resultado
+
+        except Exception as error:
+            print(
+                f"Error buscando serie en TMDb ({idioma}):",
+                error
+            )
+
+    return None
+
+
+@lru_cache(maxsize=100)
+def obtener_nombre_serie_es(nombre_original):
+    if not TMDB_API_KEY:
+        return NOMBRES_SERIES_ES.get(
+            normalizar(nombre_original),
+            ""
+        )
+
+    serie = buscar_serie_tmdb(nombre_original)
+
+    if serie:
+        try:
+            detalles = solicitar_json(
+                f"{TMDB_URL}/tv/{serie['id']}",
+                params={
+                    "api_key": TMDB_API_KEY,
+                    "language": "es-ES"
+                }
+            )
+
+            nombre_es = detalles.get("name", "").strip()
+
+            if nombre_es:
+                return nombre_es
+
+        except Exception as error:
+            print("Error obteniendo nombre español de serie:", error)
+
+    return NOMBRES_SERIES_ES.get(
+        normalizar(nombre_original),
+        ""
+    )
+
+
+# =========================================================
+# TMDb: EPISODIOS EN VARIOS IDIOMAS
+# =========================================================
+
+@lru_cache(maxsize=200)
+def obtener_detalles_serie_tmdb(tmdb_id):
+    try:
+        return solicitar_json(
+            f"{TMDB_URL}/tv/{tmdb_id}",
+            params={
+                "api_key": TMDB_API_KEY,
+                "language": "en-US"
+            }
+        )
+
+    except Exception as error:
+        print("Error obteniendo temporadas de TMDb:", error)
+        return {}
+
+
+@lru_cache(maxsize=500)
+def obtener_episodios_temporada_tmdb(
+    tmdb_id,
+    temporada,
+    idioma
+):
+    try:
+        datos = solicitar_json(
+            f"{TMDB_URL}/tv/{tmdb_id}/season/{temporada}",
+            params={
+                "api_key": TMDB_API_KEY,
+                "language": idioma
+            },
+            timeout=30
+        )
+
+        return datos.get("episodes", [])
+
+    except Exception as error:
+        print(
+            f"Error en temporada {temporada}, idioma {idioma}:",
+            error
+        )
+
+        return []
+
+
+def agregar_coincidencia(catalogo, titulo, informacion):
+    clave = normalizar(titulo)
+
+    if not clave:
+        return
+
+    existente = catalogo.get(clave)
+
+    if existente is None and clave in catalogo:
+        return
+
+    if existente is None:
+        catalogo[clave] = informacion
+        return
+
+    misma_coincidencia = (
+        existente["serie"] == informacion["serie"]
+        and existente["temporada"] == informacion["temporada"]
+        and existente["numero"] == informacion["numero"]
+    )
+
+    if not misma_coincidencia:
+        catalogo[clave] = None
 
 
 def construir_catalogo_series():
@@ -252,103 +435,213 @@ def construir_catalogo_series():
             print("Serie no encontrada en TVmaze:", nombre)
             continue
 
-        episodios = obtener_episodios_tvmaze(show["id"])
+        show_id = show["id"]
+        episodios_tvmaze = obtener_episodios_tvmaze(show_id)
 
-        cantidad = 0
+        tmdb_serie = buscar_serie_tmdb(nombre)
+        tmdb_id = tmdb_serie.get("id") if tmdb_serie else None
 
-        for episodio in episodios:
-            titulo = episodio.get("name")
+        episodios_por_numero = {}
+
+        # Primero cargar los episodios originales de TVmaze.
+        for episodio in episodios_tvmaze:
             temporada = episodio.get("season")
             numero = episodio.get("number")
+            titulo = episodio.get("name")
 
-            if not titulo or temporada is None or numero is None:
+            if (
+                temporada is None
+                or numero is None
+                or not titulo
+            ):
                 continue
 
-            clave = normalizar(titulo)
+            clave = (temporada, numero)
 
-            if not clave:
-                continue
-
-            # Si hay dos coincidencias con el mismo título,
-            # no se sobrescribe silenciosamente la primera.
-            if clave in catalogo:
-                catalogo[clave] = None
-                continue
-
-            catalogo[clave] = {
+            episodios_por_numero[clave] = {
                 "serie": nombre,
                 "episodio": titulo,
                 "temporada": temporada,
                 "numero": numero,
-                "show_id": show["id"],
+                "show_id": show_id,
             }
 
-            cantidad += 1
+            agregar_coincidencia(
+                catalogo,
+                titulo,
+                episodios_por_numero[clave]
+            )
 
-        print(f"{nombre}: {cantidad} episodios consultados")
+        cantidad_tvmaze = len(episodios_por_numero)
+
+        # Después incorporar los nombres traducidos de TMDb.
+        if tmdb_id:
+            detalles = obtener_detalles_serie_tmdb(tmdb_id)
+
+            temporadas = detalles.get("seasons", [])
+
+            for temporada_info in temporadas:
+                numero_temporada = temporada_info.get(
+                    "season_number"
+                )
+
+                if numero_temporada is None:
+                    continue
+
+                # Consultar los nombres de los episodios
+                # en los idiomas disponibles.
+                for idioma in IDIOMAS_BUSQUEDA:
+                    episodios_traducidos = (
+                        obtener_episodios_temporada_tmdb(
+                            tmdb_id,
+                            numero_temporada,
+                            idioma
+                        )
+                    )
+
+                    for episodio_tmdb in episodios_traducidos:
+                        numero = episodio_tmdb.get(
+                            "episode_number"
+                        )
+
+                        titulo = episodio_tmdb.get("name", "")
+
+                        if numero is None or not titulo:
+                            continue
+
+                        clave = (numero_temporada, numero)
+
+                        if clave not in episodios_por_numero:
+                            continue
+
+                        informacion = episodios_por_numero[clave]
+
+                        agregar_coincidencia(
+                            catalogo,
+                            titulo,
+                            informacion
+                        )
+
+        print(
+            f"{nombre}: {cantidad_tvmaze} episodios de TVmaze"
+            + (
+                " y traducciones de TMDb"
+                if tmdb_id else " (sin identificación en TMDb)"
+            )
+        )
+
+        # Obtener alias del nombre de la serie.
+        aliases = obtener_aliases_tvmaze(show_id)
+
+        if aliases:
+            print(
+                f"Alias adicionales encontrados para {nombre}:",
+                len(aliases)
+            )
 
     return catalogo
 
 
-@lru_cache(maxsize=100)
-def obtener_nombre_serie_es(nombre_ingles):
+# =========================================================
+# TMDb: PELICULAS Y TITULOS ALTERNATIVOS
+# =========================================================
+
+@lru_cache(maxsize=500)
+def obtener_titulos_alternativos_pelicula(tmdb_id):
+    titulos = set()
+
     if not TMDB_API_KEY:
-        return NOMBRES_SERIES_ES.get(normalizar(nombre_ingles), "")
+        return titulos
 
     try:
-        respuesta = SESION.get(
-            f"{TMDB_URL}/search/tv",
-            params={
-                "api_key": TMDB_API_KEY,
-                "query": nombre_ingles,
-                "language": "es-ES"
-            },
-            timeout=20
+        datos = solicitar_json(
+            f"{TMDB_URL}/movie/{tmdb_id}/alternative_titles",
+            params={"api_key": TMDB_API_KEY}
         )
 
-        respuesta.raise_for_status()
+        for elemento in datos.get("titles", []):
+            titulo = elemento.get("title", "")
 
-        resultados = respuesta.json().get("results", [])
-        nombre_buscado = normalizar(nombre_ingles)
-
-        for resultado in resultados:
-            if (
-                normalizar(resultado.get("original_name"))
-                == nombre_buscado
-                or normalizar(resultado.get("name"))
-                == nombre_buscado
-            ):
-                nombre_es = resultado.get("name", "").strip()
-
-                if nombre_es:
-                    return nombre_es
+            if titulo:
+                titulos.add(normalizar(titulo))
 
     except Exception as error:
-        print("Error buscando nombre español de serie:", error)
+        print("Error obteniendo títulos alternativos:", error)
 
-    return NOMBRES_SERIES_ES.get(normalizar(nombre_ingles), "")
+    return titulos
 
 
-# =========================================================
-# TMDb: PELICULAS Y SINOPSIS EN ESPAÑOL
-# =========================================================
+@lru_cache(maxsize=500)
+def buscar_pelicula_tmdb(titulo):
+    if not TMDB_API_KEY or not titulo:
+        return None
+
+    titulo_buscado = normalizar(titulo)
+    candidatos = {}
+
+    # Buscar el título en varios idiomas.
+    for idioma in IDIOMAS_BUSQUEDA:
+        try:
+            resultados = solicitar_json(
+                f"{TMDB_URL}/search/movie",
+                params={
+                    "api_key": TMDB_API_KEY,
+                    "query": titulo,
+                    "language": idioma,
+                    "include_adult": "false"
+                }
+            ).get("results", [])
+
+            for resultado in resultados:
+                tmdb_id = resultado.get("id")
+
+                if not tmdb_id:
+                    continue
+
+                candidatos[tmdb_id] = resultado
+
+                posibles_titulos = [
+                    resultado.get("title", ""),
+                    resultado.get("original_title", "")
+                ]
+
+                if any(
+                    normalizar(nombre) == titulo_buscado
+                    for nombre in posibles_titulos
+                    if nombre
+                ):
+                    return resultado
+
+        except Exception as error:
+            print(
+                f"Error buscando película en TMDb ({idioma}):",
+                error
+            )
+
+    # Si no hubo coincidencia directa, revisar títulos alternativos.
+    for tmdb_id, resultado in candidatos.items():
+        alternativos = obtener_titulos_alternativos_pelicula(
+            tmdb_id
+        )
+
+        if titulo_buscado in alternativos:
+            return resultado
+
+    return None
+
 
 def obtener_traduccion_es(tipo, tmdb_id):
     if not TMDB_API_KEY:
         return {}
 
     try:
-        respuesta = SESION.get(
+        datos = solicitar_json(
             f"{TMDB_URL}/{tipo}/{tmdb_id}/translations",
-            params={"api_key": TMDB_API_KEY},
-            timeout=20
+            params={"api_key": TMDB_API_KEY}
         )
 
-        respuesta.raise_for_status()
+        traducciones = datos.get("translations", [])
 
-        traducciones = respuesta.json().get("translations", [])
-
-        # Preferir español de España y después español de México.
         prioridades = ["ES", "MX"]
 
         for pais in prioridades:
@@ -369,47 +662,6 @@ def obtener_traduccion_es(tipo, tmdb_id):
     return {}
 
 
-@lru_cache(maxsize=300)
-def buscar_pelicula_tmdb(titulo):
-    if not TMDB_API_KEY or not titulo:
-        return None
-
-    try:
-        respuesta = SESION.get(
-            f"{TMDB_URL}/search/movie",
-            params={
-                "api_key": TMDB_API_KEY,
-                "query": titulo,
-                "language": "es-ES",
-                "include_adult": "false"
-            },
-            timeout=20
-        )
-
-        respuesta.raise_for_status()
-
-        resultados = respuesta.json().get("results", [])
-        titulo_buscado = normalizar(titulo)
-
-        for resultado in resultados:
-            posibles_titulos = [
-                resultado.get("title", ""),
-                resultado.get("original_title", "")
-            ]
-
-            if any(
-                normalizar(nombre) == titulo_buscado
-                for nombre in posibles_titulos
-                if nombre
-            ):
-                return resultado
-
-    except Exception as error:
-        print("Error buscando película en TMDb:", error)
-
-    return None
-
-
 def obtener_datos_pelicula(titulo):
     resultado = buscar_pelicula_tmdb(titulo)
 
@@ -424,21 +676,18 @@ def obtener_datos_pelicula(titulo):
     traduccion = obtener_traduccion_es("movie", tmdb_id)
 
     titulo_es = traduccion.get("title", "").strip()
-    sinopsis_es = limpiar_texto(traduccion.get("overview", ""))
+    sinopsis_es = limpiar_texto(
+        traduccion.get("overview", "")
+    )
 
-    # Consultar también los detalles en español.
     try:
-        respuesta = SESION.get(
+        detalles = solicitar_json(
             f"{TMDB_URL}/movie/{tmdb_id}",
             params={
                 "api_key": TMDB_API_KEY,
                 "language": "es-ES"
-            },
-            timeout=20
+            }
         )
-
-        respuesta.raise_for_status()
-        detalles = respuesta.json()
 
         if not titulo_es:
             titulo_es = detalles.get("title", "").strip()
@@ -451,10 +700,9 @@ def obtener_datos_pelicula(titulo):
     except Exception as error:
         print("Error obteniendo detalles de película:", error)
 
-    # Si TMDb no devuelve un título localizado, conservar
-    # el título que proporcionó INTV.
+    # No mostrar un título inglés como si fuera español.
     if not titulo_es:
-        titulo_es = titulo
+        return None
 
     return {
         "id": tmdb_id,
@@ -506,10 +754,7 @@ def crear_programa(programa, catalogo_series):
 
         clave = normalizar(titulo_intv)
 
-        # -------------------------------------------------
-        # PRIMERO: buscar coincidencia exacta de episodio
-        # -------------------------------------------------
-
+        # PRIMERO: buscar episodio en todos los idiomas.
         episodio = catalogo_series.get(clave)
 
         if episodio:
@@ -518,7 +763,10 @@ def crear_programa(programa, catalogo_series):
             )
 
             if not nombre_serie_es:
-                nombre_serie_es = episodio["serie"]
+                nombre_serie_es = NOMBRES_SERIES_ES.get(
+                    normalizar(episodio["serie"]),
+                    episodio["serie"]
+                )
 
             agregar_texto(
                 elemento,
@@ -534,23 +782,19 @@ def crear_programa(programa, catalogo_series):
                 "en"
             )
 
-            numero_temporada = episodio["temporada"]
-            numero_episodio = episodio["numero"]
-
             agregar_texto(
                 elemento,
                 "episode-num",
-                f"Temporada {numero_temporada} "
-                f"Episodio {numero_episodio}",
+                (
+                    f"Temporada {episodio['temporada']} "
+                    f"Episodio {episodio['numero']}"
+                ),
                 None
             )
 
             return elemento
 
-        # -------------------------------------------------
-        # SEGUNDO: comprobar si es una película
-        # -------------------------------------------------
-
+        # SEGUNDO: buscar película en varios idiomas.
         pelicula = obtener_datos_pelicula(titulo_intv)
 
         if pelicula:
@@ -571,10 +815,7 @@ def crear_programa(programa, catalogo_series):
 
             return elemento
 
-        # -------------------------------------------------
-        # TERCERO: no inventar coincidencias
-        # -------------------------------------------------
-
+        # TERCERO: conservar título sin inventar información.
         agregar_texto(
             elemento,
             "title",
@@ -648,7 +889,7 @@ def cargar_programas_anterior():
 
 def generar_xml():
     print("=" * 55)
-    print("GENERADOR EPG WARNER CHANNEL")
+    print("GENERADOR EPG WARNER CHANNEL MULTIIDIOMA")
     print("=" * 55)
 
     programas_intv = obtener_programacion()
@@ -662,7 +903,10 @@ def generar_xml():
 
     print(
         "Episodios identificables:",
-        sum(1 for valor in catalogo_series.values() if valor)
+        sum(
+            1 for valor in catalogo_series.values()
+            if valor
+        )
     )
 
     programas_finales = cargar_programas_anterior()
@@ -729,11 +973,10 @@ def generar_xml():
         xml_declaration=True
     )
 
-    # Reemplazo seguro: el XML anterior solo se sustituye
-    # cuando el nuevo archivo se ha escrito correctamente.
     os.replace(archivo_temporal, ARCHIVO_XML)
 
     print("---------------------------------------")
+    print("Idiomas de búsqueda:", ", ".join(IDIOMAS_BUSQUEDA))
     print("Programas nuevos:", nuevos)
     print("Programas actualizados:", actualizados)
     print("Registros descartados:", descartados)
