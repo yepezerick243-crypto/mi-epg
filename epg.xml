@@ -1,0 +1,639 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tv generator-info-name="EPG Warner Channel INTV">
+  <channel id="WarnerChannel.us@Colombia">
+    <display-name lang="es">Warner Channel</display-name>
+  </channel>
+  <programme start="20261104100900 -0500" stop="20261104103100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Discovery Dissipation</title>
+  </programme>
+  <programme start="20261104103100 -0500" stop="20261104105500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">I Merely Slept With a Commie</title>
+  </programme>
+  <programme start="20261104105500 -0500" stop="20261104111900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">It Never Rains in Hooterville</title>
+  </programme>
+  <programme start="20261104111900 -0500" stop="20261104114200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Smooth as a Ken Doll</title>
+  </programme>
+  <programme start="20261104114200 -0500" stop="20261104120500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Aunt Myra Doesn't Pee a Lot</title>
+  </programme>
+  <programme start="20261104120500 -0500" stop="20261104122900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Tucked, Taped and Gorgeous</title>
+  </programme>
+  <programme start="20261104122900 -0500" stop="20261104125300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Mr. McGlue's Feedbag</title>
+  </programme>
+  <programme start="20261104125300 -0500" stop="20261104132500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Feel the Night</title>
+  </programme>
+  <programme start="20261104132500 -0500" stop="20261104145500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El gato con botas</title>
+  </programme>
+  <programme start="20261104145500 -0500" stop="20261104165200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Super agente 86</title>
+  </programme>
+  <programme start="20261104165200 -0500" stop="20261104183600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hotel Transilvania 3: Unas vacaciones monstruosas</title>
+  </programme>
+  <programme start="20261104183600 -0500" stop="20261104210300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El sorprendente Hombre Araña</title>
+  </programme>
+  <programme start="20261104210300 -0500" stop="20261104231400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Mundo Jurásico</title>
+  </programme>
+  <programme start="20261104231400 -0500" stop="20261104233600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Workplace Proximity</title>
+  </programme>
+  <programme start="20261104233600 -0500" stop="20261104235800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Romance Resonance</title>
+  </programme>
+  <programme start="20261104235800 -0500" stop="20261104235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Proton Displacement</title>
+  </programme>
+  <programme start="20261105000000 -0500" stop="20261105001900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Proton Displacement</title>
+  </programme>
+  <programme start="20261105001900 -0500" stop="20261105004000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Itchy Brain Simulation</title>
+  </programme>
+  <programme start="20261105004000 -0500" stop="20261105010100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Thanksgiving Decoupling</title>
+  </programme>
+  <programme start="20261105010100 -0500" stop="20261105012200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Discovery Dissipation</title>
+  </programme>
+  <programme start="20261105012200 -0500" stop="20261105014400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">I Merely Slept With a Commie</title>
+  </programme>
+  <programme start="20261105014400 -0500" stop="20261105020700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">It Never Rains in Hooterville</title>
+  </programme>
+  <programme start="20261105020700 -0500" stop="20261105022800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Smooth as a Ken Doll</title>
+  </programme>
+  <programme start="20261105022800 -0500" stop="20261105025000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Aunt Myra Doesn't Pee a Lot</title>
+  </programme>
+  <programme start="20261105025000 -0500" stop="20261105031300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Tucked, Taped and Gorgeous</title>
+  </programme>
+  <programme start="20261105031300 -0500" stop="20261105033600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Mr. McGlue's Feedbag</title>
+  </programme>
+  <programme start="20261105033600 -0500" stop="20261105042100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Passin' Me By</title>
+  </programme>
+  <programme start="20261105042100 -0500" stop="20261105055900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Miyagi-Do</title>
+  </programme>
+  <programme start="20261105055900 -0500" stop="20261105072900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hotel Transilvania 3: Unas vacaciones monstruosas</title>
+  </programme>
+  <programme start="20261105072900 -0500" stop="20261105075200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Cooper Extraction</title>
+  </programme>
+  <programme start="20261105075200 -0500" stop="20261105081200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Hesitation Ramification</title>
+  </programme>
+  <programme start="20261105081200 -0500" stop="20261105083400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Occupation Recalibration</title>
+  </programme>
+  <programme start="20261105083400 -0500" stop="20261105085600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Convention Conundrum</title>
+  </programme>
+  <programme start="20261105085600 -0500" stop="20261105091800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Locomotive Manipulation</title>
+  </programme>
+  <programme start="20261105091800 -0500" stop="20261105093700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Table Polarization</title>
+  </programme>
+  <programme start="20261105093700 -0500" stop="20261105100100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Adoptando chicas</title>
+  </programme>
+  <programme start="20261105100100 -0500" stop="20261105102400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Chicas y helado</title>
+  </programme>
+  <programme start="20261105102400 -0500" stop="20261105104500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Aves grandes, arañas y mamá</title>
+  </programme>
+  <programme start="20261105104500 -0500" stop="20261105110800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Media Room Slash Dungeon</title>
+  </programme>
+  <programme start="20261105110800 -0500" stop="20261105113200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dum Diddy Dum Diddy Doo</title>
+  </programme>
+  <programme start="20261105113200 -0500" stop="20261105115600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">City of Great Racks</title>
+  </programme>
+  <programme start="20261105115600 -0500" stop="20261105123600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">19 de diciembre</title>
+  </programme>
+  <programme start="20261105123600 -0500" stop="20261105141700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Travesía salvaje</title>
+  </programme>
+  <programme start="20261105141700 -0500" stop="20261105163700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El sorprendente Hombre Araña</title>
+  </programme>
+  <programme start="20261105163700 -0500" stop="20261105185400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Titanes del Pacífico</title>
+  </programme>
+  <programme start="20261105185400 -0500" stop="20261105210000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Mundo Jurásico</title>
+  </programme>
+  <programme start="20261105210000 -0500" stop="20261105231000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Tirador</title>
+  </programme>
+  <programme start="20261105231000 -0500" stop="20261105233400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Cooper Extraction</title>
+  </programme>
+  <programme start="20261105233400 -0500" stop="20261105235700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Hesitation Ramification</title>
+  </programme>
+  <programme start="20261105235700 -0500" stop="20261105235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Occupation Recalibration</title>
+  </programme>
+  <programme start="20261106000000 -0500" stop="20261106001900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Occupation Recalibration</title>
+  </programme>
+  <programme start="20261106001900 -0500" stop="20261106003900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Convention Conundrum</title>
+  </programme>
+  <programme start="20261106003900 -0500" stop="20261106010100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Locomotive Manipulation</title>
+  </programme>
+  <programme start="20261106010100 -0500" stop="20261106012200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Table Polarization</title>
+  </programme>
+  <programme start="20261106012200 -0500" stop="20261106014400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Adoptando chicas</title>
+  </programme>
+  <programme start="20261106014400 -0500" stop="20261106020500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Chicas y helado</title>
+  </programme>
+  <programme start="20261106020500 -0500" stop="20261106022700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Aves grandes, arañas y mamá</title>
+  </programme>
+  <programme start="20261106022700 -0500" stop="20261106025100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Media Room Slash Dungeon</title>
+  </programme>
+  <programme start="20261106025100 -0500" stop="20261106031200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dum Diddy Dum Diddy Doo</title>
+  </programme>
+  <programme start="20261106031200 -0500" stop="20261106033400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">City of Great Racks</title>
+  </programme>
+  <programme start="20261106033400 -0500" stop="20261106050000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Obstáculos</title>
+  </programme>
+  <programme start="20261106050000 -0500" stop="20261106062400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">19 de diciembre</title>
+  </programme>
+  <programme start="20261106062400 -0500" stop="20261106064400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Anything Can Happen Recurrence</title>
+  </programme>
+  <programme start="20261106064400 -0500" stop="20261106070600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Proton Transmogrification</title>
+  </programme>
+  <programme start="20261106070600 -0500" stop="20261106073000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Putting Swim Fins on a Cat</title>
+  </programme>
+  <programme start="20261106073000 -0500" stop="20261106075300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Help Daddy Find His Toenail</title>
+  </programme>
+  <programme start="20261106075300 -0500" stop="20261106081500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Our Leather Gear Is in the Guest Room</title>
+  </programme>
+  <programme start="20261106081500 -0500" stop="20261106083500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Is There a Mrs. Waffles?</title>
+  </programme>
+  <programme start="20261106083500 -0500" stop="20261106085800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Viento a favor</title>
+  </programme>
+  <programme start="20261106085800 -0500" stop="20261106092200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Kinda Like Necrophilia</title>
+  </programme>
+  <programme start="20261106092200 -0500" stop="20261106100100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">¡Comencemos!</title>
+  </programme>
+  <programme start="20261106100100 -0500" stop="20261106122300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El sorprendente Hombre Araña</title>
+  </programme>
+  <programme start="20261106122300 -0500" stop="20261106141800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Super agente 86</title>
+  </programme>
+  <programme start="20261106141800 -0500" stop="20261106155700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hotel Transilvania 3: Unas vacaciones monstruosas</title>
+  </programme>
+  <programme start="20261106155700 -0500" stop="20261106174400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Un jefe en pañales</title>
+  </programme>
+  <programme start="20261106174400 -0500" stop="20261106192400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Plan de escape 3</title>
+  </programme>
+  <programme start="20261106192400 -0500" stop="20261106210000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">¿Qué Pasó Ayer? Parte II</title>
+  </programme>
+  <programme start="20261106210000 -0500" stop="20261106224200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Soy leyenda</title>
+  </programme>
+  <programme start="20261106224200 -0500" stop="20261106230200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La turbulencia de la amistad</title>
+  </programme>
+  <programme start="20261106230200 -0500" stop="20261106232400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Mommy Observation</title>
+  </programme>
+  <programme start="20261106232400 -0500" stop="20261106234400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Indecision Amalgamation</title>
+  </programme>
+  <programme start="20261106234400 -0500" stop="20261106235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Relationship Diremption</title>
+  </programme>
+  <programme start="20261107000000 -0500" stop="20261107000600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Relationship Diremption</title>
+  </programme>
+  <programme start="20261107000600 -0500" stop="20261107002600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Anything Can Happen Recurrence</title>
+  </programme>
+  <programme start="20261107002600 -0500" stop="20261107004900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Proton Transmogrification</title>
+  </programme>
+  <programme start="20261107004900 -0500" stop="20261107011000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Putting Swim Fins on a Cat</title>
+  </programme>
+  <programme start="20261107011000 -0500" stop="20261107013300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Help Daddy Find His Toenail</title>
+  </programme>
+  <programme start="20261107013300 -0500" stop="20261107015500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Our Leather Gear Is in the Guest Room</title>
+  </programme>
+  <programme start="20261107015500 -0500" stop="20261107021600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Is There a Mrs. Waffles?</title>
+  </programme>
+  <programme start="20261107021600 -0500" stop="20261107023700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Viento a favor</title>
+  </programme>
+  <programme start="20261107023700 -0500" stop="20261107030100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Kinda Like Necrophilia</title>
+  </programme>
+  <programme start="20261107030100 -0500" stop="20261107050000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">19 de diciembre</title>
+  </programme>
+  <programme start="20261107050000 -0500" stop="20261107062000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Primero estar de pie</title>
+  </programme>
+  <programme start="20261107062000 -0500" stop="20261107063800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Hook-Up Reverberation</title>
+  </programme>
+  <programme start="20261107063800 -0500" stop="20261107070200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Meander to Your Dander</title>
+  </programme>
+  <programme start="20261107070200 -0500" stop="20261107072600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">A Little Clammy and None Too Fresh</title>
+  </programme>
+  <programme start="20261107072600 -0500" stop="20261107074700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Soil Is Moist</title>
+  </programme>
+  <programme start="20261107074700 -0500" stop="20261107080800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Winky-Dink Time</title>
+  </programme>
+  <programme start="20261107080800 -0500" stop="20261107083200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Rough Night in Hump Junction</title>
+  </programme>
+  <programme start="20261107083200 -0500" stop="20261107085600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Look at Me, Mommy, I'm Pretty</title>
+  </programme>
+  <programme start="20261107085600 -0500" stop="20261107104100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Batman y Robin</title>
+  </programme>
+  <programme start="20261107104100 -0500" stop="20261107123100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Un jefe en pañales</title>
+  </programme>
+  <programme start="20261107123100 -0500" stop="20261107140900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">¿Qué pasó ayer? Parte 2</title>
+  </programme>
+  <programme start="20261107140900 -0500" stop="20261107161800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos policías rebeldes</title>
+  </programme>
+  <programme start="20261107161800 -0500" stop="20261107182800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El coleccionista de huesos</title>
+  </programme>
+  <programme start="20261107182800 -0500" stop="20261107210200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El plan perfecto</title>
+  </programme>
+  <programme start="20261107210200 -0500" stop="20261107232500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Bad boys para siempre</title>
+  </programme>
+  <programme start="20261107232500 -0500" stop="20261107235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Día de entrenamiento</title>
+  </programme>
+  <programme start="20261108000000 -0500" stop="20261108013100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Día de entrenamiento</title>
+  </programme>
+  <programme start="20261108013100 -0500" stop="20261108015200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Gorilla Dissolution</title>
+  </programme>
+  <programme start="20261108015200 -0500" stop="20261108021500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Status Quo Combustion</title>
+  </programme>
+  <programme start="20261108021500 -0500" stop="20261108023800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Locomotion Interruption</title>
+  </programme>
+  <programme start="20261108023800 -0500" stop="20261108025900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Junior Professor Solution</title>
+  </programme>
+  <programme start="20261108025900 -0500" stop="20261108032000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The First Pitch Insufficiency</title>
+  </programme>
+  <programme start="20261108032000 -0500" stop="20261108034000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Hook-Up Reverberation</title>
+  </programme>
+  <programme start="20261108034000 -0500" stop="20261108040400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Meander to Your Dander</title>
+  </programme>
+  <programme start="20261108040400 -0500" stop="20261108042800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">A Little Clammy and None Too Fresh</title>
+  </programme>
+  <programme start="20261108042800 -0500" stop="20261108044900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Soil Is Moist</title>
+  </programme>
+  <programme start="20261108044900 -0500" stop="20261108050000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hollywood One on One</title>
+  </programme>
+  <programme start="20261108050000 -0500" stop="20261108051300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hollywood One on One</title>
+  </programme>
+  <programme start="20261108051300 -0500" stop="20261108052500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hollywood One on One</title>
+  </programme>
+  <programme start="20261108052500 -0500" stop="20261108054800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Misinterpretation Agitation</title>
+  </programme>
+  <programme start="20261108054800 -0500" stop="20261108060900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Prom Equivalency</title>
+  </programme>
+  <programme start="20261108060900 -0500" stop="20261108063200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Septum Deviation</title>
+  </programme>
+  <programme start="20261108063200 -0500" stop="20261108065500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Champagne Reflection</title>
+  </programme>
+  <programme start="20261108065500 -0500" stop="20261108071900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Fish in a Drawer</title>
+  </programme>
+  <programme start="20261108071900 -0500" stop="20261108074300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">If My Hole Could Talk</title>
+  </programme>
+  <programme start="20261108074300 -0500" stop="20261108080700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Waiting for the Right Snapper</title>
+  </programme>
+  <programme start="20261108080700 -0500" stop="20261108083100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Taterhead Is Our Love Child</title>
+  </programme>
+  <programme start="20261108083100 -0500" stop="20261108085600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Pie Hole, Herb</title>
+  </programme>
+  <programme start="20261108085600 -0500" stop="20261108091900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Damn You, Eggs Benedict</title>
+  </programme>
+  <programme start="20261108091900 -0500" stop="20261108105100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Las aventuras del Capitán Calzoncillos: La película</title>
+  </programme>
+  <programme start="20261108105100 -0500" stop="20261108123300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">¡Scooby!</title>
+  </programme>
+  <programme start="20261108123300 -0500" stop="20261108141300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Megamente</title>
+  </programme>
+  <programme start="20261108141300 -0500" stop="20261108163300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El plan perfecto</title>
+  </programme>
+  <programme start="20261108163300 -0500" stop="20261108183400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Soy leyenda</title>
+  </programme>
+  <programme start="20261108183400 -0500" stop="20261108210000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Rey Arturo: La leyenda de la espada</title>
+  </programme>
+  <programme start="20261108210000 -0500" stop="20261108230600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Vivo o muerto</title>
+  </programme>
+  <programme start="20261108230600 -0500" stop="20261108231000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Inside Warner - Cat in the Hat</title>
+  </programme>
+  <programme start="20261108231000 -0500" stop="20261108233100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Focus Attenuation</title>
+  </programme>
+  <programme start="20261108233100 -0500" stop="20261108235600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Expedition Approximation</title>
+  </programme>
+  <programme start="20261108235600 -0500" stop="20261108235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Misinterpretation Agitation</title>
+  </programme>
+  <programme start="20261109000000 -0500" stop="20261109001700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Misinterpretation Agitation</title>
+  </programme>
+  <programme start="20261109001700 -0500" stop="20261109003900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Prom Equivalency</title>
+  </programme>
+  <programme start="20261109003900 -0500" stop="20261109010100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Septum Deviation</title>
+  </programme>
+  <programme start="20261109010100 -0500" stop="20261109012300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Champagne Reflection</title>
+  </programme>
+  <programme start="20261109012300 -0500" stop="20261109014600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Fish in a Drawer</title>
+  </programme>
+  <programme start="20261109014600 -0500" stop="20261109020900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">If My Hole Could Talk</title>
+  </programme>
+  <programme start="20261109020900 -0500" stop="20261109023300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Waiting for the Right Snapper</title>
+  </programme>
+  <programme start="20261109023300 -0500" stop="20261109025600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Taterhead Is Our Love Child</title>
+  </programme>
+  <programme start="20261109025600 -0500" stop="20261109031900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Pie Hole, Herb</title>
+  </programme>
+  <programme start="20261109031900 -0500" stop="20261109034100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Damn You, Eggs Benedict</title>
+  </programme>
+  <programme start="20261109034100 -0500" stop="20261109042400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Next Episode</title>
+  </programme>
+  <programme start="20261109042400 -0500" stop="20261109050000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Then Learn Fly</title>
+  </programme>
+  <programme start="20261109050000 -0500" stop="20261109050500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El Buzz</title>
+  </programme>
+  <programme start="20261109050500 -0500" stop="20261109050600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El Buzz</title>
+  </programme>
+  <programme start="20261109050600 -0500" stop="20261109063800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Las aventuras del Capitán Calzoncillos: La película</title>
+  </programme>
+  <programme start="20261109063800 -0500" stop="20261109081900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">¡Scooby!</title>
+  </programme>
+  <programme start="20261109081900 -0500" stop="20261109084200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Clean Room Infiltration</title>
+  </programme>
+  <programme start="20261109084200 -0500" stop="20261109090400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Space Probe Disintegration</title>
+  </programme>
+  <programme start="20261109090400 -0500" stop="20261109092800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Anxiety Optimization</title>
+  </programme>
+  <programme start="20261109092800 -0500" stop="20261109095200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Troll Manifestation</title>
+  </programme>
+  <programme start="20261109095200 -0500" stop="20261109101400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Comic Book Store Regeneration</title>
+  </programme>
+  <programme start="20261109101400 -0500" stop="20261109103700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Intimacy Acceleration</title>
+  </programme>
+  <programme start="20261109103700 -0500" stop="20261109110000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Flavin' and the Mavin</title>
+  </programme>
+  <programme start="20261109110000 -0500" stop="20261109112500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">A Jock Strap in Hell</title>
+  </programme>
+  <programme start="20261109112500 -0500" stop="20261109114900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">It's Always Nazi Week</title>
+  </programme>
+  <programme start="20261109114900 -0500" stop="20261109121200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Lo mejor que se puede comprar</title>
+  </programme>
+  <programme start="20261109121200 -0500" stop="20261109123700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Pinocchio's Mouth</title>
+  </programme>
+  <programme start="20261109123700 -0500" stop="20261109130100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Mooch at the Boo</title>
+  </programme>
+  <programme start="20261109130100 -0500" stop="20261109133600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Primero estar de pie</title>
+  </programme>
+  <programme start="20261109133600 -0500" stop="20261109151600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Megamente</title>
+  </programme>
+  <programme start="20261109151600 -0500" stop="20261109165600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Turbo</title>
+  </programme>
+  <programme start="20261109165600 -0500" stop="20261109185800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El protector</title>
+  </programme>
+  <programme start="20261109185800 -0500" stop="20261109210000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Robo en las alturas</title>
+  </programme>
+  <programme start="20261109210000 -0500" stop="20261109230600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La purga: El año de la elección</title>
+  </programme>
+  <programme start="20261109230600 -0500" stop="20261109235500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Award Tour</title>
+  </programme>
+  <programme start="20261109235500 -0500" stop="20261109235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Clean Room Infiltration</title>
+  </programme>
+  <programme start="20261110000000 -0500" stop="20261110001700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Clean Room Infiltration</title>
+  </programme>
+  <programme start="20261110001700 -0500" stop="20261110003900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Space Probe Disintegration</title>
+  </programme>
+  <programme start="20261110003900 -0500" stop="20261110010100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Anxiety Optimization</title>
+  </programme>
+  <programme start="20261110010100 -0500" stop="20261110012400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Troll Manifestation</title>
+  </programme>
+  <programme start="20261110012400 -0500" stop="20261110014600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Comic Book Store Regeneration</title>
+  </programme>
+  <programme start="20261110014600 -0500" stop="20261110020800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Intimacy Acceleration</title>
+  </programme>
+  <programme start="20261110020800 -0500" stop="20261110023000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Flavin' and the Mavin</title>
+  </programme>
+  <programme start="20261110023000 -0500" stop="20261110025300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">A Jock Strap in Hell</title>
+  </programme>
+  <programme start="20261110025300 -0500" stop="20261110031600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">It's Always Nazi Week</title>
+  </programme>
+  <programme start="20261110031600 -0500" stop="20261110033900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Lo mejor que se puede comprar</title>
+  </programme>
+  <programme start="20261110033900 -0500" stop="20261110040200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Pinocchio's Mouth</title>
+  </programme>
+  <programme start="20261110040200 -0500" stop="20261110042600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Mooch at the Boo</title>
+  </programme>
+  <programme start="20261110042600 -0500" stop="20261110043500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hollywood One on One</title>
+  </programme>
+  <programme start="20261110043500 -0500" stop="20261110044900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hollywood One on One</title>
+  </programme>
+  <programme start="20261110044900 -0500" stop="20261110050000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hollywood One on One</title>
+  </programme>
+  <programme start="20261110050000 -0500" stop="20261110054000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Party Time</title>
+  </programme>
+  <programme start="20261110054000 -0500" stop="20261110072000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Turbo</title>
+  </programme>
+  <programme start="20261110072000 -0500" stop="20261110074200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Colonization Application</title>
+  </programme>
+  <programme start="20261110074200 -0500" stop="20261110080500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Leftover Thermalization</title>
+  </programme>
+  <programme start="20261110080500 -0500" stop="20261110082900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Skywalker Incursion</title>
+  </programme>
+  <programme start="20261110082900 -0500" stop="20261110085100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Fortification Implementation</title>
+  </programme>
+  <programme start="20261110085100 -0500" stop="20261110091300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Communication Deterioration</title>
+  </programme>
+  <programme start="20261110091300 -0500" stop="20261110093500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Graduation Transmission</title>
+  </programme>
+  <programme start="20261110093500 -0500" stop="20261110095900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">He Smelled the Ham, He Got Excited</title>
+  </programme>
+  <programme start="20261110095900 -0500" stop="20261110102400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">The Devil's Lube</title>
+  </programme>
+  <programme start="20261110102400 -0500" stop="20261110104700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Thank God for Scoliosis</title>
+  </programme>
+  <programme start="20261110104700 -0500" stop="20261110111200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Creo que ofendiste a Don</title>
+  </programme>
+  <programme start="20261110111200 -0500" stop="20261110113700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">David Copperfield me drogó</title>
+  </programme>
+  <programme start="20261110113700 -0500" stop="20261110120100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Empezaré con el gato</title>
+  </programme>
+  <programme start="20261110120100 -0500" stop="20261110124000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Then Learn Fly</title>
+  </programme>
+  <programme start="20261110124000 -0500" stop="20261110143400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Robo en las alturas</title>
+  </programme>
+  <programme start="20261110143400 -0500" stop="20261110162600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Sin límites</title>
+  </programme>
+  <programme start="20261110162600 -0500" stop="20261110184300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La gran estafa</title>
+  </programme>
+</tv>
