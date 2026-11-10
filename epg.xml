@@ -4,37 +4,55 @@
     <display-name lang="es">Warner Channel</display-name>
   </channel>
   <programme start="20261104100900 -0500" stop="20261104103100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Discovery Dissipation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Discovery Dissipation</sub-title>
+    <episode-num>Temporada 7 Episodio 10</episode-num>
   </programme>
   <programme start="20261104103100 -0500" stop="20261104105500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">I Merely Slept With a Commie</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">I Merely Slept with a Commie</sub-title>
+    <episode-num>Temporada 4 Episodio 17</episode-num>
   </programme>
   <programme start="20261104105500 -0500" stop="20261104111900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">It Never Rains in Hooterville</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">It Never Rains in Hooterville</sub-title>
+    <episode-num>Temporada 4 Episodio 18</episode-num>
   </programme>
   <programme start="20261104111900 -0500" stop="20261104114200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Smooth as a Ken Doll</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Smooth As a Ken Doll</sub-title>
+    <episode-num>Temporada 4 Episodio 19</episode-num>
   </programme>
   <programme start="20261104114200 -0500" stop="20261104120500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Aunt Myra Doesn't Pee a Lot</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Aunt Myra Doesn't Pee a Lot</sub-title>
+    <episode-num>Temporada 4 Episodio 20</episode-num>
   </programme>
   <programme start="20261104120500 -0500" stop="20261104122900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Tucked, Taped and Gorgeous</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Tucked, Taped and Gorgeous</sub-title>
+    <episode-num>Temporada 4 Episodio 21</episode-num>
   </programme>
   <programme start="20261104122900 -0500" stop="20261104125300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Mr. McGlue's Feedbag</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Mr. McGlue's Feedbag</sub-title>
+    <episode-num>Temporada 4 Episodio 22</episode-num>
   </programme>
   <programme start="20261104125300 -0500" stop="20261104132500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Feel the Night</title>
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">Feel The Night</sub-title>
+    <episode-num>Temporada 3 Episodio 9</episode-num>
   </programme>
   <programme start="20261104132500 -0500" stop="20261104145500 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">El gato con botas</title>
+    <desc lang="es">Un niño pastor fetichista de los guantes, se queda prendado de la princesita de turno, quien pasa por serios problemas, ya que un ogro malvado y "transformista" está extorsionando a la Corte. Para ligarse a la chica, el pastorcito recurrirá a la ayuda de una vieja harapienta que vive rodeada de bolsas de plástico, quien transformará a su mascota en el deforme y audaz Gato con botas.</desc>
   </programme>
   <programme start="20261104145500 -0500" stop="20261104165200 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Super agente 86</title>
   </programme>
   <programme start="20261104165200 -0500" stop="20261104183600 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Hotel Transilvania 3: Unas vacaciones monstruosas</title>
+    <desc lang="es">Nuestra familia de monstruos favorita se embarca en un crucero de lujo para que por fin Drac pueda tomarse un descanso de proveer de vacaciones al resto en el hotel. Es una navegación tranquila para la pandilla de Drac, ya que los monstruos se entregan a toda la diversión a bordo que ofrece el crucero, desde el voleibol de monstruos y las excursiones exóticas, a ponerse al día con sus bronceados de luna. Pero las vacaciones de ensueño se convierten en una pesadilla cuando Mavis se da cuenta de que Drac se ha enamorado de la misteriosa capitana de la nave, Ericka, quien esconde un peligroso secreto que podría destruir a todos los monstruos.</desc>
   </programme>
   <programme start="20261104183600 -0500" stop="20261104210300 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">El sorprendente Hombre Araña</title>
@@ -43,70 +61,111 @@
     <title lang="es">Mundo Jurásico</title>
   </programme>
   <programme start="20261104231400 -0500" stop="20261104233600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Workplace Proximity</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Workplace Proximity</sub-title>
+    <episode-num>Temporada 7 Episodio 5</episode-num>
   </programme>
   <programme start="20261104233600 -0500" stop="20261104235800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Romance Resonance</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Romance Resonance</sub-title>
+    <episode-num>Temporada 7 Episodio 6</episode-num>
   </programme>
   <programme start="20261104235800 -0500" stop="20261104235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Proton Displacement</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Proton Displacement</sub-title>
+    <episode-num>Temporada 7 Episodio 7</episode-num>
   </programme>
   <programme start="20261105000000 -0500" stop="20261105001900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Proton Displacement</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Proton Displacement</sub-title>
+    <episode-num>Temporada 7 Episodio 7</episode-num>
   </programme>
   <programme start="20261105001900 -0500" stop="20261105004000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Itchy Brain Simulation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Itchy Brain Simulation</sub-title>
+    <episode-num>Temporada 7 Episodio 8</episode-num>
   </programme>
   <programme start="20261105004000 -0500" stop="20261105010100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Thanksgiving Decoupling</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Thanksgiving Decoupling</sub-title>
+    <episode-num>Temporada 7 Episodio 9</episode-num>
   </programme>
   <programme start="20261105010100 -0500" stop="20261105012200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Discovery Dissipation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Discovery Dissipation</sub-title>
+    <episode-num>Temporada 7 Episodio 10</episode-num>
   </programme>
   <programme start="20261105012200 -0500" stop="20261105014400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">I Merely Slept With a Commie</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">I Merely Slept with a Commie</sub-title>
+    <episode-num>Temporada 4 Episodio 17</episode-num>
   </programme>
   <programme start="20261105014400 -0500" stop="20261105020700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">It Never Rains in Hooterville</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">It Never Rains in Hooterville</sub-title>
+    <episode-num>Temporada 4 Episodio 18</episode-num>
   </programme>
   <programme start="20261105020700 -0500" stop="20261105022800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Smooth as a Ken Doll</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Smooth As a Ken Doll</sub-title>
+    <episode-num>Temporada 4 Episodio 19</episode-num>
   </programme>
   <programme start="20261105022800 -0500" stop="20261105025000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Aunt Myra Doesn't Pee a Lot</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Aunt Myra Doesn't Pee a Lot</sub-title>
+    <episode-num>Temporada 4 Episodio 20</episode-num>
   </programme>
   <programme start="20261105025000 -0500" stop="20261105031300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Tucked, Taped and Gorgeous</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Tucked, Taped and Gorgeous</sub-title>
+    <episode-num>Temporada 4 Episodio 21</episode-num>
   </programme>
   <programme start="20261105031300 -0500" stop="20261105033600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Mr. McGlue's Feedbag</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Mr. McGlue's Feedbag</sub-title>
+    <episode-num>Temporada 4 Episodio 22</episode-num>
   </programme>
   <programme start="20261105033600 -0500" stop="20261105042100 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Passin' Me By</title>
   </programme>
   <programme start="20261105042100 -0500" stop="20261105055900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Miyagi-Do</title>
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">Miyagi-Do</sub-title>
+    <episode-num>Temporada 3 Episodio 5</episode-num>
   </programme>
   <programme start="20261105055900 -0500" stop="20261105072900 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Hotel Transilvania 3: Unas vacaciones monstruosas</title>
+    <desc lang="es">Nuestra familia de monstruos favorita se embarca en un crucero de lujo para que por fin Drac pueda tomarse un descanso de proveer de vacaciones al resto en el hotel. Es una navegación tranquila para la pandilla de Drac, ya que los monstruos se entregan a toda la diversión a bordo que ofrece el crucero, desde el voleibol de monstruos y las excursiones exóticas, a ponerse al día con sus bronceados de luna. Pero las vacaciones de ensueño se convierten en una pesadilla cuando Mavis se da cuenta de que Drac se ha enamorado de la misteriosa capitana de la nave, Ericka, quien esconde un peligroso secreto que podría destruir a todos los monstruos.</desc>
   </programme>
   <programme start="20261105072900 -0500" stop="20261105075200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Cooper Extraction</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Cooper Extraction</sub-title>
+    <episode-num>Temporada 7 Episodio 11</episode-num>
   </programme>
   <programme start="20261105075200 -0500" stop="20261105081200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Hesitation Ramification</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Hesitation Ramification</sub-title>
+    <episode-num>Temporada 7 Episodio 12</episode-num>
   </programme>
   <programme start="20261105081200 -0500" stop="20261105083400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Occupation Recalibration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Occupation Recalibration</sub-title>
+    <episode-num>Temporada 7 Episodio 13</episode-num>
   </programme>
   <programme start="20261105083400 -0500" stop="20261105085600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Convention Conundrum</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Convention Conundrum</sub-title>
+    <episode-num>Temporada 7 Episodio 14</episode-num>
   </programme>
   <programme start="20261105085600 -0500" stop="20261105091800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Locomotive Manipulation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Locomotive Manipulation</sub-title>
+    <episode-num>Temporada 7 Episodio 15</episode-num>
   </programme>
   <programme start="20261105091800 -0500" stop="20261105093700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Table Polarization</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Table Polarization</sub-title>
+    <episode-num>Temporada 7 Episodio 16</episode-num>
   </programme>
   <programme start="20261105093700 -0500" stop="20261105100100 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Adoptando chicas</title>
@@ -118,19 +177,26 @@
     <title lang="es">Aves grandes, arañas y mamá</title>
   </programme>
   <programme start="20261105104500 -0500" stop="20261105110800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Media Room Slash Dungeon</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Media Room Slash Dungeon</sub-title>
+    <episode-num>Temporada 5 Episodio 2</episode-num>
   </programme>
   <programme start="20261105110800 -0500" stop="20261105113200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dum Diddy Dum Diddy Doo</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Dum Diddy Dum Diddy Doo</sub-title>
+    <episode-num>Temporada 5 Episodio 3</episode-num>
   </programme>
   <programme start="20261105113200 -0500" stop="20261105115600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">City of Great Racks</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">City of Great Racks</sub-title>
+    <episode-num>Temporada 5 Episodio 4</episode-num>
   </programme>
   <programme start="20261105115600 -0500" stop="20261105123600 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">19 de diciembre</title>
   </programme>
   <programme start="20261105123600 -0500" stop="20261105141700 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Travesía salvaje</title>
+    <desc lang="es">Un cazador que se dedica a capturar animales para luego venderlos a distintos zoológicos compra un pasaje para embarcarse en un crucero repleto de animales exóticos con los que piensa hacerse de oro, entre los que se incluye un jaguar y otros animales del Amazonas. Sin embargo, desconoce que en el mismo barco se está extraditando a un asesino en serie que, tras escapar del control de sus captores, liberta a los animales y con ellos el caos total.</desc>
   </programme>
   <programme start="20261105141700 -0500" stop="20261105163700 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">El sorprendente Hombre Araña</title>
@@ -145,25 +211,39 @@
     <title lang="es">Tirador</title>
   </programme>
   <programme start="20261105231000 -0500" stop="20261105233400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Cooper Extraction</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Cooper Extraction</sub-title>
+    <episode-num>Temporada 7 Episodio 11</episode-num>
   </programme>
   <programme start="20261105233400 -0500" stop="20261105235700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Hesitation Ramification</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Hesitation Ramification</sub-title>
+    <episode-num>Temporada 7 Episodio 12</episode-num>
   </programme>
   <programme start="20261105235700 -0500" stop="20261105235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Occupation Recalibration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Occupation Recalibration</sub-title>
+    <episode-num>Temporada 7 Episodio 13</episode-num>
   </programme>
   <programme start="20261106000000 -0500" stop="20261106001900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Occupation Recalibration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Occupation Recalibration</sub-title>
+    <episode-num>Temporada 7 Episodio 13</episode-num>
   </programme>
   <programme start="20261106001900 -0500" stop="20261106003900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Convention Conundrum</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Convention Conundrum</sub-title>
+    <episode-num>Temporada 7 Episodio 14</episode-num>
   </programme>
   <programme start="20261106003900 -0500" stop="20261106010100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Locomotive Manipulation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Locomotive Manipulation</sub-title>
+    <episode-num>Temporada 7 Episodio 15</episode-num>
   </programme>
   <programme start="20261106010100 -0500" stop="20261106012200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Table Polarization</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Table Polarization</sub-title>
+    <episode-num>Temporada 7 Episodio 16</episode-num>
   </programme>
   <programme start="20261106012200 -0500" stop="20261106014400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Adoptando chicas</title>
@@ -175,43 +255,65 @@
     <title lang="es">Aves grandes, arañas y mamá</title>
   </programme>
   <programme start="20261106022700 -0500" stop="20261106025100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Media Room Slash Dungeon</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Media Room Slash Dungeon</sub-title>
+    <episode-num>Temporada 5 Episodio 2</episode-num>
   </programme>
   <programme start="20261106025100 -0500" stop="20261106031200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dum Diddy Dum Diddy Doo</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Dum Diddy Dum Diddy Doo</sub-title>
+    <episode-num>Temporada 5 Episodio 3</episode-num>
   </programme>
   <programme start="20261106031200 -0500" stop="20261106033400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">City of Great Racks</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">City of Great Racks</sub-title>
+    <episode-num>Temporada 5 Episodio 4</episode-num>
   </programme>
   <programme start="20261106033400 -0500" stop="20261106050000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Obstáculos</title>
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">Obstáculos</sub-title>
+    <episode-num>Temporada 3 Episodio 7</episode-num>
   </programme>
   <programme start="20261106050000 -0500" stop="20261106062400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">19 de diciembre</title>
   </programme>
   <programme start="20261106062400 -0500" stop="20261106064400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Anything Can Happen Recurrence</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Anything Can Happen Recurrence</sub-title>
+    <episode-num>Temporada 7 Episodio 21</episode-num>
   </programme>
   <programme start="20261106064400 -0500" stop="20261106070600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Proton Transmogrification</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Proton Transmogrification</sub-title>
+    <episode-num>Temporada 7 Episodio 22</episode-num>
   </programme>
   <programme start="20261106070600 -0500" stop="20261106073000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Putting Swim Fins on a Cat</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Putting Swim Fins on a Cat</sub-title>
+    <episode-num>Temporada 5 Episodio 5</episode-num>
   </programme>
   <programme start="20261106073000 -0500" stop="20261106075300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Help Daddy Find His Toenail</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Help Daddy Find His Toenail</sub-title>
+    <episode-num>Temporada 5 Episodio 6</episode-num>
   </programme>
   <programme start="20261106075300 -0500" stop="20261106081500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Our Leather Gear Is in the Guest Room</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Our Leather Gear Is in the Guest Room</sub-title>
+    <episode-num>Temporada 5 Episodio 7</episode-num>
   </programme>
   <programme start="20261106081500 -0500" stop="20261106083500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Is There a Mrs. Waffles?</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Is There a Mrs. Waffles?</sub-title>
+    <episode-num>Temporada 5 Episodio 8</episode-num>
   </programme>
   <programme start="20261106083500 -0500" stop="20261106085800 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Viento a favor</title>
   </programme>
   <programme start="20261106085800 -0500" stop="20261106092200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Kinda Like Necrophilia</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Kinda Like Necrophilia</sub-title>
+    <episode-num>Temporada 5 Episodio 10</episode-num>
   </programme>
   <programme start="20261106092200 -0500" stop="20261106100100 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">¡Comencemos!</title>
@@ -224,57 +326,82 @@
   </programme>
   <programme start="20261106141800 -0500" stop="20261106155700 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Hotel Transilvania 3: Unas vacaciones monstruosas</title>
+    <desc lang="es">Nuestra familia de monstruos favorita se embarca en un crucero de lujo para que por fin Drac pueda tomarse un descanso de proveer de vacaciones al resto en el hotel. Es una navegación tranquila para la pandilla de Drac, ya que los monstruos se entregan a toda la diversión a bordo que ofrece el crucero, desde el voleibol de monstruos y las excursiones exóticas, a ponerse al día con sus bronceados de luna. Pero las vacaciones de ensueño se convierten en una pesadilla cuando Mavis se da cuenta de que Drac se ha enamorado de la misteriosa capitana de la nave, Ericka, quien esconde un peligroso secreto que podría destruir a todos los monstruos.</desc>
   </programme>
   <programme start="20261106155700 -0500" stop="20261106174400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Un jefe en pañales</title>
   </programme>
   <programme start="20261106174400 -0500" stop="20261106192400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Plan de escape 3</title>
+    <title lang="es">Plan de Escape 3</title>
+    <desc lang="es">El experto en seguridad Ray Breslin es contratado para rescatar a la hija de un magnate de la tecnología de Hong Kong que ha sido secuestrada y puesta bajo custodia en una prisión de Letonia. Por si esto fuera poco, su novia también es capturada. Ahora, él y su equipo deberán realizar una misión de rescate que les llevará a enfrentarse a su peor enemigo mientras tratan de poner a salvo a los rehenes.</desc>
   </programme>
   <programme start="20261106192400 -0500" stop="20261106210000 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">¿Qué Pasó Ayer? Parte II</title>
   </programme>
   <programme start="20261106210000 -0500" stop="20261106224200 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Soy leyenda</title>
+    <desc lang="es">Año 2012. Robert Neville es el último hombre vivo que hay sobre la Tierra, pero no está solo. Los demás seres humanos se han convertido en unos mutantes nocturnos llamados "Darkseekers" y todos ansían beber su sangre. Durante el día vive en estado de alerta, como un cazador, y busca a los muertos vivientes mientras duermen; pero durante la noche debe esconderse de ellos y esperar el amanecer. Esta pesadilla empezó hace tres años: Neville era un brillante científico, pero no pudo impedir la expansión de un terrible virus creado por el hombre. Él ha sobrevivido porque es inmune al virus; todos los días envía mensajes por radio con la esperanza de que haya otros supervivientes, pero es inútil. Lo único que puede hacer es buscar una fórmula que le permita utilizar su sangre inmune para devolverles a los hombres su naturaleza. Pero está en inferioridad de condiciones y el tiempo se acaba.</desc>
   </programme>
   <programme start="20261106224200 -0500" stop="20261106230200 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">La turbulencia de la amistad</title>
   </programme>
   <programme start="20261106230200 -0500" stop="20261106232400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Mommy Observation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Mommy Observation</sub-title>
+    <episode-num>Temporada 7 Episodio 18</episode-num>
   </programme>
   <programme start="20261106232400 -0500" stop="20261106234400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Indecision Amalgamation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Indecision Amalgamation</sub-title>
+    <episode-num>Temporada 7 Episodio 19</episode-num>
   </programme>
   <programme start="20261106234400 -0500" stop="20261106235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Relationship Diremption</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Relationship Diremption</sub-title>
+    <episode-num>Temporada 7 Episodio 20</episode-num>
   </programme>
   <programme start="20261107000000 -0500" stop="20261107000600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Relationship Diremption</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Relationship Diremption</sub-title>
+    <episode-num>Temporada 7 Episodio 20</episode-num>
   </programme>
   <programme start="20261107000600 -0500" stop="20261107002600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Anything Can Happen Recurrence</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Anything Can Happen Recurrence</sub-title>
+    <episode-num>Temporada 7 Episodio 21</episode-num>
   </programme>
   <programme start="20261107002600 -0500" stop="20261107004900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Proton Transmogrification</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Proton Transmogrification</sub-title>
+    <episode-num>Temporada 7 Episodio 22</episode-num>
   </programme>
   <programme start="20261107004900 -0500" stop="20261107011000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Putting Swim Fins on a Cat</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Putting Swim Fins on a Cat</sub-title>
+    <episode-num>Temporada 5 Episodio 5</episode-num>
   </programme>
   <programme start="20261107011000 -0500" stop="20261107013300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Help Daddy Find His Toenail</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Help Daddy Find His Toenail</sub-title>
+    <episode-num>Temporada 5 Episodio 6</episode-num>
   </programme>
   <programme start="20261107013300 -0500" stop="20261107015500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Our Leather Gear Is in the Guest Room</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Our Leather Gear Is in the Guest Room</sub-title>
+    <episode-num>Temporada 5 Episodio 7</episode-num>
   </programme>
   <programme start="20261107015500 -0500" stop="20261107021600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Is There a Mrs. Waffles?</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Is There a Mrs. Waffles?</sub-title>
+    <episode-num>Temporada 5 Episodio 8</episode-num>
   </programme>
   <programme start="20261107021600 -0500" stop="20261107023700 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Viento a favor</title>
   </programme>
   <programme start="20261107023700 -0500" stop="20261107030100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Kinda Like Necrophilia</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Kinda Like Necrophilia</sub-title>
+    <episode-num>Temporada 5 Episodio 10</episode-num>
   </programme>
   <programme start="20261107030100 -0500" stop="20261107050000 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">19 de diciembre</title>
@@ -283,28 +410,43 @@
     <title lang="es">Primero estar de pie</title>
   </programme>
   <programme start="20261107062000 -0500" stop="20261107063800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Hook-Up Reverberation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Hook-Up Reverberation</sub-title>
+    <episode-num>Temporada 8 Episodio 4</episode-num>
   </programme>
   <programme start="20261107063800 -0500" stop="20261107070200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Meander to Your Dander</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Meander to Your Dander</sub-title>
+    <episode-num>Temporada 5 Episodio 11</episode-num>
   </programme>
   <programme start="20261107070200 -0500" stop="20261107072600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">A Little Clammy and None Too Fresh</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">A Little Clammy and None Too Fresh</sub-title>
+    <episode-num>Temporada 5 Episodio 12</episode-num>
   </programme>
   <programme start="20261107072600 -0500" stop="20261107074700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Soil Is Moist</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">The Soil Is Moist</sub-title>
+    <episode-num>Temporada 5 Episodio 13</episode-num>
   </programme>
   <programme start="20261107074700 -0500" stop="20261107080800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Winky-Dink Time</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Winky-Dink Time</sub-title>
+    <episode-num>Temporada 5 Episodio 14</episode-num>
   </programme>
   <programme start="20261107080800 -0500" stop="20261107083200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Rough Night in Hump Junction</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Rough Night in Hump Junction</sub-title>
+    <episode-num>Temporada 5 Episodio 15</episode-num>
   </programme>
   <programme start="20261107083200 -0500" stop="20261107085600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Look at Me, Mommy, I'm Pretty</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Look at Me, Mommy, I'm Pretty</sub-title>
+    <episode-num>Temporada 5 Episodio 16</episode-num>
   </programme>
   <programme start="20261107085600 -0500" stop="20261107104100 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Batman y Robin</title>
+    <desc lang="es">Unos experimentos de criogenia han convertido al Dr. Victor Fries en el malvado Mr. Freeze, un villano que necesita mantener su cuerpo a temperaturas gélidas y que, por ello, intentará congelar a todos los habitantes de la ciudad de Gotham. Por otro lado, la tímida botánica Pamela Isley se transformará en el transcurso de un experimento en la terrible Hiedra Venenosa, que querrá asesinar a todos los seres humanos de la tierra, para que las plantas recuperen su hegemonía sobre el planeta. Por este motivo, Batman y Robin deberán enfrentarse a ellos y detener sus siniestros planes.</desc>
   </programme>
   <programme start="20261107104100 -0500" stop="20261107123100 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Un jefe en pañales</title>
@@ -314,12 +456,15 @@
   </programme>
   <programme start="20261107140900 -0500" stop="20261107161800 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Dos policías rebeldes</title>
+    <desc lang="es">Un alijo de heroína valorada en unos 100 millones de dólares es robado del mismísimo depósito de la policía. El caso le será asignado a los agentes Burnett y Lowery, una pareja muy peculiar por los métodos que utilizan. La única pista que tienen para comenzar es la de un testigo que les ayudará a identificar a los atracadores y a la que tendrán que proteger.</desc>
   </programme>
   <programme start="20261107161800 -0500" stop="20261107182800 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">El coleccionista de huesos</title>
+    <desc lang="es">Lincoln Rhyme es un policía que está en silla de ruedas desde que le cayó una viga encima durante una investigación y lo dejó tetrapléjico. Un asesino en serie deja pistas que sólo Lincoln puede descrifrar, y éste contará con la ayuda de Amelia Donaghy para resolver el misterio creado por el asesino.</desc>
   </programme>
   <programme start="20261107182800 -0500" stop="20261107210200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">El plan perfecto</title>
+    <title lang="es">El Plan Perfecto</title>
+    <desc lang="es">Un grupo de empleados del almacén son estafados y acusados de robo. Ahora tienen que huir mientras elaboran un plan para revelar la verdad.</desc>
   </programme>
   <programme start="20261107210200 -0500" stop="20261107232500 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Bad boys para siempre</title>
@@ -331,31 +476,49 @@
     <title lang="es">Día de entrenamiento</title>
   </programme>
   <programme start="20261108013100 -0500" stop="20261108015200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Gorilla Dissolution</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Gorilla Dissolution</sub-title>
+    <episode-num>Temporada 7 Episodio 23</episode-num>
   </programme>
   <programme start="20261108015200 -0500" stop="20261108021500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Status Quo Combustion</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Status Quo Combustion</sub-title>
+    <episode-num>Temporada 7 Episodio 24</episode-num>
   </programme>
   <programme start="20261108021500 -0500" stop="20261108023800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Locomotion Interruption</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Locomotion Interruption</sub-title>
+    <episode-num>Temporada 8 Episodio 1</episode-num>
   </programme>
   <programme start="20261108023800 -0500" stop="20261108025900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Junior Professor Solution</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Junior Professor Solution</sub-title>
+    <episode-num>Temporada 8 Episodio 2</episode-num>
   </programme>
   <programme start="20261108025900 -0500" stop="20261108032000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The First Pitch Insufficiency</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The First Pitch Insufficiency</sub-title>
+    <episode-num>Temporada 8 Episodio 3</episode-num>
   </programme>
   <programme start="20261108032000 -0500" stop="20261108034000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Hook-Up Reverberation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Hook-Up Reverberation</sub-title>
+    <episode-num>Temporada 8 Episodio 4</episode-num>
   </programme>
   <programme start="20261108034000 -0500" stop="20261108040400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Meander to Your Dander</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Meander to Your Dander</sub-title>
+    <episode-num>Temporada 5 Episodio 11</episode-num>
   </programme>
   <programme start="20261108040400 -0500" stop="20261108042800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">A Little Clammy and None Too Fresh</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">A Little Clammy and None Too Fresh</sub-title>
+    <episode-num>Temporada 5 Episodio 12</episode-num>
   </programme>
   <programme start="20261108042800 -0500" stop="20261108044900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Soil Is Moist</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">The Soil Is Moist</sub-title>
+    <episode-num>Temporada 5 Episodio 13</episode-num>
   </programme>
   <programme start="20261108044900 -0500" stop="20261108050000 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Hollywood One on One</title>
@@ -367,49 +530,72 @@
     <title lang="es">Hollywood One on One</title>
   </programme>
   <programme start="20261108052500 -0500" stop="20261108054800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Misinterpretation Agitation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Misinterpretation Agitation</sub-title>
+    <episode-num>Temporada 8 Episodio 7</episode-num>
   </programme>
   <programme start="20261108054800 -0500" stop="20261108060900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Prom Equivalency</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Prom Equivalency</sub-title>
+    <episode-num>Temporada 8 Episodio 8</episode-num>
   </programme>
   <programme start="20261108060900 -0500" stop="20261108063200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Septum Deviation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Septum Deviation</sub-title>
+    <episode-num>Temporada 8 Episodio 9</episode-num>
   </programme>
   <programme start="20261108063200 -0500" stop="20261108065500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Champagne Reflection</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Champagne Reflection</sub-title>
+    <episode-num>Temporada 8 Episodio 10</episode-num>
   </programme>
   <programme start="20261108065500 -0500" stop="20261108071900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Fish in a Drawer</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Fish in a Drawer</sub-title>
+    <episode-num>Temporada 5 Episodio 17</episode-num>
   </programme>
   <programme start="20261108071900 -0500" stop="20261108074300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">If My Hole Could Talk</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">If My Hole Could Talk</sub-title>
+    <episode-num>Temporada 5 Episodio 18</episode-num>
   </programme>
   <programme start="20261108074300 -0500" stop="20261108080700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Waiting for the Right Snapper</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Waiting for the Right Snapper</sub-title>
+    <episode-num>Temporada 5 Episodio 19</episode-num>
   </programme>
   <programme start="20261108080700 -0500" stop="20261108083100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Taterhead Is Our Love Child</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Taterhead Is Our Love Child</sub-title>
+    <episode-num>Temporada 6 Episodio 1</episode-num>
   </programme>
   <programme start="20261108083100 -0500" stop="20261108085600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Pie Hole, Herb</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Pie Hole, Herb</sub-title>
+    <episode-num>Temporada 6 Episodio 2</episode-num>
   </programme>
   <programme start="20261108085600 -0500" stop="20261108091900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Damn You, Eggs Benedict</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Damn You, Eggs Benedict</sub-title>
+    <episode-num>Temporada 6 Episodio 3</episode-num>
   </programme>
   <programme start="20261108091900 -0500" stop="20261108105100 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Las aventuras del Capitán Calzoncillos: La película</title>
   </programme>
   <programme start="20261108105100 -0500" stop="20261108123300 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">¡Scooby!</title>
+    <desc lang="es">Con cientos de casos resueltos y aventuras compartidas, Scooby y la pandilla se enfrentan al misterio más grande y desafiante de todos los tiempos: un complot para liberar al perro fantasma Cerberus en el mundo. Mientras compiten para detener esta escasez de perros global, la pandilla descubre que Scooby tiene un legado secreto y un destino épico más grande de lo que cualquiera podría haber imaginado.</desc>
   </programme>
   <programme start="20261108123300 -0500" stop="20261108141300 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Megamente</title>
   </programme>
   <programme start="20261108141300 -0500" stop="20261108163300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">El plan perfecto</title>
+    <title lang="es">El Plan Perfecto</title>
+    <desc lang="es">Un grupo de empleados del almacén son estafados y acusados de robo. Ahora tienen que huir mientras elaboran un plan para revelar la verdad.</desc>
   </programme>
   <programme start="20261108163300 -0500" stop="20261108183400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Soy leyenda</title>
+    <desc lang="es">Año 2012. Robert Neville es el último hombre vivo que hay sobre la Tierra, pero no está solo. Los demás seres humanos se han convertido en unos mutantes nocturnos llamados "Darkseekers" y todos ansían beber su sangre. Durante el día vive en estado de alerta, como un cazador, y busca a los muertos vivientes mientras duermen; pero durante la noche debe esconderse de ellos y esperar el amanecer. Esta pesadilla empezó hace tres años: Neville era un brillante científico, pero no pudo impedir la expansión de un terrible virus creado por el hombre. Él ha sobrevivido porque es inmune al virus; todos los días envía mensajes por radio con la esperanza de que haya otros supervivientes, pero es inútil. Lo único que puede hacer es buscar una fórmula que le permita utilizar su sangre inmune para devolverles a los hombres su naturaleza. Pero está en inferioridad de condiciones y el tiempo se acaba.</desc>
   </programme>
   <programme start="20261108183400 -0500" stop="20261108210000 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Rey Arturo: La leyenda de la espada</title>
@@ -424,46 +610,72 @@
     <title lang="es">The Focus Attenuation</title>
   </programme>
   <programme start="20261108233100 -0500" stop="20261108235600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Expedition Approximation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Expedition Approximation</sub-title>
+    <episode-num>Temporada 8 Episodio 6</episode-num>
   </programme>
   <programme start="20261108235600 -0500" stop="20261108235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Misinterpretation Agitation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Misinterpretation Agitation</sub-title>
+    <episode-num>Temporada 8 Episodio 7</episode-num>
   </programme>
   <programme start="20261109000000 -0500" stop="20261109001700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Misinterpretation Agitation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Misinterpretation Agitation</sub-title>
+    <episode-num>Temporada 8 Episodio 7</episode-num>
   </programme>
   <programme start="20261109001700 -0500" stop="20261109003900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Prom Equivalency</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Prom Equivalency</sub-title>
+    <episode-num>Temporada 8 Episodio 8</episode-num>
   </programme>
   <programme start="20261109003900 -0500" stop="20261109010100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Septum Deviation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Septum Deviation</sub-title>
+    <episode-num>Temporada 8 Episodio 9</episode-num>
   </programme>
   <programme start="20261109010100 -0500" stop="20261109012300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Champagne Reflection</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Champagne Reflection</sub-title>
+    <episode-num>Temporada 8 Episodio 10</episode-num>
   </programme>
   <programme start="20261109012300 -0500" stop="20261109014600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Fish in a Drawer</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Fish in a Drawer</sub-title>
+    <episode-num>Temporada 5 Episodio 17</episode-num>
   </programme>
   <programme start="20261109014600 -0500" stop="20261109020900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">If My Hole Could Talk</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">If My Hole Could Talk</sub-title>
+    <episode-num>Temporada 5 Episodio 18</episode-num>
   </programme>
   <programme start="20261109020900 -0500" stop="20261109023300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Waiting for the Right Snapper</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Waiting for the Right Snapper</sub-title>
+    <episode-num>Temporada 5 Episodio 19</episode-num>
   </programme>
   <programme start="20261109023300 -0500" stop="20261109025600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Taterhead Is Our Love Child</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Taterhead Is Our Love Child</sub-title>
+    <episode-num>Temporada 6 Episodio 1</episode-num>
   </programme>
   <programme start="20261109025600 -0500" stop="20261109031900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Pie Hole, Herb</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Pie Hole, Herb</sub-title>
+    <episode-num>Temporada 6 Episodio 2</episode-num>
   </programme>
   <programme start="20261109031900 -0500" stop="20261109034100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Damn You, Eggs Benedict</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Damn You, Eggs Benedict</sub-title>
+    <episode-num>Temporada 6 Episodio 3</episode-num>
   </programme>
   <programme start="20261109034100 -0500" stop="20261109042400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">The Next Episode</title>
   </programme>
   <programme start="20261109042400 -0500" stop="20261109050000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Then Learn Fly</title>
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">Then Learn Fly</sub-title>
+    <episode-num>Temporada 4 Episodio 3</episode-num>
   </programme>
   <programme start="20261109050000 -0500" stop="20261109050500 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">El Buzz</title>
@@ -476,42 +688,65 @@
   </programme>
   <programme start="20261109063800 -0500" stop="20261109081900 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">¡Scooby!</title>
+    <desc lang="es">Con cientos de casos resueltos y aventuras compartidas, Scooby y la pandilla se enfrentan al misterio más grande y desafiante de todos los tiempos: un complot para liberar al perro fantasma Cerberus en el mundo. Mientras compiten para detener esta escasez de perros global, la pandilla descubre que Scooby tiene un legado secreto y un destino épico más grande de lo que cualquiera podría haber imaginado.</desc>
   </programme>
   <programme start="20261109081900 -0500" stop="20261109084200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Clean Room Infiltration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Clean Room Infiltration</sub-title>
+    <episode-num>Temporada 8 Episodio 11</episode-num>
   </programme>
   <programme start="20261109084200 -0500" stop="20261109090400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Space Probe Disintegration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Space Probe Disintegration</sub-title>
+    <episode-num>Temporada 8 Episodio 12</episode-num>
   </programme>
   <programme start="20261109090400 -0500" stop="20261109092800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Anxiety Optimization</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Anxiety Optimization</sub-title>
+    <episode-num>Temporada 8 Episodio 13</episode-num>
   </programme>
   <programme start="20261109092800 -0500" stop="20261109095200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Troll Manifestation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Troll Manifestation</sub-title>
+    <episode-num>Temporada 8 Episodio 14</episode-num>
   </programme>
   <programme start="20261109095200 -0500" stop="20261109101400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Comic Book Store Regeneration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Comic Book Store Regeneration</sub-title>
+    <episode-num>Temporada 8 Episodio 15</episode-num>
   </programme>
   <programme start="20261109101400 -0500" stop="20261109103700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Intimacy Acceleration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Intimacy Acceleration</sub-title>
+    <episode-num>Temporada 8 Episodio 16</episode-num>
   </programme>
   <programme start="20261109103700 -0500" stop="20261109110000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Flavin' and the Mavin</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">The Flavin' and the Mavin'</sub-title>
+    <episode-num>Temporada 6 Episodio 4</episode-num>
   </programme>
   <programme start="20261109110000 -0500" stop="20261109112500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">A Jock Strap in Hell</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">A Jock Strap in Hell</sub-title>
+    <episode-num>Temporada 6 Episodio 5</episode-num>
   </programme>
   <programme start="20261109112500 -0500" stop="20261109114900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">It's Always Nazi Week</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">It's Always Nazi Week</sub-title>
+    <episode-num>Temporada 6 Episodio 6</episode-num>
   </programme>
   <programme start="20261109114900 -0500" stop="20261109121200 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Lo mejor que se puede comprar</title>
   </programme>
   <programme start="20261109121200 -0500" stop="20261109123700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Pinocchio's Mouth</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Pinocchio's Mouth</sub-title>
+    <episode-num>Temporada 6 Episodio 8</episode-num>
   </programme>
   <programme start="20261109123700 -0500" stop="20261109130100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Mooch at the Boo</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">The Mooch at the Boo</sub-title>
+    <episode-num>Temporada 6 Episodio 9</episode-num>
   </programme>
   <programme start="20261109130100 -0500" stop="20261109133600 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Primero estar de pie</title>
@@ -521,9 +756,11 @@
   </programme>
   <programme start="20261109151600 -0500" stop="20261109165600 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Turbo</title>
+    <desc lang="es">Turbo es un caracol de jardín con un sueño imposible: convertirse en el caracol más rápido del mundo. Cuando un extraño accidente le da el poder de la súper-velocidad, Turbo intentará cumplir su sueño. Primero se hará amigo de una peculiar pandilla de caracoles callejeros tuneados y obsesionados con la velocidad, y allí Turbo aprenderá que nadie llega a tener éxito por sí solo. Así que coloca su corazón y su concha en la línea de salida dispuesto a ayudar a sus colegas a lograr sus sueños, antes de intentar alcanzar su sueño imposible: ganar las 500 millas de Indianápolis.</desc>
   </programme>
   <programme start="20261109165600 -0500" stop="20261109185800 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">El protector</title>
+    <desc lang="es">Cortometraje de Jorge Macario.</desc>
   </programme>
   <programme start="20261109185800 -0500" stop="20261109210000 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Robo en las alturas</title>
@@ -535,43 +772,67 @@
     <title lang="es">Award Tour</title>
   </programme>
   <programme start="20261109235500 -0500" stop="20261109235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Clean Room Infiltration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Clean Room Infiltration</sub-title>
+    <episode-num>Temporada 8 Episodio 11</episode-num>
   </programme>
   <programme start="20261110000000 -0500" stop="20261110001700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Clean Room Infiltration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Clean Room Infiltration</sub-title>
+    <episode-num>Temporada 8 Episodio 11</episode-num>
   </programme>
   <programme start="20261110001700 -0500" stop="20261110003900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Space Probe Disintegration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Space Probe Disintegration</sub-title>
+    <episode-num>Temporada 8 Episodio 12</episode-num>
   </programme>
   <programme start="20261110003900 -0500" stop="20261110010100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Anxiety Optimization</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Anxiety Optimization</sub-title>
+    <episode-num>Temporada 8 Episodio 13</episode-num>
   </programme>
   <programme start="20261110010100 -0500" stop="20261110012400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Troll Manifestation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Troll Manifestation</sub-title>
+    <episode-num>Temporada 8 Episodio 14</episode-num>
   </programme>
   <programme start="20261110012400 -0500" stop="20261110014600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Comic Book Store Regeneration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Comic Book Store Regeneration</sub-title>
+    <episode-num>Temporada 8 Episodio 15</episode-num>
   </programme>
   <programme start="20261110014600 -0500" stop="20261110020800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Intimacy Acceleration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Intimacy Acceleration</sub-title>
+    <episode-num>Temporada 8 Episodio 16</episode-num>
   </programme>
   <programme start="20261110020800 -0500" stop="20261110023000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Flavin' and the Mavin</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">The Flavin' and the Mavin'</sub-title>
+    <episode-num>Temporada 6 Episodio 4</episode-num>
   </programme>
   <programme start="20261110023000 -0500" stop="20261110025300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">A Jock Strap in Hell</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">A Jock Strap in Hell</sub-title>
+    <episode-num>Temporada 6 Episodio 5</episode-num>
   </programme>
   <programme start="20261110025300 -0500" stop="20261110031600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">It's Always Nazi Week</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">It's Always Nazi Week</sub-title>
+    <episode-num>Temporada 6 Episodio 6</episode-num>
   </programme>
   <programme start="20261110031600 -0500" stop="20261110033900 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Lo mejor que se puede comprar</title>
   </programme>
   <programme start="20261110033900 -0500" stop="20261110040200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Pinocchio's Mouth</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Pinocchio's Mouth</sub-title>
+    <episode-num>Temporada 6 Episodio 8</episode-num>
   </programme>
   <programme start="20261110040200 -0500" stop="20261110042600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Mooch at the Boo</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">The Mooch at the Boo</sub-title>
+    <episode-num>Temporada 6 Episodio 9</episode-num>
   </programme>
   <programme start="20261110042600 -0500" stop="20261110043500 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Hollywood One on One</title>
@@ -583,37 +844,58 @@
     <title lang="es">Hollywood One on One</title>
   </programme>
   <programme start="20261110050000 -0500" stop="20261110054000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Party Time</title>
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">Party Time</sub-title>
+    <episode-num>Temporada 4 Episodio 8</episode-num>
   </programme>
   <programme start="20261110054000 -0500" stop="20261110072000 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Turbo</title>
+    <desc lang="es">Turbo es un caracol de jardín con un sueño imposible: convertirse en el caracol más rápido del mundo. Cuando un extraño accidente le da el poder de la súper-velocidad, Turbo intentará cumplir su sueño. Primero se hará amigo de una peculiar pandilla de caracoles callejeros tuneados y obsesionados con la velocidad, y allí Turbo aprenderá que nadie llega a tener éxito por sí solo. Así que coloca su corazón y su concha en la línea de salida dispuesto a ayudar a sus colegas a lograr sus sueños, antes de intentar alcanzar su sueño imposible: ganar las 500 millas de Indianápolis.</desc>
   </programme>
   <programme start="20261110072000 -0500" stop="20261110074200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Colonization Application</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Colonization Application</sub-title>
+    <episode-num>Temporada 8 Episodio 17</episode-num>
   </programme>
   <programme start="20261110074200 -0500" stop="20261110080500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Leftover Thermalization</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Leftover Thermalization</sub-title>
+    <episode-num>Temporada 8 Episodio 18</episode-num>
   </programme>
   <programme start="20261110080500 -0500" stop="20261110082900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Skywalker Incursion</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Skywalker Incursion</sub-title>
+    <episode-num>Temporada 8 Episodio 19</episode-num>
   </programme>
   <programme start="20261110082900 -0500" stop="20261110085100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Fortification Implementation</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Fortification Implementation</sub-title>
+    <episode-num>Temporada 8 Episodio 20</episode-num>
   </programme>
   <programme start="20261110085100 -0500" stop="20261110091300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Communication Deterioration</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Communication Deterioration</sub-title>
+    <episode-num>Temporada 8 Episodio 21</episode-num>
   </programme>
   <programme start="20261110091300 -0500" stop="20261110093500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Graduation Transmission</title>
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Graduation Transmission</sub-title>
+    <episode-num>Temporada 8 Episodio 22</episode-num>
   </programme>
   <programme start="20261110093500 -0500" stop="20261110095900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">He Smelled the Ham, He Got Excited</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">He Smelled the Ham, He Got Excited</sub-title>
+    <episode-num>Temporada 6 Episodio 10</episode-num>
   </programme>
   <programme start="20261110095900 -0500" stop="20261110102400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">The Devil's Lube</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">The Devil's Lube</sub-title>
+    <episode-num>Temporada 6 Episodio 11</episode-num>
   </programme>
   <programme start="20261110102400 -0500" stop="20261110104700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Thank God for Scoliosis</title>
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Thank God for Scoliosis</sub-title>
+    <episode-num>Temporada 6 Episodio 12</episode-num>
   </programme>
   <programme start="20261110104700 -0500" stop="20261110111200 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Creo que ofendiste a Don</title>
@@ -625,15 +907,19 @@
     <title lang="es">Empezaré con el gato</title>
   </programme>
   <programme start="20261110120100 -0500" stop="20261110124000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Then Learn Fly</title>
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">Then Learn Fly</sub-title>
+    <episode-num>Temporada 4 Episodio 3</episode-num>
   </programme>
   <programme start="20261110124000 -0500" stop="20261110143400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Robo en las alturas</title>
   </programme>
   <programme start="20261110143400 -0500" stop="20261110162600 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Sin límites</title>
+    <desc lang="es">Un escritor (Bradley Cooper), que sufre una crisis de creatividad, prueba un día una nueva droga que lo pone en condiciones de usar al máximo todas sus facultades mentales; es una especie de píldora inteligente gracias a la cual consigue triunfar en Nueva York. Un poderoso financiero de Wall Street (De Niro) siente una extraordinaria curiosidad por averiguar qué se esconde detrás de tanto éxito...</desc>
   </programme>
   <programme start="20261110162600 -0500" stop="20261110184300 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">La gran estafa</title>
+    <desc lang="es">En la década de los 70, el escritor Clifford Irving engañó a una importante editorial, haciendo creer a sus propietarios que tenía permiso del mismísimo Howard Hugues para publicar su autobiografía. Lo que comienza siendo un acto de picaresca por parte de un escritor sin un céntimo, acaba convirtiéndose en un escándalo que salpica incluso a la Casa Blanca. Basada en hechos reales.</desc>
   </programme>
 </tv>
