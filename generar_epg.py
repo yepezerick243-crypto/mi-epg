@@ -771,6 +771,7 @@ def identificar_programa(
 # GENERAR PROGRAMA XMLTV
 # ============================================================
 
+
 def crear_programa(programa, datos_tvmaze, datos_tmdb, cache):
 
     inicio = programa["inicio"]
@@ -828,7 +829,7 @@ def crear_programa(programa, datos_tvmaze, datos_tmdb, cache):
 
         descripcion = (
             datos.get("descripcion")
-            or programa["descripcion"]
+            or programa.get("descripcion", "")
         )
 
         if descripcion:
@@ -847,15 +848,17 @@ def crear_programa(programa, datos_tvmaze, datos_tmdb, cache):
 
         datos = resultado["datos"]
 
+        titulo_pelicula = datos.get("titulo") or titulo
+
         texto_xml(
             elemento,
             "title",
-            datos["titulo"]
+            titulo_pelicula
         )
 
         descripcion = (
             datos.get("descripcion")
-            or programa["descripcion"]
+            or programa.get("descripcion", "")
         )
 
         if descripcion:
@@ -878,7 +881,7 @@ def crear_programa(programa, datos_tvmaze, datos_tmdb, cache):
             titulo
         )
 
-        if programa["descripcion"]:
+        if programa.get("descripcion"):
             texto_xml(
                 elemento,
                 "desc",
@@ -888,9 +891,10 @@ def crear_programa(programa, datos_tvmaze, datos_tmdb, cache):
         ET.SubElement(
             elemento,
             "category"
-        ).text = programa["categoria"] or "Entretenimiento"
+        ).text = programa.get("categoria") or "Entretenimiento"
 
     return elemento
+
 
 
 # ============================================================
