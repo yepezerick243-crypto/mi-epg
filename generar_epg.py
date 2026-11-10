@@ -27,7 +27,6 @@ TMDB_URL = "https://api.themoviedb.org/3"
 
 ARCHIVO_XML = "epg.xml"
 
-# Idiomas utilizados para buscar títulos y episodios.
 IDIOMAS_BUSQUEDA = [
     "es-ES",
     "en-US",
@@ -37,7 +36,6 @@ IDIOMAS_BUSQUEDA = [
     "it-IT",
 ]
 
-# Series cuyos episodios aparecen en la programación de INTV.
 SERIES_CONOCIDAS = [
     "The Big Bang Theory",
     "Two and a Half Men",
@@ -48,6 +46,43 @@ NOMBRES_SERIES_ES = {
     "the big bang theory": "La teoría del Big Bang",
     "two and a half men": "Dos hombres y medio",
     "cobra kai": "Cobra Kai",
+}
+
+# Identificaciones manuales verificadas.
+# Formato: titulo INTV: (serie, temporada, episodio)
+EPISODIOS_MANUALES = {
+    "Adoptando chicas": (
+        "Two and a Half Men", 4, 23
+    ),
+    "Chicas y helado": (
+        "Two and a Half Men", 4, 24
+    ),
+    "Aves grandes, arañas y mamá": (
+        "Two and a Half Men", 5, 1
+    ),
+    "Creo que ofendiste a Don": (
+        "Two and a Half Men", 6, 13
+    ),
+    "Primero estar de pie": (
+        "Cobra Kai", 4, 2
+    ),
+}
+
+# Título identificado como perteneciente a la serie,
+# pero sin temporada y episodio verificados.
+SERIES_SIN_EPISODIO = {
+    "Viento a favor": "Two and a Half Men",
+}
+
+# Películas identificadas manualmente por ID de TMDb.
+PELICULAS_MANUALES = {
+    "Un jefe en pañales": 295693,
+}
+
+# No se buscarán estos títulos.
+TITULOS_NO_BUSCAR = {
+    "Hollywood One on One",
+    "El Buzz",
 }
 
 SESION = requests.Session()
@@ -425,6 +460,7 @@ def agregar_coincidencia(catalogo, titulo, informacion):
 
 def construir_catalogo_series():
     catalogo = {}
+    episodios_por_serie = {}
 
     print("Consultando series y episodios en TVmaze...")
 
@@ -443,7 +479,6 @@ def construir_catalogo_series():
 
         episodios_por_numero = {}
 
-        # Primero cargar los episodios originales de TVmaze.
         for episodio in episodios_tvmaze:
             temporada = episodio.get("season")
             numero = episodio.get("number")
@@ -472,12 +507,14 @@ def construir_catalogo_series():
                 episodios_por_numero[clave]
             )
 
+        episodios_por_serie[normalizar(nombre)] = (
+            episodios_por_numero
+        )
+
         cantidad_tvmaze = len(episodios_por_numero)
 
-        # Después incorporar los nombres traducidos de TMDb.
         if tmdb_id:
             detalles = obtener_detalles_serie_tmdb(tmdb_id)
-
             temporadas = detalles.get("seasons", [])
 
             for temporada_info in temporadas:
@@ -488,8 +525,6 @@ def construir_catalogo_series():
                 if numero_temporada is None:
                     continue
 
-                # Consultar los nombres de los episodios
-                # en los idiomas disponibles.
                 for idioma in IDIOMAS_BUSQUEDA:
                     episodios_traducidos = (
                         obtener_episodios_temporada_tmdb(
@@ -530,13 +565,43 @@ def construir_catalogo_series():
             )
         )
 
-        # Obtener alias del nombre de la serie.
         aliases = obtener_aliases_tvmaze(show_id)
 
         if aliases:
             print(
                 f"Alias adicionales encontrados para {nombre}:",
                 len(aliases)
+            )
+
+    # Incorporar los títulos manuales usando los datos
+    # originales de los episodios de TVmaze.
+    print("Aplicando identificaciones manuales...")
+
+    for titulo, datos in EPISODIOS_MANUALES.items():
+        nombre_serie, temporada, numero = datos
+
+        episodios = episodios_por_serie.get(
+            normalizar(nombre_serie),
+            {}
+        )
+
+        informacion = episodios.get((temporada, numero))
+
+        if informacion:
+            agregar_coincidencia(
+                catalogo,
+                titulo,
+                informacion
+            )
+
+            print(
+                f"Identificado: {titulo} -> "
+                f"{nombre_serie} S{temporada:02d}E{numero:02d}"
+            )
+        else:
+            print(
+                "No se encontró el episodio manual en TVmaze:",
+                titulo
             )
 
     return catalogo
@@ -577,9 +642,14 @@ def buscar_pelicula_tmdb(titulo):
         return None
 
     titulo_buscado = normalizar(titulo)
+
+    # Comprobar primero las películas identificadas manualmente.
+    for titulo_manual, tmdb_id in PELICULAS_MANUALES.items():
+        if normalizar(titulo_manual) == titulo_buscado:
+            return {"id": tmdb_id}
+
     candidatos = {}
 
-    # Buscar el título en varios idiomas.
     for idioma in IDIOMAS_BUSQUEDA:
         try:
             resultados = solicitar_json(
@@ -618,7 +688,6 @@ def buscar_pelicula_tmdb(titulo):
                 error
             )
 
-    # Si no hubo coincidencia directa, revisar títulos alternativos.
     for tmdb_id, resultado in candidatos.items():
         alternativos = obtener_titulos_alternativos_pelicula(
             tmdb_id
@@ -642,7 +711,7 @@ def obtener_traduccion_es(tipo, tmdb_id):
 
         traducciones = datos.get("translations", [])
 
-        prioridades = ["ES", "MX"]
+        prioridades = ["MX", "ES"]
 
         for pais in prioridades:
             for traduccion in traducciones:
@@ -680,12 +749,13 @@ def obtener_datos_pelicula(titulo):
         traduccion.get("overview", "")
     )
 
+    # Consultar primero la ficha mexicana de TMDb.
     try:
         detalles = solicitar_json(
             f"{TMDB_URL}/movie/{tmdb_id}",
             params={
                 "api_key": TMDB_API_KEY,
-                "language": "es-ES"
+                "language": "es-MX"
             }
         )
 
@@ -698,9 +768,30 @@ def obtener_datos_pelicula(titulo):
             )
 
     except Exception as error:
-        print("Error obteniendo detalles de película:", error)
+        print("Error obteniendo detalles es-MX:", error)
 
-    # No mostrar un título inglés como si fuera español.
+    # Si no hay datos mexicanos, intentar español de España.
+    if not titulo_es or not sinopsis_es:
+        try:
+            detalles = solicitar_json(
+                f"{TMDB_URL}/movie/{tmdb_id}",
+                params={
+                    "api_key": TMDB_API_KEY,
+                    "language": "es-ES"
+                }
+            )
+
+            if not titulo_es:
+                titulo_es = detalles.get("title", "").strip()
+
+            if not sinopsis_es:
+                sinopsis_es = limpiar_texto(
+                    detalles.get("overview", "")
+                )
+
+        except Exception as error:
+            print("Error obteniendo detalles es-ES:", error)
+
     if not titulo_es:
         return None
 
@@ -754,7 +845,8 @@ def crear_programa(programa, catalogo_series):
 
         clave = normalizar(titulo_intv)
 
-        # PRIMERO: buscar episodio en todos los idiomas.
+        # PRIMERO: buscar episodio en todos los idiomas
+        # y en las identificaciones manuales.
         episodio = catalogo_series.get(clave)
 
         if episodio:
@@ -782,19 +874,61 @@ def crear_programa(programa, catalogo_series):
                 "en"
             )
 
-            agregar_texto(
+            numero_episodio = ET.SubElement(
                 elemento,
                 "episode-num",
-                (
-                    f"Temporada {episodio['temporada']} "
-                    f"Episodio {episodio['numero']}"
-                ),
-                None
+                {"system": "onscreen"}
+            )
+
+            numero_episodio.text = (
+                f"Temporada {episodio['temporada']} "
+                f"Episodio {episodio['numero']}"
             )
 
             return elemento
 
-        # SEGUNDO: buscar película en varios idiomas.
+        # SEGUNDO: título que pertenece a una serie,
+        # pero cuyo episodio no se ha podido verificar.
+        serie_sin_episodio = None
+
+        for titulo_manual, nombre_serie in SERIES_SIN_EPISODIO.items():
+            if normalizar(titulo_manual) == clave:
+                serie_sin_episodio = nombre_serie
+                break
+
+        if serie_sin_episodio:
+            nombre_serie_es = obtener_nombre_serie_es(
+                serie_sin_episodio
+            )
+
+            if not nombre_serie_es:
+                nombre_serie_es = NOMBRES_SERIES_ES.get(
+                    normalizar(serie_sin_episodio),
+                    serie_sin_episodio
+                )
+
+            agregar_texto(
+                elemento,
+                "title",
+                nombre_serie_es,
+                "es"
+            )
+
+            agregar_texto(
+                elemento,
+                "sub-title",
+                titulo_intv,
+                "es"
+            )
+
+            print(
+                "Serie identificada, episodio pendiente:",
+                titulo_intv
+            )
+
+            return elemento
+
+        # TERCERO: buscar película en TMDb.
         pelicula = obtener_datos_pelicula(titulo_intv)
 
         if pelicula:
@@ -813,9 +947,15 @@ def crear_programa(programa, catalogo_series):
                     "es"
                 )
 
+            print(
+                f"Película identificada: {titulo_intv} "
+                f"(TMDb ID: {pelicula['id']})"
+            )
+
             return elemento
 
-        # TERCERO: conservar título sin inventar información.
+        # CUARTO: conservar el título original
+        # sin inventar información.
         agregar_texto(
             elemento,
             "title",
@@ -823,7 +963,9 @@ def crear_programa(programa, catalogo_series):
             "es"
         )
 
-        print("Sin coincidencia verificada:", titulo_intv)
+        # Estos títulos quedan excluidos de las búsquedas.
+        if titulo_intv not in TITULOS_NO_BUSCAR:
+            print("Sin coincidencia verificada:", titulo_intv)
 
         return elemento
 
