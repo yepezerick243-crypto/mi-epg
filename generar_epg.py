@@ -1,11 +1,8 @@
-
 import requests
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
 
 URL = "https://intv.com.co/inicio/television/parrilla-de-television/"
 
-def inspeccionar_scripts():
+def inspeccionar_html():
     headers = {
         "User-Agent": "Mozilla/5.0"
     }
@@ -13,15 +10,17 @@ def inspeccionar_scripts():
     respuesta = requests.get(URL, headers=headers, timeout=30)
     respuesta.raise_for_status()
 
-    soup = BeautifulSoup(respuesta.text, "html.parser")
-
     print("PAGINA:", respuesta.status_code)
-    print("ARCHIVOS JAVASCRIPT ENCONTRADOS:")
+    print("TAMAÑO HTML:", len(respuesta.text))
+    print("\nREFERENCIAS A JAVASCRIPT Y DATOS:")
 
-    for script in soup.find_all("script", src=True):
-        url_script = urljoin(URL, script["src"])
-        print(url_script)
+    for numero, linea in enumerate(respuesta.text.splitlines(), 1):
+        if any(palabra in linea.lower() for palabra in [
+            "script", "programs-wrapper", "admin-ajax",
+            "wp-json", "fetch(", "ajax", "parrilla"
+        ]):
+            print(f"{numero}: {linea[:1000]}")
 
 
 if __name__ == "__main__":
-    inspeccionar_scripts()
+    inspeccionar_html()
