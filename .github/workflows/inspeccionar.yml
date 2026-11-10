@@ -4,7 +4,7 @@ name: Generar EPG Warner Channel
 on:
   workflow_dispatch:
   schedule:
-  - cron: "0,40 * * * *"
+    - cron: "0,40 * * * *"
 
 permissions:
   contents: write
