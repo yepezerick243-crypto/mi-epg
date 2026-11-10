@@ -151,7 +151,10 @@ def texto_xml(elemento, nombre, texto):
 # DIRECTV: OBTENER PROGRAMACIÓN
 # ============================================================
 
+
 def consultar_directv(fecha):
+    global sesion
+
     payload = {
         "filterParameters": {
             "day": fecha.day,
@@ -164,13 +167,16 @@ def consultar_directv(fecha):
             "filtersScreenFilters": [""],
             "isHd": "",
             "isChannelDetails": "Y",
-            "channelName": CANAL_DIRECTV,
-            "channelNum": CANAL_NUMERO
+            "channelName": "WTVHD",
+            "channelNum": 1206
         }
     }
 
     for intento in range(4):
         try:
+            # Renovar la sesión en cada intento.
+            sesion = requests.Session()
+
             pagina = sesion.get(
                 URL_PAGINA,
                 headers=HEADERS_DIRECTV,
@@ -179,6 +185,8 @@ def consultar_directv(fecha):
 
             pagina.raise_for_status()
 
+            time.sleep(2)
+
             respuesta = sesion.post(
                 URL_API,
                 headers=HEADERS_DIRECTV,
@@ -186,36 +194,53 @@ def consultar_directv(fecha):
                 timeout=40
             )
 
+            print(
+                f"DIRECTV {fecha:%d/%m/%Y}: "
+                f"HTTP {respuesta.status_code}, "
+                f"{len(respuesta.content)} bytes"
+            )
+
             respuesta.raise_for_status()
 
-            datos = respuesta.json()
+            if not respuesta.text.strip():
+                raise ValueError("DIRECTV devolvió una respuesta vacía.")
+
+            try:
+                datos = respuesta.json()
+            except ValueError:
+                raise ValueError(
+                    "Respuesta no JSON: "
+                    + repr(respuesta.text[:300])
+                )
+
             canales = datos.get("d", [])
 
             if not isinstance(canales, list) or not canales:
-                raise ValueError("DIRECTV no devolvió canales.")
+                raise ValueError(
+                    "No se encontró la lista de canales: "
+                    + repr(respuesta.text[:300])
+                )
 
             programas = []
 
             for canal in canales:
-                if canal.get("ChannelFullName") != CANAL_DIRECTV:
+                if canal.get("ChannelFullName") != "WTVHD":
                     continue
 
-                for programa in canal.get("ProgramList", []):
+                for p in canal.get("ProgramList", []):
                     inicio = convertir_fecha(
-                        programa.get("startTimeString")
+                        p.get("startTimeString")
                     )
 
                     fin = convertir_fecha(
-                        programa.get("endTimeString")
+                        p.get("endTimeString")
                     )
 
-                    titulo = (programa.get("title") or "").strip()
+                    titulo = (p.get("title") or "").strip()
 
                     if not inicio or not fin or not titulo:
                         continue
 
-                    # Solo guardar programas que comienzan
-                    # en la fecha solicitada.
                     if inicio.date() != fecha.date():
                         continue
 
@@ -226,25 +251,20 @@ def consultar_directv(fecha):
                         "inicio": inicio,
                         "fin": fin,
                         "titulo": titulo,
-                        "descripcion": (
-                            programa.get("description") or ""
-                        ),
-                        "categoria": (
-                            programa.get("categoryId") or ""
-                        ),
-                        "tms_id": (
-                            programa.get("tmsId") or ""
-                        )
+                        "descripcion": p.get("description") or "",
+                        "categoria": p.get("categoryId") or "",
+                        "tms_id": p.get("tmsId") or ""
                     })
 
             if len(programas) < 5:
                 raise ValueError(
-                    f"Respuesta incompleta: {len(programas)} programas."
+                    f"Programación incompleta: "
+                    f"{len(programas)} programas."
                 )
 
             print(
-                f"DIRECTV {fecha:%d/%m/%Y}: "
-                f"{len(programas)} programas"
+                f"Correcto: {len(programas)} programas "
+                f"para {fecha:%d/%m/%Y}"
             )
 
             return programas
@@ -256,9 +276,10 @@ def consultar_directv(fecha):
             )
 
             if intento < 3:
-                time.sleep(3)
+                time.sleep(8)
 
     return []
+
 
 
 # ============================================================
