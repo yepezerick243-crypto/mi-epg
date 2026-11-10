@@ -1,5 +1,6 @@
 
 import requests
+import json
 
 url = "https://www.directv.com.ec/guia/ChannelDetail.aspx/GetProgramming"
 
@@ -9,26 +10,39 @@ headers = {
     "Origin": "https://www.directv.com.ec",
     "Referer": "https://www.directv.com.ec/guia/ChannelDetail.aspx?id=1206&name=WTVHD",
     "X-Requested-With": "XMLHttpRequest",
-    "User-Agent": "Mozilla/5.0",
-    "Sec-Fetch-Site": "same-origin",
-    "Sec-Fetch-Mode": "cors",
-    "Sec-Fetch-Dest": "empty",
-    "Accept-Language": "es-EC,es;q=0.9,en;q=0.8"
+    "User-Agent": "Mozilla/5.0"
 }
 
-payload = {"filterParameters": None}
+payload = {
+    "filterParameters": {
+        "day": 10,
+        "time": 0,
+        "minute": 0,
+        "month": 11,
+        "year": 2026,
+        "offSetValue": 0,
+        "homeScreenFilter": "",
+        "filtersScreenFilters": [""],
+        "isHd": "",
+        "isChannelDetails": "Y",
+        "channelName": "WTVHD",
+        "channelNum": 1206
+    }
+}
 
 r = requests.post(url, headers=headers, json=payload, timeout=30)
 
 print("ESTADO:", r.status_code)
-print("RESPUESTA:", r.text[:12000])
 
 datos = r.json()
 canales = datos.get("d", [])
 
+print("RESPUESTA:", json.dumps(datos, ensure_ascii=False)[:15000])
+
 if isinstance(canales, list):
     for canal in canales:
         print("\nCANAL:", canal.get("ChannelFullName"))
+
         for p in canal.get("ProgramList", []):
             print(
                 p.get("startTimeString"),
@@ -37,5 +51,3 @@ if isinstance(canales, list):
                 "|",
                 p.get("title")
             )
-else:
-    print("DIRECTV NO DEVOLVIÓ LA LISTA DE CANALES.")
