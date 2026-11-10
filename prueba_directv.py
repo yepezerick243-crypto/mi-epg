@@ -1,12 +1,14 @@
 
 import requests
-import json
 
 url = "https://www.directv.com.ec/guia/ChannelDetail.aspx/GetProgramming"
 
 headers = {
     "Content-Type": "application/json; charset=UTF-8",
+    "Accept": "application/json, text/javascript, */*; q=0.01",
+    "Origin": "https://www.directv.com.ec",
     "Referer": "https://www.directv.com.ec/guia/ChannelDetail.aspx?id=1206&name=WTVHD",
+    "X-Requested-With": "XMLHttpRequest",
     "User-Agent": "Mozilla/5.0"
 }
 
@@ -15,23 +17,21 @@ payload = {"filterParameters": None}
 r = requests.post(url, headers=headers, json=payload, timeout=30)
 
 print("ESTADO:", r.status_code)
-print("TIPO:", r.headers.get("Content-Type"))
-print("RESPUESTA COMPLETA:")
-print(r.text[:12000])
+print("RESPUESTA:", r.text[:12000])
 
-try:
-    datos = r.json()
-    print("\nTIPO DE DATOS:", type(datos).__name__)
-    print("CLAVES:", list(datos.keys()) if isinstance(datos, dict) else "No es diccionario")
+datos = r.json()
+canales = datos.get("d", [])
 
-    canales = datos.get("d", []) if isinstance(datos, dict) else []
-
-    print("CANTIDAD DE CANALES:", len(canales))
-
+if isinstance(canales, list):
     for canal in canales:
-        programas = canal.get("ProgramList", [])
-        print("CANAL:", canal.get("ChannelFullName"))
-        print("CANTIDAD DE PROGRAMAS:", len(programas))
-
-except Exception as e:
-    print("ERROR AL LEER JSON:", str(e))
+        print("\nCANAL:", canal.get("ChannelFullName"))
+        for p in canal.get("ProgramList", []):
+            print(
+                p.get("startTimeString"),
+                "-",
+                p.get("endTimeString"),
+                "|",
+                p.get("title")
+            )
+else:
+    print("DIRECTV NO DEVOLVIÓ LA LISTA DE CANALES.")
