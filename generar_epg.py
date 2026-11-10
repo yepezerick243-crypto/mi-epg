@@ -954,10 +954,12 @@ def cargar_xml_anterior():
 # GENERAR XML COMPLETO
 # ============================================================
 
+
 def generar_xml():
 
     ahora = datetime.now(ZONA)
     hoy = ahora.date()
+    hora_actual = ahora.strftime("%Y%m%d%H%M%S")
 
     print("=" * 55)
     print("GENERADOR EPG WARNER CHANNEL")
@@ -969,15 +971,22 @@ def generar_xml():
 
     todos_programas = []
 
-    # Hoy y los próximos 6 días.
+    # Consultar hoy y los próximos 6 días.
     for desplazamiento in range(7):
 
         fecha = hoy + timedelta(days=desplazamiento)
 
         programas = consultar_directv(fecha)
 
-        if programas:
-            todos_programas.extend(programas)
+        if not programas:
+            print(
+                "Sin programación disponible para:",
+                fecha.strftime("%d/%m/%Y")
+            )
+            print("Se detienen las consultas de días posteriores.")
+            break
+
+        todos_programas.extend(programas)
 
     if not todos_programas:
         raise RuntimeError(
@@ -985,14 +994,24 @@ def generar_xml():
             "Se conserva el XML anterior."
         )
 
-    # TVmaze y TMDb
+    # TVmaze y TMDb.
     datos_tvmaze = cargar_tvmaze()
     datos_tmdb = cargar_episodios_tmdb()
 
     cache = cargar_cache_peliculas()
 
-    # XML anterior
+    # Cargar XML anterior.
     anteriores = cargar_xml_anterior()
+
+    # Conservar únicamente programas que ya comenzaron.
+    anteriores_filtrados = []
+
+    for elemento in anteriores:
+
+        inicio_anterior = elemento.get("start", "")
+
+        if inicio_anterior[:14] <= hora_actual:
+            anteriores_filtrados.append(elemento)
 
     raiz = ET.Element("tv")
 
@@ -1008,7 +1027,8 @@ def generar_xml():
         CANAL_NOMBRE
     )
 
-    programas_xml = anteriores
+    # Empezar con programas anteriores ya iniciados.
+    programas_xml = anteriores_filtrados
 
     # Evitar duplicados.
     claves = set()
@@ -1045,6 +1065,7 @@ def generar_xml():
         claves.add(clave)
         nuevos += 1
 
+    # Ordenar cronológicamente.
     programas_xml.sort(
         key=lambda p: p.get("start", "")
     )
@@ -1070,10 +1091,11 @@ def generar_xml():
     print("=" * 55)
     print("PROGRAMAS OBTENIDOS:", len(todos_programas))
     print("PROGRAMAS NUEVOS:", nuevos)
-    print("PROGRAMAS CONSERVADOS:", len(anteriores))
+    print("PROGRAMAS ANTERIORES CONSERVADOS:", len(anteriores_filtrados))
     print("PELÍCULAS EN CACHÉ:", len(cache))
     print("XML GENERADO:", ARCHIVO_XML)
     print("=" * 55)
+
 
 
 if __name__ == "__main__":
