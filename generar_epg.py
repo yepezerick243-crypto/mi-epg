@@ -102,6 +102,7 @@ HEADERS_DIRECTV = {
 
 sesion_tmdb = requests.Session()
 
+
 # ============================================================
 # UTILIDADES
 # ============================================================
@@ -148,9 +149,8 @@ def texto_xml(elemento, nombre, texto):
 
 
 # ============================================================
-# DIRECTV: OBTENER PROGRAMACIÓN
+# DIRECTV: INICIAR SESIÓN
 # ============================================================
-
 
 def iniciar_sesion_directv():
     global sesion
@@ -174,8 +174,11 @@ def iniciar_sesion_directv():
     print("Cookies:", list(sesion.cookies.keys()))
 
 
+# ============================================================
+# DIRECTV: OBTENER PROGRAMACIÓN
+# ============================================================
+
 def consultar_directv(fecha):
-    global sesion
 
     payload = {
         "filterParameters": {
@@ -189,26 +192,13 @@ def consultar_directv(fecha):
             "filtersScreenFilters": [""],
             "isHd": "",
             "isChannelDetails": "Y",
-            "channelName": "WTVHD",
-            "channelNum": 1206
+            "channelName": CANAL_DIRECTV,
+            "channelNum": CANAL_NUMERO
         }
     }
 
     for intento in range(4):
         try:
-            # Renovar la sesión en cada intento.
-            sesion = requests.Session()
-
-            pagina = sesion.get(
-                URL_PAGINA,
-                headers=HEADERS_DIRECTV,
-                timeout=30
-            )
-
-            pagina.raise_for_status()
-
-            time.sleep(2)
-
             respuesta = sesion.post(
                 URL_API,
                 headers=HEADERS_DIRECTV,
@@ -223,13 +213,16 @@ def consultar_directv(fecha):
             )
 
             respuesta.raise_for_status()
+
             if "captcha.perfdrive.com" in respuesta.text.lower():
-    raise RuntimeError(
-        "DIRECTV bloqueó la consulta con Radware CAPTCHA."
-    )
+                raise RuntimeError(
+                    "DIRECTV bloqueó la consulta con Radware CAPTCHA."
+                )
 
             if not respuesta.text.strip():
-                raise ValueError("DIRECTV devolvió una respuesta vacía.")
+                raise ValueError(
+                    "DIRECTV devolvió una respuesta vacía."
+                )
 
             try:
                 datos = respuesta.json()
@@ -250,7 +243,7 @@ def consultar_directv(fecha):
             programas = []
 
             for canal in canales:
-                if canal.get("ChannelFullName") != "WTVHD":
+                if canal.get("ChannelFullName") != CANAL_DIRECTV:
                     continue
 
                 for p in canal.get("ProgramList", []):
@@ -307,7 +300,6 @@ def consultar_directv(fecha):
     return []
 
 
-
 # ============================================================
 # TVMAZE: CARGAR EPISODIOS
 # ============================================================
@@ -325,7 +317,6 @@ def cargar_tvmaze():
             respuesta.raise_for_status()
 
             episodios = respuesta.json()
-
             resultados[nombre] = episodios
 
             print(
@@ -335,14 +326,13 @@ def cargar_tvmaze():
 
         except Exception as error:
             print(f"Error TVmaze {nombre}: {error}")
-
             resultados[nombre] = []
 
     return resultados
 
 
 def identificar_tvmaze(titulo, datos_tvmaze):
-    # Coincidencias confirmadas manualmente.
+
     if titulo in EPISODIOS_CONFIRMADOS:
         return EPISODIOS_CONFIRMADOS[titulo]
 
@@ -366,7 +356,6 @@ def identificar_tvmaze(titulo, datos_tvmaze):
                 "episodio": ep.get("name")
             }
 
-    # Primero buscar coincidencia exacta.
     exactos = []
 
     for serie, episodios in datos_tvmaze.items():
@@ -385,7 +374,6 @@ def identificar_tvmaze(titulo, datos_tvmaze):
             "descripcion": ep.get("summary") or ""
         }
 
-    # Después buscar coincidencia aproximada.
     candidatos = []
 
     for serie, episodios in datos_tvmaze.items():
@@ -421,6 +409,7 @@ def identificar_tvmaze(titulo, datos_tvmaze):
 # ============================================================
 
 def tmdb_get(ruta, parametros=None):
+
     if not TMDB_API_KEY:
         return None
 
@@ -448,6 +437,7 @@ def tmdb_get(ruta, parametros=None):
 # ============================================================
 
 def cargar_episodios_tmdb():
+
     resultados = {}
 
     if not TMDB_API_KEY:
@@ -455,6 +445,7 @@ def cargar_episodios_tmdb():
         return resultados
 
     for serie, serie_id in TMDB_SERIES.items():
+
         episodios = []
 
         detalles = tmdb_get(
@@ -474,6 +465,7 @@ def cargar_episodios_tmdb():
 
         for temporada in temporadas:
             for idioma in IDIOMAS:
+
                 datos = tmdb_get(
                     f"/tv/{serie_id}/season/{temporada}",
                     {"language": idioma}
@@ -502,10 +494,12 @@ def cargar_episodios_tmdb():
 
 
 def identificar_tmdb_episodio(titulo, datos_tmdb):
+
     candidatos = []
 
     for serie, episodios in datos_tmdb.items():
         for ep in episodios:
+
             puntuacion = similitud(
                 titulo,
                 ep.get("episodio", "")
@@ -539,6 +533,7 @@ def identificar_tmdb_episodio(titulo, datos_tmdb):
 # ============================================================
 
 def cargar_cache_peliculas():
+
     if not ARCHIVO_CACHE.exists():
         return {}
 
@@ -548,6 +543,7 @@ def cargar_cache_peliculas():
             "r",
             encoding="utf-8"
         ) as archivo:
+
             datos = json.load(archivo)
 
         if isinstance(datos, dict):
@@ -563,11 +559,13 @@ def cargar_cache_peliculas():
 
 
 def guardar_cache_peliculas(cache):
+
     with open(
         ARCHIVO_CACHE,
         "w",
         encoding="utf-8"
     ) as archivo:
+
         json.dump(
             {"peliculas": cache},
             archivo,
@@ -577,6 +575,7 @@ def guardar_cache_peliculas(cache):
 
 
 def buscar_pelicula_tmdb(titulo, cache):
+
     clave = normalizar(titulo)
 
     if clave in cache:
@@ -594,6 +593,7 @@ def buscar_pelicula_tmdb(titulo, cache):
     pelicula_id = PELICULAS_DIRECTAS.get(titulo)
 
     if pelicula_id:
+
         detalles = tmdb_get(
             f"/movie/{pelicula_id}",
             {"language": "es-ES"}
@@ -612,6 +612,7 @@ def buscar_pelicula_tmdb(titulo, cache):
     candidatos = []
 
     for idioma in IDIOMAS:
+
         datos = tmdb_get(
             "/search/movie",
             {
@@ -625,6 +626,7 @@ def buscar_pelicula_tmdb(titulo, cache):
             continue
 
         for pelicula in datos.get("results", []):
+
             nombres = [
                 pelicula.get("title", ""),
                 pelicula.get("original_title", "")
@@ -684,6 +686,7 @@ def identificar_programa(
     datos_tmdb,
     cache_peliculas
 ):
+
     titulo = programa["titulo"]
 
     categoria = normalizar(programa["categoria"])
@@ -701,6 +704,7 @@ def identificar_programa(
     )
 
     if parece_serie:
+
         episodio = identificar_tvmaze(
             titulo,
             datos_tvmaze
@@ -718,6 +722,7 @@ def identificar_programa(
         }
 
     if parece_pelicula:
+
         pelicula = buscar_pelicula_tmdb(
             titulo,
             cache_peliculas
@@ -728,8 +733,6 @@ def identificar_programa(
             "datos": pelicula
         }
 
-    # Si DIRECTV no especifica categoría,
-    # intentamos primero identificar una serie.
     episodio = identificar_tvmaze(
         titulo,
         datos_tvmaze
@@ -769,6 +772,7 @@ def identificar_programa(
 # ============================================================
 
 def crear_programa(programa, datos_tvmaze, datos_tmdb, cache):
+
     inicio = programa["inicio"]
     fin = programa["fin"]
     titulo = programa["titulo"]
@@ -790,6 +794,7 @@ def crear_programa(programa, datos_tvmaze, datos_tmdb, cache):
     )
 
     if resultado["tipo"] == "serie" and resultado["datos"]:
+
         datos = resultado["datos"]
 
         texto_xml(
@@ -810,7 +815,8 @@ def crear_programa(programa, datos_tvmaze, datos_tmdb, cache):
             subtitulo
         )
 
-        if datos.get("temporada") is not None:
+        if datos.get("temporada") is not None and datos.get("numero") is not None:
+
             ET.SubElement(
                 elemento,
                 "episode-num",
@@ -838,6 +844,7 @@ def crear_programa(programa, datos_tvmaze, datos_tmdb, cache):
         ).text = "Serie"
 
     elif resultado["tipo"] == "pelicula" and resultado["datos"]:
+
         datos = resultado["datos"]
 
         texto_xml(
@@ -864,6 +871,7 @@ def crear_programa(programa, datos_tvmaze, datos_tmdb, cache):
         ).text = "Película"
 
     else:
+
         texto_xml(
             elemento,
             "title",
@@ -890,6 +898,7 @@ def crear_programa(programa, datos_tvmaze, datos_tmdb, cache):
 # ============================================================
 
 def cargar_xml_anterior():
+
     if not ARCHIVO_XML.exists():
         return []
 
@@ -898,6 +907,7 @@ def cargar_xml_anterior():
         raiz = arbol.getroot()
 
         hoy = datetime.now(ZONA).date()
+
         limite = datetime.combine(
             hoy,
             datetime.min.time(),
@@ -907,6 +917,7 @@ def cargar_xml_anterior():
         anteriores = []
 
         for programa in raiz.findall("programme"):
+
             inicio = programa.get("start", "")
 
             try:
@@ -915,8 +926,6 @@ def cargar_xml_anterior():
                     "%Y%m%d%H%M%S"
                 ).replace(tzinfo=ZONA)
 
-                # Mantener únicamente los programas anteriores
-                # al comienzo del día actual.
                 if fecha < limite:
                     anteriores.append(
                         ET.fromstring(
@@ -942,6 +951,7 @@ def cargar_xml_anterior():
 # ============================================================
 
 def generar_xml():
+
     ahora = datetime.now(ZONA)
     hoy = ahora.date()
 
@@ -950,12 +960,14 @@ def generar_xml():
     print("Fecha:", ahora.strftime("%d/%m/%Y %H:%M:%S"))
     print("=" * 55)
 
-    # DIRECTV
-iniciar_sesion_directv()
+    # Iniciar una sola sesión DIRECTV.
+    iniciar_sesion_directv()
+
     todos_programas = []
 
     # Hoy y los próximos 6 días.
     for desplazamiento in range(7):
+
         fecha = hoy + timedelta(days=desplazamiento)
 
         programas = consultar_directv(fecha)
@@ -998,6 +1010,7 @@ iniciar_sesion_directv()
     claves = set()
 
     for elemento in programas_xml:
+
         claves.add((
             elemento.get("start"),
             elemento.get("stop"),
@@ -1007,6 +1020,7 @@ iniciar_sesion_directv()
     nuevos = 0
 
     for programa in todos_programas:
+
         clave = (
             fecha_xml(programa["inicio"]),
             fecha_xml(programa["fin"]),
