@@ -189,6 +189,62 @@
       "titulo_es": "La gran estafa",
       "sinopsis_es": "En la década de los 70, el escritor Clifford Irving engañó a una importante editorial, haciendo creer a sus propietarios que tenía permiso del mismísimo Howard Hugues para publicar su autobiografía. Lo que comienza siendo un acto de picaresca por parte de un escritor sin un céntimo, acaba convirtiéndose en un escándalo que salpica incluso a la Casa Blanca. Basada en hechos reales.",
       "verificada": true
+    },
+    "spider man un nuevo universo": {
+      "titulo_origen": "Spider-Man: Un nuevo universo",
+      "tmdb_id": 324857,
+      "titulo_es": "Spider-Man: Un nuevo universo",
+      "sinopsis_es": "En un universo paralelo donde Peter Parker ha muerto, un jóven de secundaria llamado Miles Morales es el nuevo Spider-Man. Sin embargo, cuando el líder mafioso Wilson Fisk (a.k.a Kingpin) construye el \"Super Colisionador\" trae a una versión alternativa de Peter Parker que tratará de enseñarle a Miles como ser un mejor Spider-Man. Pero no será el único Spider Man en entrar a este universo, 4 versiones alternas de Spidey aparecerán y buscarán regresar a su universo antes de que toda la realidad colapse.",
+      "verificada": true
+    },
+    "ip man 4 el final": {
+      "titulo_origen": "Ip Man 4: El final",
+      "tmdb_id": 449924,
+      "titulo_es": "Ip Man 4",
+      "sinopsis_es": "El maestro de Wing chun viaja a los Estados Unidos, donde uno de sus estudiantes ha molestado a la comunidad de artes marciales al abrir una escuela de Wing Chun.",
+      "verificada": true
+    },
+    "shazam": {
+      "titulo_origen": "¡Shazam!",
+      "tmdb_id": 287947,
+      "titulo_es": "¡Shazam!",
+      "sinopsis_es": "Billy Batson, un chico astuto de 14 años, puede transformarse mágicamente en el superhéroe adulto Shazam. Sus poderes se pondrán a prueba contra el malvado Dr. Thaddeus Sivana.",
+      "verificada": true
+    },
+    "jack el cazagigantes": {
+      "titulo_origen": "Jack, el cazagigantes",
+      "tmdb_id": 81005,
+      "titulo_es": "Jack: El Cazagigantes",
+      "sinopsis_es": "Una antigua guerra se vuelve a encender cuando un granjero joven Jack, sin darse cuenta, abre una puerta entre nuestro mundo y una raza terrible de gigantes. Desatados en la Tierra, por primera vez en siglos, los gigantes se esfuerzan por recuperar la tierra que habían perdido, forzando al joven, Jack, a embarcarse en la batalla de su vida para detenerlos.",
+      "verificada": true
+    },
+    "un sueno posible": {
+      "titulo_origen": "Un sueño posible",
+      "tmdb_id": 22881,
+      "titulo_es": "Un sueño posible",
+      "sinopsis_es": "Michael Oher no sabe lo que significa tener una familia. Lo único que el desamparado adolescente conoce son las calles y los multifamiliares de Memphis. Leigh Anne Tuohy no tiene idea del mundo en el que vive el chico, pero cuando Michael la conoce, encuentra un hogar. Y los Tuohys descubren algo que les cambiará la vida: un adorable y nuevo hermano e hijo. Esta es una historia real sobre una familia, Michael y su ascenso en la carrera del fútbol Americano que te encantará, particularmente por la poderosa actuación de Bullock que la llevó a ganar un Oscar y el Globo de Oro a Mejor Actriz. Comparte la hermosa y motivadora historia de un atleta profesional que era un ganador incluso antes de haber puesto un pie en el campo.",
+      "verificada": true
+    },
+    "la leyenda de tarzan": {
+      "titulo_origen": "La leyenda de Tarzán",
+      "tmdb_id": 258489,
+      "titulo_es": "La leyenda de Tarzán",
+      "sinopsis_es": "Tarzán, ya acostumbrado a la vida en Londres, es llamado de vuelta a su antiguo hogar en la selva para investigar las actividades que se llevan a cabo en un campamento minero.",
+      "verificada": true
+    },
+    "los renegados": {
+      "titulo_origen": "Los renegados",
+      "tmdb_id": 1007462,
+      "titulo_es": "Los renegados",
+      "sinopsis_es": "Cuando un virus desconocido ataca a una ciudad, sus habitantes se ven obligados a sobrevivir, mientras ven a sus seres queridos convertirse en monstruos feroces.",
+      "verificada": true
+    },
+    "rudo y cursi": {
+      "titulo_origen": "Rudo y Cursi",
+      "tmdb_id": 4786,
+      "titulo_es": "Rudo y Cursi",
+      "sinopsis_es": "La historia de \"Rudo y Cursi\" gira en torno a dos hermanos, Beto, quien quiere ser futbolista, y Toto, que sueña con ser cantante de música norteña. Ambos desean llevar a cabo sus deseos para tener una mejor condición económica. Sin embargo, la rivalidad típica entre hermanos los pone a prueba.",
+      "verificada": true
     }
   }
 }

@@ -971,4 +971,437 @@
     <title lang="es">La gran estafa</title>
     <desc lang="es">En la década de los 70, el escritor Clifford Irving engañó a una importante editorial, haciendo creer a sus propietarios que tenía permiso del mismísimo Howard Hugues para publicar su autobiografía. Lo que comienza siendo un acto de picaresca por parte de un escritor sin un céntimo, acaba convirtiéndose en un escándalo que salpica incluso a la Casa Blanca. Basada en hechos reales.</desc>
   </programme>
+  <programme start="20261110184300 -0500" stop="20261110210000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Spider-Man: Un nuevo universo</title>
+    <desc lang="es">En un universo paralelo donde Peter Parker ha muerto, un jóven de secundaria llamado Miles Morales es el nuevo Spider-Man. Sin embargo, cuando el líder mafioso Wilson Fisk (a.k.a Kingpin) construye el "Super Colisionador" trae a una versión alternativa de Peter Parker que tratará de enseñarle a Miles como ser un mejor Spider-Man. Pero no será el único Spider Man en entrar a este universo, 4 versiones alternas de Spidey aparecerán y buscarán regresar a su universo antes de que toda la realidad colapse.</desc>
+  </programme>
+  <programme start="20261110210000 -0500" stop="20261110233500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El sorprendente Hombre Araña 2: La amenaza de Electro</title>
+  </programme>
+  <programme start="20261110233500 -0500" stop="20261110235800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Colonization Application</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 17</episode-num>
+  </programme>
+  <programme start="20261110235800 -0500" stop="20261110235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Leftover Thermalization</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 18</episode-num>
+  </programme>
+  <programme start="20261111000000 -0500" stop="20261111002000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Leftover Thermalization</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 18</episode-num>
+  </programme>
+  <programme start="20261111002000 -0500" stop="20261111004300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Skywalker Incursion</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 19</episode-num>
+  </programme>
+  <programme start="20261111004300 -0500" stop="20261111010400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Fortification Implementation</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 20</episode-num>
+  </programme>
+  <programme start="20261111010400 -0500" stop="20261111012400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Communication Deterioration</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 21</episode-num>
+  </programme>
+  <programme start="20261111012400 -0500" stop="20261111014500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Graduation Transmission</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 22</episode-num>
+  </programme>
+  <programme start="20261111014500 -0500" stop="20261111020800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">He Smelled the Ham, He Got Excited</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 10</episode-num>
+  </programme>
+  <programme start="20261111020800 -0500" stop="20261111023100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">The Devil's Lube</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 11</episode-num>
+  </programme>
+  <programme start="20261111023100 -0500" stop="20261111025400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Thank God for Scoliosis</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 12</episode-num>
+  </programme>
+  <programme start="20261111025400 -0500" stop="20261111031700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">I Think You Offended Don</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 13</episode-num>
+  </programme>
+  <programme start="20261111031700 -0500" stop="20261111034000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">David Copperfield me drogó</title>
+  </programme>
+  <programme start="20261111034000 -0500" stop="20261111040300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Empezaré con el gato</title>
+  </programme>
+  <programme start="20261111040300 -0500" stop="20261111044700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Victory Lap</title>
+  </programme>
+  <programme start="20261111044700 -0500" stop="20261111050000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hollywood One on One</title>
+  </programme>
+  <programme start="20261111050000 -0500" stop="20261111053200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">The Fall</sub-title>
+    <episode-num system="onscreen">Temporada 4 Episodio 9</episode-num>
+  </programme>
+  <programme start="20261111053200 -0500" stop="20261111075900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El sorprendente Hombre Araña 2: La amenaza de Electro</title>
+  </programme>
+  <programme start="20261111075900 -0500" stop="20261111082100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Separation Oscillation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 2</episode-num>
+  </programme>
+  <programme start="20261111082100 -0500" stop="20261111084300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Bachelor Party Corrosion</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 3</episode-num>
+  </programme>
+  <programme start="20261111084300 -0500" stop="20261111090500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The 2003 Approximation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 4</episode-num>
+  </programme>
+  <programme start="20261111090500 -0500" stop="20261111092900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">She'll Still Be Dead at Halftime</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 16</episode-num>
+  </programme>
+  <programme start="20261111092900 -0500" stop="20261111095100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">¿El ocu o el pado?</title>
+  </programme>
+  <programme start="20261111095100 -0500" stop="20261111101600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">My Son's Enormous Head</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 18</episode-num>
+  </programme>
+  <programme start="20261111101600 -0500" stop="20261111104000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">The Two Finger Rule</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 19</episode-num>
+  </programme>
+  <programme start="20261111104000 -0500" stop="20261111110500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Hello, I Am Alan Cousteau</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 20</episode-num>
+  </programme>
+  <programme start="20261111110500 -0500" stop="20261111113000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Above Exalted Cyclops</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 21</episode-num>
+  </programme>
+  <programme start="20261111113000 -0500" stop="20261111120600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">Bicephaly</sub-title>
+    <episode-num system="onscreen">Temporada 4 Episodio 4</episode-num>
+  </programme>
+  <programme start="20261111120600 -0500" stop="20261111141500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La gran estafa</title>
+    <desc lang="es">En la década de los 70, el escritor Clifford Irving engañó a una importante editorial, haciendo creer a sus propietarios que tenía permiso del mismísimo Howard Hugues para publicar su autobiografía. Lo que comienza siendo un acto de picaresca por parte de un escritor sin un céntimo, acaba convirtiéndose en un escándalo que salpica incluso a la Casa Blanca. Basada en hechos reales.</desc>
+  </programme>
+  <programme start="20261111141500 -0500" stop="20261111161900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Spider-Man: Un nuevo universo</title>
+    <desc lang="es">En un universo paralelo donde Peter Parker ha muerto, un jóven de secundaria llamado Miles Morales es el nuevo Spider-Man. Sin embargo, cuando el líder mafioso Wilson Fisk (a.k.a Kingpin) construye el "Super Colisionador" trae a una versión alternativa de Peter Parker que tratará de enseñarle a Miles como ser un mejor Spider-Man. Pero no será el único Spider Man en entrar a este universo, 4 versiones alternas de Spidey aparecerán y buscarán regresar a su universo antes de que toda la realidad colapse.</desc>
+  </programme>
+  <programme start="20261111161900 -0500" stop="20261111182000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Ip Man 4</title>
+    <desc lang="es">El maestro de Wing chun viaja a los Estados Unidos, donde uno de sus estudiantes ha molestado a la comunidad de artes marciales al abrir una escuela de Wing Chun.</desc>
+  </programme>
+  <programme start="20261111182000 -0500" stop="20261111205900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">¡Shazam!</title>
+    <desc lang="es">Billy Batson, un chico astuto de 14 años, puede transformarse mágicamente en el superhéroe adulto Shazam. Sus poderes se pondrán a prueba contra el malvado Dr. Thaddeus Sivana.</desc>
+  </programme>
+  <programme start="20261111205900 -0500" stop="20261111231000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Jack: El Cazagigantes</title>
+    <desc lang="es">Una antigua guerra se vuelve a encender cuando un granjero joven Jack, sin darse cuenta, abre una puerta entre nuestro mundo y una raza terrible de gigantes. Desatados en la Tierra, por primera vez en siglos, los gigantes se esfuerzan por recuperar la tierra que habían perdido, forzando al joven, Jack, a embarcarse en la batalla de su vida para detenerlos.</desc>
+  </programme>
+  <programme start="20261111231000 -0500" stop="20261111233100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Maternal Combustion</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 23</episode-num>
+  </programme>
+  <programme start="20261111233100 -0500" stop="20261111235400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Commitment Determination</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 24</episode-num>
+  </programme>
+  <programme start="20261111235400 -0500" stop="20261111235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Matrimonial Momentum</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 1</episode-num>
+  </programme>
+  <programme start="20261112000000 -0500" stop="20261112001800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Matrimonial Momentum</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 1</episode-num>
+  </programme>
+  <programme start="20261112001800 -0500" stop="20261112003800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Separation Oscillation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 2</episode-num>
+  </programme>
+  <programme start="20261112003800 -0500" stop="20261112005900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Bachelor Party Corrosion</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 3</episode-num>
+  </programme>
+  <programme start="20261112005900 -0500" stop="20261112011900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The 2003 Approximation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 4</episode-num>
+  </programme>
+  <programme start="20261112011900 -0500" stop="20261112014200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">She'll Still Be Dead at Halftime</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 16</episode-num>
+  </programme>
+  <programme start="20261112014200 -0500" stop="20261112020300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">¿El ocu o el pado?</title>
+  </programme>
+  <programme start="20261112020300 -0500" stop="20261112022700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">My Son's Enormous Head</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 18</episode-num>
+  </programme>
+  <programme start="20261112022700 -0500" stop="20261112025000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">The Two Finger Rule</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 19</episode-num>
+  </programme>
+  <programme start="20261112025000 -0500" stop="20261112031300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Hello, I Am Alan Cousteau</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 20</episode-num>
+  </programme>
+  <programme start="20261112031300 -0500" stop="20261112033600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Above Exalted Cyclops</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 21</episode-num>
+  </programme>
+  <programme start="20261112033600 -0500" stop="20261112040600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">The Fall</sub-title>
+    <episode-num system="onscreen">Temporada 4 Episodio 9</episode-num>
+  </programme>
+  <programme start="20261112040600 -0500" stop="20261112045300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">The Rise</sub-title>
+    <episode-num system="onscreen">Temporada 4 Episodio 10</episode-num>
+  </programme>
+  <programme start="20261112045300 -0500" stop="20261112045600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El Buzz</title>
+  </programme>
+  <programme start="20261112045600 -0500" stop="20261112050000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">TNT Buzz</title>
+  </programme>
+  <programme start="20261112050000 -0500" stop="20261112061100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">Molé</sub-title>
+    <episode-num system="onscreen">Temporada 5 Episodio 2</episode-num>
+  </programme>
+  <programme start="20261112061100 -0500" stop="20261112074800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Spider-Man: Un nuevo universo</title>
+    <desc lang="es">En un universo paralelo donde Peter Parker ha muerto, un jóven de secundaria llamado Miles Morales es el nuevo Spider-Man. Sin embargo, cuando el líder mafioso Wilson Fisk (a.k.a Kingpin) construye el "Super Colisionador" trae a una versión alternativa de Peter Parker que tratará de enseñarle a Miles como ser un mejor Spider-Man. Pero no será el único Spider Man en entrar a este universo, 4 versiones alternas de Spidey aparecerán y buscarán regresar a su universo antes de que toda la realidad colapse.</desc>
+  </programme>
+  <programme start="20261112074800 -0500" stop="20261112080600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Perspiration Implementation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 5</episode-num>
+  </programme>
+  <programme start="20261112080600 -0500" stop="20261112082700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Helium Insufficiency</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 6</episode-num>
+  </programme>
+  <programme start="20261112082700 -0500" stop="20261112084700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Spock Resonance</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 7</episode-num>
+  </programme>
+  <programme start="20261112084700 -0500" stop="20261112090500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Mystery Date Observation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 8</episode-num>
+  </programme>
+  <programme start="20261112090500 -0500" stop="20261112092800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Platonic Permutation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 9</episode-num>
+  </programme>
+  <programme start="20261112092800 -0500" stop="20261112095200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Earworm Reverberation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 10</episode-num>
+  </programme>
+  <programme start="20261112095200 -0500" stop="20261112101300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La cajita de Sir Lancelot</title>
+  </programme>
+  <programme start="20261112101300 -0500" stop="20261112103500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Buenos días, señora panadera</title>
+  </programme>
+  <programme start="20261112103500 -0500" stop="20261112105900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Baseball with Better Steroids</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 24</episode-num>
+  </programme>
+  <programme start="20261112105900 -0500" stop="20261112112300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">818-jklpuzo</sub-title>
+    <episode-num system="onscreen">Temporada 7 Episodio 1</episode-num>
+  </programme>
+  <programme start="20261112112300 -0500" stop="20261112114400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Apaleados por la tercera edad</title>
+  </programme>
+  <programme start="20261112114400 -0500" stop="20261112120500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Mmm, Fish. Yum.</sub-title>
+    <episode-num system="onscreen">Temporada 7 Episodio 3</episode-num>
+  </programme>
+  <programme start="20261112120500 -0500" stop="20261112123700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">Match Point</sub-title>
+    <episode-num system="onscreen">Temporada 4 Episodio 5</episode-num>
+  </programme>
+  <programme start="20261112123700 -0500" stop="20261112143300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Jack: El Cazagigantes</title>
+    <desc lang="es">Una antigua guerra se vuelve a encender cuando un granjero joven Jack, sin darse cuenta, abre una puerta entre nuestro mundo y una raza terrible de gigantes. Desatados en la Tierra, por primera vez en siglos, los gigantes se esfuerzan por recuperar la tierra que habían perdido, forzando al joven, Jack, a embarcarse en la batalla de su vida para detenerlos.</desc>
+  </programme>
+  <programme start="20261112143300 -0500" stop="20261112165900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El sorprendente Hombre Araña 2: La amenaza de Electro</title>
+  </programme>
+  <programme start="20261112165900 -0500" stop="20261112184000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hotel Transylvania 3: Monstruos de vacaciones</title>
+    <desc lang="es">Mavis y Johnny planean ir con Drácula y sus amigos a unas vacaciones en un crucero de monstruos de lujo, donde Drácula se enamora de la capitana del barco, Ericka, sin que sepan que ella es descendiente de Abraham Van Helsing, el famoso cazador de monstruos.</desc>
+  </programme>
+  <programme start="20261112184000 -0500" stop="20261112210000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Un sueño posible</title>
+    <desc lang="es">Michael Oher no sabe lo que significa tener una familia. Lo único que el desamparado adolescente conoce son las calles y los multifamiliares de Memphis. Leigh Anne Tuohy no tiene idea del mundo en el que vive el chico, pero cuando Michael la conoce, encuentra un hogar. Y los Tuohys descubren algo que les cambiará la vida: un adorable y nuevo hermano e hijo. Esta es una historia real sobre una familia, Michael y su ascenso en la carrera del fútbol Americano que te encantará, particularmente por la poderosa actuación de Bullock que la llevó a ganar un Oscar y el Globo de Oro a Mejor Actriz. Comparte la hermosa y motivadora historia de un atleta profesional que era un ganador incluso antes de haber puesto un pie en el campo.</desc>
+  </programme>
+  <programme start="20261112210000 -0500" stop="20261112225400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La leyenda de Tarzán</title>
+    <desc lang="es">Tarzán, ya acostumbrado a la vida en Londres, es llamado de vuelta a su antiguo hogar en la selva para investigar las actividades que se llevan a cabo en un campamento minero.</desc>
+  </programme>
+  <programme start="20261112225400 -0500" stop="20261112231200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Perspiration Implementation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 5</episode-num>
+  </programme>
+  <programme start="20261112231200 -0500" stop="20261112233100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Helium Insufficiency</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 6</episode-num>
+  </programme>
+  <programme start="20261112233100 -0500" stop="20261112235200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Spock Resonance</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 7</episode-num>
+  </programme>
+  <programme start="20261112235200 -0500" stop="20261112235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Mystery Date Observation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 8</episode-num>
+  </programme>
+  <programme start="20261113000000 -0500" stop="20261113001000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Mystery Date Observation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 8</episode-num>
+  </programme>
+  <programme start="20261113001000 -0500" stop="20261113003300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Platonic Permutation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 9</episode-num>
+  </programme>
+  <programme start="20261113003300 -0500" stop="20261113005600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Earworm Reverberation</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 10</episode-num>
+  </programme>
+  <programme start="20261113005600 -0500" stop="20261113011700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La cajita de Sir Lancelot</title>
+  </programme>
+  <programme start="20261113011700 -0500" stop="20261113013700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Buenos días, señora panadera</title>
+  </programme>
+  <programme start="20261113013700 -0500" stop="20261113020000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Baseball with Better Steroids</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 24</episode-num>
+  </programme>
+  <programme start="20261113020000 -0500" stop="20261113022300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">818-jklpuzo</sub-title>
+    <episode-num system="onscreen">Temporada 7 Episodio 1</episode-num>
+  </programme>
+  <programme start="20261113022300 -0500" stop="20261113024400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Apaleados por la tercera edad</title>
+  </programme>
+  <programme start="20261113024400 -0500" stop="20261113030500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Mmm, Fish. Yum.</sub-title>
+    <episode-num system="onscreen">Temporada 7 Episodio 3</episode-num>
+  </programme>
+  <programme start="20261113030500 -0500" stop="20261113050000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Cobra Kai</title>
+    <sub-title lang="en">Molé</sub-title>
+    <episode-num system="onscreen">Temporada 5 Episodio 2</episode-num>
+  </programme>
+  <programme start="20261113050000 -0500" stop="20261113062300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Caída en espiral</title>
+  </programme>
+  <programme start="20261113062300 -0500" stop="20261113064300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Big Bang</title>
+    <sub-title lang="en">The Positive Negative Reaction</sub-title>
+    <episode-num system="onscreen">Temporada 9 Episodio 16</episode-num>
+  </programme>
+  <programme start="20261113064300 -0500" stop="20261113070400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Laxative Tester, Horse Inseminator</sub-title>
+    <episode-num system="onscreen">Temporada 7 Episodio 4</episode-num>
+  </programme>
+  <programme start="20261113070400 -0500" stop="20261113072800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">For the Sake of the Child</sub-title>
+    <episode-num system="onscreen">Temporada 7 Episodio 5</episode-num>
+  </programme>
+  <programme start="20261113072800 -0500" stop="20261113075100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Give Me Your Thumb</sub-title>
+    <episode-num system="onscreen">Temporada 7 Episodio 6</episode-num>
+  </programme>
+  <programme start="20261113075100 -0500" stop="20261113081400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Lo inmaculado</title>
+  </programme>
+  <programme start="20261113081400 -0500" stop="20261113083600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">¡Oh, madre santa!</title>
+  </programme>
+  <programme start="20261113083600 -0500" stop="20261113085900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dos hombres y medio</title>
+    <sub-title lang="en">Captain Terry's Spray-On Hair</sub-title>
+    <episode-num system="onscreen">Temporada 7 Episodio 9</episode-num>
+  </programme>
+  <programme start="20261113085900 -0500" stop="20261113093200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Las patadas consiguen damas</title>
+  </programme>
+  <programme start="20261113093200 -0500" stop="20261113111300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hotel Transylvania 3: Monstruos de vacaciones</title>
+    <desc lang="es">Mavis y Johnny planean ir con Drácula y sus amigos a unas vacaciones en un crucero de monstruos de lujo, donde Drácula se enamora de la capitana del barco, Ericka, sin que sepan que ella es descendiente de Abraham Van Helsing, el famoso cazador de monstruos.</desc>
+  </programme>
+  <programme start="20261113111300 -0500" stop="20261113125000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Los renegados</title>
+    <desc lang="es">Cuando un virus desconocido ataca a una ciudad, sus habitantes se ven obligados a sobrevivir, mientras ven a sus seres queridos convertirse en monstruos feroces.</desc>
+  </programme>
+  <programme start="20261113125000 -0500" stop="20261113143700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Rudo y Cursi</title>
+    <desc lang="es">La historia de "Rudo y Cursi" gira en torno a dos hermanos, Beto, quien quiere ser futbolista, y Toto, que sueña con ser cantante de música norteña. Ambos desean llevar a cabo sus deseos para tener una mejor condición económica. Sin embargo, la rivalidad típica entre hermanos los pone a prueba.</desc>
+  </programme>
+  <programme start="20261113143700 -0500" stop="20261113165500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Un sueño posible</title>
+    <desc lang="es">Michael Oher no sabe lo que significa tener una familia. Lo único que el desamparado adolescente conoce son las calles y los multifamiliares de Memphis. Leigh Anne Tuohy no tiene idea del mundo en el que vive el chico, pero cuando Michael la conoce, encuentra un hogar. Y los Tuohys descubren algo que les cambiará la vida: un adorable y nuevo hermano e hijo. Esta es una historia real sobre una familia, Michael y su ascenso en la carrera del fútbol Americano que te encantará, particularmente por la poderosa actuación de Bullock que la llevó a ganar un Oscar y el Globo de Oro a Mejor Actriz. Comparte la hermosa y motivadora historia de un atleta profesional que era un ganador incluso antes de haber puesto un pie en el campo.</desc>
+  </programme>
 </tv>
