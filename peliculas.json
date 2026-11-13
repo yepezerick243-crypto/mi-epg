@@ -245,6 +245,55 @@
       "titulo_es": "Rudo y Cursi",
       "sinopsis_es": "La historia de \"Rudo y Cursi\" gira en torno a dos hermanos, Beto, quien quiere ser futbolista, y Toto, que sueña con ser cantante de música norteña. Ambos desean llevar a cabo sus deseos para tener una mejor condición económica. Sin embargo, la rivalidad típica entre hermanos los pone a prueba.",
       "verificada": true
+    },
+    "alfa": {
+      "titulo_origen": "Alfa",
+      "tmdb_id": 452530,
+      "titulo_es": "Alfa",
+      "sinopsis_es": "",
+      "verificada": true
+    },
+    "buzz": {
+      "titulo_origen": "Buzz",
+      "tmdb_id": 632436,
+      "titulo_es": "Buzz",
+      "sinopsis_es": "El periodista y autor ganador del premio Pulitzer, Buzz Bissinger, experimenta un despertar sexual mientras colabora con Caitlyn Jenner en sus reveladoras memorias.",
+      "verificada": true
+    },
+    "atrapame si puedes": {
+      "titulo_origen": "Atrápame si puedes",
+      "tmdb_id": 640,
+      "titulo_es": "Atrápame si puedes",
+      "sinopsis_es": "Basada en una historia real. En los años sesenta, Frank W. Abagnale era un joven y escurridizo delincuente que adoptaba diversas identidades (médico, abogado o copiloto de líneas aéreas). Carl Hanratty, un agente del FBI, tenía la misión de seguir su pista y capturarlo para llevarlo ante la justicia, pero Frank siempre iba un paso por delante de él.",
+      "verificada": true
+    },
+    "elvis": {
+      "titulo_origen": "Elvis",
+      "tmdb_id": 614934,
+      "titulo_es": "Elvis",
+      "sinopsis_es": "La película explora la vida y la música de Elvis Presley a través del prisma de su relación con el coronel Tom Parker, su enigmático manager. La historia profundiza en la compleja dinámica que existía entre Presley y Parker que abarca más de 20 años, desde el ascenso de Presley a la fama hasta su estrellato sin precedentes, en el contexto de la revolución cultural y la pérdida de la inocencia en Estados Unidos. Y en el centro de ese periplo está Priscilla Presley (Olivia DeJonge), una de las personas más importantes e influyentes en la vida de Elvis.",
+      "verificada": true
+    },
+    "harry potter y las reliquias de la muerte parte 1": {
+      "titulo_origen": "Harry Potter y las reliquias de la muerte - Parte 1",
+      "tmdb_id": 12444,
+      "titulo_es": "Harry Potter y las reliquias de la muerte (1ª parte)",
+      "sinopsis_es": "Harry, Ron y Hermione abandonan su último año en Hogwarts para encontrar y destruir los Horrocruxes restantes, poniendo fin a la búsqueda de la inmortalidad de Voldemort.",
+      "verificada": true
+    },
+    "harry potter y las reliquias de la muerte parte 2": {
+      "titulo_origen": "Harry Potter y las reliquias de la muerte - Parte 2",
+      "tmdb_id": 12445,
+      "titulo_es": "Harry Potter y las reliquias de la muerte: Parte 2",
+      "sinopsis_es": "Harry, Ron y Hermione continúan su búsqueda para derrotar al malvado Voldemort de una vez por todas. Sin embargo, Harry descubre tres objetos mágicos que le otorgan poderes que rivalizan con las formidables habilidades de Voldemort.",
+      "verificada": true
+    },
+    "la momia": {
+      "titulo_origen": "La momia",
+      "tmdb_id": 564,
+      "titulo_es": "La Momia",
+      "sinopsis_es": "Un aventurero imprudente y un grupo de exploradores desentierran accidentalmente una antigua maldición egipcia. Ahora, deben luchar contra la resucitada momia del sacerdote Imhotep, que busca recuperar su poder y venganza sobre el mundo moderno.",
+      "verificada": true
     }
   }
 }
