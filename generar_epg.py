@@ -11,13 +11,14 @@ from html.parser import HTMLParser
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 from functools import lru_cache
+from docx import Document
+from docx.table import Table
+from docx.text.paragraph import Paragraph
 
 
 # =========================================================
 # CONFIGURACION
 # =========================================================
-
-URL_INTV = "https://intv.com.co/inicio/television/parrilla-de-television/"
 
 CANAL_ID = "WarnerChannel.us@Colombia"
 ZONA = ZoneInfo("America/Guayaquil")
@@ -27,17 +28,10 @@ TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 TVMAZE_URL = "https://api.tvmaze.com"
 TMDB_URL = "https://api.themoviedb.org/3"
 
+ARCHIVO_DOCX = "WARNER.docx"
 ARCHIVO_XML = "epg.xml"
 ARCHIVO_SERIES = "series.json"
 ARCHIVO_PELICULAS = "peliculas.json"
-
-# MI.TV
-MITV_BASE = "https://mi.tv"
-MITV_PAIS = "co"
-MITV_CANAL = "warner"
-MITV_OFFSET = -300
-MITV_FECHA_INICIO = datetime(2026, 11, 4).date()
-MITV_DIAS_FUTUROS = 6
 
 IDIOMAS_BUSQUEDA = [
     "es-ES", "en-US", "pt-BR",
@@ -115,12 +109,7 @@ def guardar_json(ruta, datos):
     temporal = ruta + ".tmp"
 
     with open(temporal, "w", encoding="utf-8") as archivo:
-        json.dump(
-            datos,
-            archivo,
-            ensure_ascii=False,
-            indent=2
-        )
+        json.dump(datos, archivo, ensure_ascii=False, indent=2)
 
     os.replace(temporal, ruta)
 
@@ -198,352 +187,322 @@ def limpiar_texto(texto):
 
 
 def solicitar_json(url, params=None, timeout=25):
-    respuesta = SESION.get(
-        url,
-        params=params,
-        timeout=timeout
-    )
-
+    respuesta = SESION.get(url, params=params, timeout=timeout)
     respuesta.raise_for_status()
     return respuesta.json()
 
 
 # =========================================================
-# EXTRACCION DE INTV
+# LECTURA DE WARNER.DOCX
 # =========================================================
 
-def extraer_json(texto, inicio):
-    posicion = texto.find("{", inicio)
+def texto_celda(celda):
+    return " ".join(
+        p.text.strip()
+        for p in celda.paragraphs
+        if p.text.strip()
+    ).strip()
 
-    if posicion == -1:
+
+def convertir_fecha_docx(texto):
+    coincidencia = re.search(
+        r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b",
+        str(texto or "")
+    )
+
+    if not coincidencia:
         return None
 
-    profundidad = 0
-    dentro_texto = False
-    escape = False
+    dia, mes, anio = map(int, coincidencia.groups())
 
-    for i in range(posicion, len(texto)):
-        caracter = texto[i]
-
-        if dentro_texto:
-            if escape:
-                escape = False
-            elif caracter == "\\":
-                escape = True
-            elif caracter == '"':
-                dentro_texto = False
-        else:
-            if caracter == '"':
-                dentro_texto = True
-            elif caracter == "{":
-                profundidad += 1
-            elif caracter == "}":
-                profundidad -= 1
-
-                if profundidad == 0:
-                    return texto[posicion:i + 1]
-
-    return None
+    try:
+        return datetime(anio, mes, dia).date()
+    except ValueError:
+        return None
 
 
-def obtener_programacion():
-    respuesta = None
+def convertir_hora_docx(texto):
+    texto = str(texto or "").strip().lower()
+    texto = texto.replace(".", "")
+    texto = re.sub(r"\s+", " ", texto)
 
-    for intento in range(1, 5):
-        try:
-            print(f"Conectando con INTV: intento {intento}/4")
+    coincidencia = re.search(
+        r"\b(\d{1,2}):(\d{2})\s*(a\s*m|p\s*m|am|pm)?\b",
+        texto
+    )
 
-            respuesta = SESION.get(
-                URL_INTV,
-                timeout=(20, 60)
-            )
+    if not coincidencia:
+        return None
 
-            respuesta.raise_for_status()
-            break
+    hora = int(coincidencia.group(1))
+    minuto = int(coincidencia.group(2))
+    periodo = (coincidencia.group(3) or "").replace(" ", "")
 
-        except requests.RequestException as error:
-            print("INTV no respondió:", error)
+    if minuto > 59:
+        return None
 
-            if intento < 4:
-                print("Esperando 15 segundos...")
-                time.sleep(15)
-            else:
-                raise Exception(
-                    "No fue posible conectar con INTV. "
-                    "Se conservará el XML anterior."
-                ) from error
+    if periodo:
+        if hora < 1 or hora > 12:
+            return None
 
-    inicio = respuesta.text.find("var tvGuideData")
+        if periodo == "pm" and hora != 12:
+            hora += 12
+        elif periodo == "am" and hora == 12:
+            hora = 0
 
-    if inicio == -1:
-        raise Exception("No se encontró tvGuideData en INTV.")
+    elif hora > 23:
+        return None
 
-    contenido = extraer_json(respuesta.text, inicio)
-
-    if not contenido:
-        raise Exception("No se pudo extraer el JSON de INTV.")
-
-    datos = json.loads(contenido)
-    canales = datos.get("scheduleData", {})
-
-    for nombre, informacion in canales.items():
-        if nombre.strip().lower() == "warner channel":
-            programas = informacion.get("programs", [])
-
-            if not programas:
-                raise Exception(
-                    "INTV no entregó programas de Warner Channel."
-                )
-
-            return programas
-
-    raise Exception("No se encontró Warner Channel en INTV.")
+    return hora, minuto
 
 
-# =========================================================
-# MI.TV: LECTOR HTML SIN DEPENDENCIAS ADICIONALES
-# =========================================================
-
-class ParserMiTV(HTMLParser):
-
-    def __init__(self):
-        super().__init__(convert_charrefs=True)
-        self.programas = []
-        self.actual = None
-        self.captura = None
-
-    def handle_starttag(self, tag, attrs):
-        atributos = dict(attrs)
-        clases = atributos.get("class", "").split()
-
-        if tag == "li":
-            if self.actual is not None:
-                return
-
-            if "native" in clases:
-                self.actual = None
-                return
-
-            self.actual = {
-                "hora_texto": "",
-                "titulo": "",
-                "subtitulo": "",
-                "url": ""
-            }
-
-        if self.actual is None:
-            return
-
-        if tag == "a" and atributos.get("href"):
-            self.actual["url"] = atributos["href"]
-
-        if tag == "h2":
-            self.captura = ("titulo", tag)
-
-        elif "time" in clases:
-            self.captura = ("hora_texto", tag)
-
-        elif "sub-title" in clases:
-            self.captura = ("subtitulo", tag)
-
-    def handle_data(self, data):
-        if self.actual is not None and self.captura:
-            campo, _ = self.captura
-            self.actual[campo] += data
-
-    def handle_endtag(self, tag):
-        if self.actual is None:
-            return
-
-        if self.captura and self.captura[1] == tag:
-            self.captura = None
-
-        if tag == "li":
-            self.programas.append(self.actual)
-            self.actual = None
-            self.captura = None
-
-
-def limpiar_mitv(valor):
-    return re.sub(r"\s+", " ", str(valor or "")).strip()
-
-
-def extraer_programas_mitv(html, fecha):
-    parser = ParserMiTV()
-    parser.feed(html)
-
-    programas = []
-    ultimo_inicio = None
-    dia_actual = fecha
-
-    for item in parser.programas:
-        hora_texto = limpiar_mitv(item["hora_texto"])
-        titulo = limpiar_mitv(item["titulo"])
-        subtitulo = limpiar_mitv(item["subtitulo"])
-
-        if not hora_texto or not titulo:
-            continue
-
-        coincidencia = re.search(
-            r"\b(\d{1,2}):(\d{2})\s*(am|pm)?\b",
-            hora_texto,
-            flags=re.IGNORECASE
+def obtener_programacion_docx(programas_anterior=None):
+    if not os.path.exists(ARCHIVO_DOCX):
+        raise Exception(
+            f"No se encontró el archivo {ARCHIVO_DOCX}."
         )
 
-        if not coincidencia:
-            continue
+    documento = Document(ARCHIVO_DOCX)
+    registros = []
 
-        hora = int(coincidencia.group(1))
-        minuto = int(coincidencia.group(2))
-        periodo = (coincidencia.group(3) or "").lower()
+    for numero_tabla, tabla in enumerate(documento.tables, start=1):
+        filas = [
+            [texto_celda(celda) for celda in fila.cells]
+            for fila in tabla.rows
+        ]
 
-        if minuto > 59 or hora > 23:
-            continue
+        fecha_tabla = None
 
-        if periodo:
-            if hora < 1 or hora > 12:
-                continue
-
-            if periodo == "pm" and hora != 12:
-                hora += 12
-            elif periodo == "am" and hora == 12:
-                hora = 0
-
-        if ultimo_inicio is not None:
-            anterior = ultimo_inicio.hour * 60 + ultimo_inicio.minute
-            nuevo = hora * 60 + minuto
-
-            if nuevo < anterior:
-                dia_actual += timedelta(days=1)
-
-        inicio = datetime(
-            dia_actual.year,
-            dia_actual.month,
-            dia_actual.day,
-            hora,
-            minuto,
-            tzinfo=ZONA
-        )
-
-        ultimo_inicio = inicio
-
-        temporada = None
-        numero = None
-        titulo_episodio = ""
-
-        patron = re.search(
-            r"temporada\s+(\d+)\s+episodio\s+(\d+)"
-            r"(?:\s*[-–:]\s*(.*))?",
-            subtitulo,
-            flags=re.IGNORECASE
-        )
-
-        if patron:
-            temporada = int(patron.group(1))
-            numero = int(patron.group(2))
-            titulo_episodio = limpiar_mitv(patron.group(3) or "")
-
-        programas.append({
-            "inicio": inicio,
-            "titulo": titulo,
-            "subtitulo": subtitulo,
-            "titulo_episodio": titulo_episodio,
-            "temporada": temporada,
-            "numero": numero,
-            "url": item["url"]
-        })
-
-    return programas
-
-
-def obtener_programacion_mitv():
-    ahora = datetime.now(ZONA)
-    fecha_actual = ahora.date()
-
-    fecha_inicio = MITV_FECHA_INICIO
-    fecha_final = fecha_actual + timedelta(days=MITV_DIAS_FUTUROS)
-
-    if fecha_inicio > fecha_final:
-        print("La fecha inicial de mi.tv es posterior al límite.")
-        return {}
-
-    programas_por_inicio = {}
-
-    cantidad_fechas = (fecha_final - fecha_inicio).days + 1
-
-    print("=" * 55)
-    print("CONSULTANDO MI.TV - WARNER CHANNEL COLOMBIA")
-    print("Desde:", fecha_inicio)
-    print("Hasta:", fecha_final)
-    print("Fechas por consultar:", cantidad_fechas)
-    print("=" * 55)
-
-    SESION.headers.update({
-        "Referer": "https://mi.tv/co/canales/warner"
-    })
-
-    fechas_correctas = 0
-
-    for desplazamiento in range(cantidad_fechas):
-        fecha = fecha_inicio + timedelta(days=desplazamiento)
-
-        url = (
-            f"{MITV_BASE}/{MITV_PAIS}/async/channel/"
-            f"{MITV_CANAL}/{fecha.strftime('%Y-%m-%d')}/"
-            f"{MITV_OFFSET}"
-        )
-
-        print("Consultando mi.tv:", fecha)
-
-        html = None
-
-        for intento in range(1, 4):
-            try:
-                respuesta = SESION.get(url, timeout=40)
-                respuesta.raise_for_status()
-
-                if not respuesta.text.strip():
-                    raise RuntimeError("Respuesta vacía de mi.tv.")
-
-                html = respuesta.text
+        for fila in filas:
+            for celda in fila:
+                fecha = convertir_fecha_docx(celda)
+                if fecha:
+                    fecha_tabla = fecha
+                    break
+            if fecha_tabla:
                 break
 
-            except Exception as error:
-                print(
-                    f"Error mi.tv ({intento}/3):",
-                    error
-                )
-
-                if intento < 3:
-                    time.sleep(3)
-
-        if html is None:
-            print("No se pudo consultar:", fecha)
+        if not fecha_tabla:
+            print(
+                f"Tabla {numero_tabla}: no se encontró fecha. "
+                "Se omite."
+            )
             continue
 
-        registros = extraer_programas_mitv(html, fecha)
+        encabezado = None
+        tipo_tabla = None
 
-        print("Programas encontrados:", len(registros))
+        for indice, fila in enumerate(filas):
+            celdas = [normalizar(c) for c in fila]
 
-        if registros:
-            fechas_correctas += 1
+            if (
+                any("hora inicio" in c for c in celdas)
+                and any("hora fin" in c for c in celdas)
+                and any("programa" in c for c in celdas)
+            ):
+                encabezado = indice
+                tipo_tabla = "completa"
+                break
 
-        for programa in registros:
-            clave = programa["inicio"].replace(
-                second=0,
-                microsecond=0
+            if (
+                any(c == "hora" for c in celdas)
+                and any(c in ("titulo", "título") for c in celdas)
+            ):
+                encabezado = indice
+                tipo_tabla = "inicio"
+                break
+
+        if encabezado is None:
+            print(
+                f"Tabla {numero_tabla}: no se reconocieron "
+                "los encabezados."
+            )
+            continue
+
+        fila_encabezado = [
+            normalizar(c) for c in filas[encabezado]
+        ]
+
+        if tipo_tabla == "completa":
+            try:
+                col_inicio = next(
+                    i for i, c in enumerate(fila_encabezado)
+                    if "hora inicio" in c
+                )
+                col_fin = next(
+                    i for i, c in enumerate(fila_encabezado)
+                    if "hora fin" in c
+                )
+                col_titulo = next(
+                    i for i, c in enumerate(fila_encabezado)
+                    if "programa" in c
+                )
+            except StopIteration:
+                continue
+        else:
+            col_inicio = next(
+                i for i, c in enumerate(fila_encabezado)
+                if c == "hora"
+            )
+            col_titulo = next(
+                i for i, c in enumerate(fila_encabezado)
+                if c in ("titulo", "título")
+            )
+            col_fin = None
+
+        for fila in filas[encabezado + 1:]:
+            if not fila:
+                continue
+
+            if all(not celda.strip() for celda in fila):
+                continue
+
+            if any(convertir_fecha_docx(c) for c in fila):
+                continue
+
+            if len(fila) <= max(
+                col_inicio,
+                col_titulo,
+                col_fin if col_fin is not None else 0
+            ):
+                continue
+
+            hora_inicio = convertir_hora_docx(fila[col_inicio])
+            titulo = fila[col_titulo].strip()
+
+            if not hora_inicio or not titulo:
+                continue
+
+            # Ignorar separadores como Madrugada, Tarde y Noche.
+            if convertir_fecha_docx(titulo):
+                continue
+
+            if normalizar(titulo) in {
+                "madrugada", "manana", "tarde", "noche"
+            }:
+                continue
+
+            hora, minuto = hora_inicio
+
+            inicio = datetime(
+                fecha_tabla.year,
+                fecha_tabla.month,
+                fecha_tabla.day,
+                hora,
+                minuto,
+                tzinfo=ZONA
             )
 
-            programas_por_inicio[clave] = programa
+            fin = None
 
-        time.sleep(0.3)
+            if tipo_tabla == "completa":
+                hora_fin = convertir_hora_docx(fila[col_fin])
+
+                if not hora_fin:
+                    print("Hora de fin inválida:", titulo)
+                    continue
+
+                hora_f, minuto_f = hora_fin
+
+                fin = datetime(
+                    fecha_tabla.year,
+                    fecha_tabla.month,
+                    fecha_tabla.day,
+                    hora_f,
+                    minuto_f,
+                    tzinfo=ZONA
+                )
+
+                if fin <= inicio:
+                    fin += timedelta(days=1)
+
+            registros.append({
+                "title": titulo,
+                "inicio": inicio,
+                "fin": fin,
+                "tipo": tipo_tabla,
+                "tabla": numero_tabla
+            })
+
+    if not registros:
+        raise Exception(
+            "No se encontraron programas válidos en WARNER.docx. "
+            "No se modificará el XML."
+        )
+
+    # Ordenar cronológicamente todas las tablas.
+    registros.sort(key=lambda p: p["inicio"])
+
+    # En tablas HORA/TÍTULO, el siguiente inicio es el final
+    # del programa anterior.
+    for indice, programa in enumerate(registros):
+        if programa["tipo"] != "inicio":
+            continue
+
+        siguiente = None
+
+        for candidato in registros[indice + 1:]:
+            if candidato["inicio"] > programa["inicio"]:
+                siguiente = candidato
+                break
+
+        if siguiente:
+            programa["fin"] = siguiente["inicio"]
+
+        else:
+            # Si existe un programa anterior en el XML con
+            # el mismo inicio, se conserva su hora de final.
+            if programas_anterior:
+                inicio_xml = programa["inicio"].strftime(
+                    "%Y%m%d%H%M%S %z"
+                )
+
+                anterior = programas_anterior.get(
+                    (CANAL_ID, inicio_xml)
+                )
+
+                if anterior is not None:
+                    try:
+                        programa["fin"] = fecha_xml_a_datetime(
+                            anterior.get("stop")
+                        )
+                    except (ValueError, TypeError):
+                        programa["fin"] = None
+
+        if programa["fin"] is None:
+            print(
+                "Último programa sin hora de finalización; "
+                "se descarta:",
+                programa["title"]
+            )
+
+    resultado = []
+
+    for programa in registros:
+        inicio = programa["inicio"]
+        fin = programa["fin"]
+
+        if fin is None or fin <= inicio:
+            continue
+
+        resultado.append({
+            "title": programa["title"],
+            "start": int(inicio.timestamp() * 1000),
+            "end": int(fin.timestamp() * 1000)
+        })
+
+    if not resultado:
+        raise Exception(
+            "No quedaron programas con horarios válidos."
+        )
 
     print("---------------------------------------")
-    print("Fechas consultadas correctamente:", fechas_correctas)
-    print("Programas obtenidos de mi.tv:", len(programas_por_inicio))
+    print("Tablas procesadas:", len(documento.tables))
+    print("Programas leídos:", len(registros))
+    print("Programas válidos:", len(resultado))
     print("---------------------------------------")
 
-    return programas_por_inicio
+    return resultado
 
 
 # =========================================================
@@ -821,12 +780,7 @@ def construir_catalogo_series():
 
         nombre_es = obtener_nombre_serie_es(nombre)
 
-        guardar_serie(
-            nombre,
-            show,
-            tmdb_id,
-            nombre_es
-        )
+        guardar_serie(nombre, show, tmdb_id, nombre_es)
 
         episodios_por_numero = {}
 
@@ -914,11 +868,7 @@ def construir_catalogo_series():
         informacion = episodios.get((temporada, numero))
 
         if informacion:
-            agregar_coincidencia(
-                catalogo,
-                titulo,
-                informacion
-            )
+            agregar_coincidencia(catalogo, titulo, informacion)
 
             print(
                 f"Identificado: {titulo} -> "
@@ -928,94 +878,6 @@ def construir_catalogo_series():
             print("Episodio manual no encontrado:", titulo)
 
     return catalogo, episodios_por_serie
-
-
-# =========================================================
-# RELACIONAR MI.TV CON LAS SERIES
-# =========================================================
-
-def identificar_serie_mitv(titulo):
-    clave = normalizar(titulo)
-
-    for nombre in SERIES_CONOCIDAS:
-        if clave == normalizar(nombre):
-            return nombre
-
-        nombre_es = NOMBRES_SERIES_ES.get(normalizar(nombre), "")
-
-        if nombre_es and clave == normalizar(nombre_es):
-            return nombre
-
-    return None
-
-
-def buscar_programa_mitv(inicio, programas_mitv):
-    clave = inicio.replace(second=0, microsecond=0)
-
-    if clave in programas_mitv:
-        return programas_mitv[clave]
-
-    # Permitir una diferencia máxima de 90 segundos.
-    mejor = None
-    diferencia_minima = 91
-
-    for fecha, programa in programas_mitv.items():
-        if fecha.date() != clave.date():
-            continue
-
-        diferencia = abs((fecha - clave).total_seconds())
-
-        if diferencia < diferencia_minima:
-            diferencia_minima = diferencia
-            mejor = programa
-
-    if mejor and diferencia_minima <= 90:
-        return mejor
-
-    return None
-
-
-def obtener_episodio_mitv(programa_mitv, episodios_por_serie):
-    if not programa_mitv:
-        return None
-
-    temporada = programa_mitv.get("temporada")
-    numero = programa_mitv.get("numero")
-
-    if temporada is None or numero is None:
-        return None
-
-    nombre_serie = identificar_serie_mitv(
-        programa_mitv.get("titulo", "")
-    )
-
-    if not nombre_serie:
-        return None
-
-    episodios = episodios_por_serie.get(
-        normalizar(nombre_serie),
-        {}
-    )
-
-    informacion = episodios.get((temporada, numero))
-
-    if informacion:
-        return informacion
-
-    # Si TVmaze no tiene el episodio, utilizar el título de mi.tv.
-    titulo_episodio = programa_mitv.get("titulo_episodio", "")
-
-    if not titulo_episodio:
-        return None
-
-    return {
-        "serie": nombre_serie,
-        "episodio": titulo_episodio,
-        "temporada": temporada,
-        "numero": numero,
-        "show_id": None,
-        "idioma": "es"
-    }
 
 
 # =========================================================
@@ -1225,15 +1087,14 @@ def agregar_texto(elemento, etiqueta, texto, idioma=None):
 def crear_programa(
     programa,
     catalogo_series,
-    episodios_por_serie,
-    programas_mitv
+    episodios_por_serie
 ):
-    titulo_intv = obtener_texto(programa, ["title"])
+    titulo = obtener_texto(programa, ["title"])
 
     inicio = programa.get("start")
     fin = programa.get("end")
 
-    if not titulo_intv or not inicio or not fin:
+    if not titulo or not inicio or not fin:
         return None
 
     try:
@@ -1242,8 +1103,6 @@ def crear_programa(
 
         if fin_num <= inicio_num:
             return None
-
-        inicio_local = obtener_inicio_programa(programa)
 
         elemento = ET.Element(
             "programme",
@@ -1254,27 +1113,13 @@ def crear_programa(
             }
         )
 
-        clave = normalizar(titulo_intv)
+        clave = normalizar(titulo)
 
-        # Primero buscar el episodio de mi.tv por horario.
-        registro_mitv = buscar_programa_mitv(
-            inicio_local,
-            programas_mitv
-        )
-
-        episodio = obtener_episodio_mitv(
-            registro_mitv,
-            episodios_por_serie
-        )
-
-        # Si mi.tv no lo identifica, utilizar TVmaze/TMDb.
-        if not episodio:
-            episodio = catalogo_series.get(clave)
+        episodio = catalogo_series.get(clave)
 
         if episodio:
             nombre_serie = episodio["serie"]
 
-            # El nombre de la serie se conserva en inglés.
             agregar_texto(
                 elemento,
                 "title",
@@ -1290,8 +1135,6 @@ def crear_programa(
                 f"Temporada {temporada} Episodio {numero}"
             )
 
-            # Incluir temporada y episodio en el subtítulo
-            # para facilitar su visualización en YnoTV.
             subtitulo = identificacion
 
             if titulo_episodio:
@@ -1318,7 +1161,6 @@ def crear_programa(
 
             return elemento
 
-        # Serie identificada, episodio pendiente.
         serie_sin_episodio = None
 
         for titulo_manual, nombre_serie in SERIES_SIN_EPISODIO.items():
@@ -1337,19 +1179,18 @@ def crear_programa(
             agregar_texto(
                 elemento,
                 "sub-title",
-                titulo_intv,
+                titulo,
                 "es"
             )
 
             print(
                 "Serie identificada, episodio pendiente:",
-                titulo_intv
+                titulo
             )
 
             return elemento
 
-        # Buscar película.
-        pelicula = obtener_datos_pelicula(titulo_intv)
+        pelicula = obtener_datos_pelicula(titulo)
 
         if pelicula:
             agregar_texto(
@@ -1368,27 +1209,21 @@ def crear_programa(
                 )
 
             print(
-                f"Película identificada: {titulo_intv} "
+                f"Película identificada: {titulo} "
                 f"(TMDb ID: {pelicula['id']})"
             )
 
             return elemento
 
-        # Conservar título original si no hay coincidencia.
-        agregar_texto(
-            elemento,
-            "title",
-            titulo_intv,
-            "es"
-        )
+        agregar_texto(elemento, "title", titulo, "es")
 
-        if titulo_intv not in TITULOS_NO_BUSCAR:
-            print("Sin coincidencia verificada:", titulo_intv)
+        if titulo not in TITULOS_NO_BUSCAR:
+            print("Sin coincidencia verificada:", titulo)
 
         return elemento
 
     except (ValueError, TypeError, OSError) as error:
-        print("Error creando programa:", titulo_intv, error)
+        print("Error creando programa:", titulo, error)
         return None
 
 
@@ -1447,15 +1282,17 @@ def cargar_programas_anterior():
 
 def generar_xml():
     print("=" * 55)
-    print("GENERADOR EPG WARNER CHANNEL INTV + MI.TV")
+    print("GENERADOR EPG WARNER CHANNEL DESDE DOCX")
     print("=" * 55)
 
-    programas_intv = obtener_programacion()
+    programas_finales = cargar_programas_anterior()
 
-    print("Registros recibidos de INTV:", len(programas_intv))
+    # Leer la programación directamente desde WARNER.docx.
+    programas_docx = obtener_programacion_docx(
+        programas_finales
+    )
 
-    # Consultar mi.tv desde el 4 de noviembre.
-    programas_mitv = obtener_programacion_mitv()
+    print("Registros recibidos de WARNER.docx:", len(programas_docx))
 
     # Consultar TVmaze y TMDb.
     catalogo_series, episodios_por_serie = construir_catalogo_series()
@@ -1465,32 +1302,15 @@ def generar_xml():
         sum(1 for valor in catalogo_series.values() if valor)
     )
 
-    programas_finales = cargar_programas_anterior()
-
     nuevos = 0
     actualizados = 0
     descartados = 0
-    coincidencias_mitv = 0
 
-    for programa in programas_intv:
-        try:
-            inicio = obtener_inicio_programa(programa)
-            registro_mitv = buscar_programa_mitv(
-                inicio,
-                programas_mitv
-            )
-
-            if registro_mitv and registro_mitv.get("temporada"):
-                coincidencias_mitv += 1
-
-        except (ValueError, TypeError, KeyError):
-            pass
-
+    for programa in programas_docx:
         elemento = crear_programa(
             programa,
             catalogo_series,
-            episodios_por_serie,
-            programas_mitv
+            episodios_por_serie
         )
 
         if elemento is None:
@@ -1511,7 +1331,7 @@ def generar_xml():
 
     raiz = ET.Element(
         "tv",
-        {"generator-info-name": "EPG Warner Channel INTV + mi.tv"}
+        {"generator-info-name": "EPG Warner Channel DOCX"}
     )
 
     canal = ET.SubElement(
@@ -1548,17 +1368,13 @@ def generar_xml():
     os.replace(archivo_temporal, ARCHIVO_XML)
 
     print("---------------------------------------")
-    print("Idiomas de búsqueda:", ", ".join(IDIOMAS_BUSQUEDA))
     print("Programas nuevos:", nuevos)
     print("Programas actualizados:", actualizados)
     print("Registros descartados:", descartados)
-    print("Coincidencias de episodios con mi.tv:", coincidencias_mitv)
-    print("Programas consultados en mi.tv:", len(programas_mitv))
     print("Total conservado:", len(lista_ordenada))
     print("Archivo generado:", ARCHIVO_XML)
     print("Zona horaria: America/Guayaquil")
     print("TVmaze integrado.")
-    print("mi.tv Colombia integrado.")
     print("TMDb:", "Configurado" if TMDB_API_KEY else "Sin clave")
     print("Series guardadas:", len(BASE_SERIES["series"]))
     print("Películas guardadas:", len(BASE_PELICULAS["peliculas"]))
