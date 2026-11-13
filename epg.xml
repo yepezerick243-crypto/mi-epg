@@ -1,46 +1,46 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<tv generator-info-name="EPG Warner Channel INTV">
+<tv generator-info-name="EPG Warner Channel INTV + mi.tv">
   <channel id="WarnerChannel.us@Colombia">
     <display-name lang="es">Warner Channel</display-name>
   </channel>
   <programme start="20261104100900 -0500" stop="20261104103100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Discovery Dissipation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 10 - The Discovery Dissipation</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 10</episode-num>
   </programme>
   <programme start="20261104103100 -0500" stop="20261104105500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">I Merely Slept with a Commie</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 17 - I Merely Slept with a Commie</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 17</episode-num>
   </programme>
   <programme start="20261104105500 -0500" stop="20261104111900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">It Never Rains in Hooterville</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 18 - It Never Rains in Hooterville</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 18</episode-num>
   </programme>
   <programme start="20261104111900 -0500" stop="20261104114200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Smooth As a Ken Doll</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 19 - Smooth As a Ken Doll</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 19</episode-num>
   </programme>
   <programme start="20261104114200 -0500" stop="20261104120500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Aunt Myra Doesn't Pee a Lot</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 20 - Aunt Myra Doesn't Pee a Lot</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 20</episode-num>
   </programme>
   <programme start="20261104120500 -0500" stop="20261104122900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Tucked, Taped and Gorgeous</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 21 - Tucked, Taped and Gorgeous</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 21</episode-num>
   </programme>
   <programme start="20261104122900 -0500" stop="20261104125300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Mr. McGlue's Feedbag</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 22 - Mr. McGlue's Feedbag</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 22</episode-num>
   </programme>
   <programme start="20261104125300 -0500" stop="20261104132500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">Feel The Night</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 3 Episodio 9 - Feel The Night</sub-title>
     <episode-num system="onscreen">Temporada 3 Episodio 9</episode-num>
   </programme>
   <programme start="20261104132500 -0500" stop="20261104145500 -0500" channel="WarnerChannel.us@Colombia">
@@ -64,145 +64,146 @@
     <desc lang="es">Veintidós años después de lo ocurrido en Jurassic Park, la isla Nublar ha sido transformada en un enorme parque temático, Jurassic Wold, con versiones «domesticadas» de algunos de los dinosaurios más conocidos. Cuando todo parece ir sobre ruedas y ser el negocio del siglo, un nuevo dinosaurio de especie desconocida, pues ha sido creado manipulando genéticamente su ADN, y que resulta ser mucho más inteligente de lo que se pensaba, se escapa de su recinto y comienza a causar estragos entre los visitantes del Parque</desc>
   </programme>
   <programme start="20261104231400 -0500" stop="20261104233600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Workplace Proximity</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 5 - The Workplace Proximity</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 5</episode-num>
   </programme>
   <programme start="20261104233600 -0500" stop="20261104235800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Romance Resonance</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 6 - The Romance Resonance</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 6</episode-num>
   </programme>
   <programme start="20261104235800 -0500" stop="20261104235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Proton Displacement</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 7 - The Proton Displacement</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 7</episode-num>
   </programme>
   <programme start="20261105000000 -0500" stop="20261105001900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Proton Displacement</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 7 - The Proton Displacement</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 7</episode-num>
   </programme>
   <programme start="20261105001900 -0500" stop="20261105004000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Itchy Brain Simulation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 8 - The Itchy Brain Simulation</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 8</episode-num>
   </programme>
   <programme start="20261105004000 -0500" stop="20261105010100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Thanksgiving Decoupling</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 9 - The Thanksgiving Decoupling</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 9</episode-num>
   </programme>
   <programme start="20261105010100 -0500" stop="20261105012200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Discovery Dissipation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 10 - The Discovery Dissipation</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 10</episode-num>
   </programme>
   <programme start="20261105012200 -0500" stop="20261105014400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">I Merely Slept with a Commie</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 17 - I Merely Slept with a Commie</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 17</episode-num>
   </programme>
   <programme start="20261105014400 -0500" stop="20261105020700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">It Never Rains in Hooterville</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 18 - It Never Rains in Hooterville</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 18</episode-num>
   </programme>
   <programme start="20261105020700 -0500" stop="20261105022800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Smooth As a Ken Doll</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 19 - Smooth As a Ken Doll</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 19</episode-num>
   </programme>
   <programme start="20261105022800 -0500" stop="20261105025000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Aunt Myra Doesn't Pee a Lot</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 20 - Aunt Myra Doesn't Pee a Lot</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 20</episode-num>
   </programme>
   <programme start="20261105025000 -0500" stop="20261105031300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Tucked, Taped and Gorgeous</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 21 - Tucked, Taped and Gorgeous</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 21</episode-num>
   </programme>
   <programme start="20261105031300 -0500" stop="20261105033600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Mr. McGlue's Feedbag</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 22 - Mr. McGlue's Feedbag</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 22</episode-num>
   </programme>
   <programme start="20261105033600 -0500" stop="20261105042100 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Passin' Me By</title>
   </programme>
   <programme start="20261105042100 -0500" stop="20261105055900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">Miyagi-Do</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 3 Episodio 5 - Miyagi-Do</sub-title>
     <episode-num system="onscreen">Temporada 3 Episodio 5</episode-num>
   </programme>
   <programme start="20261105055900 -0500" stop="20261105072900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Hotel Transylvania 3: Monstruos de vacaciones</title>
-    <desc lang="es">Mavis y Johnny planean ir con Drácula y sus amigos a unas vacaciones en un crucero de monstruos de lujo, donde Drácula se enamora de la capitana del barco, Ericka, sin que sepan que ella es descendiente de Abraham Van Helsing, el famoso cazador de monstruos.</desc>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 3 Episodio 7 - Obstáculos</sub-title>
+    <episode-num system="onscreen">Temporada 3 Episodio 7</episode-num>
   </programme>
   <programme start="20261105072900 -0500" stop="20261105075200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Cooper Extraction</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 11 - The Cooper Extraction</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 11</episode-num>
   </programme>
   <programme start="20261105075200 -0500" stop="20261105081200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Hesitation Ramification</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 12 - The Hesitation Ramification</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 12</episode-num>
   </programme>
   <programme start="20261105081200 -0500" stop="20261105083400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Occupation Recalibration</sub-title>
-    <episode-num system="onscreen">Temporada 7 Episodio 13</episode-num>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 15 - The Locomotive Manipulation</sub-title>
+    <episode-num system="onscreen">Temporada 7 Episodio 15</episode-num>
   </programme>
   <programme start="20261105083400 -0500" stop="20261105085600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Convention Conundrum</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 14 - The Convention Conundrum</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 14</episode-num>
   </programme>
   <programme start="20261105085600 -0500" stop="20261105091800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Locomotive Manipulation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 15 - The Locomotive Manipulation</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 15</episode-num>
   </programme>
   <programme start="20261105091800 -0500" stop="20261105093700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Table Polarization</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 16 - The Table Polarization</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 16</episode-num>
   </programme>
   <programme start="20261105093700 -0500" stop="20261105100100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Anteaters. They're Just Crazy-lookin</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 23 - Anteaters. They're Just Crazy-lookin</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 23</episode-num>
   </programme>
   <programme start="20261105100100 -0500" stop="20261105102400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Prostitutes and Gelato</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 24 - Prostitutes and Gelato</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 24</episode-num>
   </programme>
   <programme start="20261105102400 -0500" stop="20261105104500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Large Birds, Spiders and Mom</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 1 - Large Birds, Spiders and Mom</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 1</episode-num>
   </programme>
   <programme start="20261105104500 -0500" stop="20261105110800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Media Room Slash Dungeon</sub-title>
-    <episode-num system="onscreen">Temporada 5 Episodio 2</episode-num>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 3 - Dum Diddy Dum Diddy Doo</sub-title>
+    <episode-num system="onscreen">Temporada 5 Episodio 3</episode-num>
   </programme>
   <programme start="20261105110800 -0500" stop="20261105113200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Dum Diddy Dum Diddy Doo</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 3 - Dum Diddy Dum Diddy Doo</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 3</episode-num>
   </programme>
   <programme start="20261105113200 -0500" stop="20261105115600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">City of Great Racks</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 4 - City of Great Racks</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 4</episode-num>
   </programme>
   <programme start="20261105115600 -0500" stop="20261105123600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">December 19</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 3 Episodio 10 - December 19</sub-title>
     <episode-num system="onscreen">Temporada 3 Episodio 10</episode-num>
   </programme>
   <programme start="20261105123600 -0500" stop="20261105141700 -0500" channel="WarnerChannel.us@Colombia">
@@ -225,117 +226,117 @@
     <title lang="es">Tirador</title>
   </programme>
   <programme start="20261105231000 -0500" stop="20261105233400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Cooper Extraction</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 11 - The Cooper Extraction</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 11</episode-num>
   </programme>
   <programme start="20261105233400 -0500" stop="20261105235700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Hesitation Ramification</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 12 - The Hesitation Ramification</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 12</episode-num>
   </programme>
   <programme start="20261105235700 -0500" stop="20261105235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Occupation Recalibration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 13 - The Occupation Recalibration</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 13</episode-num>
   </programme>
   <programme start="20261106000000 -0500" stop="20261106001900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Occupation Recalibration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 13 - The Occupation Recalibration</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 13</episode-num>
   </programme>
   <programme start="20261106001900 -0500" stop="20261106003900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Convention Conundrum</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 14 - The Convention Conundrum</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 14</episode-num>
   </programme>
   <programme start="20261106003900 -0500" stop="20261106010100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Locomotive Manipulation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 15 - The Locomotive Manipulation</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 15</episode-num>
   </programme>
   <programme start="20261106010100 -0500" stop="20261106012200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Table Polarization</sub-title>
-    <episode-num system="onscreen">Temporada 7 Episodio 16</episode-num>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 12 - The Hesitation Ramification</sub-title>
+    <episode-num system="onscreen">Temporada 7 Episodio 12</episode-num>
   </programme>
   <programme start="20261106012200 -0500" stop="20261106014400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Anteaters. They're Just Crazy-lookin</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 23 - Anteaters. They're Just Crazy-lookin</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 23</episode-num>
   </programme>
   <programme start="20261106014400 -0500" stop="20261106020500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Prostitutes and Gelato</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 4 Episodio 24 - Prostitutes and Gelato</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 24</episode-num>
   </programme>
   <programme start="20261106020500 -0500" stop="20261106022700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Large Birds, Spiders and Mom</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 1 - Large Birds, Spiders and Mom</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 1</episode-num>
   </programme>
   <programme start="20261106022700 -0500" stop="20261106025100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Media Room Slash Dungeon</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 2 - Media Room Slash Dungeon</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 2</episode-num>
   </programme>
   <programme start="20261106025100 -0500" stop="20261106031200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Dum Diddy Dum Diddy Doo</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 3 - Dum Diddy Dum Diddy Doo</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 3</episode-num>
   </programme>
   <programme start="20261106031200 -0500" stop="20261106033400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">City of Great Racks</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 4 - City of Great Racks</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 4</episode-num>
   </programme>
   <programme start="20261106033400 -0500" stop="20261106050000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">Obstáculos</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 3 Episodio 7 - Obstáculos</sub-title>
     <episode-num system="onscreen">Temporada 3 Episodio 7</episode-num>
   </programme>
   <programme start="20261106050000 -0500" stop="20261106062400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">December 19</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 3 Episodio 10 - December 19</sub-title>
     <episode-num system="onscreen">Temporada 3 Episodio 10</episode-num>
   </programme>
   <programme start="20261106062400 -0500" stop="20261106064400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Anything Can Happen Recurrence</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 21 - The Anything Can Happen Recurrence</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 21</episode-num>
   </programme>
   <programme start="20261106064400 -0500" stop="20261106070600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Proton Transmogrification</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 22 - The Proton Transmogrification</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 22</episode-num>
   </programme>
   <programme start="20261106070600 -0500" stop="20261106073000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Putting Swim Fins on a Cat</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 5 - Putting Swim Fins on a Cat</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 5</episode-num>
   </programme>
   <programme start="20261106073000 -0500" stop="20261106075300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Help Daddy Find His Toenail</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 6 - Help Daddy Find His Toenail</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 6</episode-num>
   </programme>
   <programme start="20261106075300 -0500" stop="20261106081500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Our Leather Gear Is in the Guest Room</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 7 - Our Leather Gear Is in the Guest Room</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 7</episode-num>
   </programme>
   <programme start="20261106081500 -0500" stop="20261106083500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Is There a Mrs. Waffles?</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 8 - Is There a Mrs. Waffles?</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 8</episode-num>
   </programme>
   <programme start="20261106083500 -0500" stop="20261106085800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
+    <title lang="en">Two and a Half Men</title>
     <sub-title lang="es">Viento a favor</sub-title>
   </programme>
   <programme start="20261106085800 -0500" stop="20261106092200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Kinda Like Necrophilia</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 10 - Kinda Like Necrophilia</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 10</episode-num>
   </programme>
   <programme start="20261106092200 -0500" stop="20261106100100 -0500" channel="WarnerChannel.us@Colombia">
@@ -370,112 +371,112 @@
     <desc lang="es">Año 2012. Robert Neville es el último hombre vivo que hay sobre la Tierra, pero no está solo. Los demás seres humanos se han convertido en unos mutantes nocturnos llamados “Darkseekers” y todos ansían beber su sangre. Durante el día vive en estado de alerta, como un cazador, y busca a los muertos vivientes mientras duermen; pero durante la noche debe esconderse de ellos y esperar el amanecer. Esta pesadilla empezó hace tres años: Neville era un brillante científico, pero no pudo impedir la expansión de un terrible virus creado por el hombre. Él ha sobrevivido porque es inmune al virus; todos los días envía mensajes por radio con la esperanza de que haya otros supervivientes, pero es inútil. Lo único que puede hacer es buscar una fórmula que le permita utilizar su sangre inmune para devolverles a los hombres su naturaleza. Pero está en inferioridad de condiciones y el tiempo se acaba.</desc>
   </programme>
   <programme start="20261106224200 -0500" stop="20261106230200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Friendship Turbulence</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 17 - The Friendship Turbulence</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 17</episode-num>
   </programme>
   <programme start="20261106230200 -0500" stop="20261106232400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Mommy Observation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 18 - The Mommy Observation</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 18</episode-num>
   </programme>
   <programme start="20261106232400 -0500" stop="20261106234400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Indecision Amalgamation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 19 - The Indecision Amalgamation</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 19</episode-num>
   </programme>
   <programme start="20261106234400 -0500" stop="20261106235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Relationship Diremption</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 20 - The Relationship Diremption</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 20</episode-num>
   </programme>
   <programme start="20261107000000 -0500" stop="20261107000600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Relationship Diremption</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 20 - The Relationship Diremption</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 20</episode-num>
   </programme>
   <programme start="20261107000600 -0500" stop="20261107002600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Anything Can Happen Recurrence</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 21 - The Anything Can Happen Recurrence</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 21</episode-num>
   </programme>
   <programme start="20261107002600 -0500" stop="20261107004900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Proton Transmogrification</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 22 - The Proton Transmogrification</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 22</episode-num>
   </programme>
   <programme start="20261107004900 -0500" stop="20261107011000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Putting Swim Fins on a Cat</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 5 - Putting Swim Fins on a Cat</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 5</episode-num>
   </programme>
   <programme start="20261107011000 -0500" stop="20261107013300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Help Daddy Find His Toenail</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 6 - Help Daddy Find His Toenail</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 6</episode-num>
   </programme>
   <programme start="20261107013300 -0500" stop="20261107015500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Our Leather Gear Is in the Guest Room</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 7 - Our Leather Gear Is in the Guest Room</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 7</episode-num>
   </programme>
   <programme start="20261107015500 -0500" stop="20261107021600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Is There a Mrs. Waffles?</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 8 - Is There a Mrs. Waffles?</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 8</episode-num>
   </programme>
   <programme start="20261107021600 -0500" stop="20261107023700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
+    <title lang="en">Two and a Half Men</title>
     <sub-title lang="es">Viento a favor</sub-title>
   </programme>
   <programme start="20261107023700 -0500" stop="20261107030100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Kinda Like Necrophilia</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 10 - Kinda Like Necrophilia</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 10</episode-num>
   </programme>
   <programme start="20261107030100 -0500" stop="20261107050000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">December 19</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 3 Episodio 10 - December 19</sub-title>
     <episode-num system="onscreen">Temporada 3 Episodio 10</episode-num>
   </programme>
   <programme start="20261107050000 -0500" stop="20261107062000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">First Learn Stand</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 4 Episodio 2 - First Learn Stand</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 2</episode-num>
   </programme>
   <programme start="20261107062000 -0500" stop="20261107063800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Hook-Up Reverberation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 4 - The Hook-Up Reverberation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 4</episode-num>
   </programme>
   <programme start="20261107063800 -0500" stop="20261107070200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Meander to Your Dander</sub-title>
-    <episode-num system="onscreen">Temporada 5 Episodio 11</episode-num>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 14 - Winky-Dink Time</sub-title>
+    <episode-num system="onscreen">Temporada 5 Episodio 14</episode-num>
   </programme>
   <programme start="20261107070200 -0500" stop="20261107072600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">A Little Clammy and None Too Fresh</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 12 - A Little Clammy and None Too Fresh</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 12</episode-num>
   </programme>
   <programme start="20261107072600 -0500" stop="20261107074700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">The Soil Is Moist</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 13 - The Soil Is Moist</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 13</episode-num>
   </programme>
   <programme start="20261107074700 -0500" stop="20261107080800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Winky-Dink Time</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 14 - Winky-Dink Time</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 14</episode-num>
   </programme>
   <programme start="20261107080800 -0500" stop="20261107083200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Rough Night in Hump Junction</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 15 - Rough Night in Hump Junction</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 15</episode-num>
   </programme>
   <programme start="20261107083200 -0500" stop="20261107085600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Look at Me, Mommy, I'm Pretty</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 16 - Look at Me, Mommy, I'm Pretty</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 16</episode-num>
   </programme>
   <programme start="20261107085600 -0500" stop="20261107104100 -0500" channel="WarnerChannel.us@Colombia">
@@ -512,107 +513,109 @@
     <title lang="es">Día de entrenamiento</title>
   </programme>
   <programme start="20261108013100 -0500" stop="20261108015200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Gorilla Dissolution</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 23 - The Gorilla Dissolution</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 23</episode-num>
   </programme>
   <programme start="20261108015200 -0500" stop="20261108021500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Status Quo Combustion</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 7 Episodio 24 - The Status Quo Combustion</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 24</episode-num>
   </programme>
   <programme start="20261108021500 -0500" stop="20261108023800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Locomotion Interruption</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 1 - The Locomotion Interruption</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 1</episode-num>
   </programme>
   <programme start="20261108023800 -0500" stop="20261108025900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Junior Professor Solution</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 2 - The Junior Professor Solution</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 2</episode-num>
   </programme>
   <programme start="20261108025900 -0500" stop="20261108032000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The First Pitch Insufficiency</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 3 - The First Pitch Insufficiency</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 3</episode-num>
   </programme>
   <programme start="20261108032000 -0500" stop="20261108034000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Hook-Up Reverberation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 4 - The Hook-Up Reverberation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 4</episode-num>
   </programme>
   <programme start="20261108034000 -0500" stop="20261108040400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Meander to Your Dander</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 11 - Meander to Your Dander</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 11</episode-num>
   </programme>
   <programme start="20261108040400 -0500" stop="20261108042800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">A Little Clammy and None Too Fresh</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 12 - A Little Clammy and None Too Fresh</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 12</episode-num>
   </programme>
   <programme start="20261108042800 -0500" stop="20261108044900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">The Soil Is Moist</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 13 - The Soil Is Moist</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 13</episode-num>
   </programme>
   <programme start="20261108044900 -0500" stop="20261108050000 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Hollywood One on One</title>
   </programme>
   <programme start="20261108050000 -0500" stop="20261108051300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Hollywood One on One</title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 11 - Meander to Your Dander</sub-title>
+    <episode-num system="onscreen">Temporada 5 Episodio 11</episode-num>
   </programme>
   <programme start="20261108051300 -0500" stop="20261108052500 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Hollywood One on One</title>
   </programme>
   <programme start="20261108052500 -0500" stop="20261108054800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Misinterpretation Agitation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 7 - The Misinterpretation Agitation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 7</episode-num>
   </programme>
   <programme start="20261108054800 -0500" stop="20261108060900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Prom Equivalency</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 8 - The Prom Equivalency</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 8</episode-num>
   </programme>
   <programme start="20261108060900 -0500" stop="20261108063200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Septum Deviation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 9 - The Septum Deviation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 9</episode-num>
   </programme>
   <programme start="20261108063200 -0500" stop="20261108065500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Champagne Reflection</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 10 - The Champagne Reflection</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 10</episode-num>
   </programme>
   <programme start="20261108065500 -0500" stop="20261108071900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Fish in a Drawer</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 17 - Fish in a Drawer</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 17</episode-num>
   </programme>
   <programme start="20261108071900 -0500" stop="20261108074300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">If My Hole Could Talk</sub-title>
-    <episode-num system="onscreen">Temporada 5 Episodio 18</episode-num>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 19 - Waiting for the Right Snapper</sub-title>
+    <episode-num system="onscreen">Temporada 5 Episodio 19</episode-num>
   </programme>
   <programme start="20261108074300 -0500" stop="20261108080700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Waiting for the Right Snapper</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 19 - Waiting for the Right Snapper</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 19</episode-num>
   </programme>
   <programme start="20261108080700 -0500" stop="20261108083100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Taterhead Is Our Love Child</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 1 - Taterhead Is Our Love Child</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 1</episode-num>
   </programme>
   <programme start="20261108083100 -0500" stop="20261108085600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Pie Hole, Herb</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 2 - Pie Hole, Herb</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 2</episode-num>
   </programme>
   <programme start="20261108085600 -0500" stop="20261108091900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Damn You, Eggs Benedict</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 3 - Damn You, Eggs Benedict</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 3</episode-num>
   </programme>
   <programme start="20261108091900 -0500" stop="20261108105100 -0500" channel="WarnerChannel.us@Colombia">
@@ -646,76 +649,76 @@
     <title lang="es">Inside Warner - Cat in the Hat</title>
   </programme>
   <programme start="20261108231000 -0500" stop="20261108233100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Focus Attentuation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 5 - The Focus Attentuation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 5</episode-num>
   </programme>
   <programme start="20261108233100 -0500" stop="20261108235600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Expedition Approximation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 6 - The Expedition Approximation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 6</episode-num>
   </programme>
   <programme start="20261108235600 -0500" stop="20261108235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Misinterpretation Agitation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 7 - The Misinterpretation Agitation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 7</episode-num>
   </programme>
   <programme start="20261109000000 -0500" stop="20261109001700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Misinterpretation Agitation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 7 - The Misinterpretation Agitation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 7</episode-num>
   </programme>
   <programme start="20261109001700 -0500" stop="20261109003900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Prom Equivalency</sub-title>
-    <episode-num system="onscreen">Temporada 8 Episodio 8</episode-num>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 5 - The Focus Attentuation</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 5</episode-num>
   </programme>
   <programme start="20261109003900 -0500" stop="20261109010100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Septum Deviation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 9 - The Septum Deviation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 9</episode-num>
   </programme>
   <programme start="20261109010100 -0500" stop="20261109012300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Champagne Reflection</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 10 - The Champagne Reflection</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 10</episode-num>
   </programme>
   <programme start="20261109012300 -0500" stop="20261109014600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Fish in a Drawer</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 17 - Fish in a Drawer</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 17</episode-num>
   </programme>
   <programme start="20261109014600 -0500" stop="20261109020900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">If My Hole Could Talk</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 18 - If My Hole Could Talk</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 18</episode-num>
   </programme>
   <programme start="20261109020900 -0500" stop="20261109023300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Waiting for the Right Snapper</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 5 Episodio 19 - Waiting for the Right Snapper</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 19</episode-num>
   </programme>
   <programme start="20261109023300 -0500" stop="20261109025600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Taterhead Is Our Love Child</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 1 - Taterhead Is Our Love Child</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 1</episode-num>
   </programme>
   <programme start="20261109025600 -0500" stop="20261109031900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Pie Hole, Herb</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 2 - Pie Hole, Herb</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 2</episode-num>
   </programme>
   <programme start="20261109031900 -0500" stop="20261109034100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Damn You, Eggs Benedict</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 3 - Damn You, Eggs Benedict</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 3</episode-num>
   </programme>
   <programme start="20261109034100 -0500" stop="20261109042400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">The Next Episode</title>
   </programme>
   <programme start="20261109042400 -0500" stop="20261109050000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">Then Learn Fly</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 4 Episodio 3 - Then Learn Fly</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 3</episode-num>
   </programme>
   <programme start="20261109050000 -0500" stop="20261109050500 -0500" channel="WarnerChannel.us@Colombia">
@@ -733,67 +736,67 @@
     <desc lang="es">Scooby y la pandilla enfrentan su misterio más complicado: un complot para liberar al perro fantasma Cerbero contra el mundo. Mientras corren para detener el apocalipsis perruno, el grupo descubre que Scooby tiene un épico destino que nadie sospechó nunca.</desc>
   </programme>
   <programme start="20261109081900 -0500" stop="20261109084200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Clean Room Infiltration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 11 - The Clean Room Infiltration</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 11</episode-num>
   </programme>
   <programme start="20261109084200 -0500" stop="20261109090400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Space Probe Disintegration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 12 - The Space Probe Disintegration</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 12</episode-num>
   </programme>
   <programme start="20261109090400 -0500" stop="20261109092800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Anxiety Optimization</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 13 - The Anxiety Optimization</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 13</episode-num>
   </programme>
   <programme start="20261109092800 -0500" stop="20261109095200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Troll Manifestation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 14 - The Troll Manifestation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 14</episode-num>
   </programme>
   <programme start="20261109095200 -0500" stop="20261109101400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Comic Book Store Regeneration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 15 - The Comic Book Store Regeneration</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 15</episode-num>
   </programme>
   <programme start="20261109101400 -0500" stop="20261109103700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Intimacy Acceleration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 16 - The Intimacy Acceleration</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 16</episode-num>
   </programme>
   <programme start="20261109103700 -0500" stop="20261109110000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">The Flavin' and the Mavin'</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 4 - The Flavin' and the Mavin'</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 4</episode-num>
   </programme>
   <programme start="20261109110000 -0500" stop="20261109112500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">A Jock Strap in Hell</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 5 - A Jock Strap in Hell</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 5</episode-num>
   </programme>
   <programme start="20261109112500 -0500" stop="20261109114900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">It's Always Nazi Week</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 6 - It's Always Nazi Week</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 6</episode-num>
   </programme>
   <programme start="20261109114900 -0500" stop="20261109121200 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Lo mejor que se puede comprar</title>
   </programme>
   <programme start="20261109121200 -0500" stop="20261109123700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Pinocchio's Mouth</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 8 - Pinocchio's Mouth</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 8</episode-num>
   </programme>
   <programme start="20261109123700 -0500" stop="20261109130100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">The Mooch at the Boo</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 9 - The Mooch at the Boo</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 9</episode-num>
   </programme>
   <programme start="20261109130100 -0500" stop="20261109133600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">First Learn Stand</sub-title>
-    <episode-num system="onscreen">Temporada 4 Episodio 2</episode-num>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 9 - The Mooch at the Boo</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 9</episode-num>
   </programme>
   <programme start="20261109133600 -0500" stop="20261109151600 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Megamente</title>
@@ -818,134 +821,136 @@
     <title lang="es">Award Tour</title>
   </programme>
   <programme start="20261109235500 -0500" stop="20261109235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Clean Room Infiltration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 11 - The Clean Room Infiltration</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 11</episode-num>
   </programme>
   <programme start="20261110000000 -0500" stop="20261110001700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Clean Room Infiltration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 11 - The Clean Room Infiltration</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 11</episode-num>
   </programme>
   <programme start="20261110001700 -0500" stop="20261110003900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Space Probe Disintegration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 12 - The Space Probe Disintegration</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 12</episode-num>
   </programme>
   <programme start="20261110003900 -0500" stop="20261110010100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Anxiety Optimization</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 13 - The Anxiety Optimization</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 13</episode-num>
   </programme>
   <programme start="20261110010100 -0500" stop="20261110012400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Troll Manifestation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 14 - The Troll Manifestation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 14</episode-num>
   </programme>
   <programme start="20261110012400 -0500" stop="20261110014600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Comic Book Store Regeneration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 15 - The Comic Book Store Regeneration</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 15</episode-num>
   </programme>
   <programme start="20261110014600 -0500" stop="20261110020800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Intimacy Acceleration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 16 - The Intimacy Acceleration</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 16</episode-num>
   </programme>
   <programme start="20261110020800 -0500" stop="20261110023000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">The Flavin' and the Mavin'</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 4 - The Flavin' and the Mavin'</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 4</episode-num>
   </programme>
   <programme start="20261110023000 -0500" stop="20261110025300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">A Jock Strap in Hell</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 5 - A Jock Strap in Hell</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 5</episode-num>
   </programme>
   <programme start="20261110025300 -0500" stop="20261110031600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">It's Always Nazi Week</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 6 - It's Always Nazi Week</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 6</episode-num>
   </programme>
   <programme start="20261110031600 -0500" stop="20261110033900 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Lo mejor que se puede comprar</title>
   </programme>
   <programme start="20261110033900 -0500" stop="20261110040200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Pinocchio's Mouth</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 8 - Pinocchio's Mouth</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 8</episode-num>
   </programme>
   <programme start="20261110040200 -0500" stop="20261110042600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">The Mooch at the Boo</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 9 - The Mooch at the Boo</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 9</episode-num>
   </programme>
   <programme start="20261110042600 -0500" stop="20261110043500 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Hollywood One on One</title>
   </programme>
   <programme start="20261110043500 -0500" stop="20261110044900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Hollywood One on One</title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 7 - Best H.O. Money Can Buy</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 7</episode-num>
   </programme>
   <programme start="20261110044900 -0500" stop="20261110050000 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Hollywood One on One</title>
   </programme>
   <programme start="20261110050000 -0500" stop="20261110054000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">Party Time</sub-title>
-    <episode-num system="onscreen">Temporada 4 Episodio 8</episode-num>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 8 - Pinocchio's Mouth</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 8</episode-num>
   </programme>
   <programme start="20261110054000 -0500" stop="20261110072000 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Turbo</title>
     <desc lang="es">La historia de un caracol de jardín común que sueña con ganar el Indy 500.</desc>
   </programme>
   <programme start="20261110072000 -0500" stop="20261110074200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Colonization Application</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 17 - The Colonization Application</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 17</episode-num>
   </programme>
   <programme start="20261110074200 -0500" stop="20261110080500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Leftover Thermalization</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 18 - The Leftover Thermalization</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 18</episode-num>
   </programme>
   <programme start="20261110080500 -0500" stop="20261110082900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Skywalker Incursion</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 19 - The Skywalker Incursion</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 19</episode-num>
   </programme>
   <programme start="20261110082900 -0500" stop="20261110085100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Fortification Implementation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 20 - The Fortification Implementation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 20</episode-num>
   </programme>
   <programme start="20261110085100 -0500" stop="20261110091300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Communication Deterioration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 21 - The Communication Deterioration</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 21</episode-num>
   </programme>
   <programme start="20261110091300 -0500" stop="20261110093500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Graduation Transmission</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 22 - The Graduation Transmission</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 22</episode-num>
   </programme>
   <programme start="20261110093500 -0500" stop="20261110095900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">He Smelled the Ham, He Got Excited</sub-title>
-    <episode-num system="onscreen">Temporada 6 Episodio 10</episode-num>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 22 - The Graduation Transmission</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 22</episode-num>
   </programme>
   <programme start="20261110095900 -0500" stop="20261110102400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">The Devil's Lube</sub-title>
-    <episode-num system="onscreen">Temporada 6 Episodio 11</episode-num>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 10 - He Smelled the Ham, He Got Excited</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 10</episode-num>
   </programme>
   <programme start="20261110102400 -0500" stop="20261110104700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Thank God for Scoliosis</sub-title>
-    <episode-num system="onscreen">Temporada 6 Episodio 12</episode-num>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 11 - The Devil's Lube</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 11</episode-num>
   </programme>
   <programme start="20261110104700 -0500" stop="20261110111200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">I Think You Offended Don</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 13 - I Think You Offended Don</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 13</episode-num>
   </programme>
   <programme start="20261110111200 -0500" stop="20261110113700 -0500" channel="WarnerChannel.us@Colombia">
@@ -955,9 +960,9 @@
     <title lang="es">Empezaré con el gato</title>
   </programme>
   <programme start="20261110120100 -0500" stop="20261110124000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">Then Learn Fly</sub-title>
-    <episode-num system="onscreen">Temporada 4 Episodio 3</episode-num>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 15 - I'd Like to Start with the Cat</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 15</episode-num>
   </programme>
   <programme start="20261110124000 -0500" stop="20261110143400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Robo en las alturas</title>
@@ -979,58 +984,58 @@
     <title lang="es">El sorprendente Hombre Araña 2: La amenaza de Electro</title>
   </programme>
   <programme start="20261110233500 -0500" stop="20261110235800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Colonization Application</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 17 - The Colonization Application</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 17</episode-num>
   </programme>
   <programme start="20261110235800 -0500" stop="20261110235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Leftover Thermalization</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 18 - The Leftover Thermalization</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 18</episode-num>
   </programme>
   <programme start="20261111000000 -0500" stop="20261111002000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Leftover Thermalization</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 18 - The Leftover Thermalization</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 18</episode-num>
   </programme>
   <programme start="20261111002000 -0500" stop="20261111004300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Skywalker Incursion</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 19 - The Skywalker Incursion</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 19</episode-num>
   </programme>
   <programme start="20261111004300 -0500" stop="20261111010400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Fortification Implementation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 20 - The Fortification Implementation</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 20</episode-num>
   </programme>
   <programme start="20261111010400 -0500" stop="20261111012400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Communication Deterioration</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 21 - The Communication Deterioration</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 21</episode-num>
   </programme>
   <programme start="20261111012400 -0500" stop="20261111014500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Graduation Transmission</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 22 - The Graduation Transmission</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 22</episode-num>
   </programme>
   <programme start="20261111014500 -0500" stop="20261111020800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">He Smelled the Ham, He Got Excited</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 10 - He Smelled the Ham, He Got Excited</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 10</episode-num>
   </programme>
   <programme start="20261111020800 -0500" stop="20261111023100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">The Devil's Lube</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 11 - The Devil's Lube</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 11</episode-num>
   </programme>
   <programme start="20261111023100 -0500" stop="20261111025400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Thank God for Scoliosis</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 12 - Thank God for Scoliosis</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 12</episode-num>
   </programme>
   <programme start="20261111025400 -0500" stop="20261111031700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">I Think You Offended Don</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 13 - I Think You Offended Don</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 13</episode-num>
   </programme>
   <programme start="20261111031700 -0500" stop="20261111034000 -0500" channel="WarnerChannel.us@Colombia">
@@ -1046,59 +1051,59 @@
     <title lang="es">Hollywood One on One</title>
   </programme>
   <programme start="20261111050000 -0500" stop="20261111053200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">The Fall</sub-title>
-    <episode-num system="onscreen">Temporada 4 Episodio 9</episode-num>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 15 - I'd Like to Start with the Cat</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 15</episode-num>
   </programme>
   <programme start="20261111053200 -0500" stop="20261111075900 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">El sorprendente Hombre Araña 2: La amenaza de Electro</title>
   </programme>
   <programme start="20261111075900 -0500" stop="20261111082100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Separation Oscillation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 2 - The Separation Oscillation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 2</episode-num>
   </programme>
   <programme start="20261111082100 -0500" stop="20261111084300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Bachelor Party Corrosion</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 3 - The Bachelor Party Corrosion</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 3</episode-num>
   </programme>
   <programme start="20261111084300 -0500" stop="20261111090500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The 2003 Approximation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 4 - The 2003 Approximation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 4</episode-num>
   </programme>
   <programme start="20261111090500 -0500" stop="20261111092900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">She'll Still Be Dead at Halftime</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 16 - She'll Still Be Dead at Halftime</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 16</episode-num>
   </programme>
   <programme start="20261111092900 -0500" stop="20261111095100 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">¿El ocu o el pado?</title>
   </programme>
   <programme start="20261111095100 -0500" stop="20261111101600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">My Son's Enormous Head</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 18 - My Son's Enormous Head</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 18</episode-num>
   </programme>
   <programme start="20261111101600 -0500" stop="20261111104000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">The Two Finger Rule</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 19 - The Two Finger Rule</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 19</episode-num>
   </programme>
   <programme start="20261111104000 -0500" stop="20261111110500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Hello, I Am Alan Cousteau</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 20 - Hello, I Am Alan Cousteau</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 20</episode-num>
   </programme>
   <programme start="20261111110500 -0500" stop="20261111113000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Above Exalted Cyclops</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 21 - Above Exalted Cyclops</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 21</episode-num>
   </programme>
   <programme start="20261111113000 -0500" stop="20261111120600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">Bicephaly</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 4 Episodio 4 - Bicephaly</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 4</episode-num>
   </programme>
   <programme start="20261111120600 -0500" stop="20261111141500 -0500" channel="WarnerChannel.us@Colombia">
@@ -1122,76 +1127,76 @@
     <desc lang="es">Una antigua guerra se vuelve a encender cuando un granjero joven Jack, sin darse cuenta, abre una puerta entre nuestro mundo y una raza terrible de gigantes. Desatados en la Tierra, por primera vez en siglos, los gigantes se esfuerzan por recuperar la tierra que habían perdido, forzando al joven, Jack, a embarcarse en la batalla de su vida para detenerlos.</desc>
   </programme>
   <programme start="20261111231000 -0500" stop="20261111233100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Maternal Combustion</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 23 - The Maternal Combustion</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 23</episode-num>
   </programme>
   <programme start="20261111233100 -0500" stop="20261111235400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Commitment Determination</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 8 Episodio 24 - The Commitment Determination</sub-title>
     <episode-num system="onscreen">Temporada 8 Episodio 24</episode-num>
   </programme>
   <programme start="20261111235400 -0500" stop="20261111235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Matrimonial Momentum</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 1 - The Matrimonial Momentum</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 1</episode-num>
   </programme>
   <programme start="20261112000000 -0500" stop="20261112001800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Matrimonial Momentum</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 1 - The Matrimonial Momentum</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 1</episode-num>
   </programme>
   <programme start="20261112001800 -0500" stop="20261112003800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Separation Oscillation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 2 - The Separation Oscillation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 2</episode-num>
   </programme>
   <programme start="20261112003800 -0500" stop="20261112005900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Bachelor Party Corrosion</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 3 - The Bachelor Party Corrosion</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 3</episode-num>
   </programme>
   <programme start="20261112005900 -0500" stop="20261112011900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The 2003 Approximation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 4 - The 2003 Approximation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 4</episode-num>
   </programme>
   <programme start="20261112011900 -0500" stop="20261112014200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">She'll Still Be Dead at Halftime</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 16 - She'll Still Be Dead at Halftime</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 16</episode-num>
   </programme>
   <programme start="20261112014200 -0500" stop="20261112020300 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">¿El ocu o el pado?</title>
   </programme>
   <programme start="20261112020300 -0500" stop="20261112022700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">My Son's Enormous Head</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 18 - My Son's Enormous Head</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 18</episode-num>
   </programme>
   <programme start="20261112022700 -0500" stop="20261112025000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">The Two Finger Rule</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 19 - The Two Finger Rule</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 19</episode-num>
   </programme>
   <programme start="20261112025000 -0500" stop="20261112031300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Hello, I Am Alan Cousteau</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 20 - Hello, I Am Alan Cousteau</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 20</episode-num>
   </programme>
   <programme start="20261112031300 -0500" stop="20261112033600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Above Exalted Cyclops</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 21 - Above Exalted Cyclops</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 21</episode-num>
   </programme>
   <programme start="20261112033600 -0500" stop="20261112040600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">The Fall</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 4 Episodio 9 - The Fall</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 9</episode-num>
   </programme>
   <programme start="20261112040600 -0500" stop="20261112045300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">The Rise</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 4 Episodio 10 - The Rise</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 10</episode-num>
   </programme>
   <programme start="20261112045300 -0500" stop="20261112045600 -0500" channel="WarnerChannel.us@Colombia">
@@ -1201,8 +1206,8 @@
     <title lang="es">TNT Buzz</title>
   </programme>
   <programme start="20261112050000 -0500" stop="20261112061100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">Molé</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 5 Episodio 2 - Molé</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 2</episode-num>
   </programme>
   <programme start="20261112061100 -0500" stop="20261112074800 -0500" channel="WarnerChannel.us@Colombia">
@@ -1210,62 +1215,64 @@
     <desc lang="es">En un universo paralelo donde Peter Parker ha muerto, un jóven de secundaria llamado Miles Morales es el nuevo Spider-Man. Sin embargo, cuando el líder mafioso Wilson Fisk (a.k.a Kingpin) construye el "Super Colisionador" trae a una versión alternativa de Peter Parker que tratará de enseñarle a Miles como ser un mejor Spider-Man. Pero no será el único Spider Man en entrar a este universo, 4 versiones alternas de Spidey aparecerán y buscarán regresar a su universo antes de que toda la realidad colapse.</desc>
   </programme>
   <programme start="20261112074800 -0500" stop="20261112080600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Perspiration Implementation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 5 - The Perspiration Implementation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 5</episode-num>
   </programme>
   <programme start="20261112080600 -0500" stop="20261112082700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Helium Insufficiency</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 6 - The Helium Insufficiency</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 6</episode-num>
   </programme>
   <programme start="20261112082700 -0500" stop="20261112084700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Spock Resonance</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 7 - The Spock Resonance</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 7</episode-num>
   </programme>
   <programme start="20261112084700 -0500" stop="20261112090500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Mystery Date Observation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 8 - The Mystery Date Observation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 8</episode-num>
   </programme>
   <programme start="20261112090500 -0500" stop="20261112092800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Platonic Permutation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 9 - The Platonic Permutation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 9</episode-num>
   </programme>
   <programme start="20261112092800 -0500" stop="20261112095200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Earworm Reverberation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 10 - The Earworm Reverberation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 10</episode-num>
   </programme>
   <programme start="20261112095200 -0500" stop="20261112101300 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">La cajita de Sir Lancelot</title>
   </programme>
   <programme start="20261112101300 -0500" stop="20261112103500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Buenos días, señora panadera</title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 22 - Sir Lancelot's Litter Box</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 22</episode-num>
   </programme>
   <programme start="20261112103500 -0500" stop="20261112105900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Baseball with Better Steroids</sub-title>
-    <episode-num system="onscreen">Temporada 6 Episodio 24</episode-num>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 23 - Good Morning, Mrs. Butterworth</sub-title>
+    <episode-num system="onscreen">Temporada 6 Episodio 23</episode-num>
   </programme>
   <programme start="20261112105900 -0500" stop="20261112112300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">818-jklpuzo</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 7 Episodio 1 - 818-jklpuzo</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 1</episode-num>
   </programme>
   <programme start="20261112112300 -0500" stop="20261112114400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Apaleados por la tercera edad</title>
   </programme>
   <programme start="20261112114400 -0500" stop="20261112120500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Mmm, Fish. Yum.</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 7 Episodio 3 - Mmm, Fish. Yum.</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 3</episode-num>
   </programme>
   <programme start="20261112120500 -0500" stop="20261112123700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">Match Point</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 4 Episodio 5 - Match Point</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 5</episode-num>
   </programme>
   <programme start="20261112123700 -0500" stop="20261112143300 -0500" channel="WarnerChannel.us@Colombia">
@@ -1288,38 +1295,38 @@
     <desc lang="es">Tarzán, ya acostumbrado a la vida en Londres, es llamado de vuelta a su antiguo hogar en la selva para investigar las actividades que se llevan a cabo en un campamento minero.</desc>
   </programme>
   <programme start="20261112225400 -0500" stop="20261112231200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Perspiration Implementation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 5 - The Perspiration Implementation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 5</episode-num>
   </programme>
   <programme start="20261112231200 -0500" stop="20261112233100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Helium Insufficiency</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 6 - The Helium Insufficiency</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 6</episode-num>
   </programme>
   <programme start="20261112233100 -0500" stop="20261112235200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Spock Resonance</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 7 - The Spock Resonance</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 7</episode-num>
   </programme>
   <programme start="20261112235200 -0500" stop="20261112235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Mystery Date Observation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 8 - The Mystery Date Observation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 8</episode-num>
   </programme>
   <programme start="20261113000000 -0500" stop="20261113001000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Mystery Date Observation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 8 - The Mystery Date Observation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 8</episode-num>
   </programme>
   <programme start="20261113001000 -0500" stop="20261113003300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Platonic Permutation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 9 - The Platonic Permutation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 9</episode-num>
   </programme>
   <programme start="20261113003300 -0500" stop="20261113005600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Earworm Reverberation</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 10 - The Earworm Reverberation</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 10</episode-num>
   </programme>
   <programme start="20261113005600 -0500" stop="20261113011700 -0500" channel="WarnerChannel.us@Colombia">
@@ -1329,49 +1336,49 @@
     <title lang="es">Buenos días, señora panadera</title>
   </programme>
   <programme start="20261113013700 -0500" stop="20261113020000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Baseball with Better Steroids</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 6 Episodio 24 - Baseball with Better Steroids</sub-title>
     <episode-num system="onscreen">Temporada 6 Episodio 24</episode-num>
   </programme>
   <programme start="20261113020000 -0500" stop="20261113022300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">818-jklpuzo</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 7 Episodio 1 - 818-jklpuzo</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 1</episode-num>
   </programme>
   <programme start="20261113022300 -0500" stop="20261113024400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Apaleados por la tercera edad</title>
   </programme>
   <programme start="20261113024400 -0500" stop="20261113030500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Mmm, Fish. Yum.</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 7 Episodio 3 - Mmm, Fish. Yum.</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 3</episode-num>
   </programme>
   <programme start="20261113030500 -0500" stop="20261113050000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Cobra Kai</title>
-    <sub-title lang="en">Molé</sub-title>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 5 Episodio 2 - Molé</sub-title>
     <episode-num system="onscreen">Temporada 5 Episodio 2</episode-num>
   </programme>
   <programme start="20261113050000 -0500" stop="20261113062300 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Caída en espiral</title>
   </programme>
   <programme start="20261113062300 -0500" stop="20261113064300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Big Bang</title>
-    <sub-title lang="en">The Positive Negative Reaction</sub-title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 9 Episodio 16 - The Positive Negative Reaction</sub-title>
     <episode-num system="onscreen">Temporada 9 Episodio 16</episode-num>
   </programme>
   <programme start="20261113064300 -0500" stop="20261113070400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Laxative Tester, Horse Inseminator</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 7 Episodio 4 - Laxative Tester, Horse Inseminator</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 4</episode-num>
   </programme>
   <programme start="20261113070400 -0500" stop="20261113072800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">For the Sake of the Child</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 7 Episodio 5 - For the Sake of the Child</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 5</episode-num>
   </programme>
   <programme start="20261113072800 -0500" stop="20261113075100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Give Me Your Thumb</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 7 Episodio 6 - Give Me Your Thumb</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 6</episode-num>
   </programme>
   <programme start="20261113075100 -0500" stop="20261113081400 -0500" channel="WarnerChannel.us@Colombia">
@@ -1381,8 +1388,8 @@
     <title lang="es">¡Oh, madre santa!</title>
   </programme>
   <programme start="20261113083600 -0500" stop="20261113085900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Dos hombres y medio</title>
-    <sub-title lang="en">Captain Terry's Spray-On Hair</sub-title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 7 Episodio 9 - Captain Terry's Spray-On Hair</sub-title>
     <episode-num system="onscreen">Temporada 7 Episodio 9</episode-num>
   </programme>
   <programme start="20261113085900 -0500" stop="20261113093200 -0500" channel="WarnerChannel.us@Colombia">
