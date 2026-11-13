@@ -35,3 +35,97 @@ jobs:
         with:
           commit_message: "Actualizar EPG y catalogos"
           file_pattern: epg.xml series.json peliculas.json
+
+      - name: Instalar BeautifulSoup para la prueba
+        run: pip install beautifulsoup4
+
+      - name: Probar consulta de Warner en mi.tv Colombia
+        run: |
+          python - <<'PY'
+          import re
+          import requests
+          from bs4 import BeautifulSoup
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          fecha = datetime.now(
+              ZoneInfo("America/Guayaquil")
+          ).strftime("%Y-%m-%d")
+
+          offset = -300
+
+          url = (
+              f"https://mi.tv/co/async/channel/warner/"
+              f"{fecha}/{offset}"
+          )
+
+          sesion = requests.Session()
+          sesion.headers.update({
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                            "AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
+              "Referer": "https://mi.tv/co/canales/warner",
+          })
+
+          print("=" * 55)
+          print("PRUEBA MI.TV - WARNER CHANNEL COLOMBIA")
+          print("=" * 55)
+          print("Fecha:", fecha)
+          print("URL:", url)
+
+          respuesta = sesion.get(url, timeout=40)
+
+          print("Código HTTP:", respuesta.status_code)
+          print("Contenido recibido:", len(respuesta.text), "caracteres")
+
+          respuesta.raise_for_status()
+
+          soup = BeautifulSoup(respuesta.text, "html.parser")
+          lista = soup.select_one("ul.broadcasts")
+
+          if lista is None:
+              print("No se encontró ul.broadcasts.")
+              print("Respuesta recibida:")
+              print(respuesta.text[:2000])
+              raise SystemExit(1)
+
+          elementos = lista.find_all("li", recursive=False)
+          print("Elementos encontrados:", len(elementos))
+
+          encontrados = 0
+
+          for item in elementos:
+              if "native" in item.get("class", []):
+                  continue
+
+              hora = item.select_one(".time")
+              titulo = item.select_one("h2")
+
+              if hora is None or titulo is None:
+                  continue
+
+              limpiar = lambda x: re.sub(
+                  r"\s+", " ", x.get_text(" ", strip=True)
+              ).strip() if x else ""
+
+              subtitulo = item.select_one(".sub-title")
+              enlace = item.select_one("a[href]")
+
+              print("------------------------------")
+              print("Hora:", limpiar(hora))
+              print("Título:", limpiar(titulo))
+              print("Subtítulo:", limpiar(subtitulo))
+              print("Enlace:", enlace.get("href", "") if enlace else "")
+
+              encontrados += 1
+
+              if encontrados >= 10:
+                  break
+
+          print("=" * 55)
+          print("PROGRAMAS MOSTRADOS:", encontrados)
+          print("PRUEBA FINALIZADA")
+          print("=" * 55)
+
+          if encontrados == 0:
+              raise SystemExit("No se encontraron programas.")
+          PY
