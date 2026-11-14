@@ -294,6 +294,48 @@
       "titulo_es": "La Momia",
       "sinopsis_es": "Un aventurero imprudente y un grupo de exploradores desentierran accidentalmente una antigua maldición egipcia. Ahora, deben luchar contra la resucitada momia del sacerdote Imhotep, que busca recuperar su poder y venganza sobre el mundo moderno.",
       "verificada": true
+    },
+    "teen titans go la pelicula": {
+      "titulo_origen": "Teen Titans Go! La película",
+      "tmdb_id": 474395,
+      "titulo_es": "Jóvenes Titanes en acción: la película",
+      "sinopsis_es": "Parece que todos los grandes superhéroes están protagonizando sus propias películas, todos menos los Teen Titans. Robin está obligado y decidido a remediar esa situación al convertirse en una estrella en lugar de ser un compañero. Con algunas ideas locas y una canción en sus corazones, los Teen Titans se dirigen a Hollywood para cumplir sus sueños. Sin embargo, las cosas pronto van mal, cuando un supervillano planea apoderarse del planeta, poniendo en peligro la suerte de los jóvenes héroes.",
+      "verificada": true
+    },
+    "viva elvis": {
+      "titulo_origen": "Viva Elvis",
+      "tmdb_id": 1315938,
+      "titulo_es": "Viva Elvis",
+      "sinopsis_es": "",
+      "verificada": true
+    },
+    "harry potter y el misterio del principe": {
+      "titulo_origen": "Harry Potter y el misterio del príncipe",
+      "tmdb_id": 767,
+      "titulo_es": "Harry Potter y el misterio del príncipe",
+      "sinopsis_es": "A pesar de la oscuridad que Lord Voldemort entrelaza el mundo muggle y el mágico, Hogwarts continúa adelante. Mientras está en una misión por orden de el director Dumbledore, Harry obtiene un viejo libro de posiciones de el \"Príncipe Mestizo\".",
+      "verificada": true
+    },
+    "la gran aventura lego 2": {
+      "titulo_origen": "La gran aventura Lego 2",
+      "tmdb_id": 280217,
+      "titulo_es": "La Gran Aventura LEGO 2",
+      "sinopsis_es": "\"La Gran Aventura LEGO 2\" reúne a los héroes de Bricksburg en una nueva aventura en la que tendrán que salvar su ciudad. Después de cinco años de tranquilidad aparece una nueva amenaza: invasores de LEGO DUPLO del espacio exterior que lo destrozan todo antes de que dé tiempo a reconstruirlo. Emmet, Lucy, Batman y sus amigos unirán fuerzas para librar una batalla que les llevará a mundos inexplorados.",
+      "verificada": true
+    },
+    "la mula": {
+      "titulo_origen": "La mula",
+      "tmdb_id": 172265,
+      "titulo_es": "La mula",
+      "sinopsis_es": "Año 1939. Solo quedan 3 meses para que acabe la Guerra Civil española. El cabo Juan Castro, un joven de Jaén que combate en el bando nacional, encuentra una mula perdida en medio del campo de batalla y decide esconderla para llevársela a casa al final de la guerra. Con su mula y con las cuatrocientas pesetas que lleva en el bolsillo intentará conquistar a la chica más guapa que ha visto nunca.",
+      "verificada": true
+    },
+    "liga de la justicia": {
+      "titulo_origen": "Liga de la justicia",
+      "tmdb_id": 141052,
+      "titulo_es": "Liga de la Justicia",
+      "sinopsis_es": "Motivado por la fe que había recuperado en la humanidad e inspirado por la acción altruista de Superman, Bruce Wayne recluta la ayuda de su nueva aliada, Diana Prince, para enfrentarse a un enemigo aún mayor. Juntos, Batman y Wonder Woman se mueven rápidamente para intentar encontrar y reclutar un equipo de metahumanos que combata esta nueva amenaza. El problema es que a pesar de la formación de esta liga de héroes sin precedentes –Batman, Wonder Woman, Aquaman, Cyborg y Flash– puede que sea demasiado tarde para salvar el planeta de una amenaza de proporciones catastróficas",
+      "verificada": true
     }
   }
 }
