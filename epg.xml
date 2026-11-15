@@ -3,28 +3,6 @@
   <channel id="WarnerChannel.us@Colombia">
     <display-name lang="es">Warner Channel</display-name>
   </channel>
-  <programme start="20261113123000 -0500" stop="20261113142000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Rudo y Cursi</title>
-    <desc lang="es">La historia de "Rudo y Cursi" gira en torno a dos hermanos, Beto, quien quiere ser futbolista, y Toto, que sueña con ser cantante de música norteña. Ambos desean llevar a cabo sus deseos para tener una mejor condición económica. Sin embargo, la rivalidad típica entre hermanos los pone a prueba.</desc>
-  </programme>
-  <programme start="20261113125000 -0500" stop="20261113143700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Rudo y Cursi</title>
-    <desc lang="es">La historia de "Rudo y Cursi" gira en torno a dos hermanos, Beto, quien quiere ser futbolista, y Toto, que sueña con ser cantante de música norteña. Ambos desean llevar a cabo sus deseos para tener una mejor condición económica. Sin embargo, la rivalidad típica entre hermanos los pone a prueba.</desc>
-  </programme>
-  <programme start="20261113142000 -0500" stop="20261113163900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Un sueño posible</title>
-    <desc lang="es">Michael Oher no sabe lo que significa tener una familia. Lo único que el desamparado adolescente conoce son las calles y los multifamiliares de Memphis. Leigh Anne Tuohy no tiene idea del mundo en el que vive el chico, pero cuando Michael la conoce, encuentra un hogar. Y los Tuohys descubren algo que les cambiará la vida: un adorable y nuevo hermano e hijo. Esta es una historia real sobre una familia, Michael y su ascenso en la carrera del fútbol Americano que te encantará, particularmente por la poderosa actuación de Bullock que la llevó a ganar un Oscar y el Globo de Oro a Mejor Actriz. Comparte la hermosa y motivadora historia de un atleta profesional que era un ganador incluso antes de haber puesto un pie en el campo.</desc>
-  </programme>
-  <programme start="20261113143700 -0500" stop="20261113165500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Un sueño posible</title>
-    <desc lang="es">Michael Oher no sabe lo que significa tener una familia. Lo único que el desamparado adolescente conoce son las calles y los multifamiliares de Memphis. Leigh Anne Tuohy no tiene idea del mundo en el que vive el chico, pero cuando Michael la conoce, encuentra un hogar. Y los Tuohys descubren algo que les cambiará la vida: un adorable y nuevo hermano e hijo. Esta es una historia real sobre una familia, Michael y su ascenso en la carrera del fútbol Americano que te encantará, particularmente por la poderosa actuación de Bullock que la llevó a ganar un Oscar y el Globo de Oro a Mejor Actriz. Comparte la hermosa y motivadora historia de un atleta profesional que era un ganador incluso antes de haber puesto un pie en el campo.</desc>
-  </programme>
-  <programme start="20261113191300 -0500" stop="20261113210000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Alfa</title>
-  </programme>
-  <programme start="20261114044000 -0500" stop="20261114045400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Hollywood One on One</title>
-  </programme>
   <programme start="20261114045400 -0500" stop="20261114050000 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Buzz</title>
     <desc lang="es">El periodista y autor ganador del premio Pulitzer, Buzz Bissinger, experimenta un despertar sexual mientras colabora con Caitlyn Jenner en sus reveladoras memorias.</desc>
@@ -431,9 +409,9 @@
     <episode-num system="onscreen">Temporada 8 Episodio 11</episode-num>
   </programme>
   <programme start="20261117130800 -0500" stop="20261117134800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 8 Episodio 10 - Ow, Ow, Don't Stop</sub-title>
-    <episode-num system="onscreen">Temporada 8 Episodio 10</episode-num>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 4 Episodio 8 - Party Time</sub-title>
+    <episode-num system="onscreen">Temporada 4 Episodio 8</episode-num>
   </programme>
   <programme start="20261117134800 -0500" stop="20261117153400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">La Gran Aventura LEGO 2</title>
