@@ -3,16 +3,6 @@
   <channel id="WarnerChannel.us@Colombia">
     <display-name lang="es">Warner Channel</display-name>
   </channel>
-  <programme start="20261114045400 -0500" stop="20261114050000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Buzz</title>
-    <desc lang="es">El periodista y autor ganador del premio Pulitzer, Buzz Bissinger, experimenta un despertar sexual mientras colabora con Caitlyn Jenner en sus reveladoras memorias.</desc>
-  </programme>
-  <programme start="20261114050000 -0500" stop="20261114051600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Hollywood One on One</title>
-  </programme>
-  <programme start="20261114051600 -0500" stop="20261114052800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Hollywood One on One</title>
-  </programme>
   <programme start="20261114094200 -0500" stop="20261114111000 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Jóvenes Titanes en acción: la película</title>
     <desc lang="es">Parece que todos los grandes superhéroes están protagonizando sus propias películas, todos menos los Teen Titans. Robin está obligado y decidido a remediar esa situación al convertirse en una estrella en lugar de ser un compañero. Con algunas ideas locas y una canción en sus corazones, los Teen Titans se dirigen a Hollywood para cumplir sus sueños. Sin embargo, las cosas pronto van mal, cuando un supervillano planea apoderarse del planeta, poniendo en peligro la suerte de los jóvenes héroes.</desc>
