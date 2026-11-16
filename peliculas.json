@@ -336,6 +336,55 @@
       "titulo_es": "Liga de la Justicia",
       "sinopsis_es": "Motivado por la fe que había recuperado en la humanidad e inspirado por la acción altruista de Superman, Bruce Wayne recluta la ayuda de su nueva aliada, Diana Prince, para enfrentarse a un enemigo aún mayor. Juntos, Batman y Wonder Woman se mueven rápidamente para intentar encontrar y reclutar un equipo de metahumanos que combata esta nueva amenaza. El problema es que a pesar de la formación de esta liga de héroes sin precedentes –Batman, Wonder Woman, Aquaman, Cyborg y Flash– puede que sea demasiado tarde para salvar el planeta de una amenaza de proporciones catastróficas",
       "verificada": true
+    },
+    "trolls": {
+      "titulo_origen": "Trolls",
+      "tmdb_id": 136799,
+      "titulo_es": "Trolls",
+      "sinopsis_es": "Adorable y amable, a los trolls les encanta jugar. Pero un día, un gigante misterioso aparece para terminar la fiesta. Poppy, la líder optimista de los Trolls, y su polo opuesto, Branch, deben embarcarse en una aventura que les lleva mucho más allá del único mundo que han conocido.",
+      "verificada": true
+    },
+    "los minions": {
+      "titulo_origen": "Los minions",
+      "tmdb_id": 211672,
+      "titulo_es": "Los Minions",
+      "sinopsis_es": "La historia de Los Minions se remonta al principio de los tiempos. Empezaron siendo organismos amarillos unicelulares que evolucionaron a través del tiempo, poniéndose siempre al servicio de los amos más despreciables. Ante su incapacidad para mantener a esos amos – desde el T. Rex a Napoleón –, los Minions acaban encontrándose solos y caen en una profunda depresión. Sin embargo, uno de ellos, llamado Kevin, tiene un plan. Acompañado por el rebelde Stuart y el adorable Bob, emprende un emocionante viaje para conseguir una jefa a quien servir, la terrible Scarlet Overkill. Pasarán de la helada Antártida, a la ciudad de Nueva York en los años sesenta, para acabar en el Londres de la misma época, donde deberán enfrentarse al mayor reto hasta la fecha: salvar a la raza Minion de la aniquilación.",
+      "verificada": true
+    },
+    "geo tormenta": {
+      "titulo_origen": "Geo-Tormenta",
+      "tmdb_id": 274855,
+      "titulo_es": "Geo-Tormenta",
+      "sinopsis_es": "Cuando unos cambios catastróficos en el clima hacen peligrar la supervivencia en la Tierra, numerosos gobiernos del mundo se unen y dan lugar a un proyecto consistente en una red global de satélites que rodeen el planeta, armados con avanzadas tecnologías, capaces de evitar desastres naturales. Jake es un diseñador de satélites que, tras un fallo en esta cadena, deberá formar equipo con su hermano Max para viajar al espacio y salvar al planeta de una tormenta artificial de proporciones épicas, mientras en la superficie del planeta se está gestando un complot para asesinar al presidente de Estados Unidos.",
+      "verificada": true
+    },
+    "cenicienta": {
+      "titulo_origen": "Cenicienta",
+      "tmdb_id": 150689,
+      "titulo_es": "La Cenicienta",
+      "sinopsis_es": "A pesar del maltrato de su madrastra, Lady Tremaine, y sus hermanastras, Anastasia y Drisella, Ella se aferra a la bondad y la esperanza. Su vida da un giro inesperado cuando conoce al Príncipe Kit, sin saber su verdadera identidad. Con la ayuda de su Hada Madrina, Ella tendrá la oportunidad de cambiar su destino y descubrir su verdadero valor.",
+      "verificada": true
+    },
+    "la momia la tumba del emperador dragon": {
+      "titulo_origen": "La momia: La tumba del emperador dragón",
+      "tmdb_id": 1735,
+      "titulo_es": "La Momia: La tumba del emperador dragón",
+      "sinopsis_es": "El aventurero Rick O'Connell y su familia desafían las antiguas maldiciones y se aventuran en China para enfrentarse al cruel emperador dragón, que ha sido despertado de su sueño milenario. En esta trepidante aventura, lucharán contra fuerzas oscuras y criaturas sobrenaturales en una carrera contra el tiempo para salvar al mundo de una nueva amenaza.",
+      "verificada": true
+    },
+    "piloto": {
+      "titulo_origen": "Piloto",
+      "tmdb_id": 1575477,
+      "titulo_es": "Piloto.",
+      "sinopsis_es": "",
+      "verificada": true
+    },
+    "el ultimo hombre": {
+      "titulo_origen": "El último hombre",
+      "tmdb_id": 946199,
+      "titulo_es": "El último hombre",
+      "sinopsis_es": "El Patronato de la Infancia de Buenos Aires es un centro destinado a proteger a niños desvalidos. En 1939 se fundó allí la primera orquesta sinfónica del mundo compuesta exclusivamente por jóvenes ciegos. Durante décadas, once adolescentes se entregaron a la música en cuerpo y alma. Basilio, el último superviviente de aquella orquesta está a punto de retirarse. El film muestra cómo se hacen y se leen las partituras en Braille, cómo se ejecutan los instrumentos al tiempo que describe la historia que esconde cada una de las habitaciones del Patronato (donde hoy funciona el Museo Evita.",
+      "verificada": true
     }
   }
 }

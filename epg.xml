@@ -3,103 +3,6 @@
   <channel id="WarnerChannel.us@Colombia">
     <display-name lang="es">Warner Channel</display-name>
   </channel>
-  <programme start="20261114094200 -0500" stop="20261114111000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Jóvenes Titanes en acción: la película</title>
-    <desc lang="es">Parece que todos los grandes superhéroes están protagonizando sus propias películas, todos menos los Teen Titans. Robin está obligado y decidido a remediar esa situación al convertirse en una estrella en lugar de ser un compañero. Con algunas ideas locas y una canción en sus corazones, los Teen Titans se dirigen a Hollywood para cumplir sus sueños. Sin embargo, las cosas pronto van mal, cuando un supervillano planea apoderarse del planeta, poniendo en peligro la suerte de los jóvenes héroes.</desc>
-  </programme>
-  <programme start="20261114111000 -0500" stop="20261114125300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Hotel Transylvania 3: Monstruos de vacaciones</title>
-    <desc lang="es">Mavis y Johnny planean ir con Drácula y sus amigos a unas vacaciones en un crucero de monstruos de lujo, donde Drácula se enamora de la capitana del barco, Ericka, sin que sepan que ella es descendiente de Abraham Van Helsing, el famoso cazador de monstruos.</desc>
-  </programme>
-  <programme start="20261114125300 -0500" stop="20261114143300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Alfa</title>
-  </programme>
-  <programme start="20261114143300 -0500" stop="20261114163000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">La leyenda de Tarzán</title>
-    <desc lang="es">Tarzán, ya acostumbrado a la vida en Londres, es llamado de vuelta a su antiguo hogar en la selva para investigar las actividades que se llevan a cabo en un campamento minero.</desc>
-  </programme>
-  <programme start="20261114163000 -0500" stop="20261114190800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Atrápame si puedes</title>
-    <desc lang="es">Basada en una historia real. En los años sesenta, Frank W. Abagnale era un joven y escurridizo delincuente que adoptaba diversas identidades (médico, abogado o copiloto de líneas aéreas). Carl Hanratty, un agente del FBI, tenía la misión de seguir su pista y capturarlo para llevarlo ante la justicia, pero Frank siempre iba un paso por delante de él.</desc>
-  </programme>
-  <programme start="20261114190800 -0500" stop="20261114210000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Sully: Hazaña en el Hudson</title>
-  </programme>
-  <programme start="20261114210000 -0500" stop="20261114235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Milagros Inesperados</title>
-  </programme>
-  <programme start="20261115000000 -0500" stop="20261115002900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Milagros Inesperados</title>
-  </programme>
-  <programme start="20261115002900 -0500" stop="20261115031100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Viva Elvis</title>
-  </programme>
-  <programme start="20261115031100 -0500" stop="20261115033100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">The Big Bang Theory</title>
-    <sub-title>Temporada 9 Episodio 17 - The Celebration Experimentation</sub-title>
-    <episode-num system="onscreen">Temporada 9 Episodio 17</episode-num>
-  </programme>
-  <programme start="20261115033100 -0500" stop="20261115035200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">The Big Bang Theory</title>
-    <sub-title>Temporada 9 Episodio 18 - The Application Deterioration</sub-title>
-    <episode-num system="onscreen">Temporada 9 Episodio 18</episode-num>
-  </programme>
-  <programme start="20261115035200 -0500" stop="20261115041400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">The Big Bang Theory</title>
-    <sub-title>Temporada 9 Episodio 19 - The Solder Excursion Diversion</sub-title>
-    <episode-num system="onscreen">Temporada 9 Episodio 19</episode-num>
-  </programme>
-  <programme start="20261115041400 -0500" stop="20261115043200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">The Big Bang Theory</title>
-    <sub-title>Temporada 9 Episodio 20 - The Big Bear Precipitation</sub-title>
-    <episode-num system="onscreen">Temporada 9 Episodio 20</episode-num>
-  </programme>
-  <programme start="20261115043200 -0500" stop="20261115044700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Hollywood One on One</title>
-  </programme>
-  <programme start="20261115044700 -0500" stop="20261115050000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Hollywood One on One</title>
-  </programme>
-  <programme start="20261115050000 -0500" stop="20261115053900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Cobra Kai</title>
-    <sub-title>Temporada 5 Episodio 8 - Taikai</sub-title>
-    <episode-num system="onscreen">Temporada 5 Episodio 8</episode-num>
-  </programme>
-  <programme start="20261115053900 -0500" stop="20261115060200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">The Big Bang Theory</title>
-    <sub-title>Temporada 10 Episodio 4 - The Cohabitation Experimentation</sub-title>
-    <episode-num system="onscreen">Temporada 10 Episodio 4</episode-num>
-  </programme>
-  <programme start="20261115060200 -0500" stop="20261115062700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Orinar como princesa</title>
-  </programme>
-  <programme start="20261115062700 -0500" stop="20261115065100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">I Found Your Mustache</title>
-  </programme>
-  <programme start="20261115065100 -0500" stop="20261115071500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 7 Episodio 18 - Ixnay on the Oggie Day</sub-title>
-    <episode-num system="onscreen">Temporada 7 Episodio 18</episode-num>
-  </programme>
-  <programme start="20261115071500 -0500" stop="20261115073700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 7 Episodio 19 - Keith Moon Is Vomiting in His Grave</sub-title>
-    <episode-num system="onscreen">Temporada 7 Episodio 19</episode-num>
-  </programme>
-  <programme start="20261115073700 -0500" stop="20261115080100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 7 Episodio 20 - I Called Him Magoo</sub-title>
-    <episode-num system="onscreen">Temporada 7 Episodio 20</episode-num>
-  </programme>
-  <programme start="20261115080100 -0500" stop="20261115082500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Hombre de goma con lanza</title>
-  </programme>
-  <programme start="20261115082500 -0500" stop="20261115100400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Alfa</title>
-  </programme>
-  <programme start="20261115100400 -0500" stop="20261115132400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Milagros Inesperados</title>
-  </programme>
   <programme start="20261115132400 -0500" stop="20261115160400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Harry Potter y el misterio del príncipe</title>
     <desc lang="es">A pesar de la oscuridad que Lord Voldemort entrelaza el mundo muggle y el mágico, Hogwarts continúa adelante. Mientras está en una misión por orden de el director Dumbledore, Harry obtiene un viejo libro de posiciones de el "Príncipe Mestizo".</desc>
@@ -342,9 +245,7 @@
     <title lang="es">Hollywood One on One</title>
   </programme>
   <programme start="20261117051700 -0500" stop="20261117054800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Cobra Kai</title>
-    <sub-title>Temporada 1 Episodio 1 - Ace Degenerate</sub-title>
-    <episode-num system="onscreen">Temporada 1 Episodio 1</episode-num>
+    <title lang="es">As degenerado</title>
   </programme>
   <programme start="20261117054800 -0500" stop="20261117083000 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Harry Potter y el misterio del príncipe</title>
@@ -409,5 +310,302 @@
   </programme>
   <programme start="20261117153400 -0500" stop="20261117171600 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Espanta tiburones</title>
+  </programme>
+  <programme start="20261117171600 -0500" stop="20261117190700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Trolls</title>
+    <desc lang="es">Adorable y amable, a los trolls les encanta jugar. Pero un día, un gigante misterioso aparece para terminar la fiesta. Poppy, la líder optimista de los Trolls, y su polo opuesto, Branch, deben embarcarse en una aventura que les lleva mucho más allá del único mundo que han conocido.</desc>
+  </programme>
+  <programme start="20261117190700 -0500" stop="20261117205600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Los Minions</title>
+    <desc lang="es">La historia de Los Minions se remonta al principio de los tiempos. Empezaron siendo organismos amarillos unicelulares que evolucionaron a través del tiempo, poniéndose siempre al servicio de los amos más despreciables. Ante su incapacidad para mantener a esos amos – desde el T. Rex a Napoleón –, los Minions acaban encontrándose solos y caen en una profunda depresión. Sin embargo, uno de ellos, llamado Kevin, tiene un plan. Acompañado por el rebelde Stuart y el adorable Bob, emprende un emocionante viaje para conseguir una jefa a quien servir, la terrible Scarlet Overkill. Pasarán de la helada Antártida, a la ciudad de Nueva York en los años sesenta, para acabar en el Londres de la misma época, donde deberán enfrentarse al mayor reto hasta la fecha: salvar a la raza Minion de la aniquilación.</desc>
+  </programme>
+  <programme start="20261117205600 -0500" stop="20261117230300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Geo-Tormenta</title>
+    <desc lang="es">Cuando unos cambios catastróficos en el clima hacen peligrar la supervivencia en la Tierra, numerosos gobiernos del mundo se unen y dan lugar a un proyecto consistente en una red global de satélites que rodeen el planeta, armados con avanzadas tecnologías, capaces de evitar desastres naturales. Jake es un diseñador de satélites que, tras un fallo en esta cadena, deberá formar equipo con su hermano Max para viajar al espacio y salvar al planeta de una tormenta artificial de proporciones épicas, mientras en la superficie del planeta se está gestando un complot para asesinar al presidente de Estados Unidos.</desc>
+  </programme>
+  <programme start="20261117230300 -0500" stop="20261117232600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La sincronicidad del cumpleaños</title>
+  </programme>
+  <programme start="20261117232600 -0500" stop="20261117234900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El resumen de vacaciones</title>
+  </programme>
+  <programme start="20261117234900 -0500" stop="20261117235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La recalibración del romance</title>
+  </programme>
+  <programme start="20261118000000 -0500" stop="20261118001100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La recalibración del romance</title>
+  </programme>
+  <programme start="20261118001100 -0500" stop="20261118003300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 11 - The Birthday Synchronicity</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 11</episode-num>
+  </programme>
+  <programme start="20261118003300 -0500" stop="20261118005500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La reverberación locomocional</title>
+  </programme>
+  <programme start="20261118005500 -0500" stop="20261118011400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 16 - The Allowance Evaporation</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 16</episode-num>
+  </programme>
+  <programme start="20261118011400 -0500" stop="20261118013700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Vibrando con tu mágico error</title>
+  </programme>
+  <programme start="20261118013700 -0500" stop="20261118015900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 7 - The Crazy Bitch Gazette</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 7</episode-num>
+  </programme>
+  <programme start="20261118015900 -0500" stop="20261118022200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Primavera en un palito</title>
+  </programme>
+  <programme start="20261118022200 -0500" stop="20261118024500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 9 - A Good Time in Central Africa</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 9</episode-num>
+  </programme>
+  <programme start="20261118024500 -0500" stop="20261118030700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 10 - Ow, Ow, Don't Stop</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 10</episode-num>
+  </programme>
+  <programme start="20261118030700 -0500" stop="20261118033000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 11 - Dead from the Waist Down</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 11</episode-num>
+  </programme>
+  <programme start="20261118033000 -0500" stop="20261118041900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">11:00 A.M</title>
+  </programme>
+  <programme start="20261118041900 -0500" stop="20261118044700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">As degenerado</title>
+  </programme>
+  <programme start="20261118044700 -0500" stop="20261118055400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hollywood One on One</title>
+  </programme>
+  <programme start="20261118055400 -0500" stop="20261118073400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Trolls</title>
+    <desc lang="es">Adorable y amable, a los trolls les encanta jugar. Pero un día, un gigante misterioso aparece para terminar la fiesta. Poppy, la líder optimista de los Trolls, y su polo opuesto, Branch, deben embarcarse en una aventura que les lleva mucho más allá del único mundo que han conocido.</desc>
+  </programme>
+  <programme start="20261118073400 -0500" stop="20261118075600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El enigma de Comic-Con</title>
+  </programme>
+  <programme start="20261118075600 -0500" stop="20261118081800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 18 - The Escape Hatch Identification</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 18</episode-num>
+  </programme>
+  <programme start="20261118081800 -0500" stop="20261118083600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 19 - The Collaboration Fluctuation</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 19</episode-num>
+  </programme>
+  <programme start="20261118083600 -0500" stop="20261118085800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 20 - The Recollection Dissipation</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 20</episode-num>
+  </programme>
+  <programme start="20261118085800 -0500" stop="20261118092000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 21 - The Separation Agitation</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 21</episode-num>
+  </programme>
+  <programme start="20261118092000 -0500" stop="20261118093900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 22 - The Cognition Regeneration</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 22</episode-num>
+  </programme>
+  <programme start="20261118093900 -0500" stop="20261118100300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 12 - Chocolate Diddlers or My Puppy's Dead</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 12</episode-num>
+  </programme>
+  <programme start="20261118100300 -0500" stop="20261118102700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 13 - Skunk, Dog, Crap and Ketchup</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 13</episode-num>
+  </programme>
+  <programme start="20261118102700 -0500" stop="20261118105200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Looking' for Japanese Subs</title>
+  </programme>
+  <programme start="20261118105200 -0500" stop="20261118111500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 15 - Three Hookers and a Philly Cheesesteak</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 15</episode-num>
+  </programme>
+  <programme start="20261118111500 -0500" stop="20261118113600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 16 - That Darn Priest</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 16</episode-num>
+  </programme>
+  <programme start="20261118113600 -0500" stop="20261118120100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 16 - That Darn Priest</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 16</episode-num>
+  </programme>
+  <programme start="20261118120100 -0500" stop="20261118123300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 1 - Pilot</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 1</episode-num>
+  </programme>
+  <programme start="20261118123300 -0500" stop="20261118141400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Los Minions</title>
+    <desc lang="es">La historia de Los Minions se remonta al principio de los tiempos. Empezaron siendo organismos amarillos unicelulares que evolucionaron a través del tiempo, poniéndose siempre al servicio de los amos más despreciables. Ante su incapacidad para mantener a esos amos – desde el T. Rex a Napoleón –, los Minions acaban encontrándose solos y caen en una profunda depresión. Sin embargo, uno de ellos, llamado Kevin, tiene un plan. Acompañado por el rebelde Stuart y el adorable Bob, emprende un emocionante viaje para conseguir una jefa a quien servir, la terrible Scarlet Overkill. Pasarán de la helada Antártida, a la ciudad de Nueva York en los años sesenta, para acabar en el Londres de la misma época, donde deberán enfrentarse al mayor reto hasta la fecha: salvar a la raza Minion de la aniquilación.</desc>
+  </programme>
+  <programme start="20261118141400 -0500" stop="20261118161300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La Cenicienta</title>
+    <desc lang="es">A pesar del maltrato de su madrastra, Lady Tremaine, y sus hermanastras, Anastasia y Drisella, Ella se aferra a la bondad y la esperanza. Su vida da un giro inesperado cuando conoce al Príncipe Kit, sin saber su verdadera identidad. Con la ayuda de su Hada Madrina, Ella tendrá la oportunidad de cambiar su destino y descubrir su verdadero valor.</desc>
+  </programme>
+  <programme start="20261118161300 -0500" stop="20261118184800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Rey Richard: Una familia ganadora</title>
+  </programme>
+  <programme start="20261118184800 -0500" stop="20261118210000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Liga de la Justicia</title>
+    <desc lang="es">Motivado por la fe que había recuperado en la humanidad e inspirado por la acción altruista de Superman, Bruce Wayne recluta la ayuda de su nueva aliada, Diana Prince, para enfrentarse a un enemigo aún mayor. Juntos, Batman y Wonder Woman se mueven rápidamente para intentar encontrar y reclutar un equipo de metahumanos que combata esta nueva amenaza. El problema es que a pesar de la formación de esta liga de héroes sin precedentes –Batman, Wonder Woman, Aquaman, Cyborg y Flash– puede que sea demasiado tarde para salvar el planeta de una amenaza de proporciones catastróficas</desc>
+  </programme>
+  <programme start="20261118210000 -0500" stop="20261118225300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La Momia: La tumba del emperador dragón</title>
+    <desc lang="es">El aventurero Rick O'Connell y su familia desafían las antiguas maldiciones y se aventuran en China para enfrentarse al cruel emperador dragón, que ha sido despertado de su sueño milenario. En esta trepidante aventura, lucharán contra fuerzas oscuras y criaturas sobrenaturales en una carrera contra el tiempo para salvar al mundo de una nueva amenaza.</desc>
+  </programme>
+  <programme start="20261118225300 -0500" stop="20261118231200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El enigma de Comic-Con</title>
+  </programme>
+  <programme start="20261118231200 -0500" stop="20261118233200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 18 - The Escape Hatch Identification</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 18</episode-num>
+  </programme>
+  <programme start="20261118233200 -0500" stop="20261118235300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 19 - The Collaboration Fluctuation</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 19</episode-num>
+  </programme>
+  <programme start="20261118235300 -0500" stop="20261118235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 20 - The Recollection Dissipation</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 20</episode-num>
+  </programme>
+  <programme start="20261119000000 -0500" stop="20261119001100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 20 - The Recollection Dissipation</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 20</episode-num>
+  </programme>
+  <programme start="20261119001100 -0500" stop="20261119003300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 21 - The Separation Agitation</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 21</episode-num>
+  </programme>
+  <programme start="20261119003300 -0500" stop="20261119005400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 22 - The Cognition Regeneration</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 22</episode-num>
+  </programme>
+  <programme start="20261119005400 -0500" stop="20261119011600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 12 - Chocolate Diddlers or My Puppy's Dead</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 12</episode-num>
+  </programme>
+  <programme start="20261119011600 -0500" stop="20261119013800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 13 - Skunk, Dog, Crap and Ketchup</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 13</episode-num>
+  </programme>
+  <programme start="20261119013800 -0500" stop="20261119020200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Looking' for Japanese Subs</title>
+  </programme>
+  <programme start="20261119020200 -0500" stop="20261119022600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 15 - Three Hookers and a Philly Cheesesteak</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 15</episode-num>
+  </programme>
+  <programme start="20261119022600 -0500" stop="20261119024700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 16 - That Darn Priest</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 16</episode-num>
+  </programme>
+  <programme start="20261119024700 -0500" stop="20261119030900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Piloto.</title>
+  </programme>
+  <programme start="20261119030900 -0500" stop="20261119050000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 1 Episodio 3 - Esqueleto</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 3</episode-num>
+  </programme>
+  <programme start="20261119050000 -0500" stop="20261119060600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 1 Episodio 5 - Counterbalance</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 5</episode-num>
+  </programme>
+  <programme start="20261119060600 -0500" stop="20261119081400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Rey Richard: Una familia ganadora</title>
+  </programme>
+  <programme start="20261119081400 -0500" stop="20261119083400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El colapso giroscópico</title>
+  </programme>
+  <programme start="20261119083400 -0500" stop="20261119085600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 24 - The Long Distance Dissonance</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 24</episode-num>
+  </programme>
+  <programme start="20261119085600 -0500" stop="20261119091800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La propuesta de propuesta</title>
+  </programme>
+  <programme start="20261119091800 -0500" stop="20261119093900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 2 - The Retraction Reaction</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 2</episode-num>
+  </programme>
+  <programme start="20261119093900 -0500" stop="20261119100200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 3 - The Relaxation Integration</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 3</episode-num>
+  </programme>
+  <programme start="20261119100200 -0500" stop="20261119102500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 4 - The Explosion Implosion</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 4</episode-num>
+  </programme>
+  <programme start="20261119102500 -0500" stop="20261119104700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 4 - The Explosion Implosion</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 4</episode-num>
+  </programme>
+  <programme start="20261119104700 -0500" stop="20261119110800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 2 - Big Flappy Bastards</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 2</episode-num>
+  </programme>
+  <programme start="20261119110800 -0500" stop="20261119113200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 3 - Go East on Sunset Until You Reach the Gates of Hell</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 3</episode-num>
+  </programme>
+  <programme start="20261119113200 -0500" stop="20261119115300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 4 - If I Can't Write My Chocolate Song I'm Going to Take a Nap</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 4</episode-num>
+  </programme>
+  <programme start="20261119115300 -0500" stop="20261119121400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 6 - Did You Check with the Captain of the Flying Monkeys?</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 6</episode-num>
+  </programme>
+  <programme start="20261119121400 -0500" stop="20261119123700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 7 - If They Do Go Either Way, They're Usually Fake</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 7</episode-num>
+  </programme>
+  <programme start="20261119123700 -0500" stop="20261119132700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 7 - If They Do Go Either Way, They're Usually Fake</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 7</episode-num>
+  </programme>
+  <programme start="20261119132700 -0500" stop="20261119151200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El último hombre</title>
+    <desc lang="es">El Patronato de la Infancia de Buenos Aires es un centro destinado a proteger a niños desvalidos. En 1939 se fundó allí la primera orquesta sinfónica del mundo compuesta exclusivamente por jóvenes ciegos. Durante décadas, once adolescentes se entregaron a la música en cuerpo y alma. Basilio, el último superviviente de aquella orquesta está a punto de retirarse. El film muestra cómo se hacen y se leen las partituras en Braille, cómo se ejecutan los instrumentos al tiempo que describe la historia que esconde cada una de las habitaciones del Patronato (donde hoy funciona el Museo Evita.</desc>
+  </programme>
+  <programme start="20261119151200 -0500" stop="20261119170300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Geo-Tormenta</title>
+    <desc lang="es">Cuando unos cambios catastróficos en el clima hacen peligrar la supervivencia en la Tierra, numerosos gobiernos del mundo se unen y dan lugar a un proyecto consistente en una red global de satélites que rodeen el planeta, armados con avanzadas tecnologías, capaces de evitar desastres naturales. Jake es un diseñador de satélites que, tras un fallo en esta cadena, deberá formar equipo con su hermano Max para viajar al espacio y salvar al planeta de una tormenta artificial de proporciones épicas, mientras en la superficie del planeta se está gestando un complot para asesinar al presidente de Estados Unidos.</desc>
   </programme>
 </tv>
