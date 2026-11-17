@@ -3,21 +3,6 @@
   <channel id="WarnerChannel.us@Colombia">
     <display-name lang="es">Warner Channel</display-name>
   </channel>
-  <programme start="20261115132400 -0500" stop="20261115160400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Harry Potter y el misterio del príncipe</title>
-    <desc lang="es">A pesar de la oscuridad que Lord Voldemort entrelaza el mundo muggle y el mágico, Hogwarts continúa adelante. Mientras está en una misión por orden de el director Dumbledore, Harry obtiene un viejo libro de posiciones de el "Príncipe Mestizo".</desc>
-  </programme>
-  <programme start="20261115160400 -0500" stop="20261115183900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Harry Potter y las reliquias de la muerte (1ª parte)</title>
-    <desc lang="es">Harry, Ron y Hermione abandonan su último año en Hogwarts para encontrar y destruir los Horrocruxes restantes, poniendo fin a la búsqueda de la inmortalidad de Voldemort.</desc>
-  </programme>
-  <programme start="20261115163900 -0500" stop="20261115210100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Harry Potter y las reliquias de la muerte: Parte 2</title>
-    <desc lang="es">Harry, Ron y Hermione continúan su búsqueda para derrotar al malvado Voldemort de una vez por todas. Sin embargo, Harry descubre tres objetos mágicos que le otorgan poderes que rivalizan con las formidables habilidades de Voldemort.</desc>
-  </programme>
-  <programme start="20261115183900 -0500" stop="20261115210100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Harry Potter y las reliquias de la muerte 2</title>
-  </programme>
   <programme start="20261115210100 -0500" stop="20261115230500 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">La Momia</title>
     <desc lang="es">Un aventurero imprudente y un grupo de exploradores desentierran accidentalmente una antigua maldición egipcia. Ahora, deben luchar contra la resucitada momia del sacerdote Imhotep, que busca recuperar su poder y venganza sobre el mundo moderno.</desc>
