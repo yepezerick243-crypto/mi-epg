@@ -3,25 +3,6 @@
   <channel id="WarnerChannel.us@Colombia">
     <display-name lang="es">Warner Channel</display-name>
   </channel>
-  <programme start="20261115210100 -0500" stop="20261115230500 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">La Momia</title>
-    <desc lang="es">Un aventurero imprudente y un grupo de exploradores desentierran accidentalmente una antigua maldición egipcia. Ahora, deben luchar contra la resucitada momia del sacerdote Imhotep, que busca recuperar su poder y venganza sobre el mundo moderno.</desc>
-  </programme>
-  <programme start="20261115230500 -0500" stop="20261115232700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">The Big Bang Theory</title>
-    <sub-title>Temporada 9 Episodio 23 - The Line Substitution Solution</sub-title>
-    <episode-num system="onscreen">Temporada 9 Episodio 23</episode-num>
-  </programme>
-  <programme start="20261115232700 -0500" stop="20261115234900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">The Big Bang Theory</title>
-    <sub-title>Temporada 9 Episodio 24 - The Convergence Convergence</sub-title>
-    <episode-num system="onscreen">Temporada 9 Episodio 24</episode-num>
-  </programme>
-  <programme start="20261115234900 -0500" stop="20261115235900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">The Big Bang Theory</title>
-    <sub-title>Temporada 10 Episodio 1 - The Conjugal Conjecture</sub-title>
-    <episode-num system="onscreen">Temporada 10 Episodio 1</episode-num>
-  </programme>
   <programme start="20261116000000 -0500" stop="20261116001200 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">The Big Bang Theory</title>
     <sub-title>Temporada 10 Episodio 1 - The Conjugal Conjecture</sub-title>
