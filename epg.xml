@@ -405,14 +405,12 @@
     <episode-num system="onscreen">Temporada 8 Episodio 16</episode-num>
   </programme>
   <programme start="20261118113600 -0500" stop="20261118120100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 8 Episodio 16 - That Darn Priest</sub-title>
-    <episode-num system="onscreen">Temporada 8 Episodio 16</episode-num>
+    <title lang="es">Piloto.</title>
   </programme>
   <programme start="20261118120100 -0500" stop="20261118123300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 1 Episodio 1 - Pilot</sub-title>
-    <episode-num system="onscreen">Temporada 1 Episodio 1</episode-num>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 4 Episodio 9 - The Fall</sub-title>
+    <episode-num system="onscreen">Temporada 4 Episodio 9</episode-num>
   </programme>
   <programme start="20261118123300 -0500" stop="20261118141400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Los Minions</title>
@@ -463,26 +461,28 @@
   </programme>
   <programme start="20261119003300 -0500" stop="20261119005400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">The Big Bang Theory</title>
-    <sub-title>Temporada 10 Episodio 22 - The Cognition Regeneration</sub-title>
-    <episode-num system="onscreen">Temporada 10 Episodio 22</episode-num>
+    <sub-title>Temporada 10 Episodio 18 - The Escape Hatch Identification</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 18</episode-num>
   </programme>
   <programme start="20261119005400 -0500" stop="20261119011600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 8 Episodio 12 - Chocolate Diddlers or My Puppy's Dead</sub-title>
-    <episode-num system="onscreen">Temporada 8 Episodio 12</episode-num>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 19 - The Collaboration Fluctuation</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 19</episode-num>
   </programme>
   <programme start="20261119011600 -0500" stop="20261119013800 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 8 Episodio 13 - Skunk, Dog, Crap and Ketchup</sub-title>
-    <episode-num system="onscreen">Temporada 8 Episodio 13</episode-num>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 20 - The Recollection Dissipation</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 20</episode-num>
   </programme>
   <programme start="20261119013800 -0500" stop="20261119020200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Looking' for Japanese Subs</title>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 21 - The Separation Agitation</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 21</episode-num>
   </programme>
   <programme start="20261119020200 -0500" stop="20261119022600 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 8 Episodio 15 - Three Hookers and a Philly Cheesesteak</sub-title>
-    <episode-num system="onscreen">Temporada 8 Episodio 15</episode-num>
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 22 - The Cognition Regeneration</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 22</episode-num>
   </programme>
   <programme start="20261119022600 -0500" stop="20261119024700 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Two and a Half Men</title>
@@ -490,12 +490,14 @@
     <episode-num system="onscreen">Temporada 8 Episodio 16</episode-num>
   </programme>
   <programme start="20261119024700 -0500" stop="20261119030900 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Piloto.</title>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 13 - Skunk, Dog, Crap and Ketchup</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 13</episode-num>
   </programme>
   <programme start="20261119030900 -0500" stop="20261119050000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Cobra Kai</title>
-    <sub-title>Temporada 1 Episodio 3 - Esqueleto</sub-title>
-    <episode-num system="onscreen">Temporada 1 Episodio 3</episode-num>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 8 Episodio 14 - Lookin' for Japanese Subs</sub-title>
+    <episode-num system="onscreen">Temporada 8 Episodio 14</episode-num>
   </programme>
   <programme start="20261119050000 -0500" stop="20261119060600 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Cobra Kai</title>
