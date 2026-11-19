@@ -538,7 +538,7 @@
     <sub-title>Temporada 11 Episodio 4 - The Explosion Implosion</sub-title>
     <episode-num system="onscreen">Temporada 11 Episodio 4</episode-num>
   </programme>
-  <programme start="20261119104700 -0500" stop="20261119110800 -0500" channel="WarnerChannel.us@Colombia">
+  <programme start="20261119104700 -0500" stop="20261119111500 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Two and a Half Men</title>
     <sub-title>Temporada 1 Episodio 2 - Big Flappy Bastards</sub-title>
     <episode-num system="onscreen">Temporada 1 Episodio 2</episode-num>
@@ -548,15 +548,30 @@
     <sub-title>Temporada 1 Episodio 3 - Go East on Sunset Until You Reach the Gates of Hell</sub-title>
     <episode-num system="onscreen">Temporada 1 Episodio 3</episode-num>
   </programme>
+  <programme start="20261119111500 -0500" stop="20261119113900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 6 - Did You Check with the Captain of the Flying Monkeys?</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 6</episode-num>
+  </programme>
   <programme start="20261119113200 -0500" stop="20261119115300 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Two and a Half Men</title>
     <sub-title>Temporada 1 Episodio 4 - If I Can't Write My Chocolate Song I'm Going to Take a Nap</sub-title>
     <episode-num system="onscreen">Temporada 1 Episodio 4</episode-num>
   </programme>
+  <programme start="20261119113900 -0500" stop="20261119120200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 7 - If They Do Go Either Way, They're Usually Fake</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 7</episode-num>
+  </programme>
   <programme start="20261119115300 -0500" stop="20261119121400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Two and a Half Men</title>
     <sub-title>Temporada 1 Episodio 6 - Did You Check with the Captain of the Flying Monkeys?</sub-title>
     <episode-num system="onscreen">Temporada 1 Episodio 6</episode-num>
+  </programme>
+  <programme start="20261119120200 -0500" stop="20261119125200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 4 Episodio 10 - The Rise</sub-title>
+    <episode-num system="onscreen">Temporada 4 Episodio 10</episode-num>
   </programme>
   <programme start="20261119121400 -0500" stop="20261119123700 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Two and a Half Men</title>
@@ -568,12 +583,440 @@
     <sub-title>Temporada 1 Episodio 7 - If They Do Go Either Way, They're Usually Fake</sub-title>
     <episode-num system="onscreen">Temporada 1 Episodio 7</episode-num>
   </programme>
+  <programme start="20261119125200 -0500" stop="20261119144200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El último hombre</title>
+    <desc lang="es">El Patronato de la Infancia de Buenos Aires es un centro destinado a proteger a niños desvalidos. En 1939 se fundó allí la primera orquesta sinfónica del mundo compuesta exclusivamente por jóvenes ciegos. Durante décadas, once adolescentes se entregaron a la música en cuerpo y alma. Basilio, el último superviviente de aquella orquesta está a punto de retirarse. El film muestra cómo se hacen y se leen las partituras en Braille, cómo se ejecutan los instrumentos al tiempo que describe la historia que esconde cada una de las habitaciones del Patronato (donde hoy funciona el Museo Evita.</desc>
+  </programme>
   <programme start="20261119132700 -0500" stop="20261119151200 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">El último hombre</title>
     <desc lang="es">El Patronato de la Infancia de Buenos Aires es un centro destinado a proteger a niños desvalidos. En 1939 se fundó allí la primera orquesta sinfónica del mundo compuesta exclusivamente por jóvenes ciegos. Durante décadas, once adolescentes se entregaron a la música en cuerpo y alma. Basilio, el último superviviente de aquella orquesta está a punto de retirarse. El film muestra cómo se hacen y se leen las partituras en Braille, cómo se ejecutan los instrumentos al tiempo que describe la historia que esconde cada una de las habitaciones del Patronato (donde hoy funciona el Museo Evita.</desc>
   </programme>
+  <programme start="20261119144200 -0500" stop="20261119164000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Geo-Tormenta</title>
+    <desc lang="es">Cuando unos cambios catastróficos en el clima hacen peligrar la supervivencia en la Tierra, numerosos gobiernos del mundo se unen y dan lugar a un proyecto consistente en una red global de satélites que rodeen el planeta, armados con avanzadas tecnologías, capaces de evitar desastres naturales. Jake es un diseñador de satélites que, tras un fallo en esta cadena, deberá formar equipo con su hermano Max para viajar al espacio y salvar al planeta de una tormenta artificial de proporciones épicas, mientras en la superficie del planeta se está gestando un complot para asesinar al presidente de Estados Unidos.</desc>
+  </programme>
   <programme start="20261119151200 -0500" stop="20261119170300 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Geo-Tormenta</title>
     <desc lang="es">Cuando unos cambios catastróficos en el clima hacen peligrar la supervivencia en la Tierra, numerosos gobiernos del mundo se unen y dan lugar a un proyecto consistente en una red global de satélites que rodeen el planeta, armados con avanzadas tecnologías, capaces de evitar desastres naturales. Jake es un diseñador de satélites que, tras un fallo en esta cadena, deberá formar equipo con su hermano Max para viajar al espacio y salvar al planeta de una tormenta artificial de proporciones épicas, mientras en la superficie del planeta se está gestando un complot para asesinar al presidente de Estados Unidos.</desc>
+  </programme>
+  <programme start="20261119164000 -0500" stop="20261119185400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hellboy II: El Ejército Dorado</title>
+    <desc lang="es">Un líder despiadado decide traicionar a sus ancestros y organiza un ejército de criaturas diabólicas para desatar el infierno en la Tierra. Entonces Hellboy y con la colaboración de la Agencia de Investigación y Defensa Paranormal viajarán entre dos mundos mientras Hellboy deberá elegir entre la vida que conoce y el desconocido destino que le reclama.</desc>
+  </programme>
+  <programme start="20261119185400 -0500" stop="20261119205800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La Momia: La tumba del emperador dragón</title>
+    <desc lang="es">El aventurero Rick O'Connell y su familia desafían las antiguas maldiciones y se aventuran en China para enfrentarse al cruel emperador dragón, que ha sido despertado de su sueño milenario. En esta trepidante aventura, lucharán contra fuerzas oscuras y criaturas sobrenaturales en una carrera contra el tiempo para salvar al mundo de una nueva amenaza.</desc>
+  </programme>
+  <programme start="20261119205800 -0500" stop="20261119224300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Jack y Jill</title>
+  </programme>
+  <programme start="20261119224300 -0500" stop="20261119230700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El colapso giroscópico</title>
+  </programme>
+  <programme start="20261119230700 -0500" stop="20261119232900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 10 Episodio 24 - The Long Distance Dissonance</sub-title>
+    <episode-num system="onscreen">Temporada 10 Episodio 24</episode-num>
+  </programme>
+  <programme start="20261119232900 -0500" stop="20261119235300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La propuesta de propuesta</title>
+  </programme>
+  <programme start="20261119235300 -0500" stop="20261119235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 2 - The Retraction Reaction</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 2</episode-num>
+  </programme>
+  <programme start="20261120000000 -0500" stop="20261120001700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 2 - The Retraction Reaction</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 2</episode-num>
+  </programme>
+  <programme start="20261120001700 -0500" stop="20261120003900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 3 - The Relaxation Integration</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 3</episode-num>
+  </programme>
+  <programme start="20261120003900 -0500" stop="20261120010100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 4 - The Explosion Implosion</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 4</episode-num>
+  </programme>
+  <programme start="20261120010100 -0500" stop="20261120012400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 2 - Big Flappy Bastards</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 2</episode-num>
+  </programme>
+  <programme start="20261120012400 -0500" stop="20261120014700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 3 - Go East on Sunset Until You Reach the Gates of Hell</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 3</episode-num>
+  </programme>
+  <programme start="20261120014700 -0500" stop="20261120021000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 4 - If I Can't Write My Chocolate Song I'm Going to Take a Nap</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 4</episode-num>
+  </programme>
+  <programme start="20261120021000 -0500" stop="20261120023000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 5 - The Last Thing You Want Is to Wind Up with a Hump</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 5</episode-num>
+  </programme>
+  <programme start="20261120023000 -0500" stop="20261120025300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 6 - Did You Check with the Captain of the Flying Monkeys?</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 6</episode-num>
+  </programme>
+  <programme start="20261120025300 -0500" stop="20261120031600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 7 - If They Do Go Either Way, They're Usually Fake</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 7</episode-num>
+  </programme>
+  <programme start="20261120031600 -0500" stop="20261120040300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">1:00 p.m.</title>
+  </programme>
+  <programme start="20261120040300 -0500" stop="20261120043600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 1 Episodio 5 - Counterbalance</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 5</episode-num>
+  </programme>
+  <programme start="20261120043600 -0500" stop="20261120045000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hollywood One on One</title>
+  </programme>
+  <programme start="20261120045000 -0500" stop="20261120050000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hollywood One on One</title>
+  </programme>
+  <programme start="20261120050000 -0500" stop="20261120053000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 1 Episodio 7 - All Valley</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 7</episode-num>
+  </programme>
+  <programme start="20261120053000 -0500" stop="20261120055200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El efecto Tesla</title>
+  </programme>
+  <programme start="20261120055200 -0500" stop="20261120061400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 9 - The Bitcoin Entanglement</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 9</episode-num>
+  </programme>
+  <programme start="20261120061400 -0500" stop="20261120063800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 10 - The Confidence Erosion</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 10</episode-num>
+  </programme>
+  <programme start="20261120063800 -0500" stop="20261120070100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 8 - Twenty-Five Little Pre-pubers Without a Snoot-ful</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 8</episode-num>
+  </programme>
+  <programme start="20261120070100 -0500" stop="20261120072400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 9 - Phase One, Complete</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 9</episode-num>
+  </programme>
+  <programme start="20261120072400 -0500" stop="20261120074800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 10 - Merry Thanksgiving</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 10</episode-num>
+  </programme>
+  <programme start="20261120074800 -0500" stop="20261120081100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 9 - Phase One, Complete</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 9</episode-num>
+  </programme>
+  <programme start="20261120081100 -0500" stop="20261120083400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Camel Filters and Pheremones</title>
+  </programme>
+  <programme start="20261120083400 -0500" stop="20261120085800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 13 - Sarah Like Puny Alan</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 13</episode-num>
+  </programme>
+  <programme start="20261120085800 -0500" stop="20261120093200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 12 - Camel Filters + Pheromones</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 12</episode-num>
+  </programme>
+  <programme start="20261120093200 -0500" stop="20261120113100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La Cenicienta</title>
+    <desc lang="es">A pesar del maltrato de su madrastra, Lady Tremaine, y sus hermanastras, Anastasia y Drisella, Ella se aferra a la bondad y la esperanza. Su vida da un giro inesperado cuando conoce al Príncipe Kit, sin saber su verdadera identidad. Con la ayuda de su Hada Madrina, Ella tendrá la oportunidad de cambiar su destino y descubrir su verdadero valor.</desc>
+  </programme>
+  <programme start="20261120113100 -0500" stop="20261120132100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El último hombre</title>
+    <desc lang="es">El Patronato de la Infancia de Buenos Aires es un centro destinado a proteger a niños desvalidos. En 1939 se fundó allí la primera orquesta sinfónica del mundo compuesta exclusivamente por jóvenes ciegos. Durante décadas, once adolescentes se entregaron a la música en cuerpo y alma. Basilio, el último superviviente de aquella orquesta está a punto de retirarse. El film muestra cómo se hacen y se leen las partituras en Braille, cómo se ejecutan los instrumentos al tiempo que describe la historia que esconde cada una de las habitaciones del Patronato (donde hoy funciona el Museo Evita.</desc>
+  </programme>
+  <programme start="20261120132100 -0500" stop="20261120152700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Hellboy II: El Ejército Dorado</title>
+    <desc lang="es">Un líder despiadado decide traicionar a sus ancestros y organiza un ejército de criaturas diabólicas para desatar el infierno en la Tierra. Entonces Hellboy y con la colaboración de la Agencia de Investigación y Defensa Paranormal viajarán entre dos mundos mientras Hellboy deberá elegir entre la vida que conoce y el desconocido destino que le reclama.</desc>
+  </programme>
+  <programme start="20261120152700 -0500" stop="20261120171300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La herencia del Sr. Deeds</title>
+    <desc lang="es">Cuando Longfellow Deeds, un dueño de la pizzería provinciano y poeta, hereda $40 mil millones de su tío difunto, rápidamente comienza a llegar a un diferente tipo de masa. Trasladándose a la ciudad grande, Deeds se encuentra sitiado por oportunistas todo el tiroteo para su pieza de la tarta. Babe, un reportero del tabloide de televisión, se hace pasar por una muchacha provinciana inocente para hacer un exposÃ© en Deeds.</desc>
+  </programme>
+  <programme start="20261120171300 -0500" stop="20261120190000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Jack y Jill</title>
+  </programme>
+  <programme start="20261120190000 -0500" stop="20261120210100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Son Como Niños</title>
+    <desc lang="es">Después de muchos años, su antiguo entrenador de basquet muere y cinco amigos deciden pasar un fin de semana, ahora con sus respectivas familias, en la casa de  antaño donde celebraron, el campeonato.</desc>
+  </programme>
+  <programme start="20261120210100 -0500" stop="20261120225000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Buenos vecinos</title>
+    <desc lang="es">Un hombre es acusado de adulterio por su prometida, viéndose obligado a trasladarse a casa de sus padres. Mientras lucha por la custodia de su hija de cuatro años, se ve progresivamente involucrado en una disputa entre sus progenitores y los vecinos de estos, a propósito de un viejo y hermoso árbol.</desc>
+  </programme>
+  <programme start="20261120225000 -0500" stop="20261120231100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 5 - The Collaboration Contamination</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 5</episode-num>
+  </programme>
+  <programme start="20261120231100 -0500" stop="20261120233500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 6 - The Proton Regeneration</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 6</episode-num>
+  </programme>
+  <programme start="20261120233500 -0500" stop="20261120235600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 7 - The Geology Methodology</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 7</episode-num>
+  </programme>
+  <programme start="20261120235600 -0500" stop="20261120235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El efecto Tesla</title>
+  </programme>
+  <programme start="20261121000000 -0500" stop="20261121001600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El efecto Tesla</title>
+  </programme>
+  <programme start="20261121001600 -0500" stop="20261121003700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 9 - The Bitcoin Entanglement</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 9</episode-num>
+  </programme>
+  <programme start="20261121003700 -0500" stop="20261121010000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 10 - The Confidence Erosion</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 10</episode-num>
+  </programme>
+  <programme start="20261121010000 -0500" stop="20261121012100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 8 - Twenty-Five Little Pre-pubers Without a Snoot-ful</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 8</episode-num>
+  </programme>
+  <programme start="20261121012100 -0500" stop="20261121014300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 9 - Phase One, Complete</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 9</episode-num>
+  </programme>
+  <programme start="20261121014300 -0500" stop="20261121020400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 10 - Merry Thanksgiving</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 10</episode-num>
+  </programme>
+  <programme start="20261121020400 -0500" stop="20261121022600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">El sex appeal de Alan</title>
+  </programme>
+  <programme start="20261121022600 -0500" stop="20261121024800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Camel Filters and Pheremones</title>
+  </programme>
+  <programme start="20261121024800 -0500" stop="20261121031000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 13 - Sarah Like Puny Alan</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 13</episode-num>
+  </programme>
+  <programme start="20261121031000 -0500" stop="20261121035700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">1:00 p.m.</title>
+  </programme>
+  <programme start="20261121035700 -0500" stop="20261121042800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 1 Episodio 7 - All Valley</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 7</episode-num>
+  </programme>
+  <programme start="20261121042800 -0500" stop="20261121061100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">MUDA</title>
+    <desc lang="es">Como mudando de piel, Jorge celebra un nuevo cumpleaños, en medio de una lucha interna que convertirá la velada en su más terrible pesadilla.</desc>
+  </programme>
+  <programme start="20261121061100 -0500" stop="20261121062900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 11 - The Celebration Reverberation</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 11</episode-num>
+  </programme>
+  <programme start="20261121062900 -0500" stop="20261121065200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 12 - The Matrimonial Metric</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 12</episode-num>
+  </programme>
+  <programme start="20261121065200 -0500" stop="20261121071400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 13 - The Solo Oscillation</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 13</episode-num>
+  </programme>
+  <programme start="20261121071400 -0500" stop="20261121073400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La triangulación de la separación</title>
+  </programme>
+  <programme start="20261121073400 -0500" stop="20261121075700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 15 - The Novelization Correlation</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 15</episode-num>
+  </programme>
+  <programme start="20261121075700 -0500" stop="20261121081700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 16 - The Neonatal Nomenclature</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 16</episode-num>
+  </programme>
+  <programme start="20261121081700 -0500" stop="20261121083700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 14 - I Can't Afford Hyenas</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 14</episode-num>
+  </programme>
+  <programme start="20261121083700 -0500" stop="20261121090000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 15 - Round One to the Hot Crazy Chick (1)</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 15</episode-num>
+  </programme>
+  <programme start="20261121090000 -0500" stop="20261121092300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 16 - That Was Saliva, Alan (2)</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 16</episode-num>
+  </programme>
+  <programme start="20261121092300 -0500" stop="20261121094200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 17 - Ate the Hamburgers, Wearing the Hats</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 17</episode-num>
+  </programme>
+  <programme start="20261121094200 -0500" stop="20261121100400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 18 - An Old Flame with a New Wick</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 18</episode-num>
+  </programme>
+  <programme start="20261121100400 -0500" stop="20261121102600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 19 - I Remember the Coatroom, I Just Don't Remember You</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 19</episode-num>
+  </programme>
+  <programme start="20261121102600 -0500" stop="20261121121200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Cómo el Grinch se robó la Navidad</title>
+  </programme>
+  <programme start="20261121121200 -0500" stop="20261121135200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La herencia del Sr. Deeds</title>
+    <desc lang="es">Cuando Longfellow Deeds, un dueño de la pizzería provinciano y poeta, hereda $40 mil millones de su tío difunto, rápidamente comienza a llegar a un diferente tipo de masa. Trasladándose a la ciudad grande, Deeds se encuentra sitiado por oportunistas todo el tiroteo para su pieza de la tarta. Babe, un reportero del tabloide de televisión, se hace pasar por una muchacha provinciana inocente para hacer un exposÃ© en Deeds.</desc>
+  </programme>
+  <programme start="20261121135200 -0500" stop="20261121152800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Jack y Jill</title>
+  </programme>
+  <programme start="20261121152800 -0500" stop="20261121171400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Son Como Niños</title>
+    <desc lang="es">Después de muchos años, su antiguo entrenador de basquet muere y cinco amigos deciden pasar un fin de semana, ahora con sus respectivas familias, en la casa de  antaño donde celebraron, el campeonato.</desc>
+  </programme>
+  <programme start="20261121171400 -0500" stop="20261121185800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dicen por ahí...</title>
+    <desc lang="es">Sara Huttinger (Jennifer Aniston), una joven a punto de casarse, regresa a su ciudad natal, en California, para averiguar la verdad sobre un secreto familiar. Al parecer, los personajes femeninos tanto del libro como de la película "El Graduado" están inspirados en su abuela y en su madre. Pero eso no es lo peor: poco a poco Sara se sentirá atraída por el maduro galán (Kevin Costner) que tuvo relaciones con ellas en el pasado.</desc>
+  </programme>
+  <programme start="20261121185800 -0500" stop="20261121210000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Solo para parejas</title>
+    <desc lang="es">Cuatro parejas, todos amigos, descienden en una isla tropical resort. Aunque un marido y una esposa están allí para trabajar en su unión, los otros apenas quieren gozar de una cierta diversión en el sol. Sin embargo, pronto encuentran que el paraíso tiene un precio: la participación en sesiones de terapia de pareja es obligatoria. Lo que comenzó como un recorte de vacaciones se convierte en un examen de los problemas comunes que muchos enfrentan.</desc>
+  </programme>
+  <programme start="20261121210000 -0500" stop="20261121224600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Vacaciones</title>
+    <desc lang="es">Con la esperanza de acercar a su familia y recrear sus vacaciones de infancia para sus propios hijos, un adulto Rusty Griswold lleva a su esposa ya sus dos hijos a un viaje por carretera al más cool parque temático de América, Walley World. Huelga decir que las cosas no salen como lo planeado.</desc>
+  </programme>
+  <programme start="20261121224600 -0500" stop="20261121235900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Blue Beetle</title>
+    <desc lang="es">Un adolescente mexicano encuentra un escarabajo alienígena que le proporciona una armadura superpoderosa.</desc>
+  </programme>
+  <programme start="20261122000000 -0500" stop="20261122010400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Blue Beetle</title>
+    <desc lang="es">Un adolescente mexicano encuentra un escarabajo alienígena que le proporciona una armadura superpoderosa.</desc>
+  </programme>
+  <programme start="20261122010400 -0500" stop="20261122012500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 11 - The Celebration Reverberation</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 11</episode-num>
+  </programme>
+  <programme start="20261122012500 -0500" stop="20261122014600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 12 - The Matrimonial Metric</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 12</episode-num>
+  </programme>
+  <programme start="20261122014600 -0500" stop="20261122020700 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 13 - The Solo Oscillation</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 13</episode-num>
+  </programme>
+  <programme start="20261122020700 -0500" stop="20261122022800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">La triangulación de la separación</title>
+  </programme>
+  <programme start="20261122022800 -0500" stop="20261122025100 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 15 - The Novelization Correlation</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 15</episode-num>
+  </programme>
+  <programme start="20261122025100 -0500" stop="20261122030900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">The Big Bang Theory</title>
+    <sub-title>Temporada 11 Episodio 16 - The Neonatal Nomenclature</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 16</episode-num>
+  </programme>
+  <programme start="20261122030900 -0500" stop="20261122033200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 14 - I Can't Afford Hyenas</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 14</episode-num>
+  </programme>
+  <programme start="20261122033200 -0500" stop="20261122035300 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 15 - Round One to the Hot Crazy Chick (1)</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 15</episode-num>
+  </programme>
+  <programme start="20261122035300 -0500" stop="20261122041500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 16 - That Was Saliva, Alan (2)</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 16</episode-num>
+  </programme>
+  <programme start="20261122041500 -0500" stop="20261122050000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">3:00 p.m.</title>
+  </programme>
+  <programme start="20261122050000 -0500" stop="20261122061400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Otra vez juntos</title>
+    <desc lang="es">Anne Crandall es la viuda de un alcalde de una pequeña localidad de Vermont y ahora alcaldesa de la ciudad. Vive con la hija, a la cual crió, y el padre de su difunto marido. Con el fin de encargar una nueva estatua de su difunto esposo, ya que ha sido dañada por un rayo, se desplaza a Nueva York para entrevistarse con un escultor, George Corday, del que se enamora. Estando ambos en una discoteca de dudosa reputación, se ve envuelta en una redada y va a la cárcel al confundirla con la vedette. De vuelta a casa, ella trata de mantener el escándalo en secreto y olvidar a Corday, pero él aparece en la ciudad para construir la estatua.</desc>
+  </programme>
+  <programme start="20261122061400 -0500" stop="20261122063600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 21 - No Sniffing, No Wowing</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 21</episode-num>
+  </programme>
+  <programme start="20261122063600 -0500" stop="20261122065900 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 22 - My Doctor Has a Cow Puppet</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 22</episode-num>
+  </programme>
+  <programme start="20261122065900 -0500" stop="20261122072200 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 23 - Just Like Buffalo</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 23</episode-num>
+  </programme>
+  <programme start="20261122072200 -0500" stop="20261122074400 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 2 Episodio 1 - Back Off, Mary Poppins</sub-title>
+    <episode-num system="onscreen">Temporada 2 Episodio 1</episode-num>
+  </programme>
+  <programme start="20261122074400 -0500" stop="20261122080600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 2 Episodio 1 - Back Off, Mary Poppins</sub-title>
+    <episode-num system="onscreen">Temporada 2 Episodio 1</episode-num>
+  </programme>
+  <programme start="20261122080600 -0500" stop="20261122095000 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Dicen por ahí...</title>
+    <desc lang="es">Sara Huttinger (Jennifer Aniston), una joven a punto de casarse, regresa a su ciudad natal, en California, para averiguar la verdad sobre un secreto familiar. Al parecer, los personajes femeninos tanto del libro como de la película "El Graduado" están inspirados en su abuela y en su madre. Pero eso no es lo peor: poco a poco Sara se sentirá atraída por el maduro galán (Kevin Costner) que tuvo relaciones con ellas en el pasado.</desc>
+  </programme>
+  <programme start="20261122095000 -0500" stop="20261122113500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Son Como Niños</title>
+    <desc lang="es">Después de muchos años, su antiguo entrenador de basquet muere y cinco amigos deciden pasar un fin de semana, ahora con sus respectivas familias, en la casa de  antaño donde celebraron, el campeonato.</desc>
+  </programme>
+  <programme start="20261122113500 -0500" stop="20261122133500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Solo para parejas</title>
+    <desc lang="es">Cuatro parejas, todos amigos, descienden en una isla tropical resort. Aunque un marido y una esposa están allí para trabajar en su unión, los otros apenas quieren gozar de una cierta diversión en el sol. Sin embargo, pronto encuentran que el paraíso tiene un precio: la participación en sesiones de terapia de pareja es obligatoria. Lo que comenzó como un recorte de vacaciones se convierte en un examen de los problemas comunes que muchos enfrentan.</desc>
+  </programme>
+  <programme start="20261122133500 -0500" stop="20261122155800 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Harry Potter y el prisionero de Azkaban</title>
+    <desc lang="es">Durante sus días en la escuela Hogwarts, nuevos peligros se le presentan a Harry y sus amigos. La llegada de los Dementores, seres que absorben el alma, un peligroso aliado acecha dentro de los muros del castillo y el temible mago Sirius Black escapa Azkaban.</desc>
+  </programme>
+  <programme start="20261122155800 -0500" stop="20261122183600 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="es">Harry Potter y el cáliz de fuego</title>
+    <desc lang="es">El Torneo de los Tres Magos llega a la escuela Hogwarts. Sin embargo, Harry Potter se convierte en un competidor, pero nunca presentó su nombre. A medida que avanza los juegos, poco a poco Harry descubre las intenciones detras de este torneo.</desc>
   </programme>
 </tv>
