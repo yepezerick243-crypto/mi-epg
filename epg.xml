@@ -719,9 +719,7 @@
     <episode-num system="onscreen">Temporada 1 Episodio 10</episode-num>
   </programme>
   <programme start="20261120074800 -0500" stop="20261120081100 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 1 Episodio 9 - Phase One, Complete</sub-title>
-    <episode-num system="onscreen">Temporada 1 Episodio 9</episode-num>
+    <title lang="es">El sex appeal de Alan</title>
   </programme>
   <programme start="20261120081100 -0500" stop="20261120083400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Camel Filters and Pheremones</title>
@@ -732,9 +730,9 @@
     <episode-num system="onscreen">Temporada 1 Episodio 13</episode-num>
   </programme>
   <programme start="20261120085800 -0500" stop="20261120093200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 1 Episodio 12 - Camel Filters + Pheromones</sub-title>
-    <episode-num system="onscreen">Temporada 1 Episodio 12</episode-num>
+    <title lang="en">Cobra Kai</title>
+    <sub-title>Temporada 5 Episodio 1 - Long, Long Way From Home</sub-title>
+    <episode-num system="onscreen">Temporada 5 Episodio 1</episode-num>
   </programme>
   <programme start="20261120093200 -0500" stop="20261120113100 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">La Cenicienta</title>
