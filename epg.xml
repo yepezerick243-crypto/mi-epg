@@ -558,29 +558,11 @@
     <sub-title>Temporada 4 Episodio 10 - The Rise</sub-title>
     <episode-num system="onscreen">Temporada 4 Episodio 10</episode-num>
   </programme>
-  <programme start="20261119121400 -0500" stop="20261119123700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 1 Episodio 7 - If They Do Go Either Way, They're Usually Fake</sub-title>
-    <episode-num system="onscreen">Temporada 1 Episodio 7</episode-num>
-  </programme>
-  <programme start="20261119123700 -0500" stop="20261119132700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 1 Episodio 7 - If They Do Go Either Way, They're Usually Fake</sub-title>
-    <episode-num system="onscreen">Temporada 1 Episodio 7</episode-num>
-  </programme>
   <programme start="20261119125200 -0500" stop="20261119144200 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">El último hombre</title>
     <desc lang="es">El Patronato de la Infancia de Buenos Aires es un centro destinado a proteger a niños desvalidos. En 1939 se fundó allí la primera orquesta sinfónica del mundo compuesta exclusivamente por jóvenes ciegos. Durante décadas, once adolescentes se entregaron a la música en cuerpo y alma. Basilio, el último superviviente de aquella orquesta está a punto de retirarse. El film muestra cómo se hacen y se leen las partituras en Braille, cómo se ejecutan los instrumentos al tiempo que describe la historia que esconde cada una de las habitaciones del Patronato (donde hoy funciona el Museo Evita.</desc>
   </programme>
-  <programme start="20261119132700 -0500" stop="20261119151200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">El último hombre</title>
-    <desc lang="es">El Patronato de la Infancia de Buenos Aires es un centro destinado a proteger a niños desvalidos. En 1939 se fundó allí la primera orquesta sinfónica del mundo compuesta exclusivamente por jóvenes ciegos. Durante décadas, once adolescentes se entregaron a la música en cuerpo y alma. Basilio, el último superviviente de aquella orquesta está a punto de retirarse. El film muestra cómo se hacen y se leen las partituras en Braille, cómo se ejecutan los instrumentos al tiempo que describe la historia que esconde cada una de las habitaciones del Patronato (donde hoy funciona el Museo Evita.</desc>
-  </programme>
   <programme start="20261119144200 -0500" stop="20261119164000 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="es">Geo-Tormenta</title>
-    <desc lang="es">Cuando unos cambios catastróficos en el clima hacen peligrar la supervivencia en la Tierra, numerosos gobiernos del mundo se unen y dan lugar a un proyecto consistente en una red global de satélites que rodeen el planeta, armados con avanzadas tecnologías, capaces de evitar desastres naturales. Jake es un diseñador de satélites que, tras un fallo en esta cadena, deberá formar equipo con su hermano Max para viajar al espacio y salvar al planeta de una tormenta artificial de proporciones épicas, mientras en la superficie del planeta se está gestando un complot para asesinar al presidente de Estados Unidos.</desc>
-  </programme>
-  <programme start="20261119151200 -0500" stop="20261119170300 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">Geo-Tormenta</title>
     <desc lang="es">Cuando unos cambios catastróficos en el clima hacen peligrar la supervivencia en la Tierra, numerosos gobiernos del mundo se unen y dan lugar a un proyecto consistente en una red global de satélites que rodeen el planeta, armados con avanzadas tecnologías, capaces de evitar desastres naturales. Jake es un diseñador de satélites que, tras un fallo en esta cadena, deberá formar equipo con su hermano Max para viajar al espacio y salvar al planeta de una tormenta artificial de proporciones épicas, mientras en la superficie del planeta se está gestando un complot para asesinar al presidente de Estados Unidos.</desc>
   </programme>
@@ -839,9 +821,9 @@
     <episode-num system="onscreen">Temporada 11 Episodio 15</episode-num>
   </programme>
   <programme start="20261121075700 -0500" stop="20261121081700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">The Big Bang Theory</title>
-    <sub-title>Temporada 11 Episodio 16 - The Neonatal Nomenclature</sub-title>
-    <episode-num system="onscreen">Temporada 11 Episodio 16</episode-num>
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 16 - That Was Saliva, Alan (2)</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 16</episode-num>
   </programme>
   <programme start="20261121081700 -0500" stop="20261121083700 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Two and a Half Men</title>
