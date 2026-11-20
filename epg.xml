@@ -512,8 +512,8 @@
   </programme>
   <programme start="20261119083400 -0500" stop="20261119085600 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">The Big Bang Theory</title>
-    <sub-title>Temporada 10 Episodio 24 - The Long Distance Dissonance</sub-title>
-    <episode-num system="onscreen">Temporada 10 Episodio 24</episode-num>
+    <sub-title>Temporada 11 Episodio 2 - The Retraction Reaction</sub-title>
+    <episode-num system="onscreen">Temporada 11 Episodio 2</episode-num>
   </programme>
   <programme start="20261119085600 -0500" stop="20261119091800 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="es">La propuesta de propuesta</title>
@@ -534,14 +534,14 @@
     <episode-num system="onscreen">Temporada 11 Episodio 4</episode-num>
   </programme>
   <programme start="20261119102500 -0500" stop="20261119104700 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">The Big Bang Theory</title>
-    <sub-title>Temporada 11 Episodio 4 - The Explosion Implosion</sub-title>
-    <episode-num system="onscreen">Temporada 11 Episodio 4</episode-num>
-  </programme>
-  <programme start="20261119104700 -0500" stop="20261119111500 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Two and a Half Men</title>
     <sub-title>Temporada 1 Episodio 2 - Big Flappy Bastards</sub-title>
     <episode-num system="onscreen">Temporada 1 Episodio 2</episode-num>
+  </programme>
+  <programme start="20261119104700 -0500" stop="20261119111500 -0500" channel="WarnerChannel.us@Colombia">
+    <title lang="en">Two and a Half Men</title>
+    <sub-title>Temporada 1 Episodio 3 - Go East on Sunset Until You Reach the Gates of Hell</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 3</episode-num>
   </programme>
   <programme start="20261119110800 -0500" stop="20261119113200 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Two and a Half Men</title>
