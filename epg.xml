@@ -543,30 +543,15 @@
     <sub-title>Temporada 1 Episodio 3 - Go East on Sunset Until You Reach the Gates of Hell</sub-title>
     <episode-num system="onscreen">Temporada 1 Episodio 3</episode-num>
   </programme>
-  <programme start="20261119110800 -0500" stop="20261119113200 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 1 Episodio 3 - Go East on Sunset Until You Reach the Gates of Hell</sub-title>
-    <episode-num system="onscreen">Temporada 1 Episodio 3</episode-num>
-  </programme>
   <programme start="20261119111500 -0500" stop="20261119113900 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Two and a Half Men</title>
     <sub-title>Temporada 1 Episodio 6 - Did You Check with the Captain of the Flying Monkeys?</sub-title>
     <episode-num system="onscreen">Temporada 1 Episodio 6</episode-num>
   </programme>
-  <programme start="20261119113200 -0500" stop="20261119115300 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 1 Episodio 4 - If I Can't Write My Chocolate Song I'm Going to Take a Nap</sub-title>
-    <episode-num system="onscreen">Temporada 1 Episodio 4</episode-num>
-  </programme>
   <programme start="20261119113900 -0500" stop="20261119120200 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Two and a Half Men</title>
     <sub-title>Temporada 1 Episodio 7 - If They Do Go Either Way, They're Usually Fake</sub-title>
     <episode-num system="onscreen">Temporada 1 Episodio 7</episode-num>
-  </programme>
-  <programme start="20261119115300 -0500" stop="20261119121400 -0500" channel="WarnerChannel.us@Colombia">
-    <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 1 Episodio 6 - Did You Check with the Captain of the Flying Monkeys?</sub-title>
-    <episode-num system="onscreen">Temporada 1 Episodio 6</episode-num>
   </programme>
   <programme start="20261119120200 -0500" stop="20261119125200 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Cobra Kai</title>
@@ -989,8 +974,8 @@
   </programme>
   <programme start="20261122072200 -0500" stop="20261122074400 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Two and a Half Men</title>
-    <sub-title>Temporada 2 Episodio 1 - Back Off, Mary Poppins</sub-title>
-    <episode-num system="onscreen">Temporada 2 Episodio 1</episode-num>
+    <sub-title>Temporada 1 Episodio 24 - Can You Feel My Finger?</sub-title>
+    <episode-num system="onscreen">Temporada 1 Episodio 24</episode-num>
   </programme>
   <programme start="20261122074400 -0500" stop="20261122080600 -0500" channel="WarnerChannel.us@Colombia">
     <title lang="en">Two and a Half Men</title>
