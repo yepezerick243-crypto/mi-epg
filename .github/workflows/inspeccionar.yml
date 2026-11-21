@@ -1,8 +1,9 @@
 ```yaml
-name: Generar EPG Telemundo
+name: EPG Telemundo
 
 on:
   workflow_dispatch:
+
   schedule:
     - cron: "0,40 * * * *"
 
@@ -11,24 +12,27 @@ permissions:
 
 jobs:
   generar:
+    name: Generar programación Telemundo
     runs-on: ubuntu-latest
 
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
 
-      - name: Configurar Python
+      - name: Instalar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Instalar dependencias
-        run: pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Generar XMLTV de Telemundo
+      - name: Generar EPG
         run: python generar_epg.py
 
-      - name: Guardar EPG
+      - name: Guardar XMLTV
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Actualizar EPG Telemundo"
