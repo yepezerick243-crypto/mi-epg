@@ -27,11 +27,8 @@ ZONA = ZoneInfo("America/Guayaquil")
 
 ARCHIVO_XML = "epg.xml"
 
-# SOLO 6 DIAS DE PROGRAMACION
+# Hoy y los próximos cinco días
 DIAS_A_GENERAR = 6
-
-# Conservar historial reciente
-HORAS_HISTORIAL = 24
 
 INTENTOS = 4
 ESPERA_REINTENTO = 10
@@ -55,6 +52,7 @@ SESION.headers.update({
 # =========================================================
 
 def limpiar_texto(texto):
+
     if texto is None:
         return ""
 
@@ -66,6 +64,7 @@ def limpiar_texto(texto):
 
 
 def url_valida(url):
+
     if not url:
         return False
 
@@ -76,22 +75,24 @@ def url_valida(url):
             resultado.scheme in ("http", "https")
             and bool(resultado.netloc)
         )
+
     except Exception:
         return False
 
 
 def convertir_hora(texto):
+
     texto = limpiar_texto(texto).lower()
     texto = texto.replace(" ", "")
 
-    formatos = [
-        "%I:%M%p",
-        "%I%p",
-    ]
+    for formato in ("%I:%M%p", "%I%p"):
 
-    for formato in formatos:
         try:
-            return datetime.strptime(texto, formato).time()
+            return datetime.strptime(
+                texto,
+                formato
+            ).time()
+
         except ValueError:
             continue
 
@@ -101,10 +102,14 @@ def convertir_hora(texto):
 
 
 def fecha_xml(fecha):
-    return fecha.strftime("%Y%m%d%H%M%S %z")
+
+    return fecha.strftime(
+        "%Y%m%d%H%M%S %z"
+    )
 
 
 def fecha_desde_xml(texto):
+
     return datetime.strptime(
         texto,
         "%Y%m%d%H%M%S %z"
@@ -112,7 +117,7 @@ def fecha_desde_xml(texto):
 
 
 # =========================================================
-# CONSULTA API TELE​​MUNDO
+# CONSULTAR TELE​​MUNDO
 # =========================================================
 
 def solicitar_programacion(fecha):
@@ -124,6 +129,7 @@ def solicitar_programacion(fecha):
     for intento in range(1, INTENTOS + 1):
 
         try:
+
             print(
                 f"Consultando Telemundo: "
                 f"{fecha_url} ({intento}/{INTENTOS})"
@@ -140,12 +146,12 @@ def solicitar_programacion(fecha):
 
             if not isinstance(datos, list):
                 raise ValueError(
-                    "La API no devolvió una lista de programas."
+                    "La API no devolvió una lista."
                 )
 
             if not datos:
                 raise ValueError(
-                    "La API devolvió una programación vacía."
+                    "La programación recibida está vacía."
                 )
 
             print(
@@ -176,7 +182,7 @@ def solicitar_programacion(fecha):
 
 
 # =========================================================
-# PROCESAR PROGRAMACION
+# PROCESAR PROGRAMAS
 # =========================================================
 
 def procesar_programas(datos, fecha):
@@ -195,6 +201,7 @@ def procesar_programas(datos, fecha):
             continue
 
         try:
+
             hora = convertir_hora(hora_texto)
 
             inicio = datetime(
@@ -210,41 +217,33 @@ def procesar_programas(datos, fecha):
 
             print(
                 f"Programa omitido: {titulo}. "
-                f"Error de horario: {error}"
+                f"Error: {error}"
             )
 
             continue
 
-        descripcion = limpiar_texto(
-            elemento.get("description", "")
-        )
-
-        imagen = limpiar_texto(
-            elemento.get("image_url", "")
-        )
-
-        enlace = limpiar_texto(
-            elemento.get("url", "")
-        )
-
-        rating = limpiar_texto(
-            elemento.get("rating", "")
-        )
-
         programas.append({
             "inicio": inicio,
             "titulo": titulo,
-            "descripcion": descripcion,
-            "imagen": imagen,
-            "url": enlace,
-            "rating": rating,
+            "descripcion": limpiar_texto(
+                elemento.get("description", "")
+            ),
+            "imagen": limpiar_texto(
+                elemento.get("image_url", "")
+            ),
+            "url": limpiar_texto(
+                elemento.get("url", "")
+            ),
+            "rating": limpiar_texto(
+                elemento.get("rating", "")
+            ),
         })
 
     return programas
 
 
 # =========================================================
-# OBTENER LOS 6 DIAS
+# OBTENER PROGRAMACION ACTUAL Y FUTURA
 # =========================================================
 
 def obtener_programacion():
@@ -253,23 +252,25 @@ def obtener_programacion():
 
     programas = []
 
+    ultimo_dia = hoy + timedelta(
+        days=DIAS_A_GENERAR - 1
+    )
+
     print("=" * 60)
     print("GENERADOR EPG EXCLUSIVO DE TELEMUNDO")
     print("=" * 60)
 
     print("Fecha inicial:", hoy)
-
-    ultimo_dia = hoy + timedelta(
-        days=DIAS_A_GENERAR - 1
-    )
-
     print("Último día incluido:", ultimo_dia)
-    print("Días de programación:", DIAS_A_GENERAR)
+    print("Días consultados:", DIAS_A_GENERAR)
     print("Zona horaria: America/Guayaquil")
+
+    print("Los días anteriores no se consultan.")
+    print("El historial anterior se conserva.")
 
     print("=" * 60)
 
-    # EXACTAMENTE 6 CONSULTAS DE FECHA
+    # Empieza hoy. Nunca consulta días anteriores.
     for desplazamiento in range(DIAS_A_GENERAR):
 
         fecha = hoy + timedelta(
@@ -286,26 +287,18 @@ def obtener_programacion():
         if not registros:
 
             raise Exception(
-                f"No se encontraron programas válidos "
-                f"para {fecha}."
+                f"No hay programas válidos para {fecha}."
             )
 
         programas.extend(registros)
 
         time.sleep(0.5)
 
-    if not programas:
-
-        raise Exception(
-            "No se obtuvo programación de Telemundo."
-        )
-
-    # Ordenar cronológicamente
     programas.sort(
         key=lambda programa: programa["inicio"]
     )
 
-    # Eliminar horarios duplicados
+    # Eliminar duplicados por hora de inicio
     unicos = {}
 
     for programa in programas:
@@ -334,21 +327,25 @@ def obtener_programacion():
 
     print("----------------------------------------")
     print("Días consultados:", DIAS_A_GENERAR)
-    print("Total de programas:", len(programas))
+    print("Programas recibidos:", len(programas))
     print("----------------------------------------")
 
     return programas
 
 
 # =========================================================
-# CONSERVAR HISTORIAL ANTERIOR
+# CARGAR Y CONSERVAR TODO EL HISTORIAL
 # =========================================================
 
 def cargar_historial():
 
     if not os.path.exists(ARCHIVO_XML):
 
-        print("No existe XML anterior.")
+        print(
+            "No existe XML anterior. "
+            "Se creará uno nuevo."
+        )
+
         return []
 
     try:
@@ -357,10 +354,6 @@ def cargar_historial():
         raiz = arbol.getroot()
 
         ahora = datetime.now(ZONA)
-
-        limite = ahora - timedelta(
-            hours=HORAS_HISTORIAL
-        )
 
         historial = []
 
@@ -379,12 +372,9 @@ def cargar_historial():
                 inicio_texto
             )
 
-            fin = fecha_desde_xml(
-                fin_texto
-            )
-
-            # Conservar solamente programas recientes
-            if inicio < ahora and fin >= limite:
+            # Conservar todos los programas que ya comenzaron.
+            # No se elimina el historial por antigüedad.
+            if inicio < ahora:
 
                 historial.append(
                     copy.deepcopy(programa)
@@ -399,27 +389,24 @@ def cargar_historial():
 
     except Exception as error:
 
-        print(
-            "No se pudo leer el historial anterior:",
-            error
+        raise Exception(
+            "No se pudo leer el XML anterior. "
+            "Se cancela para proteger el historial. "
+            f"Detalle: {error}"
         )
-
-        return []
 
 
 # =========================================================
-# CREAR ELEMENTO XMLTV
+# CREAR PROGRAMA XMLTV
 # =========================================================
 
 def crear_elemento_programa(
-    raiz,
     programa,
     inicio,
     fin
 ):
 
-    elemento = ET.SubElement(
-        raiz,
+    elemento = ET.Element(
         "programme",
         {
             "start": fecha_xml(inicio),
@@ -486,12 +473,13 @@ def crear_elemento_programa(
 
 def generar_xml():
 
+    # 1. Obtener solamente hoy y los próximos cinco días.
     programas = obtener_programacion()
 
-    ahora = datetime.now(ZONA)
-
+    # 2. Recuperar el historial anterior.
     historial = cargar_historial()
 
+    # 3. Crear el XML.
     raiz = ET.Element(
         "tv",
         {
@@ -514,7 +502,7 @@ def generar_xml():
 
     nombre.text = CANAL_NOMBRE
 
-    # Registrar historial por hora de inicio
+    # Guardar historial por hora de inicio.
     elementos = {}
 
     for anterior in historial:
@@ -522,10 +510,9 @@ def generar_xml():
         inicio = anterior.get("start")
 
         if inicio:
-
             elementos[inicio] = anterior
 
-    # Crear programación nueva
+    # 4. Incorporar programación nueva.
     for indice, programa in enumerate(programas):
 
         inicio = programa["inicio"]
@@ -537,7 +524,7 @@ def generar_xml():
         else:
 
             # Último programa del sexto día:
-            # finalizar a medianoche del día siguiente.
+            # fin a medianoche del día siguiente.
             fin = datetime(
                 inicio.year,
                 inicio.month,
@@ -546,73 +533,21 @@ def generar_xml():
             ) + timedelta(days=1)
 
         if fin <= inicio:
-
             continue
 
-        elemento_temporal = ET.Element(
-            "programme",
-            {
-                "start": fecha_xml(inicio),
-                "stop": fecha_xml(fin),
-                "channel": CANAL_ID
-            }
+        elemento = crear_elemento_programa(
+            programa,
+            inicio,
+            fin
         )
-
-        # Construir los datos del programa
-        titulo = ET.SubElement(
-            elemento_temporal,
-            "title",
-            {"lang": "es"}
-        )
-
-        titulo.text = programa["titulo"]
-
-        if programa.get("descripcion"):
-
-            descripcion = ET.SubElement(
-                elemento_temporal,
-                "desc",
-                {"lang": "es"}
-            )
-
-            descripcion.text = programa["descripcion"]
-
-        if url_valida(programa.get("imagen")):
-
-            ET.SubElement(
-                elemento_temporal,
-                "icon",
-                {"src": programa["imagen"]}
-            )
-
-        if url_valida(programa.get("url")):
-
-            enlace = ET.SubElement(
-                elemento_temporal,
-                "url"
-            )
-
-            enlace.text = programa["url"]
-
-        if programa.get("rating"):
-
-            rating = ET.SubElement(
-                elemento_temporal,
-                "rating"
-            )
-
-            valor = ET.SubElement(
-                rating,
-                "value"
-            )
-
-            valor.text = programa["rating"]
 
         clave = fecha_xml(inicio)
 
-        elementos[clave] = elemento_temporal
+        # La programación nueva reemplaza la anterior
+        # cuando ambas tienen el mismo horario de inicio.
+        elementos[clave] = elemento
 
-    # Ordenar todos los programas
+    # 5. Ordenar todo el historial y la programación nueva.
     lista_final = []
 
     for elemento in elementos.values():
@@ -638,7 +573,6 @@ def generar_xml():
 
         raiz.append(elemento)
 
-    # Comprobar que hay programación
     cantidad = len(
         raiz.findall("programme")
     )
@@ -649,7 +583,7 @@ def generar_xml():
             "El XML no contiene programas."
         )
 
-    # Crear archivo temporal
+    # 6. Escribir temporalmente antes de reemplazar.
     temporal = ARCHIVO_XML + ".tmp"
 
     arbol = ET.ElementTree(raiz)
@@ -665,7 +599,7 @@ def generar_xml():
         xml_declaration=True
     )
 
-    # Reemplazar únicamente después de generar correctamente
+    # Reemplazar únicamente cuando todo salió bien.
     os.replace(
         temporal,
         ARCHIVO_XML
@@ -678,7 +612,7 @@ def generar_xml():
     print("Canal:", CANAL_NOMBRE)
     print("ID:", CANAL_ID)
     print("Días consultados:", DIAS_A_GENERAR)
-    print("Programas guardados:", cantidad)
+    print("Programas históricos y nuevos:", cantidad)
     print("Archivo:", ARCHIVO_XML)
 
     print("=" * 60)
