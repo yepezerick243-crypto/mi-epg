@@ -2,11 +2,13 @@
 import os
 import re
 import time
+import copy
 import requests
 import xml.etree.ElementTree as ET
 
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
+from urllib.parse import urlparse
 
 
 # =========================================================
@@ -19,16 +21,20 @@ API_BASE = (
 )
 
 CANAL_ID = "Telemundo.us"
-NOMBRE_CANAL = "Telemundo"
+CANAL_NOMBRE = "Telemundo"
 
 ZONA = ZoneInfo("America/Guayaquil")
 
 ARCHIVO_XML = "epg.xml"
 
-DIAS_PROGRAMACION = 7
+# SOLO 6 DIAS DE PROGRAMACION
+DIAS_A_GENERAR = 6
+
+# Conservar historial reciente
+HORAS_HISTORIAL = 24
 
 INTENTOS = 4
-ESPERA = 10
+ESPERA_REINTENTO = 10
 
 SESION = requests.Session()
 
@@ -38,31 +44,94 @@ SESION.headers.update({
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/120.0.0.0 Safari/537.36"
     ),
-    "Accept": "application/json, text/plain, */*"
+    "Accept": "application/json, text/plain, */*",
+    "Referer": "https://www.telemundo.com/",
+    "Origin": "https://www.telemundo.com",
 })
 
 
 # =========================================================
-# CONSULTAR API DE TELEMUNDO
+# UTILIDADES
+# =========================================================
+
+def limpiar_texto(texto):
+    if texto is None:
+        return ""
+
+    texto = str(texto)
+    texto = re.sub(r"<[^>]*>", "", texto)
+    texto = re.sub(r"\s+", " ", texto)
+
+    return texto.strip()
+
+
+def url_valida(url):
+    if not url:
+        return False
+
+    try:
+        resultado = urlparse(str(url))
+
+        return (
+            resultado.scheme in ("http", "https")
+            and bool(resultado.netloc)
+        )
+    except Exception:
+        return False
+
+
+def convertir_hora(texto):
+    texto = limpiar_texto(texto).lower()
+    texto = texto.replace(" ", "")
+
+    formatos = [
+        "%I:%M%p",
+        "%I%p",
+    ]
+
+    for formato in formatos:
+        try:
+            return datetime.strptime(texto, formato).time()
+        except ValueError:
+            continue
+
+    raise ValueError(
+        f"No se pudo interpretar la hora: {texto}"
+    )
+
+
+def fecha_xml(fecha):
+    return fecha.strftime("%Y%m%d%H%M%S %z")
+
+
+def fecha_desde_xml(texto):
+    return datetime.strptime(
+        texto,
+        "%Y%m%d%H%M%S %z"
+    ).astimezone(ZONA)
+
+
+# =========================================================
+# CONSULTA API TELE​​MUNDO
 # =========================================================
 
 def solicitar_programacion(fecha):
 
-    fecha_texto = fecha.strftime("%Y/%m/%d")
+    fecha_url = fecha.strftime("%Y/%m/%d")
 
-    url = f"{API_BASE}/{fecha_texto}"
+    url = f"{API_BASE}/{fecha_url}"
 
     for intento in range(1, INTENTOS + 1):
 
         try:
             print(
                 f"Consultando Telemundo: "
-                f"{fecha_texto} ({intento}/{INTENTOS})"
+                f"{fecha_url} ({intento}/{INTENTOS})"
             )
 
             respuesta = SESION.get(
                 url,
-                timeout=(20, 60)
+                timeout=(20, 45)
             )
 
             respuesta.raise_for_status()
@@ -71,150 +140,116 @@ def solicitar_programacion(fecha):
 
             if not isinstance(datos, list):
                 raise ValueError(
-                    "La API no devolvió una lista JSON."
+                    "La API no devolvió una lista de programas."
                 )
 
             if not datos:
                 raise ValueError(
-                    f"Telemundo no entregó programas para {fecha_texto}."
+                    "La API devolvió una programación vacía."
                 )
 
             print(
-                f"Programas recibidos: {len(datos)}"
+                "Programas recibidos:",
+                len(datos)
             )
 
             return datos
 
-        except (
-            requests.RequestException,
-            ValueError
-        ) as error:
+        except Exception as error:
 
-            print("Error consultando Telemundo:", error)
-
-            if intento < INTENTOS:
-                print(f"Esperando {ESPERA} segundos...")
-                time.sleep(ESPERA)
-
-            else:
-                raise Exception(
-                    f"No se pudo obtener la programación "
-                    f"del {fecha_texto}."
-                ) from error
-
-
-# =========================================================
-# CONVERTIR TIME_FULL A FECHA LOCAL
-# =========================================================
-
-def convertir_hora(fecha, hora_texto):
-
-    if not isinstance(hora_texto, str):
-        raise ValueError("time_full no contiene una hora válida.")
-
-    hora_texto = hora_texto.strip().lower()
-
-    hora_texto = re.sub(
-        r"\s+",
-        "",
-        hora_texto
-    )
-
-    formatos = [
-        "%I:%M%p",
-        "%I%p"
-    ]
-
-    hora_convertida = None
-
-    for formato in formatos:
-
-        try:
-            hora_convertida = datetime.strptime(
-                hora_texto,
-                formato
+            print(
+                "Error consultando Telemundo:",
+                error
             )
 
-            break
+            if intento < INTENTOS:
 
-        except ValueError:
-            continue
+                print(
+                    f"Esperando {ESPERA_REINTENTO} segundos..."
+                )
 
-    if hora_convertida is None:
-        raise ValueError(
-            f"Formato de hora no reconocido: {hora_texto}"
-        )
+                time.sleep(ESPERA_REINTENTO)
 
-    return datetime(
-        fecha.year,
-        fecha.month,
-        fecha.day,
-        hora_convertida.hour,
-        hora_convertida.minute,
-        tzinfo=ZONA
+    raise Exception(
+        f"No se pudo obtener la programación del {fecha_url}."
     )
 
 
 # =========================================================
-# EXTRAER PROGRAMAS
+# PROCESAR PROGRAMACION
 # =========================================================
 
-def extraer_programas(fecha, datos):
+def procesar_programas(datos, fecha):
 
     programas = []
 
-    for registro in datos:
+    for elemento in datos:
 
-        if not isinstance(registro, dict):
+        titulo = limpiar_texto(
+            elemento.get("name")
+        )
+
+        hora_texto = elemento.get("time_full")
+
+        if not titulo or not hora_texto:
             continue
-
-        nombre = registro.get("name")
-
-        if not isinstance(nombre, str) or not nombre.strip():
-            continue
-
-        hora_texto = registro.get("time_full")
 
         try:
-            inicio = convertir_hora(
-                fecha,
-                hora_texto
+            hora = convertir_hora(hora_texto)
+
+            inicio = datetime(
+                fecha.year,
+                fecha.month,
+                fecha.day,
+                hora.hour,
+                hora.minute,
+                tzinfo=ZONA
             )
 
-        except (ValueError, TypeError) as error:
+        except Exception as error:
 
             print(
-                f"Horario descartado: {nombre} - {error}"
+                f"Programa omitido: {titulo}. "
+                f"Error de horario: {error}"
             )
 
             continue
 
-        programa = {
-            "inicio": inicio,
-            "nombre": nombre.strip(),
-            "descripcion": registro.get("description") or "",
-            "imagen": registro.get("image_url") or "",
-            "url": registro.get("url") or "",
-            "rating": registro.get("rating") or "",
-            "show_id": registro.get("nbcu_showid") or ""
-        }
+        descripcion = limpiar_texto(
+            elemento.get("description", "")
+        )
 
-        programas.append(programa)
+        imagen = limpiar_texto(
+            elemento.get("image_url", "")
+        )
+
+        enlace = limpiar_texto(
+            elemento.get("url", "")
+        )
+
+        rating = limpiar_texto(
+            elemento.get("rating", "")
+        )
+
+        programas.append({
+            "inicio": inicio,
+            "titulo": titulo,
+            "descripcion": descripcion,
+            "imagen": imagen,
+            "url": enlace,
+            "rating": rating,
+        })
 
     return programas
 
 
 # =========================================================
-# DESCARGAR PROGRAMACION DE VARIOS DIAS
+# OBTENER LOS 6 DIAS
 # =========================================================
 
 def obtener_programacion():
 
     hoy = datetime.now(ZONA).date()
-
-    fecha_final = hoy + timedelta(
-        days=DIAS_PROGRAMACION
-    )
 
     programas = []
 
@@ -223,14 +258,19 @@ def obtener_programacion():
     print("=" * 60)
 
     print("Fecha inicial:", hoy)
-    print("Último día incluido:", fecha_final - timedelta(days=1))
-    print("Días de programación:", DIAS_PROGRAMACION)
-    print("Zona horaria:", ZONA)
 
-    # Se consulta un día adicional para calcular
-    # la finalización del último programa.
+    ultimo_dia = hoy + timedelta(
+        days=DIAS_A_GENERAR - 1
+    )
 
-    for desplazamiento in range(DIAS_PROGRAMACION + 1):
+    print("Último día incluido:", ultimo_dia)
+    print("Días de programación:", DIAS_A_GENERAR)
+    print("Zona horaria: America/Guayaquil")
+
+    print("=" * 60)
+
+    # EXACTAMENTE 6 CONSULTAS DE FECHA
+    for desplazamiento in range(DIAS_A_GENERAR):
 
         fecha = hoy + timedelta(
             days=desplazamiento
@@ -238,21 +278,34 @@ def obtener_programacion():
 
         datos = solicitar_programacion(fecha)
 
-        registros = extraer_programas(
-            fecha,
-            datos
+        registros = procesar_programas(
+            datos,
+            fecha
         )
 
         if not registros:
+
             raise Exception(
-                f"No se encontraron horarios válidos "
-                f"para el {fecha}."
+                f"No se encontraron programas válidos "
+                f"para {fecha}."
             )
 
         programas.extend(registros)
 
-    # Eliminar posibles registros duplicados.
+        time.sleep(0.5)
 
+    if not programas:
+
+        raise Exception(
+            "No se obtuvo programación de Telemundo."
+        )
+
+    # Ordenar cronológicamente
+    programas.sort(
+        key=lambda programa: programa["inicio"]
+    )
+
+    # Eliminar horarios duplicados
     unicos = {}
 
     for programa in programas:
@@ -260,158 +313,148 @@ def obtener_programacion():
         clave = programa["inicio"]
 
         if clave not in unicos:
+
             unicos[clave] = programa
+
+        else:
+
+            anterior = unicos[clave]
+
+            if (
+                len(programa["descripcion"])
+                > len(anterior["descripcion"])
+            ):
+
+                unicos[clave] = programa
 
     programas = sorted(
         unicos.values(),
-        key=lambda p: p["inicio"]
+        key=lambda programa: programa["inicio"]
     )
 
-    # Conservar solamente los siete días solicitados.
-    # El día adicional sirve como referencia de finalización.
-
-    limite = datetime(
-        fecha_final.year,
-        fecha_final.month,
-        fecha_final.day,
-        0,
-        0,
-        tzinfo=ZONA
-    )
-
-    programas = [
-        p for p in programas
-        if p["inicio"] < limite
-    ]
-
-    if not programas:
-        raise Exception(
-            "No se obtuvo programación válida."
-        )
-
-    print("---------------------------------------")
+    print("----------------------------------------")
+    print("Días consultados:", DIAS_A_GENERAR)
     print("Total de programas:", len(programas))
-    print("---------------------------------------")
+    print("----------------------------------------")
 
     return programas
 
 
 # =========================================================
-# FORMATO DE FECHAS XMLTV
+# CONSERVAR HISTORIAL ANTERIOR
 # =========================================================
 
-def convertir_fecha_xml(fecha):
+def cargar_historial():
 
-    return fecha.strftime(
-        "%Y%m%d%H%M%S %z"
-    )
+    if not os.path.exists(ARCHIVO_XML):
+
+        print("No existe XML anterior.")
+        return []
+
+    try:
+
+        arbol = ET.parse(ARCHIVO_XML)
+        raiz = arbol.getroot()
+
+        ahora = datetime.now(ZONA)
+
+        limite = ahora - timedelta(
+            hours=HORAS_HISTORIAL
+        )
+
+        historial = []
+
+        for programa in raiz.findall("programme"):
+
+            if programa.get("channel") != CANAL_ID:
+                continue
+
+            inicio_texto = programa.get("start")
+            fin_texto = programa.get("stop")
+
+            if not inicio_texto or not fin_texto:
+                continue
+
+            inicio = fecha_desde_xml(
+                inicio_texto
+            )
+
+            fin = fecha_desde_xml(
+                fin_texto
+            )
+
+            # Conservar solamente programas recientes
+            if inicio < ahora and fin >= limite:
+
+                historial.append(
+                    copy.deepcopy(programa)
+                )
+
+        print(
+            "Programas históricos conservados:",
+            len(historial)
+        )
+
+        return historial
+
+    except Exception as error:
+
+        print(
+            "No se pudo leer el historial anterior:",
+            error
+        )
+
+        return []
 
 
 # =========================================================
-# AGREGAR TEXTO XML
+# CREAR ELEMENTO XMLTV
 # =========================================================
 
-def agregar_texto(
-    elemento,
-    etiqueta,
-    texto,
-    idioma="es"
+def crear_elemento_programa(
+    raiz,
+    programa,
+    inicio,
+    fin
 ):
 
-    if texto is None:
-        return
-
-    texto = str(texto).strip()
-
-    if not texto:
-        return
-
-    nuevo = ET.SubElement(
-        elemento,
-        etiqueta,
-        {"lang": idioma}
-    )
-
-    nuevo.text = texto
-
-
-# =========================================================
-# CREAR PROGRAMA XMLTV
-# =========================================================
-
-def crear_programa(programa, siguiente):
-
-    inicio = programa["inicio"]
-    fin = siguiente["inicio"]
-
-    if fin <= inicio:
-        return None
-
-    elemento = ET.Element(
+    elemento = ET.SubElement(
+        raiz,
         "programme",
         {
-            "start": convertir_fecha_xml(inicio),
-            "stop": convertir_fecha_xml(fin),
+            "start": fecha_xml(inicio),
+            "stop": fecha_xml(fin),
             "channel": CANAL_ID
         }
     )
 
-    # Título original de Telemundo.
-
-    agregar_texto(
+    titulo = ET.SubElement(
         elemento,
         "title",
-        programa["nombre"]
+        {"lang": "es"}
     )
 
-    # Descripción original.
+    titulo.text = programa["titulo"]
 
-    agregar_texto(
-        elemento,
-        "desc",
-        programa["descripcion"]
-    )
+    if programa.get("descripcion"):
 
-    # Imagen del programa.
+        descripcion = ET.SubElement(
+            elemento,
+            "desc",
+            {"lang": "es"}
+        )
 
-    if programa["imagen"]:
+        descripcion.text = programa["descripcion"]
 
-        icono = ET.SubElement(
+    if url_valida(programa.get("imagen")):
+
+        ET.SubElement(
             elemento,
             "icon",
             {"src": programa["imagen"]}
         )
 
-    # Clasificación televisiva.
-
-    if programa["rating"]:
-
-        clasificacion = ET.SubElement(
-            elemento,
-            "rating",
-            {"system": "MPAA"}
-        )
-
-        agregar_texto(
-            clasificacion,
-            "value",
-            programa["rating"]
-        )
-
-    # Identificador del programa.
-
-    if programa["show_id"]:
-
-        agregar_texto(
-            elemento,
-            "episode-num",
-            programa["show_id"],
-            "en"
-        )
-
-    # Página del programa.
-
-    if programa["url"]:
+    if url_valida(programa.get("url")):
 
         enlace = ET.SubElement(
             elemento,
@@ -420,40 +463,21 @@ def crear_programa(programa, siguiente):
 
         enlace.text = programa["url"]
 
+    if programa.get("rating"):
+
+        rating = ET.SubElement(
+            elemento,
+            "rating"
+        )
+
+        valor = ET.SubElement(
+            rating,
+            "value"
+        )
+
+        valor.text = programa["rating"]
+
     return elemento
-
-
-# =========================================================
-# RECUPERAR XML ANTERIOR
-# =========================================================
-
-def cargar_xml_anterior():
-
-    if not os.path.exists(ARCHIVO_XML):
-
-        print(
-            "No existe un XML anterior. "
-            "Se generará uno nuevo."
-        )
-
-        return None
-
-    try:
-
-        arbol = ET.parse(ARCHIVO_XML)
-
-        print(
-            "XML anterior encontrado y válido."
-        )
-
-        return arbol
-
-    except ET.ParseError as error:
-
-        raise Exception(
-            "El XML anterior está dañado. "
-            "Se cancela la generación."
-        ) from error
 
 
 # =========================================================
@@ -464,23 +488,17 @@ def generar_xml():
 
     programas = obtener_programacion()
 
-    # Comprobar el XML anterior antes de reemplazarlo.
+    ahora = datetime.now(ZONA)
 
-    cargar_xml_anterior()
+    historial = cargar_historial()
 
     raiz = ET.Element(
         "tv",
         {
-            "generator-info-name": (
-                "Telemundo EPG Generator"
-            ),
-            "generator-info-url": (
-                "https://www.telemundo.com/"
-            )
+            "generator-info-name": "EPG Telemundo API",
+            "generator-info-url": "https://www.telemundo.com/"
         }
     )
-
-    # Información del canal.
 
     canal = ET.SubElement(
         raiz,
@@ -488,88 +506,186 @@ def generar_xml():
         {"id": CANAL_ID}
     )
 
-    agregar_texto(
+    nombre = ET.SubElement(
         canal,
         "display-name",
-        NOMBRE_CANAL
+        {"lang": "es"}
     )
 
-    # Crear programas usando el siguiente horario
-    # como hora de finalización.
+    nombre.text = CANAL_NOMBRE
 
-    creados = 0
-    descartados = 0
+    # Registrar historial por hora de inicio
+    elementos = {}
 
+    for anterior in historial:
+
+        inicio = anterior.get("start")
+
+        if inicio:
+
+            elementos[inicio] = anterior
+
+    # Crear programación nueva
     for indice, programa in enumerate(programas):
 
-        if indice + 1 >= len(programas):
-            descartados += 1
+        inicio = programa["inicio"]
+
+        if indice + 1 < len(programas):
+
+            fin = programas[indice + 1]["inicio"]
+
+        else:
+
+            # Último programa del sexto día:
+            # finalizar a medianoche del día siguiente.
+            fin = datetime(
+                inicio.year,
+                inicio.month,
+                inicio.day,
+                tzinfo=ZONA
+            ) + timedelta(days=1)
+
+        if fin <= inicio:
+
             continue
 
-        siguiente = programas[indice + 1]
-
-        elemento = crear_programa(
-            programa,
-            siguiente
+        elemento_temporal = ET.Element(
+            "programme",
+            {
+                "start": fecha_xml(inicio),
+                "stop": fecha_xml(fin),
+                "channel": CANAL_ID
+            }
         )
 
-        if elemento is None:
+        # Construir los datos del programa
+        titulo = ET.SubElement(
+            elemento_temporal,
+            "title",
+            {"lang": "es"}
+        )
 
-            descartados += 1
+        titulo.text = programa["titulo"]
+
+        if programa.get("descripcion"):
+
+            descripcion = ET.SubElement(
+                elemento_temporal,
+                "desc",
+                {"lang": "es"}
+            )
+
+            descripcion.text = programa["descripcion"]
+
+        if url_valida(programa.get("imagen")):
+
+            ET.SubElement(
+                elemento_temporal,
+                "icon",
+                {"src": programa["imagen"]}
+            )
+
+        if url_valida(programa.get("url")):
+
+            enlace = ET.SubElement(
+                elemento_temporal,
+                "url"
+            )
+
+            enlace.text = programa["url"]
+
+        if programa.get("rating"):
+
+            rating = ET.SubElement(
+                elemento_temporal,
+                "rating"
+            )
+
+            valor = ET.SubElement(
+                rating,
+                "value"
+            )
+
+            valor.text = programa["rating"]
+
+        clave = fecha_xml(inicio)
+
+        elementos[clave] = elemento_temporal
+
+    # Ordenar todos los programas
+    lista_final = []
+
+    for elemento in elementos.values():
+
+        inicio_texto = elemento.get("start")
+
+        if not inicio_texto:
             continue
+
+        inicio = fecha_desde_xml(
+            inicio_texto
+        )
+
+        lista_final.append(
+            (inicio, elemento)
+        )
+
+    lista_final.sort(
+        key=lambda item: item[0]
+    )
+
+    for _, elemento in lista_final:
 
         raiz.append(elemento)
 
-        creados += 1
-
-    if creados == 0:
-        raise Exception(
-            "No se generaron programas XMLTV."
-        )
-
-    ET.indent(
-        raiz,
-        space="  "
+    # Comprobar que hay programación
+    cantidad = len(
+        raiz.findall("programme")
     )
 
-    # Escritura temporal para evitar dañar
-    # el archivo anterior si ocurre un error.
+    if cantidad == 0:
 
-    archivo_temporal = ARCHIVO_XML + ".tmp"
+        raise Exception(
+            "El XML no contiene programas."
+        )
 
-    ET.ElementTree(raiz).write(
-        archivo_temporal,
-        encoding="UTF-8",
+    # Crear archivo temporal
+    temporal = ARCHIVO_XML + ".tmp"
+
+    arbol = ET.ElementTree(raiz)
+
+    ET.indent(
+        arbol,
+        space="    "
+    )
+
+    arbol.write(
+        temporal,
+        encoding="utf-8",
         xml_declaration=True
     )
 
-    # Comprobar el XML recién generado.
-
-    ET.parse(archivo_temporal)
-
+    # Reemplazar únicamente después de generar correctamente
     os.replace(
-        archivo_temporal,
+        temporal,
         ARCHIVO_XML
     )
 
     print("=" * 60)
-    print("GENERACION COMPLETADA")
+    print("GENERACIÓN FINALIZADA CORRECTAMENTE")
     print("=" * 60)
 
-    print("Canal:", NOMBRE_CANAL)
+    print("Canal:", CANAL_NOMBRE)
     print("ID:", CANAL_ID)
-    print("Programas creados:", creados)
-    print("Programas descartados:", descartados)
-    print("Archivo generado:", ARCHIVO_XML)
-    print("Horario utilizado: time_full")
-    print("Zona horaria: America/Guayaquil")
-    print("Días incluidos:", DIAS_PROGRAMACION)
+    print("Días consultados:", DIAS_A_GENERAR)
+    print("Programas guardados:", cantidad)
+    print("Archivo:", ARCHIVO_XML)
 
     print("=" * 60)
 
 
 # =========================================================
-# EJECUCION
+# EJECUCION PRINCIPAL
 # =========================================================
 
 if __name__ == "__main__":
@@ -582,8 +698,14 @@ if __name__ == "__main__":
 
         print("=" * 60)
         print("GENERACION CANCELADA")
+        print("=" * 60)
+
         print(error)
-        print("El epg.xml anterior no será reemplazado.")
+
+        print(
+            "El epg.xml anterior no será reemplazado."
+        )
+
         print("=" * 60)
 
         raise
