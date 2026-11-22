@@ -1260,10 +1260,205 @@
         <title lang="es">NFL Football</title>
         <desc lang="es">Semana 12 de la temporada regular 2026. En el último enfrentamiento, Buffalo Bills venció 28-21 a Kansas City Chiefs. En la semana 9, los Chiefs se ubicaron como la segunda ofensiva mas productiva con un promedio de 383.6 yardas por partido.</desc>
     </programme>
-    <programme start="20261126233000 -0500" stop="20261127000000 -0500" channel="Telemundo.us">
+    <programme start="20261126233000 -0500" stop="20261127000500 -0500" channel="Telemundo.us">
         <title lang="es">Noticias Telemundo</title>
         <desc lang="es">Julio Vaqueiro presenta Edición Noticias Telemundo, la fuente de información más confiable de la comunidad hispana en EE.UU. Sus corresponsales ofrecen las últimas noticias y entrevistas.</desc>
         <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_main_programing_guide_image_220x228.jpeg" />
         <url>https://www.telemundo.com/noticias/edicion-noticias-telemundo</url>
+    </programme>
+    <programme start="20261127000500 -0500" stop="20261127003000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo en la noche</title>
+        <desc lang="es">Noticias Telemundo en la noche presenta las últimas noticias de Estados Unidos y el mundo. Arantxa Loizaga trae la información más relevante de todo lo que necesita saber al final del día.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_noche_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche</url>
+    </programme>
+    <programme start="20261127003000 -0500" stop="20261127010000 -0500" channel="Telemundo.us">
+        <title lang="es">El pelotazo</title>
+        <desc lang="es">La nueva e innovadora apuesta de Telemundo Deportes: cobertura completa de los mejores eventos, invitados y polémica. Seguimiento detallado de equipos, jugadores y partidos más destacados.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2025/05/01/22352395_omni_el_pelotazo_500x500_t.com_thumbnail.jpg" />
+        <url>https://www.telemundo.com/deportes/el-pelotazo</url>
+        <rating>
+            <value>TVPG</value>
+        </rating>
+    </programme>
+    <programme start="20261127010000 -0500" stop="20261127020000 -0500" channel="Telemundo.us">
+        <title lang="es">Juego de villanos</title>
+        <desc lang="es">Dieciocho villanos icónicos compiten por el título de "El Emperador de los Villanos" y 200 mil dólares. Entre desafíos, inmunidades, alianzas y traiciones, solo uno alcanza la cima.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/i/rockcms/2026-07/543962/default-img-220x226-Clq9WPR2-2f9ea2_ef13aff84719f1b592449135407d8db05fce05d5.png" />
+        <url>https://www.telemundo.com/shows/juego-de-villanos</url>
+    </programme>
+    <programme start="20261127020000 -0500" stop="20261127030000 -0500" channel="Telemundo.us">
+        <title lang="es">En casa con Telemundo</title>
+        <desc lang="es">Una oferta ligera, de formato accesible y familiar que incluye entrevistas con estrellas y buenas noticias.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2023/03/08/ecct_programing_guide_image_220x228_telemundo.png" />
+        <url>https://www.telemundo.com/shows/en-casa-con-telemundo</url>
+        <rating>
+            <value>TVPG</value>
+        </rating>
+    </programme>
+    <programme start="20261127030000 -0500" stop="20261127040000 -0500" channel="Telemundo.us">
+        <title lang="es">En casa con Telemundo</title>
+        <desc lang="es">Una oferta ligera, de formato accesible y familiar que incluye entrevistas con estrellas y buenas noticias.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2023/03/08/ecct_programing_guide_image_220x228_telemundo.png" />
+        <url>https://www.telemundo.com/shows/en-casa-con-telemundo</url>
+        <rating>
+            <value>TVPG</value>
+        </rating>
+    </programme>
+    <programme start="20261127040000 -0500" stop="20261127050000 -0500" channel="Telemundo.us">
+        <title lang="es">La mesa caliente</title>
+        <desc lang="es">Un equipo de mujeres audaces y empoderadas debate desde diversas perspectivas sobre el entretenimiento y los temas más candentes y controversiales que afectan a la comunidad latina en Estados Unidos.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2022/02/23/la-mesa-caliente-telemundo.jpeg" />
+        <url>https://www.telemundo.com/shows/la-mesa-caliente</url>
+        <rating>
+            <value>TV14</value>
+        </rating>
+    </programme>
+    <programme start="20261127050000 -0500" stop="20261127053000 -0500" channel="Telemundo.us">
+        <title lang="es">Caso cerrado</title>
+        <desc lang="es">Juan y Vanessa están separados, pero el día de Acción de Gracias ella regresa a casa, al ver que él besaba a un hombre, le lanzó el pavo que le había cocinado y causó un accidente.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2018/10/17/02_cc_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/caso-cerrado</url>
+        <rating>
+            <value>TV14</value>
+        </rating>
+    </programme>
+    <programme start="20261127053000 -0500" stop="20261127060000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo en la noche</title>
+        <desc lang="es">Noticias Telemundo en la noche presenta las últimas noticias de Estados Unidos y el mundo. Arantxa Loizaga trae la información más relevante de todo lo que necesita saber al final del día.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_noche_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche</url>
+    </programme>
+    <programme start="20261127060000 -0500" stop="20261127070000 -0500" channel="Telemundo.us">
+        <title lang="es">Al rojo vivo</title>
+        <desc lang="es">La revista noticiosa que define la agenda de la televisión en español en EE. UU. Se caracteriza por ofrecer, antes que nadie, historias que cautivan al público hispano y por presentarlas en un formato innovador que resalta el aspecto humano.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2020/10/23/02_arv_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/al-rojo-vivo</url>
+    </programme>
+    <programme start="20261127070000 -0500" stop="20261127080000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo AHORA</title>
+        <desc lang="es">Las noticias más recientes y las historias más importantes para la comunidad latina.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_main_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/edicion-noticias-telemundo</url>
+    </programme>
+    <programme start="20261127080000 -0500" stop="20261127113000 -0500" channel="Telemundo.us">
+        <title lang="es">Hoy día</title>
+        <desc lang="es">El show de las mañanas que ofrece más entretenimiento y diversión, con contenido positivo, útil e inspirador, pero sin dejar de lado los titulares y noticias que la comunidad hispana en Estados Unidos necesita para comenzar el día bien informada.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2023/11/01/hoydiashow_600_900.jpg" />
+        <url>https://www.telemundo.com/shows/hoy-dia</url>
+        <rating>
+            <value>TVY</value>
+        </rating>
+    </programme>
+    <programme start="20261127113000 -0500" stop="20261127120000 -0500" channel="Telemundo.us">
+        <title lang="es">Reina de corazones</title>
+        <desc lang="es">Historia de Reina y Nicolás, quienes se enamoran a primera vista, pero ella termina casada con un traficante de joyas y él se convierte en agente del Servicio Secreto, pero regresa para rescatar a la mujer que ama.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/sites/nbcutelemundo/files/images/tv_show/02_ReinaDeCorazones_220x228_2.jpg" />
+        <url>https://www.telemundo.com/shows/reina-de-corazones</url>
+    </programme>
+    <programme start="20261127120000 -0500" stop="20261127123000 -0500" channel="Telemundo.us">
+        <title lang="es">Santa Diabla</title>
+        <desc lang="es">Un giro en el destino lleva a Santa Martínez a idear un plan para la venganza perfecta, pero el amor toca a su puerta otra vez y debe decidir si sacrifica el amor o la venganza que luchó por alcanzar.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/sites/nbcutelemundo/files/images/tv_show/02_SantaDiabla_220x228_2.jpg" />
+        <url>https://www.telemundo.com/shows/santa-diabla</url>
+    </programme>
+    <programme start="20261127123000 -0500" stop="20261127130000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo mediodía</title>
+        <desc lang="es">Un informativo con un estilo único de narrar noticias de una manera atractiva. Se presentan historias locales y nacionales, desde diferentes ángulos de los acontecimientos, y entrevistas.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/ntm_programingguide_220x228.png" />
+        <url>https://www.telemundo.com/noticias/noticias-telemundo-mediodia</url>
+        <rating>
+            <value>TVPG</value>
+        </rating>
+    </programme>
+    <programme start="20261127130000 -0500" stop="20261127140000 -0500" channel="Telemundo.us">
+        <title lang="es">En casa con Telemundo</title>
+        <desc lang="es">Una oferta ligera, de formato accesible y familiar que incluye entrevistas con estrellas y buenas noticias.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2023/03/08/ecct_programing_guide_image_220x228_telemundo.png" />
+        <url>https://www.telemundo.com/shows/en-casa-con-telemundo</url>
+        <rating>
+            <value>TVPG</value>
+        </rating>
+    </programme>
+    <programme start="20261127140000 -0500" stop="20261127150000 -0500" channel="Telemundo.us">
+        <title lang="es">En casa con Telemundo</title>
+        <desc lang="es">Una oferta ligera, de formato accesible y familiar que incluye entrevistas con estrellas y buenas noticias.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2023/03/08/ecct_programing_guide_image_220x228_telemundo.png" />
+        <url>https://www.telemundo.com/shows/en-casa-con-telemundo</url>
+        <rating>
+            <value>TVPG</value>
+        </rating>
+    </programme>
+    <programme start="20261127150000 -0500" stop="20261127160000 -0500" channel="Telemundo.us">
+        <title lang="es">La mesa caliente</title>
+        <desc lang="es">Un equipo de mujeres audaces y empoderadas debate desde diversas perspectivas sobre el entretenimiento y los temas más candentes y controversiales que afectan a la comunidad latina en Estados Unidos.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2022/02/23/la-mesa-caliente-telemundo.jpeg" />
+        <url>https://www.telemundo.com/shows/la-mesa-caliente</url>
+        <rating>
+            <value>TV14</value>
+        </rating>
+    </programme>
+    <programme start="20261127160000 -0500" stop="20261127170000 -0500" channel="Telemundo.us">
+        <title lang="es">Al rojo vivo</title>
+        <desc lang="es">La revista noticiosa que define la agenda de la televisión en español en EE. UU. Se caracteriza por ofrecer, antes que nadie, historias que cautivan al público hispano y por presentarlas en un formato innovador que resalta el aspecto humano.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2020/10/23/02_arv_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/al-rojo-vivo</url>
+    </programme>
+    <programme start="20261127170000 -0500" stop="20261127180000 -0500" channel="Telemundo.us">
+        <title lang="es">En casa con Telemundo</title>
+        <desc lang="es">Una oferta ligera, de formato accesible y familiar que incluye entrevistas con estrellas y buenas noticias.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2023/03/08/ecct_programing_guide_image_220x228_telemundo.png" />
+        <url>https://www.telemundo.com/shows/en-casa-con-telemundo</url>
+        <rating>
+            <value>TVPG</value>
+        </rating>
+    </programme>
+    <programme start="20261127180000 -0500" stop="20261127183000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo mediodía</title>
+        <desc lang="es">Un informativo con un estilo único de narrar noticias de una manera atractiva. Se presentan historias locales y nacionales, desde diferentes ángulos de los acontecimientos, y entrevistas.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/ntm_programingguide_220x228.png" />
+        <url>https://www.telemundo.com/noticias/noticias-telemundo-mediodia</url>
+        <rating>
+            <value>TVPG</value>
+        </rating>
+    </programme>
+    <programme start="20261127183000 -0500" stop="20261127190000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo</title>
+        <desc lang="es">Julio Vaqueiro presenta Edición Noticias Telemundo, la fuente de información más confiable de la comunidad hispana en EE.UU. Sus corresponsales ofrecen las últimas noticias y entrevistas.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_main_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/edicion-noticias-telemundo</url>
+    </programme>
+    <programme start="20261127190000 -0500" stop="20261127210000 -0500" channel="Telemundo.us">
+        <title lang="es">Juego de villanos</title>
+        <desc lang="es">Dieciocho villanos icónicos compiten por el título de "El Emperador de los Villanos" y 200 mil dólares. Entre desafíos, inmunidades, alianzas y traiciones, solo uno alcanza la cima.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/i/rockcms/2026-07/543962/default-img-220x226-Clq9WPR2-2f9ea2_ef13aff84719f1b592449135407d8db05fce05d5.png" />
+        <url>https://www.telemundo.com/shows/juego-de-villanos</url>
+    </programme>
+    <programme start="20261127210000 -0500" stop="20261127220000 -0500" channel="Telemundo.us">
+        <title lang="es">Sin senos sí hay paraíso</title>
+        <desc lang="es">Una chica busca redimir a su familia del mundo de la violencia y la prostitución que les ha traído tanto dolor y miseria, y decide tener éxito en la vida sin tener que recurrir a la cirugía plástica o caer en la tentación del dinero fácil.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2018/05/15/02_sssshp3_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/sin-senos-si-hay-paraiso</url>
+        <rating>
+            <value>TV14</value>
+        </rating>
+    </programme>
+    <programme start="20261127220000 -0500" stop="20261127230000 -0500" channel="Telemundo.us">
+        <title lang="es">Uzak Sehir</title>
+        <desc lang="es">Alya llega a Albora para enterrar a su esposo y se enfrenta, por primera vez, a una poderosa familia impulsada por la venganza. Proteger a su hijo Deniz y recuperar su libertad no será fácil.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/i/rockcms/2026-08/559380/LDTS2ProgramingGuideImage220x228-1-a47e54_1fbe2053e29d7ed5913c2971f0135d144f31bd67.jpg" />
+        <url>https://www.telemundo.com/shows/lejos-de-ti</url>
+    </programme>
+    <programme start="20261127230000 -0500" stop="20261127233500 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo</title>
+        <desc lang="es">Julio Vaqueiro presenta Edición Noticias Telemundo, la fuente de información más confiable de la comunidad hispana en EE.UU. Sus corresponsales ofrecen las últimas noticias y entrevistas.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_main_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/edicion-noticias-telemundo</url>
+    </programme>
+    <programme start="20261127233500 -0500" stop="20261128000000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo en la noche</title>
+        <desc lang="es">Noticias Telemundo en la noche presenta las últimas noticias de Estados Unidos y el mundo. Arantxa Loizaga trae la información más relevante de todo lo que necesita saber al final del día.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_noche_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche</url>
     </programme>
 </tv>
