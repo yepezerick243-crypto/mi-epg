@@ -1461,4 +1461,167 @@
         <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_noche_programing_guide_image_220x228.jpeg" />
         <url>https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche</url>
     </programme>
+    <programme start="20261128000000 -0500" stop="20261128003000 -0500" channel="Telemundo.us">
+        <title lang="es">El pelotazo</title>
+        <desc lang="es">La nueva e innovadora apuesta de Telemundo Deportes: cobertura completa de los mejores eventos, invitados y polémica. Seguimiento detallado de equipos, jugadores y partidos más destacados.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2025/05/01/22352395_omni_el_pelotazo_500x500_t.com_thumbnail.jpg" />
+        <url>https://www.telemundo.com/deportes/el-pelotazo</url>
+        <rating>
+            <value>TVPG</value>
+        </rating>
+    </programme>
+    <programme start="20261128003000 -0500" stop="20261128013000 -0500" channel="Telemundo.us">
+        <title lang="es">Uzak Sehir</title>
+        <desc lang="es">Alya llega a Albora para enterrar a su esposo y se enfrenta, por primera vez, a una poderosa familia impulsada por la venganza. Proteger a su hijo Deniz y recuperar su libertad no será fácil.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/i/rockcms/2026-08/559380/LDTS2ProgramingGuideImage220x228-1-a47e54_1fbe2053e29d7ed5913c2971f0135d144f31bd67.jpg" />
+        <url>https://www.telemundo.com/shows/lejos-de-ti</url>
+    </programme>
+    <programme start="20261128013000 -0500" stop="20261128020000 -0500" channel="Telemundo.us">
+        <title lang="es">Caso cerrado</title>
+        <desc lang="es">El novio de Graciela la dejó porque le enviaron a la casa unas flores con dedicatoria, pero ella está segura de no tener otra relación ni admirador. El vendedor no revela quién las compró.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2018/10/17/02_cc_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/caso-cerrado</url>
+        <rating>
+            <value>TV14</value>
+        </rating>
+    </programme>
+    <programme start="20261128020000 -0500" stop="20261128030000 -0500" channel="Telemundo.us">
+        <title lang="es">En casa con Telemundo</title>
+        <desc lang="es">Una oferta ligera, de formato accesible y familiar que incluye entrevistas con estrellas y buenas noticias.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2023/03/08/ecct_programing_guide_image_220x228_telemundo.png" />
+        <url>https://www.telemundo.com/shows/en-casa-con-telemundo</url>
+        <rating>
+            <value>TVPG</value>
+        </rating>
+    </programme>
+    <programme start="20261128030000 -0500" stop="20261128040000 -0500" channel="Telemundo.us">
+        <title lang="es">En casa con Telemundo</title>
+        <desc lang="es">Una oferta ligera, de formato accesible y familiar que incluye entrevistas con estrellas y buenas noticias.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2023/03/08/ecct_programing_guide_image_220x228_telemundo.png" />
+        <url>https://www.telemundo.com/shows/en-casa-con-telemundo</url>
+        <rating>
+            <value>TVPG</value>
+        </rating>
+    </programme>
+    <programme start="20261128040000 -0500" stop="20261128050000 -0500" channel="Telemundo.us">
+        <title lang="es">La mesa caliente</title>
+        <desc lang="es">Un equipo de mujeres audaces y empoderadas debate desde diversas perspectivas sobre el entretenimiento y los temas más candentes y controversiales que afectan a la comunidad latina en Estados Unidos.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2022/02/23/la-mesa-caliente-telemundo.jpeg" />
+        <url>https://www.telemundo.com/shows/la-mesa-caliente</url>
+        <rating>
+            <value>TV14</value>
+        </rating>
+    </programme>
+    <programme start="20261128050000 -0500" stop="20261128053000 -0500" channel="Telemundo.us">
+        <title lang="es">Caso cerrado</title>
+        <desc lang="es">La hija de Maricela casi muere por hacer el reto de tragar jabón, y ella demanda al causante.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2018/10/17/02_cc_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/caso-cerrado</url>
+        <rating>
+            <value>TV14</value>
+        </rating>
+    </programme>
+    <programme start="20261128053000 -0500" stop="20261128060000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo en la noche</title>
+        <desc lang="es">Noticias Telemundo en la noche presenta las últimas noticias de Estados Unidos y el mundo. Arantxa Loizaga trae la información más relevante de todo lo que necesita saber al final del día.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_noche_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche</url>
+    </programme>
+    <programme start="20261128060000 -0500" stop="20261128063000 -0500" channel="Telemundo.us">
+        <title lang="es">Caso cerrado</title>
+        <desc lang="es">David cree que su hermana y su madrastra planearon la muerte de su padre para cobrar la herencia. El señor descubrió a su mujer y a su hija teniendo sexo y cómo tenía problemas cardíacos el hombre murió. David quiere que las mujeres vayan presas.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2018/10/17/02_cc_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/caso-cerrado</url>
+        <rating>
+            <value>TV14</value>
+        </rating>
+    </programme>
+    <programme start="20261128063000 -0500" stop="20261128070000 -0500" channel="Telemundo.us">
+        <title lang="es">La Dr. Polo vida sin límites</title>
+        <desc lang="es">Ana María Polo revela su secreto para vivir sin límites. Acompáñala junto al Dr. Ramos mientras exploran la ciencia detrás del alivio natural. Además, comparten historias inspiradoras de personas reales que recuperan sus vidas.</desc>
+    </programme>
+    <programme start="20261128070000 -0500" stop="20261128073000 -0500" channel="Telemundo.us">
+        <title lang="es">Wild Child</title>
+        <desc lang="es">Conoce a las especies que más han influido en la vida humana, desde caballos salvajes y perros leales hasta chimpancés de gran inteligencia. Descubre el impacto que han tenido en el mundo.</desc>
+        <rating>
+            <value>TVG</value>
+        </rating>
+    </programme>
+    <programme start="20261128073000 -0500" stop="20261128080000 -0500" channel="Telemundo.us">
+        <title lang="es">Earth Odyssey With Dylan Dreyer</title>
+        <desc lang="es">En India, unos monos burlan a una pitón, crías de elefante se reúnen con su familia y asnos salvajes desafían a un lobo en una muestra de ingenio, fuerza y adaptación en paisajes sorprendentes.</desc>
+        <rating>
+            <value>TVG</value>
+        </rating>
+    </programme>
+    <programme start="20261128080000 -0500" stop="20261128090000 -0500" channel="Telemundo.us">
+        <title lang="es">Harlem Globetrotters: Play It Forward</title>
+        <desc lang="es">Torch, Hammer y Hot Shot se reúnen con la Fundación Embrace Girls, una organización sin fines de lucro que alienta a las niñas en riesgo y organiza las tradicionales fiestas de té en Florida.</desc>
+        <rating>
+            <value>TVG</value>
+        </rating>
+    </programme>
+    <programme start="20261128090000 -0500" stop="20261128092500 -0500" channel="Telemundo.us">
+        <title lang="es">Fútbol estelar</title>
+        <desc lang="es">Todo el fútbol europeo en un solo lugar. Goles, mejores jugadas, noticias, análisis, entrevistas y la actualidad de la Premier League, Bundesliga y Serie A.</desc>
+    </programme>
+    <programme start="20261128092500 -0500" stop="20261128113000 -0500" channel="Telemundo.us">
+        <title lang="es">Bundesliga Soccer</title>
+        <desc lang="es">Desde el Volksparkstadion, en Hamburgo, Alemania.</desc>
+    </programme>
+    <programme start="20261128113000 -0500" stop="20261128122500 -0500" channel="Telemundo.us">
+        <title lang="es">Fútbol estelar</title>
+        <desc lang="es">Todo el fútbol europeo en un solo lugar. Goles, mejores jugadas, noticias, análisis, entrevistas y la actualidad de la Premier League, Bundesliga y Serie A.</desc>
+    </programme>
+    <programme start="20261128122500 -0500" stop="20261128143000 -0500" channel="Telemundo.us">
+        <title lang="es">Premier League Soccer</title>
+        <desc lang="es">Jornada 12 de la temporada 2026-27 de la Premier League. Ipswich Town se enfrenta a Aston Villa. Desde el estadio Portman Road.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2019/04/01/02_premierleague_220x228_0.jpg" />
+        <url>https://www.telemundo.com/deportes/premier-league</url>
+    </programme>
+    <programme start="20261128143000 -0500" stop="20261128170000 -0500" channel="Telemundo.us">
+        <title lang="es">Italian Serie A Soccer</title>
+        <desc lang="es">Desde el estadio Giuseppe Meazza, en Milán, Italia.</desc>
+    </programme>
+    <programme start="20261128170000 -0500" stop="20261128180000 -0500" channel="Telemundo.us">
+        <title lang="es">Uzak Sehir</title>
+        <desc lang="es">Alya llega a Albora para enterrar a su esposo y se enfrenta, por primera vez, a una poderosa familia impulsada por la venganza. Proteger a su hijo Deniz y recuperar su libertad no será fácil.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/i/rockcms/2026-08/559380/LDTS2ProgramingGuideImage220x228-1-a47e54_1fbe2053e29d7ed5913c2971f0135d144f31bd67.jpg" />
+        <url>https://www.telemundo.com/shows/lejos-de-ti</url>
+    </programme>
+    <programme start="20261128180000 -0500" stop="20261128183000 -0500" channel="Telemundo.us">
+        <title lang="es">Caso cerrado</title>
+        <desc lang="es">Rosa, recuperada de su enfermedad, regresa de un viaje y descubre que su hija de 18 años está enamorada de su padrastro. Ella exige que él cubra el tratamiento psicológico para la joven.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2018/10/17/02_cc_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/caso-cerrado</url>
+        <rating>
+            <value>TV14</value>
+        </rating>
+    </programme>
+    <programme start="20261128183000 -0500" stop="20261128190000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo fin de semana</title>
+        <desc lang="es">Noticias Telemundo fin de semana es la fuente de información más confiable de la comunidad hispana en EE. UU. Su galardonado equipo de corresponsales ofrece los últimos acontecimientos.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_main_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/edicion-noticias-telemundo</url>
+    </programme>
+    <programme start="20261128190000 -0500" stop="20261128210000 -0500" channel="Telemundo.us">
+        <title lang="es">Dateline</title>
+        <desc lang="es">Investigadores y familiares reconstruyen el asesinato de Kelsey Berreth, una madre de Colorado que desaparece tras ser vista por última vez en un supermercado un Día de Acción de Gracias.</desc>
+    </programme>
+    <programme start="20261128210000 -0500" stop="20261128230000 -0500" channel="Telemundo.us">
+        <title lang="es">The Devil Wears Prada</title>
+        <desc lang="es">Miranda Priestley no solo es la editora más famosa en el mundo de la moda. Es una persona temida por los diseñadores y dura con sus empleados. Para Andy Sachs, su nueva asistente, será todo un desafío complacerla.</desc>
+    </programme>
+    <programme start="20261128230000 -0500" stop="20261128233000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo fin de semana</title>
+        <desc lang="es">Noticias Telemundo fin de semana es la fuente de información más confiable de la comunidad hispana en EE. UU. Su galardonado equipo de corresponsales ofrece los últimos acontecimientos.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_main_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/edicion-noticias-telemundo</url>
+    </programme>
+    <programme start="20261128233000 -0500" stop="20261129000000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo en la noche</title>
+        <desc lang="es">Noticias Telemundo en la noche presenta las últimas noticias de Estados Unidos y el mundo. Arantxa Loizaga trae la información más relevante de todo lo que necesita saber al final del día.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_noche_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche</url>
+    </programme>
 </tv>
