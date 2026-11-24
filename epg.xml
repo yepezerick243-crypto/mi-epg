@@ -1624,4 +1624,142 @@
         <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_noche_programing_guide_image_220x228.jpeg" />
         <url>https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche</url>
     </programme>
+    <programme start="20261129000000 -0500" stop="20261129003000 -0500" channel="Telemundo.us">
+        <title lang="es">El pelotazo</title>
+        <desc lang="es">La nueva e innovadora apuesta de Telemundo Deportes: cobertura completa de los mejores eventos, invitados y polémica. Seguimiento detallado de equipos, jugadores y partidos más destacados.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2025/05/01/22352395_omni_el_pelotazo_500x500_t.com_thumbnail.jpg" />
+        <url>https://www.telemundo.com/deportes/el-pelotazo</url>
+        <rating>
+            <value>TVPG</value>
+        </rating>
+    </programme>
+    <programme start="20261129003000 -0500" stop="20261129023000 -0500" channel="Telemundo.us">
+        <title lang="es">Fast &amp; Furious</title>
+        <desc lang="es">El fugitivo Dominic Toretto y el agente Brian O'Conner reavivan su enemistad, aunque las circunstancias los obliga a unir fuerzas contra un enemigo común: deben encontrar al asesino de Vince.</desc>
+        <rating>
+            <value>pg-13</value>
+        </rating>
+    </programme>
+    <programme start="20261129023000 -0500" stop="20261129043000 -0500" channel="Telemundo.us">
+        <title lang="es">Vivo</title>
+        <desc lang="es">Vivo, un pequeño mamífero con un don especial para la música, y Gabi se embarcan en una aventura desde La Habana hasta Miami para entregarle una canción al antiguo amor de su adorado dueño.</desc>
+    </programme>
+    <programme start="20261129043000 -0500" stop="20261129053000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo en la noche</title>
+        <desc lang="es">Noticias Telemundo en la noche presenta las últimas noticias de Estados Unidos y el mundo. Arantxa Loizaga trae la información más relevante de todo lo que necesita saber al final del día.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_noche_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche</url>
+    </programme>
+    <programme start="20261129053000 -0500" stop="20261129060000 -0500" channel="Telemundo.us">
+        <title lang="es">Paid Programming</title>
+        <desc lang="es">Programa que muestra diversos productos para la venta.</desc>
+        <rating>
+            <value>TVG</value>
+        </rating>
+    </programme>
+    <programme start="20261129060000 -0500" stop="20261129063000 -0500" channel="Telemundo.us">
+        <title lang="es">Paid Programming</title>
+        <desc lang="es">Programa que muestra diversos productos para la venta.</desc>
+        <rating>
+            <value>TVG</value>
+        </rating>
+    </programme>
+    <programme start="20261129063000 -0500" stop="20261129070000 -0500" channel="Telemundo.us">
+        <title lang="es">La Dr. Polo vida sin límites</title>
+        <desc lang="es">Ana María Polo revela su secreto para vivir sin límites. Acompáñala junto al Dr. Ramos mientras exploran la ciencia detrás del alivio natural. Además, comparten historias inspiradoras de personas reales que recuperan sus vidas.</desc>
+    </programme>
+    <programme start="20261129070000 -0500" stop="20261129073000 -0500" channel="Telemundo.us">
+        <title lang="es">Operation Smile</title>
+        <desc lang="es">Operation Smile: transformando vidas y regalando sonrisas a los niños alrededor del mundo.</desc>
+    </programme>
+    <programme start="20261129073000 -0500" stop="20261129080000 -0500" channel="Telemundo.us">
+        <title lang="es">Operation Smile</title>
+        <desc lang="es">Operation Smile: transformando vidas y regalando sonrisas a los niños alrededor del mundo.</desc>
+    </programme>
+    <programme start="20261129080000 -0500" stop="20261129083000 -0500" channel="Telemundo.us">
+        <title lang="es">Mutual of Omaha's Wild Kingdom Protecting the Wild</title>
+        <desc lang="es">La Dra. Rae y Peter se conectan con algunos de los pequeños más salvajes e increíbles del continente como los oseznos huérfanos, los esquivos ocelotes bebés, y las tiernas crías de perezosos.</desc>
+        <rating>
+            <value>TVG</value>
+        </rating>
+    </programme>
+    <programme start="20261129083000 -0500" stop="20261129090000 -0500" channel="Telemundo.us">
+        <title lang="es">Mutual of Omaha's Wild Kingdom Protecting the Wild</title>
+        <desc lang="es">Peter y la Dra. Rae conocen a los pandas gigantes y descubren su historia, valor cultural y conservación. Luego exploran a los pandas rojos en Nebraska y los esfuerzos para proteger la especie.</desc>
+        <rating>
+            <value>TVG</value>
+        </rating>
+    </programme>
+    <programme start="20261129090000 -0500" stop="20261129092500 -0500" channel="Telemundo.us">
+        <title lang="es">Fútbol estelar</title>
+        <desc lang="es">Todo el fútbol europeo en un solo lugar. Goles, mejores jugadas, noticias, análisis, entrevistas y la actualidad de la Premier League, Bundesliga y Serie A.</desc>
+    </programme>
+    <programme start="20261129092500 -0500" stop="20261129112500 -0500" channel="Telemundo.us">
+        <title lang="es">Bundesliga Soccer</title>
+        <desc lang="es">Acción de la jornada 11 de la Bundesliga 2026-27. Freiburg busca el segundo lugar y Leipzig su quinta victoria al hilo.</desc>
+    </programme>
+    <programme start="20261129112500 -0500" stop="20261129133000 -0500" channel="Telemundo.us">
+        <title lang="es">Premier League Soccer</title>
+        <desc lang="es">Jornada 12 de la temporada 2026-27 de la Premier League. Arsenal se enfrenta a Manchester City. Desde el estadio Emirates, en Londres.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2019/04/01/02_premierleague_220x228_0.jpg" />
+        <url>https://www.telemundo.com/deportes/premier-league</url>
+    </programme>
+    <programme start="20261129133000 -0500" stop="20261129140000 -0500" channel="Telemundo.us">
+        <title lang="es">3er Tiempo</title>
+        <desc lang="es">Análisis, resúmenes y entrevistas exclusivas con expertos.</desc>
+    </programme>
+    <programme start="20261129140000 -0500" stop="20261129143000 -0500" channel="Telemundo.us">
+        <title lang="es">Fútbol estelar</title>
+        <desc lang="es">Todo el fútbol europeo en un solo lugar. Goles, mejores jugadas, noticias, análisis, entrevistas y la actualidad de la Premier League, Bundesliga y Serie A.</desc>
+    </programme>
+    <programme start="20261129143000 -0500" stop="20261129170000 -0500" channel="Telemundo.us">
+        <title lang="es">Italian Serie A Soccer</title>
+        <desc lang="es">Desde el Estadio Giuseppe Sinigaglia en Como, Lombardy, Italia.</desc>
+    </programme>
+    <programme start="20261129170000 -0500" stop="20261129180000 -0500" channel="Telemundo.us">
+        <title lang="es">Uzak Sehir</title>
+        <desc lang="es">Alya llega a Albora para enterrar a su esposo y se enfrenta, por primera vez, a una poderosa familia impulsada por la venganza. Proteger a su hijo Deniz y recuperar su libertad no será fácil.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/i/rockcms/2026-08/559380/LDTS2ProgramingGuideImage220x228-1-a47e54_1fbe2053e29d7ed5913c2971f0135d144f31bd67.jpg" />
+        <url>https://www.telemundo.com/shows/lejos-de-ti</url>
+    </programme>
+    <programme start="20261129180000 -0500" stop="20261129183000 -0500" channel="Telemundo.us">
+        <title lang="es">Caso cerrado</title>
+        <desc lang="es">Yoli quiere el divorcio y la custodia de su hijo porque su esposo come manatíes.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2018/10/17/02_cc_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/caso-cerrado</url>
+        <rating>
+            <value>TV14</value>
+        </rating>
+    </programme>
+    <programme start="20261129183000 -0500" stop="20261129190000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo fin de semana</title>
+        <desc lang="es">Noticias Telemundo fin de semana es la fuente de información más confiable de la comunidad hispana en EE. UU. Su galardonado equipo de corresponsales ofrece los últimos acontecimientos.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_main_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/edicion-noticias-telemundo</url>
+    </programme>
+    <programme start="20261129190000 -0500" stop="20261129210000 -0500" channel="Telemundo.us">
+        <title lang="es">Juego de villanos</title>
+        <desc lang="es">Dieciocho villanos icónicos compiten por el título de "El Emperador de los Villanos" y 200 mil dólares. Entre desafíos, inmunidades, alianzas y traiciones, solo uno alcanza la cima.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/i/rockcms/2026-07/543962/default-img-220x226-Clq9WPR2-2f9ea2_ef13aff84719f1b592449135407d8db05fce05d5.png" />
+        <url>https://www.telemundo.com/shows/juego-de-villanos</url>
+    </programme>
+    <programme start="20261129210000 -0500" stop="20261129230000 -0500" channel="Telemundo.us">
+        <title lang="es">Home Alone</title>
+        <desc lang="es">Un encantador niño de 8 años desafía a un torpe par de ladrones cuando, accidentalmente, sus padres lo olvidan en casa.</desc>
+        <rating>
+            <value>tv-pg</value>
+        </rating>
+    </programme>
+    <programme start="20261129230000 -0500" stop="20261129233000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo fin de semana</title>
+        <desc lang="es">Noticias Telemundo fin de semana es la fuente de información más confiable de la comunidad hispana en EE. UU. Su galardonado equipo de corresponsales ofrece los últimos acontecimientos.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_main_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/edicion-noticias-telemundo</url>
+    </programme>
+    <programme start="20261129233000 -0500" stop="20261130000000 -0500" channel="Telemundo.us">
+        <title lang="es">Noticias Telemundo en la noche</title>
+        <desc lang="es">Noticias Telemundo en la noche presenta las últimas noticias de Estados Unidos y el mundo. Arantxa Loizaga trae la información más relevante de todo lo que necesita saber al final del día.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2021/09/27/noticiastelemundo_noche_programing_guide_image_220x228.jpeg" />
+        <url>https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche</url>
+    </programme>
 </tv>
