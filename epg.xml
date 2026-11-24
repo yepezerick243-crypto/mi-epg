@@ -1605,12 +1605,15 @@
         <url>https://www.telemundo.com/noticias/edicion-noticias-telemundo</url>
     </programme>
     <programme start="20261128190000 -0500" stop="20261128210000 -0500" channel="Telemundo.us">
-        <title lang="es">Dateline</title>
-        <desc lang="es">Investigadores y familiares reconstruyen el asesinato de Kelsey Berreth, una madre de Colorado que desaparece tras ser vista por última vez en un supermercado un Día de Acción de Gracias.</desc>
-    </programme>
-    <programme start="20261128210000 -0500" stop="20261128230000 -0500" channel="Telemundo.us">
         <title lang="es">The Devil Wears Prada</title>
         <desc lang="es">Miranda Priestley no solo es la editora más famosa en el mundo de la moda. Es una persona temida por los diseñadores y dura con sus empleados. Para Andy Sachs, su nueva asistente, será todo un desafío complacerla.</desc>
+    </programme>
+    <programme start="20261128210000 -0500" stop="20261128230000 -0500" channel="Telemundo.us">
+        <title lang="es">Home Alone</title>
+        <desc lang="es">Un encantador niño de 8 años desafía a un torpe par de ladrones cuando, accidentalmente, sus padres lo olvidan en casa.</desc>
+        <rating>
+            <value>tv-pg</value>
+        </rating>
     </programme>
     <programme start="20261128230000 -0500" stop="20261128233000 -0500" channel="Telemundo.us">
         <title lang="es">Noticias Telemundo fin de semana</title>
