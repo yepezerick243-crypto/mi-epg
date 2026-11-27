@@ -1576,7 +1576,7 @@
     </programme>
     <programme start="20261128143000 -0500" stop="20261128170000 -0500" channel="Telemundo.us">
         <title lang="es">Italian Serie A Soccer</title>
-        <desc lang="es">Desde el estadio Giuseppe Meazza, en Milán, Italia.</desc>
+        <desc lang="es">Acción de la fecha 13 de la temporada 2026-27 de la Serie A. Inter recibe a Genoa. Desde el estadio Giuseppe Meazza, en Milán.</desc>
     </programme>
     <programme start="20261128170000 -0500" stop="20261128180000 -0500" channel="Telemundo.us">
         <title lang="es">Uzak Sehir</title>
@@ -1698,7 +1698,7 @@
     </programme>
     <programme start="20261129112500 -0500" stop="20261129133000 -0500" channel="Telemundo.us">
         <title lang="es">Premier League Soccer</title>
-        <desc lang="es">Jornada 12 de la temporada 2026-27 de la Premier League. Arsenal se enfrenta a Manchester City. Desde el estadio Emirates, en Londres.</desc>
+        <desc lang="es">Jornada 12 de la temporada 2026-27 de la Premier League. Desde el estadio Emirates, en Londres. El Arsenal recibe a un City que se encuentra a seis puntos y que ha perdido tres de sus últimos cuatro partidos de liga.</desc>
         <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2019/04/01/02_premierleague_220x228_0.jpg" />
         <url>https://www.telemundo.com/deportes/premier-league</url>
     </programme>
@@ -2124,7 +2124,7 @@
     </programme>
     <programme start="20261201220000 -0500" stop="20261201230000 -0500" channel="Telemundo.us">
         <title lang="es">Leyla: Hayat... Aşk... Adalet...</title>
-        <desc lang="es">Leyla pierde a su madre a temprana edad y su vida cambia cuando su padre se casa con otra mujer. Abandonada por Nur, su cruel madrastra, años después regresa para vengarse de ella.</desc>
+        <desc lang="es">El padre de Leyla toma una difícil decisión para ayudar a su esposa Nur. La niña descubre las verdaderas intenciones de su madrastra, pero una tragedia cambia su vida para siempre.</desc>
         <rating>
             <value>TV14</value>
         </rating>
