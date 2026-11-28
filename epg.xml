@@ -2167,6 +2167,8 @@
     <programme start="20261202013000 -0500" stop="20261202020000 -0500" channel="Telemundo.us">
         <title lang="es">Caso cerrado</title>
         <desc lang="es">Juan Carlos se encontró con el asesino de su hijo, quien fue absuelto del crimen, y le dio una paliza.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2018/10/17/02_cc_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/caso-cerrado</url>
         <rating>
             <value>TV14</value>
         </rating>
@@ -2201,6 +2203,8 @@
     <programme start="20261202050000 -0500" stop="20261202053000 -0500" channel="Telemundo.us">
         <title lang="es">Caso cerrado</title>
         <desc lang="es">Oslenin paga las consecuencias del comportamiento racista y abusador de su hermano Ricardo.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2018/10/17/02_cc_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/caso-cerrado</url>
         <rating>
             <value>TV14</value>
         </rating>
@@ -2313,6 +2317,8 @@
     <programme start="20261202190000 -0500" stop="20261202210000 -0500" channel="Telemundo.us">
         <title lang="es">Juego de villanos</title>
         <desc lang="es">Dieciocho villanos icónicos compiten por el título de "El Emperador de los Villanos" y 200 mil dólares. Entre desafíos, inmunidades, alianzas y traiciones, solo uno alcanza la cima.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/i/rockcms/2026-07/543962/default-img-220x226-Clq9WPR2-2f9ea2_ef13aff84719f1b592449135407d8db05fce05d5.png" />
+        <url>https://www.telemundo.com/shows/juego-de-villanos</url>
     </programme>
     <programme start="20261202210000 -0500" stop="20261202220000 -0500" channel="Telemundo.us">
         <title lang="es">94th Annual Christmas in Rockefeller Center</title>
@@ -2352,6 +2358,8 @@
     <programme start="20261203013000 -0500" stop="20261203020000 -0500" channel="Telemundo.us">
         <title lang="es">Caso cerrado</title>
         <desc lang="es">La doctora Ana María Polo interviene en batallas legales que afectan a los latinos. Como en una corte, las partes presentan testigos y evidencias para que ella emita su decisión. Además, expertos contribuyen con sus conocimientos.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2018/10/17/02_cc_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/caso-cerrado</url>
         <rating>
             <value>TV14</value>
         </rating>
@@ -2386,6 +2394,8 @@
     <programme start="20261203050000 -0500" stop="20261203053000 -0500" channel="Telemundo.us">
         <title lang="es">Caso cerrado</title>
         <desc lang="es">Gladis acusa a Juan de ser un monstruo porque siendo veterinario, experimentaba con seres humanos.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2018/10/17/02_cc_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/caso-cerrado</url>
         <rating>
             <value>TV14</value>
         </rating>
@@ -2498,6 +2508,8 @@
     <programme start="20261203190000 -0500" stop="20261203210000 -0500" channel="Telemundo.us">
         <title lang="es">Juego de villanos</title>
         <desc lang="es">Dieciocho villanos icónicos compiten por el título de "El Emperador de los Villanos" y 200 mil dólares. Entre desafíos, inmunidades, alianzas y traiciones, solo uno alcanza la cima.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/i/rockcms/2026-07/543962/default-img-220x226-Clq9WPR2-2f9ea2_ef13aff84719f1b592449135407d8db05fce05d5.png" />
+        <url>https://www.telemundo.com/shows/juego-de-villanos</url>
     </programme>
     <programme start="20261203210000 -0500" stop="20261203220000 -0500" channel="Telemundo.us">
         <title lang="es">Sin senos sí hay paraíso</title>
