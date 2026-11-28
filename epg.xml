@@ -1565,7 +1565,11 @@
         </rating>
     </programme>
     <programme start="20261128083000 -0500" stop="20261128123000 -0500" channel="Telemundo.us">
-        <title lang="es">Macy's Thanksgiving Day Parade</title>
+        <title lang="es">100th Macy's Thanksgiving Day Parade</title>
+        <desc lang="es">La temporada festiva comienza por todo lo alto con una celebración única por los 100 años del desfile, con espectaculares globos, carrozas, artistas y muchas sorpresas.</desc>
+        <rating>
+            <value>TVPG</value>
+        </rating>
     </programme>
     <programme start="20261128123000 -0500" stop="20261128143000 -0500" channel="Telemundo.us">
         <title lang="es">Fast &amp; Furious</title>
@@ -1576,7 +1580,7 @@
     </programme>
     <programme start="20261128143000 -0500" stop="20261128170000 -0500" channel="Telemundo.us">
         <title lang="es">Italian Serie A Soccer</title>
-        <desc lang="es">Acción de la fecha 13 de la temporada 2026-27 de la Serie A. Inter recibe a Genoa. Desde el estadio Giuseppe Meazza, en Milán.</desc>
+        <desc lang="es">Acción de la jornada 13 de la Serie A 2026-27. Inter busca el liderato y Genoa su segunda victoria al hilo. Desde el estadio Giuseppe Meazza, en Milán.</desc>
     </programme>
     <programme start="20261128170000 -0500" stop="20261128180000 -0500" channel="Telemundo.us">
         <title lang="es">Uzak Sehir</title>
@@ -1712,10 +1716,16 @@
     </programme>
     <programme start="20261129143000 -0500" stop="20261129170000 -0500" channel="Telemundo.us">
         <title lang="es">Italian Serie A Soccer</title>
-        <desc lang="es">Desde el Estadio Giuseppe Sinigaglia en Como, Lombardy, Italia.</desc>
+        <desc lang="es">Acción de la jornada 13 de la Serie A 2026-27. Como busca puestos de Champions League y Juventus retener el sexto puesto.</desc>
     </programme>
     <programme start="20261129170000 -0500" stop="20261129180000 -0500" channel="Telemundo.us">
-        <title lang="es">Especial: Sin senos sí hay paraíso</title>
+        <title lang="es">Sin senos sí hay paraíso</title>
+        <desc lang="es">La Diabla desata una tormenta de emociones en Catalina, quien esquiva los controles de la NSA, agencia de inteligencia de EE. UU. Titi tiene acceso al secreto más perverso de Israel Montero.</desc>
+        <icon src="https://media-cldnry.s-nbcnews.com/image/upload/telemundocms/images/show_program/2018/05/15/02_sssshp3_220x228.jpg" />
+        <url>https://www.telemundo.com/shows/sin-senos-si-hay-paraiso</url>
+        <rating>
+            <value>TV14</value>
+        </rating>
     </programme>
     <programme start="20261129180000 -0500" stop="20261129183000 -0500" channel="Telemundo.us">
         <title lang="es">Caso cerrado</title>
